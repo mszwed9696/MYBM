@@ -13,20 +13,12 @@ export default function FractionalCMOPage() {
       <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
         {/* European Street cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/Gemini_Generated_Image_1lqyf51lqyf51lqy.png" alt="European Street" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/european-street.png" alt="European Street" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
           {/* Light gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/60 via-[#1a1a2e]/50 to-black/70"></div>
         </div>
 
         {/* The Don character */}
-        <motion.div
-          className="absolute right-10 md:right-20 bottom-0 w-72 md:w-96 opacity-80 z-10"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.8 }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
@@ -257,15 +249,6 @@ export default function FractionalCMOPage() {
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
         {/* Character image */}
-        <motion.div
-          className="absolute left-0 bottom-0 w-64 opacity-50"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>

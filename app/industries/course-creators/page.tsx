@@ -10,14 +10,14 @@ export default function CourseCreatorsPage() {
       <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}>
               Marketing Solutions for Online Course Creators
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Stop the launch roller coaster. Build evergreen funnels that fill your courses every month
               without live launches or constant promotion.
             </p>
-            <Link href="/apply" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 inline-block">
+            <Link href="/apply" className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#a00000] inline-block">
               Scale Your Course Business
             </Link>
           </div>
@@ -26,7 +26,7 @@ export default function CourseCreatorsPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Course Creator Challenges We Solve</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>Course Creator Challenges We Solve</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <h3 className="text-xl font-bold mb-4">Launch Burnout</h3>
@@ -46,7 +46,7 @@ export default function CourseCreatorsPage() {
 
       <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">Our Course Marketing Services</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>Our Course Marketing Services</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Evergreen VSL Funnels</h3>
@@ -70,7 +70,7 @@ export default function CourseCreatorsPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Course Types We Scale</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>Course Types We Scale</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 bg-gray-50 rounded-xl">
               <h3 className="font-bold text-gray-900 mb-2">Business & Marketing Courses</h3>
@@ -102,18 +102,18 @@ export default function CourseCreatorsPage() {
 
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Real Course Creator Results</h2>
+          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Real Course Creator Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400">+210%</div>
+              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>+210%</div>
               <p className="text-gray-400 mt-4">Revenue growth for course creator scaling from $120k to $372k/mo with evergreen funnel</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400">$15k</div>
+              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>$15k</div>
               <p className="text-gray-400 mt-4">Average student value after adding group coaching tier to $997 course</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400">87%</div>
+              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
               <p className="text-gray-400 mt-4">Reduction in launch workload while maintaining revenue through automation</p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function CourseCreatorsPage() {
 
       <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Automate Your Course Sales?</h2>
+          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Ready to Automate Your Course Sales?</h2>
           <p className="text-xl mb-8">If you're doing $100k+ monthly and ready to scale without constant launches, let's talk.</p>
           <Link href="/apply" className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100">
             Apply for Partnership

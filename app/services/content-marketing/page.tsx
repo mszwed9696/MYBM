@@ -37,7 +37,7 @@ export default function ContentMarketingPage() {
               🚗 CONTENT MARKETING - THE DRIVER 🚗
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,34 +81,34 @@ export default function ContentMarketingPage() {
       {/* Why Content */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why High-Ticket Businesses Need Content Marketing
           </h2>
-          <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto">
             Premium buyers don't respond to aggressive ads. They buy from recognized authorities they discover
             through valuable content.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Pre-Sold Inbound Leads</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
+              <h3 className="text-xl font-bold text-white mb-4">Pre-Sold Inbound Leads</h3>
+              <p className="text-gray-300">
                 People who find you through content are already sold on your expertise. They're reaching out to hire you,
                 not to be convinced.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">💰</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Compounds Over Time</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💰</div>
+              <h3 className="text-xl font-bold text-white mb-4">Compounds Over Time</h3>
+              <p className="text-gray-300">
                 Paid ads stop when you stop paying. Content keeps working forever. One great piece can generate leads
                 for years.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">👑</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Category Leadership</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>👑</div>
+              <h3 className="text-xl font-bold text-white mb-4">Category Leadership</h3>
+              <p className="text-gray-300">
                 When you dominate search results and thought leadership, competitors become irrelevant. You own
                 the category.
               </p>
@@ -118,14 +118,14 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Our Content Marketing Methodology
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🔍</div>
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔍</div>
               <h3 className="text-2xl font-bold mb-3">High-Intent Keyword Research</h3>
               <p className="text-blue-100">
                 Target keywords that indicate buying intent and budget. Not "how to" queries from broke beginners,
@@ -133,7 +133,7 @@ export default function ContentMarketingPage() {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">📝</div>
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📝</div>
               <h3 className="text-2xl font-bold mb-3">Authority Content Creation</h3>
               <p className="text-blue-100">
                 Deep, comprehensive content that demonstrates expertise. Not 500-word blog posts, but pillar content
@@ -141,7 +141,7 @@ export default function ContentMarketingPage() {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">📊</div>
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
               <h3 className="text-2xl font-bold mb-3">Technical SEO Excellence</h3>
               <p className="text-blue-100">
                 Optimize site architecture, page speed, mobile experience, and technical elements that Google rewards.
@@ -149,7 +149,7 @@ export default function ContentMarketingPage() {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🔗</div>
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔗</div>
               <h3 className="text-2xl font-bold mb-3">Strategic Link Building</h3>
               <p className="text-blue-100">
                 Earn backlinks from authoritative sources through guest posts, partnerships, PR, and linkable assets.
@@ -163,13 +163,13 @@ export default function ContentMarketingPage() {
       {/* Content Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Content Types We Create
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Pillar Content & Guides</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Pillar Content & Guides</h3>
+              <p className="text-gray-300 mb-4">
                 Comprehensive 3,000-5,000+ word guides that rank for competitive keywords and serve as ultimate
                 resources in your niche.
               </p>
@@ -179,8 +179,8 @@ export default function ContentMarketingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Thought Leadership Articles</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Thought Leadership Articles</h3>
+              <p className="text-gray-300 mb-4">
                 Opinion pieces and frameworks that position you as a category leader. Published on your blog and
                 distributed to industry publications.
               </p>
@@ -190,8 +190,8 @@ export default function ContentMarketingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Case Studies & Results Content</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Case Studies & Results Content</h3>
+              <p className="text-gray-300 mb-4">
                 Detailed breakdowns of client success stories. Ranks for "[your service] results" keywords and
                 provides social proof.
               </p>
@@ -201,8 +201,8 @@ export default function ContentMarketingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Comparison & Buyer's Guides</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Comparison & Buyer's Guides</h3>
+              <p className="text-gray-300 mb-4">
                 Content targeting bottom-funnel keywords when buyers are comparing options. Positions you as
                 the obvious choice.
               </p>
@@ -212,8 +212,8 @@ export default function ContentMarketingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Video Content</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Video Content</h3>
+              <p className="text-gray-300 mb-4">
                 YouTube videos optimized for search. Video builds trust faster than text and ranks well in
                 Google search.
               </p>
@@ -223,8 +223,8 @@ export default function ContentMarketingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Podcast Content Strategy</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Podcast Content Strategy</h3>
+              <p className="text-gray-300 mb-4">
                 Launch or optimize your podcast for authority building. Repurpose into blog posts, clips, and
                 social content.
               </p>
@@ -239,38 +239,38 @@ export default function ContentMarketingPage() {
       {/* SEO Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Complete SEO Services
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Technical SEO</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Site speed optimization</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Mobile responsiveness</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Site architecture</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Schema markup</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>XML sitemaps</li>
+              <h3 className="text-xl font-bold text-white mb-4">Technical SEO</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Site speed optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Mobile responsiveness</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Site architecture</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Schema markup</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>XML sitemaps</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">On-Page SEO</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Keyword optimization</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Meta tags & descriptions</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Internal linking</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Image optimization</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Content optimization</li>
+              <h3 className="text-xl font-bold text-white mb-4">On-Page SEO</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Keyword optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Meta tags & descriptions</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Internal linking</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Image optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Content optimization</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Off-Page SEO</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Link building campaigns</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Guest posting</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Digital PR</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Brand mentions</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Authority building</li>
+              <h3 className="text-xl font-bold text-white mb-4">Off-Page SEO</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Link building campaigns</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Guest posting</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Digital PR</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Brand mentions</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Authority building</li>
               </ul>
             </div>
           </div>
@@ -280,22 +280,22 @@ export default function ContentMarketingPage() {
       {/* Results */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Content Marketing & SEO Results
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">287%</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>287%</div>
               <div className="text-xl font-semibold mb-4">Organic Traffic Growth</div>
               <p className="text-gray-400">Business coach: 2,400 → 9,300 monthly organic visitors in 9 months. 35% of new clients from organic search.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">47</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>47</div>
               <div className="text-xl font-semibold mb-4">Page 1 Rankings</div>
               <p className="text-gray-400">Consultant: Ranking #1-10 for 47 high-intent keywords in their niche within 12 months.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">$0.00</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$0.00</div>
               <div className="text-xl font-semibold mb-4">Cost Per Lead (Organic)</div>
               <p className="text-gray-400">Course creator: 120+ qualified leads/month from organic content. Zero ad spend required.</p>
             </div>
@@ -304,9 +304,9 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Build Authority That Attracts Premium Clients?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -314,7 +314,7 @@ export default function ContentMarketingPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
           >
             Get Your Content Strategy
           </Link>

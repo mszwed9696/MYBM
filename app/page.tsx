@@ -10,29 +10,34 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Mobster Theme with Philadelphia Skyline */}
-      <section className="relative bg-gradient-to-br from-[#1a1a2e] via-[#2a1a4a] to-black text-white overflow-hidden min-h-screen flex items-center">
-        {/* Philadelphia cityscape - FULL image visible (not cropped) */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/philadelphia-skyline.png" alt="Philadelphia Skyline" className="w-full h-full object-contain opacity-90" />
-          {/* Subtle gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
+      <section className="relative bg-gradient-to-br from-[#1a1a2e] via-[#2a1a4a] to-black text-white overflow-hidden" style={{ minHeight: '100vh' }}>
+        {/* Philadelphia cityscape - FULL image visible including sunset and all details */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/heroes/philadelphia-skyline.png"
+            alt="Philadelphia Skyline"
+            className="w-full h-full object-cover opacity-95"
+            style={{ objectPosition: 'center top' }}
+          />
+          {/* Very subtle gradient overlay - preserve sunset visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"></div>
         </div>
 
         {/* Floating gold particles (money theme) */}
         <FloatingParticles count={40} color="#FFD700" />
 
-        {/* The Don character - cropped and layered on top */}
+        {/* The Don character with car - positioned in front */}
         <motion.div
-          className="absolute right-10 md:right-20 lg:right-32 bottom-0 w-80 md:w-96 lg:w-[500px] z-10"
+          className="absolute right-8 md:right-16 lg:right-24 bottom-0 w-72 md:w-[400px] lg:w-[520px] z-10"
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          style={{ filter: "drop-shadow(0 20px 50px rgba(0, 0, 0, 0.8))" }}
+          style={{ filter: "drop-shadow(0 25px 60px rgba(0, 0, 0, 0.9))" }}
         >
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
+          <img src="/characters/driver-vintage-car.png" alt="The Don" className="w-full h-auto" />
         </motion.div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-20 flex items-center min-h-screen">
           <div className="max-w-4xl">
             <motion.div
               className="inline-block mb-6 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"

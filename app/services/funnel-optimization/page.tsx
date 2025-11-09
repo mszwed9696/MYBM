@@ -37,7 +37,7 @@ export default function FunnelOptimizationPage() {
               💰 FUNNEL OPTIMIZATION - THE BANKER 💰
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,33 +81,33 @@ export default function FunnelOptimizationPage() {
       {/* Problem */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Where High-Ticket Funnels Fail
           </h2>
-          <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto">
             You're driving traffic but revenue isn't growing proportionally. The problem isn't traffic—it's conversion.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">📉</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Low Application Rates</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📉</div>
+              <h3 className="text-xl font-bold text-white mb-4">Low Application Rates</h3>
+              <p className="text-gray-300">
                 Visitors land on your page but don't fill out applications. Poor copy, unclear value prop, or
                 friction in the process.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">☎️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">No-Shows & Cancellations</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>☎️</div>
+              <h3 className="text-xl font-bold text-white mb-4">No-Shows & Cancellations</h3>
+              <p className="text-gray-300">
                 People book calls but don't show up. Or they show up unqualified. Your funnel isn't pre-selling
                 or qualifying properly.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4">💸</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Long Sales Cycles</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💸</div>
+              <h3 className="text-xl font-bold text-white mb-4">Long Sales Cycles</h3>
+              <p className="text-gray-300">
                 Prospects enter your funnel but take months to close (or never do). Missing nurture sequences
                 and trust-building elements.
               </p>
@@ -117,15 +117,15 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* Our Process */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Our 5-Step Funnel Optimization Process
           </h2>
           <div className="space-y-6">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-6">1</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">1</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Complete Funnel Audit</h3>
                   <p className="text-blue-100">
@@ -137,7 +137,7 @@ export default function FunnelOptimizationPage() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-6">2</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">2</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Conversion Gap Analysis</h3>
                   <p className="text-blue-100">
@@ -149,7 +149,7 @@ export default function FunnelOptimizationPage() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-6">3</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">3</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Strategic Redesign</h3>
                   <p className="text-blue-100">
@@ -161,7 +161,7 @@ export default function FunnelOptimizationPage() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-6">4</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">4</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">A/B Testing & Iteration</h3>
                   <p className="text-blue-100">
@@ -173,7 +173,7 @@ export default function FunnelOptimizationPage() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-6">5</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">5</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Scale What Works</h3>
                   <p className="text-blue-100">
@@ -190,63 +190,63 @@ export default function FunnelOptimizationPage() {
       {/* Funnel Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             High-Ticket Funnels We Optimize
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Application Funnels</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Application Funnels</h3>
+              <p className="text-gray-300 mb-4">
                 Landing page → Application form → Qualification → Call booking. Perfect for high-ticket coaching,
                 consulting, and done-for-you services.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Pre-qualification questions</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Calendar integration</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Automated screening</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>SMS/email confirmations</li>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Pre-qualification questions</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Calendar integration</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Automated screening</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>SMS/email confirmations</li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Webinar Funnels</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Webinar Funnels</h3>
+              <p className="text-gray-300 mb-4">
                 Registration → Webinar (live/automated) → Pitch → Application. High-converting for coaches,
                 course creators, and group programs.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Registration page optimization</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Webinar script refinement</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Replay sequences</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Post-webinar followup</li>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Registration page optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Webinar script refinement</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Replay sequences</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Post-webinar followup</li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">VSL (Video Sales Letter) Funnels</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">VSL (Video Sales Letter) Funnels</h3>
+              <p className="text-gray-300 mb-4">
                 Traffic → VSL → Application/Purchase. Automated selling for high-ticket offers through long-form
                 video presentations.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Script optimization</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Video production</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Call-to-action timing</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Scarcity mechanisms</li>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Script optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Video production</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Call-to-action timing</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Scarcity mechanisms</li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Lead Magnet → Nurture Funnels</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">Lead Magnet → Nurture Funnels</h3>
+              <p className="text-gray-300 mb-4">
                 Free resource → Email sequence → Discovery call. Build trust over time with valuable content
                 before the pitch.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Lead magnet creation</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Email sequence writing</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Segmentation logic</li>
-                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Multi-step nurture</li>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Lead magnet creation</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Email sequence writing</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Segmentation logic</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Multi-step nurture</li>
               </ul>
             </div>
           </div>
@@ -256,49 +256,49 @@ export default function FunnelOptimizationPage() {
       {/* What We Optimize */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Every Element We Test & Optimize
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-4xl mb-3">📝</div>
-              <h3 className="font-bold text-gray-900 mb-2">Copy & Messaging</h3>
-              <p className="text-sm text-gray-600">Headlines, bullets, CTAs, value props</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>📝</div>
+              <h3 className="font-bold text-white mb-2">Copy & Messaging</h3>
+              <p className="text-sm text-gray-300">Headlines, bullets, CTAs, value props</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">🎨</div>
-              <h3 className="font-bold text-gray-900 mb-2">Design & Layout</h3>
-              <p className="text-sm text-gray-600">Visual hierarchy, whitespace, flow</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>🎨</div>
+              <h3 className="font-bold text-white mb-2">Design & Layout</h3>
+              <p className="text-sm text-gray-300">Visual hierarchy, whitespace, flow</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">📋</div>
-              <h3 className="font-bold text-gray-900 mb-2">Forms & Fields</h3>
-              <p className="text-sm text-gray-600">Question order, required fields, length</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>📋</div>
+              <h3 className="font-bold text-white mb-2">Forms & Fields</h3>
+              <p className="text-sm text-gray-300">Question order, required fields, length</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">⭐</div>
-              <h3 className="font-bold text-gray-900 mb-2">Social Proof</h3>
-              <p className="text-sm text-gray-600">Testimonials, case studies, logos</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>⭐</div>
+              <h3 className="font-bold text-white mb-2">Social Proof</h3>
+              <p className="text-sm text-gray-300">Testimonials, case studies, logos</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">🎥</div>
-              <h3 className="font-bold text-gray-900 mb-2">Video Content</h3>
-              <p className="text-sm text-gray-600">VSLs, explainers, testimonials</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>🎥</div>
+              <h3 className="font-bold text-white mb-2">Video Content</h3>
+              <p className="text-sm text-gray-300">VSLs, explainers, testimonials</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">📧</div>
-              <h3 className="font-bold text-gray-900 mb-2">Email Sequences</h3>
-              <p className="text-sm text-gray-600">Subject lines, timing, content</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
+              <h3 className="font-bold text-white mb-2">Email Sequences</h3>
+              <p className="text-sm text-gray-300">Subject lines, timing, content</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">⚡</div>
-              <h3 className="font-bold text-gray-900 mb-2">Urgency & Scarcity</h3>
-              <p className="text-sm text-gray-600">Deadlines, bonuses, limited spots</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>⚡</div>
+              <h3 className="font-bold text-white mb-2">Urgency & Scarcity</h3>
+              <p className="text-sm text-gray-300">Deadlines, bonuses, limited spots</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-3">📱</div>
-              <h3 className="font-bold text-gray-900 mb-2">Mobile Experience</h3>
-              <p className="text-sm text-gray-600">Responsive design, load speed</p>
+              <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>📱</div>
+              <h3 className="font-bold text-white mb-2">Mobile Experience</h3>
+              <p className="text-sm text-gray-300">Responsive design, load speed</p>
             </div>
           </div>
         </div>
@@ -307,22 +307,22 @@ export default function FunnelOptimizationPage() {
       {/* Results */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Funnel Optimization Results
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+127%</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+127%</div>
               <div className="text-xl font-semibold mb-4">Application Rate</div>
               <p className="text-gray-400">Coaching program: 4.2% → 9.5% application rate through page redesign and copy optimization</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+89%</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+89%</div>
               <div className="text-xl font-semibold mb-4">Show-Up Rate</div>
               <p className="text-gray-400">Consultant: 51% → 96% call show rate with automated SMS reminders and pre-call video</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+203%</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+203%</div>
               <div className="text-xl font-semibold mb-4">Webinar Conversion</div>
               <p className="text-gray-400">Course creator: 2.8% → 8.5% webinar-to-sale conversion through script and offer optimization</p>
             </div>
@@ -331,9 +331,9 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Fix Your Leaky Funnel?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -341,7 +341,7 @@ export default function FunnelOptimizationPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
           >
             Get Your Funnel Audit
           </Link>

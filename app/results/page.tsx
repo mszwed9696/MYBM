@@ -189,20 +189,20 @@ export default function ResultsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">87%</div>
-              <div className="text-gray-600">Average Revenue Increase Year 1</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
+              <div className="text-gray-300">Average Revenue Increase Year 1</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-600">Clients Hit 30% Guarantee</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>100%</div>
+              <div className="text-gray-300">Clients Hit 30% Guarantee</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">$18M+</div>
-              <div className="text-gray-600">Revenue Added for Clients</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$18M+</div>
+              <div className="text-gray-300">Revenue Added for Clients</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">9.2</div>
-              <div className="text-gray-600">Average Month to ROI Positive</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>9.2</div>
+              <div className="text-gray-300">Average Month to ROI Positive</div>
             </div>
           </div>
         </div>
@@ -211,21 +211,21 @@ export default function ResultsPage() {
       {/* Case Studies */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Client Case Studies
           </h2>
 
           <div className="space-y-12">
             {caseStudies.map((study, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div className="bg-gradient-to-r from-[#1a1a2e] to-black text-white p-8">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <div>
                       <div className="text-sm font-semibold text-blue-200 mb-2">{study.industry}</div>
                       <h3 className="text-3xl font-bold">{study.title}</h3>
                     </div>
                     <div className="bg-white/20 backdrop-blur-sm px-6 py-4 rounded-lg mt-4 md:mt-0">
-                      <div className="text-5xl font-bold text-green-300">{study.increase}</div>
+                      <div className="text-5xl font-bold text-green-300" style={{ fontFamily: "\'Georgia\', serif" }}>{study.increase}</div>
                       <div className="text-sm text-blue-100">Revenue Growth</div>
                     </div>
                   </div>
@@ -242,14 +242,14 @@ export default function ResultsPage() {
                 </div>
 
                 <div className="p-8">
-                  <p className="text-lg text-gray-700 mb-8">{study.description}</p>
+                  <p className="text-lg text-gray-200 mb-8">{study.description}</p>
 
                   <div className="grid md:grid-cols-3 gap-8">
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Challenges</h4>
+                      <h4 className="text-xl font-bold text-white mb-4">Challenges</h4>
                       <ul className="space-y-2">
                         {study.challenges.map((challenge, i) => (
-                          <li key={i} className="flex items-start text-gray-600">
+                          <li key={i} className="flex items-start text-gray-300">
                             <span className="text-red-500 mr-2">•</span>
                             <span>{challenge}</span>
                           </li>
@@ -258,10 +258,10 @@ export default function ResultsPage() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Solutions</h4>
+                      <h4 className="text-xl font-bold text-white mb-4">Solutions</h4>
                       <ul className="space-y-2">
                         {study.solutions.map((solution, i) => (
-                          <li key={i} className="flex items-start text-gray-600">
+                          <li key={i} className="flex items-start text-gray-300">
                             <span className="text-blue-500 mr-2">→</span>
                             <span>{solution}</span>
                           </li>
@@ -270,10 +270,10 @@ export default function ResultsPage() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Results</h4>
+                      <h4 className="text-xl font-bold text-white mb-4">Results</h4>
                       <ul className="space-y-2">
                         {study.results.map((result, i) => (
-                          <li key={i} className="flex items-start text-gray-600">
+                          <li key={i} className="flex items-start text-gray-300">
                             <span className="text-green-500 mr-2">✓</span>
                             <span>{result}</span>
                           </li>
@@ -293,9 +293,9 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Become Our Next Success Story?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -303,7 +303,7 @@ export default function ResultsPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
           >
             Apply for Partnership
           </Link>

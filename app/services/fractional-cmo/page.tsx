@@ -40,7 +40,7 @@ export default function FractionalCMOPage() {
               🎩 FRACTIONAL CMO - THE CONSIGLIERE 🎩
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -86,14 +86,14 @@ export default function FractionalCMOPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              <h2 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 What's a <span className="text-[#8B0000]">Consigliere</span>?
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-200 mb-4">
                 In the family, the <strong>Consigliere</strong> is the trusted advisor. The strategic mind. The one who sees the whole board
                 while everyone else is focused on one move. That's what a Fractional CMO does for your business.
               </p>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-200 mb-4">
                 You get executive-level marketing leadership—someone who's scaled businesses from 6 to 7 and 7 to 8 figures.
                 <strong> But you don't pay a $250k+ salary.</strong> You get the expertise. We handle the execution. Capisce?
               </p>
@@ -107,33 +107,33 @@ export default function FractionalCMOPage() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              <h2 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 When You Need <span className="text-[#8B0000]">The Consigliere</span>
               </h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
+                  <span className="text-gray-200"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
+                  <span className="text-gray-200"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
+                  <span className="text-gray-200"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
+                  <span className="text-gray-200"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
+                  <span className="text-gray-200"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
+                  <span className="text-gray-200"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
                 </li>
               </ul>
             </div>
@@ -145,7 +145,7 @@ export default function FractionalCMOPage() {
       <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               What The <span className="text-[#FFD700]">Consigliere</span> Handles
             </h2>
             <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
@@ -223,33 +223,33 @@ export default function FractionalCMOPage() {
       {/* Industries Served */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Fractional CMO Services for Every High-Ticket Business Type
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/industries/coaches" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">High-Ticket Coaches</h3>
-              <p className="text-gray-600">$10k+ coaching programs, masterminds, and transformation programs</p>
+              <h3 className="text-xl font-bold text-white mb-2">High-Ticket Coaches</h3>
+              <p className="text-gray-300">$10k+ coaching programs, masterminds, and transformation programs</p>
             </Link>
             <Link href="/industries/consultants" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Business Consultants</h3>
-              <p className="text-gray-600">Strategic consulting, implementation services, and advisory</p>
+              <h3 className="text-xl font-bold text-white mb-2">Business Consultants</h3>
+              <p className="text-gray-300">Strategic consulting, implementation services, and advisory</p>
             </Link>
             <Link href="/industries/course-creators" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Course Creators</h3>
-              <p className="text-gray-600">Premium online courses, certifications, and training programs</p>
+              <h3 className="text-xl font-bold text-white mb-2">Course Creators</h3>
+              <p className="text-gray-300">Premium online courses, certifications, and training programs</p>
             </Link>
             <Link href="/industries/service-businesses" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">B2B Service Businesses</h3>
-              <p className="text-gray-600">Professional services, agencies, and specialized B2B offerings</p>
+              <h3 className="text-xl font-bold text-white mb-2">B2B Service Businesses</h3>
+              <p className="text-gray-300">Professional services, agencies, and specialized B2B offerings</p>
             </Link>
             <Link href="/industries/saas" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">SaaS Companies</h3>
-              <p className="text-gray-600">B2B software platforms doing $1M+ ARR</p>
+              <h3 className="text-xl font-bold text-white mb-2">SaaS Companies</h3>
+              <p className="text-gray-300">B2B software platforms doing $1M+ ARR</p>
             </Link>
             <Link href="/industries/product-businesses" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">High-Ticket Products</h3>
-              <p className="text-gray-600">Premium ecommerce, luxury goods, and B2B equipment</p>
+              <h3 className="text-xl font-bold text-white mb-2">High-Ticket Products</h3>
+              <p className="text-gray-300">Premium ecommerce, luxury goods, and B2B equipment</p>
             </Link>
           </div>
         </div>
@@ -269,7 +269,7 @@ export default function FractionalCMOPage() {
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Why <span className="text-[#FFD700]">The Family</span> Is Different
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -304,7 +304,7 @@ export default function FractionalCMOPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-black to-[#1a1a2e] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Ready to Bring In <span className="text-[#FFD700]">The Consigliere</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>

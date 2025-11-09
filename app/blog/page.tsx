@@ -85,7 +85,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Insights for High-Ticket Businesses
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -95,27 +95,27 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-[#1a1a2e] to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-600 hover:shadow-xl transition-all"
+                className="group bg-gradient-to-b from-[#1a1a2e] to-black border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-600 hover:shadow-xl transition-all"
               >
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-sm font-semibold text-blue-600">{post.category}</span>
+                    <span className="text-sm font-semibold text-[#FFD700]">{post.category}</span>
                     <span className="text-sm text-gray-500">{post.readTime}</span>
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">
+                  <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#FFD700]">
                     {post.title}
                   </h2>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                  <p className="text-gray-300 mb-4">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.date}</span>
-                    <span className="text-blue-600 font-semibold group-hover:underline">
+                    <span className="text-[#FFD700] font-semibold group-hover:underline">
                       Read More →
                     </span>
                   </div>
@@ -129,15 +129,15 @@ export default function BlogPage() {
       {/* CTA */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Apply These Strategies to Your Business?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-300 mb-8">
             Get a custom marketing strategy designed specifically for your business with our 30% revenue guarantee.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-blue-600 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-blue-700"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]"
           >
             Apply for Partnership
           </Link>

@@ -35,7 +35,7 @@ export default function ApplyPage() {
       <div className="min-h-screen bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white flex items-center justify-center py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-6xl mb-6 text-[#FFD700]">🤝</div>
-          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
             Welcome To <span className="text-[#FFD700]">The Family</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
@@ -58,7 +58,7 @@ export default function ApplyPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
             Join <span className="text-[#FFD700]">The Family</span>
           </h1>
           <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
@@ -69,11 +69,11 @@ export default function ApplyPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-[#1a1a2e] to-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-12">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">What Happens Next?</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
+            <h3 className="text-xl font-bold text-white mb-2">What Happens Next?</h3>
+            <ol className="list-decimal list-inside space-y-2 text-gray-200">
               <li>Submit your application below (takes 2 minutes)</li>
               <li>We'll review within 24-48 hours</li>
               <li>If you're a fit, we'll schedule a strategy call</li>
@@ -85,7 +85,7 @@ export default function ApplyPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-200 mb-2">
                   Full Name *
                 </label>
                 <input
@@ -101,7 +101,7 @@ export default function ApplyPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-200 mb-2">
                   Email Address *
                 </label>
                 <input
@@ -119,7 +119,7 @@ export default function ApplyPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-200 mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -135,7 +135,7 @@ export default function ApplyPage() {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-semibold text-gray-200 mb-2">
                   Company/Business Name *
                 </label>
                 <input
@@ -152,7 +152,7 @@ export default function ApplyPage() {
             </div>
 
             <div>
-              <label htmlFor="monthlyRevenue" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="monthlyRevenue" className="block text-sm font-semibold text-gray-200 mb-2">
                 Current Monthly Revenue *
               </label>
               <select
@@ -173,7 +173,7 @@ export default function ApplyPage() {
             </div>
 
             <div>
-              <label htmlFor="businessType" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="businessType" className="block text-sm font-semibold text-gray-200 mb-2">
                 Business Type *
               </label>
               <select
@@ -197,7 +197,7 @@ export default function ApplyPage() {
             </div>
 
             <div>
-              <label htmlFor="biggestChallenge" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="biggestChallenge" className="block text-sm font-semibold text-gray-200 mb-2">
                 What's your biggest marketing challenge right now? *
               </label>
               <textarea
@@ -213,7 +213,7 @@ export default function ApplyPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-gray-300">
                 By submitting this form, you agree to be contacted by Mind Your Business Media regarding
                 our marketing services. We typically respond within 24-48 hours. We respect your privacy
                 and will never share your information.
@@ -222,7 +222,7 @@ export default function ApplyPage() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all"
+              className="w-full bg-[#8B0000] border-2 border-[#FFD700] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all"
             >
               Submit Application
             </button>
@@ -233,25 +233,25 @@ export default function ApplyPage() {
       {/* Why Partner */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why Partner With Us?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Guaranteed Results</h3>
-              <p className="text-gray-600">
+            <div className="bg-gradient-to-b from-[#1a1a2e] to-black p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-white mb-4">Guaranteed Results</h3>
+              <p className="text-gray-300">
                 30% revenue increase in year 1 or we work for free. No other agency backs their work like this.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">High-Ticket Specialists</h3>
-              <p className="text-gray-600">
+            <div className="bg-gradient-to-b from-[#1a1a2e] to-black p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-white mb-4">High-Ticket Specialists</h3>
+              <p className="text-gray-300">
                 We exclusively work with high-ticket businesses. We understand premium positioning and sophisticated buyers.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Complete Execution</h3>
-              <p className="text-gray-600">
+            <div className="bg-gradient-to-b from-[#1a1a2e] to-black p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-white mb-4">Complete Execution</h3>
+              <p className="text-gray-300">
                 We don't just create strategies—we execute everything. Your entire marketing function, handled.
               </p>
             </div>

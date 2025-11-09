@@ -10,14 +10,14 @@ export default function SaaSPage() {
       <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}>
               Marketing for B2B SaaS Companies
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Scale your SaaS from $1M to $10M+ ARR with proven demand generation, product marketing,
               and growth strategies.
             </p>
-            <Link href="/apply" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 inline-block">
+            <Link href="/apply" className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#a00000] inline-block">
               Scale Your SaaS
             </Link>
           </div>
@@ -26,7 +26,7 @@ export default function SaaSPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">SaaS Growth Challenges</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>SaaS Growth Challenges</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <h3 className="text-xl font-bold mb-4">High CAC, Low LTV</h3>
@@ -46,7 +46,7 @@ export default function SaaSPage() {
 
       <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">Our SaaS Marketing Approach</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>Our SaaS Marketing Approach</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Product-Led Growth (PLG)</h3>
@@ -70,7 +70,7 @@ export default function SaaSPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">SaaS Categories We Scale</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>SaaS Categories We Scale</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 bg-gray-50 rounded-xl">
               <h3 className="font-bold text-gray-900 mb-2">Marketing & Sales SaaS</h3>
@@ -102,9 +102,9 @@ export default function SaaSPage() {
 
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Scale Your SaaS?</h2>
+          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Ready to Scale Your SaaS?</h2>
           <p className="text-xl mb-8">If you're doing $1M+ ARR and ready for predictable growth, let's talk.</p>
-          <Link href="/apply" className="inline-block bg-blue-600 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-blue-700">
+          <Link href="/apply" className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]">
             Apply for Partnership
           </Link>
         </div>

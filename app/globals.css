@@ -17,3 +17,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Character image blending styles - seamlessly integrate with backgrounds */
+img[src*="/characters/"] {
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
+}
+
+/* Better blending for light backgrounds */
+.bg-white img[src*="/characters/"],
+.bg-gray-50 img[src*="/characters/"],
+section[class*="bg-white"] img[src*="/characters/"],
+section[class*="bg-gray"] img[src*="/characters/"] {
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+  filter: brightness(1.05) contrast(1.1) drop-shadow(0 5px 20px rgba(0, 0, 0, 0.25));
+}

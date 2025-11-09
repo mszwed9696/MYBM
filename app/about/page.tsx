@@ -7,6 +7,11 @@ export default function AboutPage() {
   return (
     <div>
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* DC Monument background for authority/establishment */}
+        <div className="absolute inset-0 opacity-15 z-0">
+          <img src="/heroes/dc-monument.png" alt="Authority" className="w-full h-full object-cover" />
+        </div>
+
         {/* The Boss character */}
         <motion.div
           className="absolute right-0 bottom-0 w-72 md:w-96 opacity-50 z-0"

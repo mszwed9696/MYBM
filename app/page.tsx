@@ -10,6 +10,11 @@ export default function Home() {
     <>
       {/* Hero Section - Mobster Theme */}
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white overflow-hidden min-h-screen flex items-center">
+        {/* Chicago cityscape background */}
+        <div className="absolute inset-0 opacity-20 z-0">
+          <img src="/heroes/chicago-bean.png" alt="Chicago" className="w-full h-full object-cover" />
+        </div>
+
         {/* Floating gold particles (money theme) */}
         <FloatingParticles count={40} color="#FFD700" />
 

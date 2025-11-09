@@ -136,7 +136,7 @@ export default function ConsultingPage() {
 
               {/* Hollywood Mansion Image */}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
-                <img src="/heroes/hollywood-mansion.png" alt="Mastermind" className="w-full h-full object-cover" />
+                <img src="/heroes/hollywood-mansion.png" alt="Mastermind" className="w-full h-full object-contain" />
               </div>
 
               <div className="text-center mb-6 relative z-10">
@@ -192,7 +192,7 @@ export default function ConsultingPage() {
             >
               {/* Casino VIP Image */}
               <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <img src="/heroes/casino-vip.png" alt="VIP Coaching" className="w-full h-full object-cover" />
+                <img src="/heroes/casino-vip.png" alt="VIP Coaching" className="w-full h-full object-contain" />
               </div>
 
               <div className="text-center mb-6 relative z-10">

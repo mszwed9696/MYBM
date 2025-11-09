@@ -9,26 +9,27 @@ import SkylineDivider from "@/components/SkylineDivider";
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Mobster Theme with Chicago Cityscape */}
-      <section className="relative bg-black text-white overflow-hidden min-h-screen flex items-center">
-        {/* Chicago cityscape - PROMINENT hero image */}
-        <div className="absolute inset-0 z-0">
-          <img src="/heroes/chicago-bean.png" alt="Chicago" className="w-full h-full object-cover" />
-          {/* Light gradient overlay for text readability - MUCH lighter */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
+      {/* Hero Section - Mobster Theme with Philadelphia Skyline */}
+      <section className="relative bg-gradient-to-br from-[#1a1a2e] via-[#2a1a4a] to-black text-white overflow-hidden min-h-screen flex items-center">
+        {/* Philadelphia cityscape - FULL image visible (not cropped) */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <img src="/heroes/philadelphia-skyline.png" alt="Philadelphia Skyline" className="w-full h-full object-contain opacity-90" />
+          {/* Subtle gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
         </div>
 
         {/* Floating gold particles (money theme) */}
         <FloatingParticles count={40} color="#FFD700" />
 
-        {/* The Boss character - layered on top */}
+        {/* The Don character - cropped and layered on top */}
         <motion.div
-          className="absolute right-10 md:right-20 bottom-0 w-72 md:w-96 lg:w-[500px] opacity-90 z-10"
+          className="absolute right-10 md:right-20 lg:right-32 bottom-0 w-80 md:w-96 lg:w-[500px] z-10"
           initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.9 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
+          style={{ filter: "drop-shadow(0 20px 50px rgba(0, 0, 0, 0.8))" }}
         >
-          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
+          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
         </motion.div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">

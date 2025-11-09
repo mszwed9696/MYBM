@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
         {/* DC Monument background for authority/establishment */}
         <div className="absolute inset-0 opacity-15 z-0">
-          <img src="/heroes/dc-monument.png" alt="Authority" className="w-full h-full object-contain" />
+          <img src="/heroes/Gemini_Generated_Image_b7f0mnb7f0mnb7f0.png" alt="Authority" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
         </div>
 
         {/* The Boss character */}

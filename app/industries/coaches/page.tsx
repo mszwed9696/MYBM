@@ -11,7 +11,7 @@ export default function CoachesPage() {
       <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
         {/* Phoenix Desert cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/phoenix-desert.png" alt="Phoenix Desert" className="w-full h-full object-contain" />
+          <img src="/heroes/Gemini_Generated_Image_5p6y6h5p6y6h5p6y.png" alt="Phoenix Desert" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>

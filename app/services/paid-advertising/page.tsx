@@ -11,7 +11,7 @@ export default function PaidAdvertisingPage() {
       <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
         {/* Vegas Strip cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/vegas-strip.png" alt="Vegas Strip" className="w-full h-full object-contain" />
+          <img src="/heroes/Gemini_Generated_Image_29pmsb29pmsb29pm.png" alt="Vegas Strip" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>

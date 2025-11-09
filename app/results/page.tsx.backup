@@ -1,18 +1,8 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
-import ResultsHero from "@/components/ResultsHero";
-import SkylineDivider from "@/components/SkylineDivider";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Client Results & Case Studies | Marketing Agency Success Stories",
-  description: "Real results from high-ticket coaches, consultants, and businesses we've scaled. See case studies showing 30%-300%+ revenue increases.",
-  keywords: [
-    "marketing agency results",
-    "marketing case studies",
-    "client success stories",
-    "marketing agency testimonials",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function ResultsPage() {
   const caseStudies = [
@@ -177,7 +167,46 @@ export default function ResultsPage() {
   return (
     <div>
       {/* Hero Section - Vegas Strip (Winner's Row) */}
-      <ResultsHero />
+      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+        {/* Vegas Strip cityscape - PROMINENT hero image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/heroes/vegas-strip.png" alt="Vegas" className="w-full h-full object-cover" />
+          {/* Light gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
+        </div>
+
+        {/* Money Stack character */}
+        <motion.div
+          className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.8 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
+          <img src="/characters/money-stack.png" alt="Money Stack" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
+          <motion.h1
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
+            style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Real Results. <span className="text-[#FFD700]">Real Revenue Growth.</span>
+          </motion.h1>
+          <motion.p
+            className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto"
+            style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            These aren't cherry-picked success stories. Every client we accept gets results like these—
+            <br /><span className="text-[#FFD700] font-bold">or we work for free until they do.</span>
+          </motion.p>
+        </div>
+      </section>
 
       {/* Skyline Divider */}
       <div className="relative -mt-1">
@@ -188,22 +217,42 @@ export default function ResultsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">87%</div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>87%</div>
               <div className="text-gray-600">Average Revenue Increase Year 1</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">100%</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>100%</div>
               <div className="text-gray-600">Clients Hit 30% Guarantee</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">$18M+</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>$18M+</div>
               <div className="text-gray-600">Revenue Added for Clients</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">9.2</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>9.2</div>
               <div className="text-gray-600">Average Month to ROI Positive</div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -211,31 +260,38 @@ export default function ResultsPage() {
       {/* Case Studies */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Client Case Studies
           </h2>
 
           <div className="space-y-12">
             {caseStudies.map((study, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+              <motion.div
+                key={index}
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <div className="bg-gradient-to-r from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white p-8">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <div>
-                      <div className="text-sm font-semibold text-blue-200 mb-2">{study.industry}</div>
-                      <h3 className="text-3xl font-bold">{study.title}</h3>
+                      <div className="text-sm font-semibold text-[#FFD700] mb-2">{study.industry}</div>
+                      <h3 className="text-3xl font-bold" style={{ fontFamily: "'Georgia', serif" }}>{study.title}</h3>
                     </div>
-                    <div className="bg-white/20 backdrop-blur-sm px-6 py-4 rounded-lg mt-4 md:mt-0">
-                      <div className="text-5xl font-bold text-green-300">{study.increase}</div>
-                      <div className="text-sm text-blue-100">Revenue Growth</div>
+                    <div className="bg-white/20 backdrop-blur-sm px-6 py-4 rounded-lg mt-4 md:mt-0 border-2 border-[#FFD700]/30">
+                      <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>{study.increase}</div>
+                      <div className="text-sm text-gray-200">Revenue Growth</div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <div className="text-blue-200">Before</div>
+                      <div className="text-gray-300">Before</div>
                       <div className="text-xl font-bold">{study.before}</div>
                     </div>
                     <div>
-                      <div className="text-blue-200">After</div>
+                      <div className="text-gray-300">After</div>
                       <div className="text-xl font-bold">{study.after}</div>
                     </div>
                   </div>
@@ -293,20 +349,41 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Become Our Next Success Story?
-          </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold mb-6"
+            style={{ fontFamily: "'Georgia', serif" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
           >
-            Apply for Partnership
-          </Link>
+            Ready to Become Our Next <span className="text-[#FFD700]">Success Story?</span>
+          </motion.h2>
+          <motion.p
+            className="text-xl mb-8 text-gray-200"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <Link
+              href="/apply"
+              className="inline-block bg-[#FFD700] text-black px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#FFA500] transition-all shadow-lg"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Apply for Partnership
+            </Link>
+          </motion.div>
         </div>
       </section>
     </div>

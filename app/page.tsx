@@ -9,38 +9,18 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Mobster Theme */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-[#1a1a1a] to-black text-white overflow-hidden min-h-screen flex items-center">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white overflow-hidden min-h-screen flex items-center">
         {/* Floating gold particles (money theme) */}
         <FloatingParticles count={40} color="#FFD700" />
 
-        {/* City skyline background */}
-        <div className="absolute bottom-0 left-0 right-0 opacity-30">
-          <img src="/illustrations/nyc-skyline.svg" alt="" className="w-full" />
-        </div>
-
-        {/* City wave divider at top */}
-        <div className="absolute top-0 left-0 right-0 opacity-20 rotate-180">
-          <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full" />
-        </div>
-
-        {/* Philly City Hall with MYBM flag */}
+        {/* The Boss character - Hero image */}
         <motion.div
-          className="absolute right-10 bottom-0 w-64 opacity-70"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 0.7 }}
-          transition={{ duration: 1 }}
+          className="absolute right-10 md:right-20 bottom-0 w-72 md:w-96 lg:w-[500px] opacity-90 z-10"
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.9 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <img src="/illustrations/philly-city-hall.svg" alt="Philadelphia City Hall" />
-        </motion.div>
-
-        {/* Vintage Cadillac */}
-        <motion.div
-          className="absolute left-10 bottom-20 w-96 opacity-80"
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.8 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
-        >
-          <img src="/illustrations/vintage-cadillac.svg" alt="Vintage Cadillac" />
+          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
         </motion.div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
@@ -125,11 +105,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* City Wave Divider */}
-      <div className="relative -mt-1">
-        <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full" />
-      </div>
-
       {/* Why Most Agencies Are "Weak" Section */}
       <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white relative overflow-hidden">
         <FloatingParticles count={20} color="#8B0000" />
@@ -188,26 +163,27 @@ export default function Home() {
       </section>
 
       {/* Our Way - The Family Business */}
-      <section className="py-20 bg-black text-white relative overflow-hidden">
-        {/* Mobster characters */}
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white relative overflow-hidden">
+        {/* The Banker - Left side */}
         <motion.div
-          className="absolute left-0 bottom-0 w-48 opacity-60"
+          className="absolute left-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
           initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.6 }}
+          whileInView={{ x: 0, opacity: 0.7 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <img src="/illustrations/mobster-character-1.svg" alt="The Boss" />
+          <img src="/characters/banker-briefcase.png" alt="The Banker" className="w-full h-auto" />
         </motion.div>
 
+        {/* The Enforcer - Right side */}
         <motion.div
-          className="absolute right-0 bottom-0 w-48 opacity-60"
+          className="absolute right-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
           initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.6 }}
+          whileInView={{ x: 0, opacity: 0.7 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <img src="/illustrations/mobster-character-2.svg" alt="The Enforcer" />
+          <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -320,14 +296,14 @@ export default function Home() {
       </section>
 
       {/* Social Proof - The Numbers */}
-      <section className="py-20 bg-black text-white relative overflow-hidden">
-        {/* Money bag illustration */}
+      <section className="py-20 bg-gradient-to-br from-black via-[#1a1a2e] to-black text-white relative overflow-hidden">
+        {/* The Bagman character - floating animation */}
         <motion.div
-          className="absolute right-10 top-10 w-40 opacity-40"
+          className="absolute right-10 top-10 w-64 md:w-80 opacity-60"
           animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 3, repeat: Infinity }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
-          <img src="/illustrations/money-bag.svg" alt="Money Bag" />
+          <img src="/characters/bagman-money.png" alt="The Bagman" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -372,6 +348,17 @@ export default function Home() {
       {/* Final CTA */}
       <section className="py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
         <FloatingParticles count={30} color="#FFD700" />
+
+        {/* The Don character - Left side */}
+        <motion.div
+          className="absolute left-0 bottom-0 w-64 md:w-96 opacity-75 z-0"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 0.75 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+        >
+          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
+        </motion.div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.h2
@@ -422,11 +409,6 @@ export default function Home() {
           </motion.p>
         </div>
       </section>
-
-      {/* Bottom City Wave */}
-      <div className="relative">
-        <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full rotate-180" />
-      </div>
     </>
   );
 }

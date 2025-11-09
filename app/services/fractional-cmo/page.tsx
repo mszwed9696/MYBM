@@ -1,101 +1,126 @@
+"use client";
+
 import Link from "next/link";
 import { generateMetadata } from "@/lib/seo";
-
-export const metadata = generateMetadata({
-  title: "Fractional CMO Services for High-Ticket Businesses | $100k+ Monthly Revenue",
-  description: "Get a seasoned Chief Marketing Officer for your high-ticket business without the $250k+ salary. Fractional CMO services for coaches, consultants, and businesses doing $100k+ monthly revenue.",
-  keywords: [
-    "fractional cmo services",
-    "fractional cmo for coaches",
-    "fractional cmo for consultants",
-    "fractional chief marketing officer",
-    "marketing leadership for high ticket businesses",
-    "cmo for million dollar businesses",
-  ],
-});
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FractionalCMOPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* The Don character */}
+        <motion.div
+          className="absolute right-0 bottom-0 w-72 md:w-96 opacity-60 z-0"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.6 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-block mb-4 px-4 py-2 bg-blue-600/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold">
-              Fractional CMO Services
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Strategic Marketing Leadership
-              <span className="text-blue-400"> Without the $250k+ Salary</span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Get a seasoned Chief Marketing Officer guiding your marketing strategy and execution.
-              Perfect for businesses doing $100k+ monthly who need executive-level marketing leadership.
-            </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700"
+            <motion.div
+              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              Schedule a Strategy Call
-            </Link>
+              🎩 FRACTIONAL CMO - THE CONSIGLIERE 🎩
+            </motion.div>
+            <motion.h1
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Every Don Needs A<br />
+              <span className="text-[#FFD700]">Trusted Consigliere</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Strategic marketing leadership for $100k+ monthly businesses.
+              <span className="text-[#FFD700] font-bold"> No $250k+ salary. No empty suits.</span> Just results.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link
+                href="/apply"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                Join The Family
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                What Is a Fractional CMO?
+              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+                What's a <span className="text-[#8B0000]">Consigliere</span>?
               </h2>
-              <p className="text-lg text-gray-600 mb-4">
-                A Fractional Chief Marketing Officer provides executive-level marketing leadership and strategic guidance
-                without the commitment and cost of a full-time hire. You get the expertise of a seasoned marketing executive
-                who has scaled businesses like yours—at a fraction of the cost.
+              <p className="text-lg text-gray-700 mb-4">
+                In the family, the <strong>Consigliere</strong> is the trusted advisor. The strategic mind. The one who sees the whole board
+                while everyone else is focused on one move. That's what a Fractional CMO does for your business.
               </p>
-              <p className="text-lg text-gray-600 mb-4">
-                Perfect for high-ticket coaches, consultants, course creators, and service businesses doing $100k to $5M monthly
-                who need sophisticated marketing strategy but can't justify (or don't need) a full-time CMO.
+              <p className="text-lg text-gray-700 mb-4">
+                You get executive-level marketing leadership—someone who's scaled businesses from 6 to 7 and 7 to 8 figures.
+                <strong> But you don't pay a $250k+ salary.</strong> You get the expertise. We handle the execution. Capisce?
               </p>
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-                <p className="text-lg font-semibold text-gray-900 mb-2">
-                  Full-Time CMO Salary: $250k - $400k+ per year
+              <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
+                <p className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
+                  Full-Time CMO: $250k - $400k/year + benefits
                 </p>
-                <p className="text-lg font-semibold text-blue-600">
-                  Fractional CMO: $8k - $20k per month (flexible engagement)
+                <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>
+                  Our Consigliere: $8k - $20k/month (no BS, just results)
                 </p>
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                When You Need a Fractional CMO
+              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+                When You Need <span className="text-[#8B0000]">The Consigliere</span>
               </h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">Your revenue is $100k+ monthly but marketing feels chaotic and uncoordinated</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">You're spending money on ads but lack overall strategy and leadership</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">You have a marketing team but no one at the executive level to guide them</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">You're ready to scale from 6 to 7 or 7 to 8 figures but need strategic expertise</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">You're hiring agencies for execution but lack internal strategic oversight</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 text-2xl mr-3">✓</span>
-                  <span className="text-gray-600">You want to build a marketing function that can scale without bottlenecks</span>
+                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
+                  <span className="text-gray-700"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
                 </li>
               </ul>
             </div>
@@ -104,80 +129,78 @@ export default function FractionalCMOPage() {
       </section>
 
       {/* What's Included */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What Our Fractional CMO Service Includes
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              What The <span className="text-[#FFD700]">Consigliere</span> Handles
             </h2>
-            <p className="text-xl text-gray-600">
-              Complete marketing leadership and strategic execution
+            <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
+              Complete marketing leadership. No guesswork. No excuses.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Strategy Development</h3>
-              <p className="text-gray-600">
-                Comprehensive marketing strategy aligned with business goals, competitive positioning,
-                and growth objectives.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Strategy Development</h3>
+              <p className="text-gray-300">
+                The master plan. Your roadmap to domination. Strategy aligned with your business goals and market position.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Team Leadership & Management</h3>
-              <p className="text-gray-600">
-                Lead internal marketers, manage agency relationships, and ensure all marketing activities
-                align with strategy.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Team Leadership & Management</h3>
+              <p className="text-gray-300">
+                We run the crew. Lead your internal team, manage agency partners, make sure everyone's following orders.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Customer Acquisition Strategy</h3>
-              <p className="text-gray-600">
-                Multi-channel acquisition strategies optimized for high-ticket sales cycles and customer lifetime value.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Customer Acquisition Strategy</h3>
+              <p className="text-gray-300">
+                Multi-channel plays optimized for high-ticket sales. We bring in the right people, not tire-kickers.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Budget Optimization</h3>
-              <p className="text-gray-600">
-                Strategic budget allocation across channels, campaigns, and initiatives for maximum ROI.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Budget Optimization</h3>
+              <p className="text-gray-300">
+                Every dollar has a job. Strategic allocation for maximum ROI. No wasteful spending on our watch.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Brand Positioning & Messaging</h3>
-              <p className="text-gray-600">
-                Define your unique market position, develop compelling messaging, and differentiate from competitors.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Brand Positioning & Messaging</h3>
+              <p className="text-gray-300">
+                Define your territory. Own your market position. Make competitors look like amateurs.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Systems & Processes</h3>
-              <p className="text-gray-600">
-                Build scalable marketing systems, processes, and infrastructure for sustainable growth.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Systems & Processes</h3>
+              <p className="text-gray-300">
+                Build infrastructure that scales. Systems that work while you sleep. Sustainable growth, not chaos.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Performance Analytics & Reporting</h3>
-              <p className="text-gray-600">
-                Track KPIs, analyze performance, and provide executive-level insights and recommendations.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Performance Analytics & Reporting</h3>
+              <p className="text-gray-300">
+                Track what matters. Executive-level insights. We tell you what's working and what's getting cut.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Go-to-Market Planning</h3>
-              <p className="text-gray-600">
-                Launch strategies for new offers, products, or market expansion initiatives.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Go-to-Market Planning</h3>
+              <p className="text-gray-300">
+                Launch strategies for new offers. Market expansion. We make sure every launch is a hit, not a flop.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Technology Stack</h3>
-              <p className="text-gray-600">
-                Select, implement, and optimize marketing tools and platforms for efficiency and growth.
+            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
+              <h3 className="text-xl font-bold text-[#FFD700] mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Technology Stack</h3>
+              <p className="text-gray-300">
+                Select and optimize your tools. The right tech for maximum efficiency. No bloated software budgets.
               </p>
             </div>
           </div>
@@ -220,36 +243,45 @@ export default function FractionalCMOPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
-            Why Choose Mind Your Business Media as Your Fractional CMO
+      <section className="py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
+        {/* Character image */}
+        <motion.div
+          className="absolute left-0 bottom-0 w-64 opacity-50"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 0.5 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+            Why <span className="text-[#FFD700]">The Family</span> Is Different
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">Proven Track Record</h3>
-              <p className="text-blue-100">
-                We've scaled dozens of high-ticket businesses from 6 to 7 and 7 to 8 figures. We know exactly what works
-                because we've done it repeatedly.
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <h3 className="text-2xl font-bold mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Proven Track Record</h3>
+              <p className="text-gray-200">
+                We've scaled dozens of high-ticket businesses from 6 to 7 and 7 to 8 figures. We don't guess. We execute what works.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">High-Ticket Specialization</h3>
-              <p className="text-blue-100">
-                Unlike generalist CMOs, we exclusively work with high-ticket businesses. We understand long sales cycles,
-                relationship-based selling, and premium positioning.
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <h3 className="text-2xl font-bold mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>High-Ticket Specialization</h3>
+              <p className="text-gray-200">
+                Unlike amateurs, we exclusively work with high-ticket businesses. Long sales cycles, premium positioning—this is our territory.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">Results Guarantee</h3>
-              <p className="text-blue-100">
-                30% revenue increase in year 1 or we work for free. Show us another fractional CMO who guarantees results.
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <h3 className="text-2xl font-bold mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>The Family Guarantee</h3>
+              <p className="text-gray-200">
+                30% revenue increase in year 1 or we work for free. Find another Consigliere who guarantees results. You can't.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">Hands-On Execution</h3>
-              <p className="text-blue-100">
-                We don't just create PowerPoint strategies. We roll up our sleeves and execute alongside your team.
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <h3 className="text-2xl font-bold mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Hands-On Execution</h3>
+              <p className="text-gray-200">
+                We don't create PowerPoint decks and disappear. We execute. We're in the trenches with you. That's the family way.
               </p>
             </div>
           </div>
@@ -257,19 +289,21 @@ export default function FractionalCMOPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-black to-[#1a1a2e] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready for Executive-Level Marketing Leadership?
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+            Ready to Bring In <span className="text-[#FFD700]">The Consigliere</span>?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            If you're doing $100k+ monthly and need a CMO to guide your marketing to the next level, let's talk.
+          <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
+            If you're doing $100k+ monthly and serious about scaling, let's talk.
+            <br />We don't work with everyone. Only serious players.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-blue-600 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-2xl"
+            style={{ fontFamily: "'Georgia', serif" }}
           >
-            Schedule Your Strategy Call
+            Join The Family
           </Link>
         </div>
       </section>

@@ -1,43 +1,67 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Paid Advertising Management for High-Ticket Businesses | Google Ads, Facebook Ads, LinkedIn",
-  description: "Expert paid advertising management for high-ticket coaches, consultants, and businesses doing $100k+ monthly. Google Ads, Facebook Ads, LinkedIn Ads, and YouTube optimized for premium sales.",
-  keywords: [
-    "paid advertising management",
-    "google ads for high ticket businesses",
-    "facebook ads for coaches",
-    "linkedin ads for consultants",
-    "paid ads agency",
-    "ppc management for high ticket",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function PaidAdvertisingPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* The Enforcer character */}
+        <motion.div
+          className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.6 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-block mb-4 px-4 py-2 bg-blue-600/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold">
-              Paid Advertising Management
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Paid Advertising That Actually Generates
-              <span className="text-blue-400"> High-Ticket Clients</span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Stop wasting ad spend on unqualified leads. Get premium campaigns across Google, Facebook, LinkedIn,
-              and YouTube optimized for $10k-100k+ sales.
-            </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700"
+            <motion.div
+              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              Get Your Custom Ad Strategy
-            </Link>
+              🎯 PAID ADVERTISING - THE ENFORCER 🎯
+            </motion.div>
+            <motion.h1
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              We Don't Chase Leads<br />
+              We <span className="text-[#FFD700]">Enforce Results</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Paid ads across Google, Facebook, LinkedIn, YouTube.
+              <span className="text-[#FFD700] font-bold"> No tire-kickers. No BS. Just qualified buyers.</span>
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link
+                href="/apply"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                Join The Family
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

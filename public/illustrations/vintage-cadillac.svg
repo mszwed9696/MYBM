@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <!-- Vintage Black Cadillac -->
+  <!-- Car Body -->
+  <path d="M 100 180 L 80 200 L 80 220 L 520 220 L 520 200 L 500 180 L 480 160 L 400 140 L 200 140 L 120 160 Z" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+
+  <!-- Roof -->
+  <path d="M 180 140 L 160 180 L 440 180 L 420 140 Z" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+
+  <!-- Windows -->
+  <path d="M 185 150 L 170 175 L 280 175 L 280 150 Z" fill="#4a5568" stroke="#0a0a0a" stroke-width="2"/>
+  <path d="M 290 150 L 290 175 L 415 175 L 405 150 Z" fill="#4a5568" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Chrome trim -->
+  <rect x="80" y="195" width="440" height="5" fill="#c0c0c0"/>
+  <rect x="100" y="178" width="400" height="3" fill="#c0c0c0"/>
+
+  <!-- Headlights -->
+  <circle cx="110" cy="190" r="15" fill="#fff8dc" stroke="#0a0a0a" stroke-width="2"/>
+  <circle cx="110" cy="190" r="10" fill="#ffeb3b"/>
+
+  <!-- Tail lights -->
+  <rect x="495" y="175" width="20" height="25" rx="3" fill="#dc143c" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Front Grill -->
+  <rect x="70" y="200" width="60" height="20" fill="#2a2a2a" stroke="#0a0a0a" stroke-width="2"/>
+  <line x1="75" y1="205" x2="125" y2="205" stroke="#c0c0c0" stroke-width="1"/>
+  <line x1="75" y1="210" x2="125" y2="210" stroke="#c0c0c0" stroke-width="1"/>
+  <line x1="75" y1="215" x2="125" y2="215" stroke="#c0c0c0" stroke-width="1"/>
+
+  <!-- Wheels -->
+  <circle cx="170" cy="230" r="35" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+  <circle cx="170" cy="230" r="25" fill="#2a2a2a"/>
+  <circle cx="170" cy="230" r="15" fill="#c0c0c0"/>
+  <circle cx="170" cy="230" r="8" fill="#1a1a1a"/>
+
+  <circle cx="430" cy="230" r="35" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+  <circle cx="430" cy="230" r="25" fill="#2a2a2a"/>
+  <circle cx="430" cy="230" r="15" fill="#c0c0c0"/>
+  <circle cx="430" cy="230" r="8" fill="#1a1a1a"/>
+
+  <!-- Whitewalls -->
+  <circle cx="170" cy="230" r="30" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="430" cy="230" r="30" fill="none" stroke="#ffffff" stroke-width="4"/>
+
+  <!-- Door handle -->
+  <rect x="240" y="185" width="30" height="8" rx="4" fill="#c0c0c0" stroke="#0a0a0a" stroke-width="1"/>
+
+  <!-- Side mirror -->
+  <rect x="150" y="160" width="15" height="6" fill="#c0c0c0" stroke="#0a0a0a" stroke-width="1"/>
+  <circle cx="145" cy="163" r="6" fill="#4a5568" stroke="#0a0a0a" stroke-width="1"/>
+
+  <!-- Exhaust smoke (optional) -->
+  <ellipse cx="545" cy="225" rx="20" ry="10" fill="#9CA3AF" opacity="0.5"/>
+  <ellipse cx="560" cy="223" rx="15" ry="8" fill="#9CA3AF" opacity="0.3"/>
+</svg>

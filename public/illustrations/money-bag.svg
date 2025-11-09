@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" fill="none">
+  <!-- Cartoon Money Bag -->
+  <!-- Bag body -->
+  <ellipse cx="150" cy="250" rx="110" ry="140" fill="#2d5016" stroke="#1a1a1a" stroke-width="4"/>
+  <ellipse cx="150" cy="240" rx="100" ry="125" fill="#3d6e1f"/>
+
+  <!-- Tie string -->
+  <path d="M 90 140 Q 150 150 210 140" stroke="#8B4513" stroke-width="8" fill="none"/>
+  <ellipse cx="150" cy="142" rx="60" ry="20" fill="#8B4513" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Bag opening shadow -->
+  <ellipse cx="150" cy="142" rx="50" ry="15" fill="#1a1a1a" opacity="0.3"/>
+
+  <!-- Dollar sign -->
+  <text x="105" y="280" font-family="Arial Black" font-size="120" fill="#FFD700" stroke="#1a1a1a" stroke-width="3" font-weight="bold">$</text>
+
+  <!-- Money sticking out top -->
+  <rect x="135" y="110" width="30" height="40" fill="#85bb65" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="138" y="113" width="24" height="34" fill="#a8d587"/>
+  <text x="143" y="135" font-family="Arial" font-size="14" fill="#1a1a1a" font-weight="bold">$$</text>
+
+  <!-- Highlight on bag -->
+  <ellipse cx="110" cy="200" rx="30" ry="50" fill="#5a9c2e" opacity="0.3"/>
+
+  <!-- Shadow -->
+  <ellipse cx="150" cy="390" rx="90" ry="20" fill="#1a1a1a" opacity="0.2"/>
+</svg>

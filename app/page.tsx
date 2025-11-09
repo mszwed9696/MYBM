@@ -1,306 +1,432 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import FloatingParticles from "@/components/FloatingParticles";
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:40px_40px]"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      {/* Hero Section - Mobster Theme */}
+      <section className="relative bg-gradient-to-br from-gray-900 via-[#1a1a1a] to-black text-white overflow-hidden min-h-screen flex items-center">
+        {/* Floating gold particles (money theme) */}
+        <FloatingParticles count={40} color="#FFD700" />
+
+        {/* City skyline background */}
+        <div className="absolute bottom-0 left-0 right-0 opacity-30">
+          <img src="/illustrations/nyc-skyline.svg" alt="" className="w-full" />
+        </div>
+
+        {/* City wave divider at top */}
+        <div className="absolute top-0 left-0 right-0 opacity-20 rotate-180">
+          <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full" />
+        </div>
+
+        {/* Philly City Hall with MYBM flag */}
+        <motion.div
+          className="absolute right-10 bottom-0 w-64 opacity-70"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 0.7 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/illustrations/philly-city-hall.svg" alt="Philadelphia City Hall" />
+        </motion.div>
+
+        {/* Vintage Cadillac */}
+        <motion.div
+          className="absolute left-10 bottom-20 w-96 opacity-80"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.8 }}
+          transition={{ duration: 1.5, delay: 0.3 }}
+        >
+          <img src="/illustrations/vintage-cadillac.svg" alt="Vintage Cadillac" />
+        </motion.div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
           <div className="max-w-4xl">
-            <div className="inline-block mb-6 px-4 py-2 bg-blue-600/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold">
-              For Businesses Doing $100k+ Monthly Revenue
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Guaranteed 30% Revenue Increase in Year 1
-              <span className="text-blue-400"> Or We Work For Free</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              We're the marketing agency for high-ticket coaches, consultants, and businesses generating serious revenue.
-              Stop gambling with agencies that can't back up their promises.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div
+              className="inline-block mb-6 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              🎩 FOR BUSINESSES DOING $100K+ MONTHLY REVENUE 🎩
+            </motion.div>
+
+            <motion.h1
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              We Don't Make Offers
+              <br />
+              <span className="text-[#FFD700]">We Make You An Offer</span>
+              <br />
+              <span className="text-5xl md:text-6xl">You Can't Refuse</span>
+            </motion.h1>
+
+            <motion.p
+              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              30% revenue increase in year 1, <span className="text-[#FFD700] font-bold">guaranteed</span>.
+              Or we work for free until you get it. That's the family way.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
               <Link
                 href="/apply"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 text-center"
+                className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 text-center shadow-lg"
+                style={{ fontFamily: "'Georgia', serif" }}
               >
-                Apply for Partnership
+                Join The Family
               </Link>
               <Link
                 href="/guarantee"
-                className="bg-white/10 border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all text-center"
+                className="bg-black/50 border-2 border-[#FFD700] text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-black/70 transition-all text-center"
+                style={{ fontFamily: "'Georgia', serif" }}
               >
-                See Our Guarantee
+                See The Guarantee
               </Link>
-            </div>
-            <div className="mt-12 grid grid-cols-3 gap-8">
+            </motion.div>
+
+            <motion.div
+              className="grid grid-cols-3 gap-8 bg-black/60 p-8 rounded-xl border-2 border-[#FFD700]/30"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
               <div>
-                <div className="text-4xl font-bold text-blue-400">30%</div>
-                <div className="text-gray-400 mt-1">Minimum Revenue Increase</div>
+                <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>30%</div>
+                <div className="text-gray-400 mt-2 text-sm">Minimum Revenue Increase</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-400">$100k+</div>
-                <div className="text-gray-400 mt-1">Monthly Revenue Required</div>
+                <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>$100k+</div>
+                <div className="text-gray-400 mt-2 text-sm">Monthly Revenue Required</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-400">100%</div>
-                <div className="text-gray-400 mt-1">Risk-Free Guarantee</div>
+                <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>100%</div>
+                <div className="text-gray-400 mt-2 text-sm">Risk-Free Guarantee</div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Tired of Marketing Agencies That Under-Deliver?
+      {/* City Wave Divider */}
+      <div className="relative -mt-1">
+        <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full" />
+      </div>
+
+      {/* Why Most Agencies Are "Weak" Section */}
+      <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white relative overflow-hidden">
+        <FloatingParticles count={20} color="#8B0000" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              Why Most Agencies Are <span className="text-[#8B0000]">Weak</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Most agencies charge premium prices but deliver mediocre results. They hide behind vanity metrics
-              while your revenue stays flat. You deserve better.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: "'Georgia', serif" }}>
+              They make empty promises, take your money, and disappear when results don't show.
+              <br />We don't do business that way.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-red-600 text-5xl mb-4">✗</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Empty Promises</h3>
-              <p className="text-gray-600">
-                Agencies promise the moon but deliver nothing. No accountability, no guarantees, just excuses.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-red-600 text-5xl mb-4">✗</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Wasted Budgets</h3>
-              <p className="text-gray-600">
-                Burning through $5k-10k/month in retainers with nothing to show for it. Testing takes months with no ROI.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-red-600 text-5xl mb-4">✗</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Generic Strategies</h3>
-              <p className="text-gray-600">
-                Cookie-cutter approaches that don't work for high-ticket businesses. You need specialized expertise.
-              </p>
-            </div>
+            {[
+              {
+                icon: "💸",
+                title: "They Burn Your Money",
+                description: "$5k-10k/month retainers with zero accountability. They test on your dime while you bleed cash.",
+              },
+              {
+                icon: "🎭",
+                title: "They Hide Behind Metrics",
+                description: "Clicks, impressions, engagement—all vanity. They don't talk about revenue because they can't deliver it.",
+              },
+              {
+                icon: "🤡",
+                title: "They Use Cookie-Cutters",
+                description: "Same strategy for everyone. High-ticket businesses need specialized expertise, not generic templates.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-black/50 p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>{item.title}</h3>
+                <p className="text-gray-300">{item.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              The Mind Your Business Media Difference
+      {/* Our Way - The Family Business */}
+      <section className="py-20 bg-black text-white relative overflow-hidden">
+        {/* Mobster characters */}
+        <motion.div
+          className="absolute left-0 bottom-0 w-48 opacity-60"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/illustrations/mobster-character-1.svg" alt="The Boss" />
+        </motion.div>
+
+        <motion.div
+          className="absolute right-0 bottom-0 w-48 opacity-60"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/illustrations/mobster-character-2.svg" alt="The Enforcer" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              The <span className="text-[#FFD700]">Mind Your Business</span> Way
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              We only work with established businesses doing $100k+ monthly because we deliver guaranteed results.
-              Here's how we do it:
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: "'Georgia', serif" }}>
+              We're a family business. We protect our partners. We deliver results. Or we don't get paid. Capisce?
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-2xl font-bold mb-3">Revenue-First Strategy</h3>
-              <p className="text-blue-100">
-                We don't care about likes, follows, or vanity metrics. Our sole focus is increasing your net revenue by 30% or more.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🔬</div>
-              <h3 className="text-2xl font-bold mb-3">Data-Driven Execution</h3>
-              <p className="text-blue-100">
-                Every decision backed by data. We track everything, optimize relentlessly, and scale what works.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">💎</div>
-              <h3 className="text-2xl font-bold mb-3">High-Ticket Expertise</h3>
-              <p className="text-blue-100">
-                We specialize in businesses with high customer lifetime value. Different strategies, different execution.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">✅</div>
-              <h3 className="text-2xl font-bold mb-3">Ironclad Guarantee</h3>
-              <p className="text-blue-100">
-                30% revenue increase in year 1 or we work for free until we hit it. No agency offers this because they can't deliver.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                icon: "🎯",
+                title: "Revenue Is The Only Metric That Matters",
+                description: "We don't care about vanity metrics. Our sole focus: increase your net revenue by 30% minimum. That's it.",
+              },
+              {
+                icon: "👔",
+                title: "We Only Work With Serious Players",
+                description: "$100k+ monthly revenue businesses only. You're established, you're ready to scale, you want guarantees.",
+              },
+              {
+                icon: "🤝",
+                title: "Our Word Is Our Bond",
+                description: "30% revenue increase in year 1 or we work for free. No other agency makes this promise because they can't deliver.",
+              },
+              {
+                icon: "💼",
+                title: "Complete Execution, Not Just Strategy",
+                description: "We don't hand you a deck and disappear. We execute everything: ads, funnels, content, optimization. Done.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-8 rounded-xl border-2 border-[#FFD700]/20 hover:border-[#FFD700] transition-all"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                whileHover={{ scale: 1.03 }}
+              >
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>{item.title}</h3>
+                <p className="text-gray-300">{item.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Comprehensive Marketing Solutions
+      {/* What We Do - Services with cartoon cards */}
+      <section className="py-20 bg-gradient-to-br from-[#1a1a1a] to-black text-white relative overflow-hidden">
+        <FloatingParticles count={25} color="#FFD700" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              What The <span className="text-[#FFD700]">Family</span> Does For You
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: "'Georgia', serif" }}>
               Everything you need to dominate your market and scale to 8-figures
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/services/fractional-cmo" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Fractional CMO Services</h3>
-              <p className="text-gray-600 mb-4">
-                Strategic leadership without the $250k+ salary. Get a seasoned CMO guiding your entire marketing operation.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
-
-            <Link href="/services/paid-advertising" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Paid Advertising Management</h3>
-              <p className="text-gray-600 mb-4">
-                High-converting campaigns across Google, Facebook, LinkedIn, and YouTube. Optimized for high-ticket sales.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
-
-            <Link href="/services/funnel-optimization" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Funnel Optimization</h3>
-              <p className="text-gray-600 mb-4">
-                Turn more traffic into qualified leads and customers. Complete funnel audits and conversion rate optimization.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
-
-            <Link href="/services/marketing-strategy" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Marketing Strategy</h3>
-              <p className="text-gray-600 mb-4">
-                Custom strategies for scaling high-ticket offers. Positioning, messaging, and go-to-market plans that work.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
-
-            <Link href="/services/content-marketing" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Content Marketing & SEO</h3>
-              <p className="text-gray-600 mb-4">
-                Authority-building content that ranks and converts. Thought leadership that attracts premium clients.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
-
-            <Link href="/services/marketing-automation" className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600">Marketing Automation</h3>
-              <p className="text-gray-600 mb-4">
-                Scale your marketing without scaling your team. Automated nurture sequences and sales systems.
-              </p>
-              <span className="text-blue-600 font-semibold group-hover:underline">Learn More →</span>
-            </Link>
+            {[
+              { title: "Fractional CMO", desc: "Strategic leadership without the $250k salary. We run your entire marketing operation.", link: "/services/fractional-cmo" },
+              { title: "Paid Advertising", desc: "High-converting campaigns on Google, Facebook, LinkedIn, YouTube. Built for high-ticket.", link: "/services/paid-advertising" },
+              { title: "Funnel Optimization", desc: "Turn traffic into qualified leads and sales. Complete funnel audits and conversion optimization.", link: "/services/funnel-optimization" },
+              { title: "Marketing Strategy", desc: "Custom strategies for scaling high-ticket offers. Positioning, messaging, go-to-market.", link: "/services/marketing-strategy" },
+              { title: "Content & SEO", desc: "Authority content that ranks and converts. Thought leadership that attracts premium clients.", link: "/services/content-marketing" },
+              { title: "Marketing Automation", desc: "Scale marketing without scaling team. Automated nurture sequences and sales systems.", link: "/services/marketing-automation" },
+            ].map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <Link
+                  href={service.link}
+                  className="group block bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] hover:shadow-2xl transition-all h-full"
+                >
+                  <h3 className="text-2xl font-bold mb-3 text-[#FFD700] group-hover:text-white transition-colors" style={{ fontFamily: "'Georgia', serif" }}>
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4">{service.desc}</p>
+                  <span className="text-[#FFD700] font-semibold group-hover:underline">Learn More →</span>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Industries Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Who We Work With
+      {/* Social Proof - The Numbers */}
+      <section className="py-20 bg-black text-white relative overflow-hidden">
+        {/* Money bag illustration */}
+        <motion.div
+          className="absolute right-10 top-10 w-40 opacity-40"
+          animate={{ y: [0, -20, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        >
+          <img src="/illustrations/money-bag.svg" alt="Money Bag" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              The <span className="text-[#FFD700]">Numbers</span> Don't Lie
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Specialized marketing solutions for high-ticket businesses across multiple industries
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link href="/industries/coaches" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">High-Ticket Coaches</h3>
-              <p className="text-gray-600">$10k+ programs, masterminds, and 1-on-1 coaching</p>
-            </Link>
-
-            <Link href="/industries/consultants" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">Consultants</h3>
-              <p className="text-gray-600">Business consultants, fractional executives, advisory services</p>
-            </Link>
-
-            <Link href="/industries/course-creators" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">Online Course Creators</h3>
-              <p className="text-gray-600">Premium courses, memberships, certification programs</p>
-            </Link>
-
-            <Link href="/industries/service-businesses" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">High-Ticket Services</h3>
-              <p className="text-gray-600">Professional services, agencies, B2B services</p>
-            </Link>
-
-            <Link href="/industries/product-businesses" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">High-Ticket Products</h3>
-              <p className="text-gray-600">Premium ecommerce, luxury goods, B2B equipment</p>
-            </Link>
-
-            <Link href="/industries/saas" className="group p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">SaaS Companies</h3>
-              <p className="text-gray-600">Enterprise software, B2B platforms, $1M+ ARR</p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Real Results. Real Revenue Growth.
-            </h2>
-            <Link href="/results" className="text-blue-400 text-xl hover:underline">
+            <Link href="/results" className="text-[#FFD700] text-xl hover:underline font-bold">
               View All Case Studies →
             </Link>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+287%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Increase</div>
-              <p className="text-gray-400">High-ticket business coaching program went from $80k/mo to $310k/mo in 9 months</p>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+156%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Increase</div>
-              <p className="text-gray-400">B2B consulting firm scaled from $150k/mo to $385k/mo in 12 months</p>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2">+210%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Increase</div>
-              <p className="text-gray-400">Online course creator grew from $120k/mo to $372k/mo in 11 months</p>
-            </div>
+            {[
+              { percent: "+287%", desc: "High-ticket coaching: $80k/mo → $310k/mo in 9 months" },
+              { percent: "+156%", desc: "B2B consulting: $150k/mo → $385k/mo in 12 months" },
+              { percent: "+210%", desc: "Online courses: $120k/mo → $372k/mo in 11 months" },
+            ].map((result, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-br from-[#8B0000] to-[#5a0000] p-8 rounded-xl border-2 border-[#FFD700]"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="text-6xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>{result.percent}</div>
+                <p className="text-white text-lg">{result.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Guarantee Your Growth?
-          </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            If you're doing $100k+ monthly revenue and serious about scaling, let's talk.
-            Limited partnerships available.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+      <section className="py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
+        <FloatingParticles count={30} color="#FFD700" />
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.h2
+            className="text-5xl md:text-6xl font-bold mb-6"
+            style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
           >
-            Apply for Partnership Now
-          </Link>
-          <p className="mt-6 text-blue-200 text-sm">
-            Application review typically takes 24-48 hours
-          </p>
+            Ready To Join <span className="text-[#FFD700]">The Family</span>?
+          </motion.h2>
+          <motion.p
+            className="text-2xl mb-10 text-gray-200"
+            style={{ fontFamily: "'Georgia', serif" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            If you're doing $100k+ monthly and serious about scaling,
+            <br />
+            we'll make you an offer you can't refuse.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <Link
+              href="/apply"
+              className="inline-block bg-black border-4 border-[#FFD700] text-[#FFD700] px-12 py-6 rounded-lg font-bold text-xl hover:bg-[#FFD700] hover:text-black transition-all transform hover:scale-110 shadow-2xl"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Join The Family Now
+            </Link>
+          </motion.div>
+          <motion.p
+            className="mt-8 text-[#FFD700] text-sm font-bold"
+            style={{ fontFamily: "'Georgia', serif" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            Application review: 24-48 hours | Limited partnerships available
+          </motion.p>
         </div>
       </section>
+
+      {/* Bottom City Wave */}
+      <div className="relative">
+        <img src="/illustrations/city-wave-divider.svg" alt="" className="w-full rotate-180" />
+      </div>
     </>
   );
 }

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none">
+  <!-- Italian Mobster Character - "The Boss" -->
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="80" ry="90" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Fedora Hat -->
+  <ellipse cx="200" cy="100" rx="100" ry="30" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+  <ellipse cx="200" cy="100" rx="85" ry="25" fill="#2a2a2a"/>
+  <rect x="120" y="100" width="160" height="25" fill="#1a1a1a"/>
+  <rect x="130" y="105" width="140" height="15" fill="#8B4513"/>
+
+  <!-- Face details -->
+  <circle cx="175" cy="140" r="8" fill="#1a1a1a"/>
+  <circle cx="225" cy="140" r="8" fill="#1a1a1a"/>
+  <path d="M 185 170 Q 200 180 215 170" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+
+  <!-- Cigar -->
+  <rect x="230" y="162" width="50" height="10" rx="5" fill="#8B4513" stroke="#1a1a1a" stroke-width="2"/>
+  <ellipse cx="280" cy="167" rx="8" ry="8" fill="#ff6b35" opacity="0.8"/>
+  <path d="M 280 167 Q 290 165 295 160" stroke="#ffa500" stroke-width="2" opacity="0.6"/>
+
+  <!-- Neck/Collar -->
+  <rect x="170" y="220" width="60" height="30" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Suit Body -->
+  <path d="M 120 250 L 120 500 L 180 520 L 200 510 L 220 520 L 280 500 L 280 250 Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M 200 250 L 200 510" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Lapels -->
+  <path d="M 140 250 L 200 350 L 200 250 Z" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 260 250 L 200 350 L 200 250 Z" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- White Shirt -->
+  <rect x="185" y="260" width="30" height="200" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Tie -->
+  <path d="M 195 270 L 190 350 L 200 400 L 210 350 L 205 270 Z" fill="#8B0000" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Gold Chain -->
+  <ellipse cx="200" cy="240" rx="25" ry="8" fill="none" stroke="#FFD700" stroke-width="4"/>
+
+  <!-- Arms -->
+  <rect x="80" y="280" width="40" height="150" rx="20" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="280" y="280" width="40" height="150" rx="20" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Hands -->
+  <ellipse cx="100" cy="440" rx="25" ry="30" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+  <ellipse cx="300" cy="440" rx="25" ry="30" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Money in hand -->
+  <rect x="90" y="420" width="30" height="15" fill="#85bb65" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="95" y="432" font-family="Arial" font-size="10" fill="#1a1a1a" font-weight="bold">$$$</text>
+</svg>

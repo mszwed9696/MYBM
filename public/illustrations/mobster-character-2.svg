@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none">
+  <!-- Italian Mobster Character 2 - "The Enforcer" -->
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="75" ry="85" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Slicked back hair -->
+  <path d="M 130 120 Q 200 90 270 120 L 270 140 Q 200 110 130 140 Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Face details -->
+  <circle cx="175" cy="145" r="7" fill="#1a1a1a"/>
+  <circle cx="225" cy="145" r="7" fill="#1a1a1a"/>
+
+  <!-- Sunglasses -->
+  <rect x="160" y="135" width="35" height="20" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="205" y="135" width="35" height="20" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="195" y1="145" x2="205" y2="145" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Mustache -->
+  <path d="M 180 170 Q 190 175 200 173 Q 210 175 220 170" stroke="#1a1a1a" stroke-width="4" fill="none"/>
+
+  <!-- Mouth -->
+  <path d="M 185 185 Q 200 190 215 185" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="175" y="220" width="50" height="30" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Suit Body -->
+  <path d="M 125 250 L 125 500 L 185 520 L 200 510 L 215 520 L 275 500 L 275 250 Z" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M 200 250 L 200 510" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Lapels -->
+  <path d="M 145 250 L 200 350 L 200 250 Z" fill="#3a3a3a" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 255 250 L 200 350 L 200 250 Z" fill="#3a3a3a" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Red pocket square -->
+  <rect x="145" y="270" width="20" height="8" fill="#dc143c" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- White Shirt -->
+  <rect x="185" y="260" width="30" height="200" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Black Tie -->
+  <path d="M 195 270 L 193 350 L 200 400 L 207 350 L 205 270 Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Arms crossed -->
+  <path d="M 85 300 L 115 320 L 195 340 L 190 360 L 110 340 L 85 380" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M 315 300 L 285 320 L 205 340 L 210 360 L 290 340 L 315 380" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Hands/Fists -->
+  <ellipse cx="192" cy="350" rx="22" ry="25" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+  <ellipse cx="208" cy="350" rx="22" ry="25" fill="#f4c4a0" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- Pinky ring -->
+  <rect x="210" y="342" width="8" height="6" rx="3" fill="#FFD700" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="214" cy="345" r="3" fill="#dc143c"/>
+</svg>

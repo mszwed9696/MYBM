@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 200" preserveAspectRatio="none" fill="none">
+  <!-- City Skyline Wave Divider -->
+  <path d="M 0 150 L 0 100 L 30 100 L 30 80 L 50 80 L 50 100 L 80 100 L 80 70 L 100 70 L 100 60 L 120 60 L 120 70 L 140 70 L 140 100 L 180 100 L 180 85 L 200 85 L 200 100 L 240 100 L 240 90 L 260 90 L 260 75 L 280 75 L 280 90 L 300 90 L 300 100 L 350 100 L 350 80 L 370 80 L 370 70 L 390 70 L 390 80 L 410 80 L 410 100 L 460 100 L 460 85 L 480 85 L 480 100 L 520 100 L 520 75 L 540 75 L 540 60 L 560 60 L 560 75 L 580 75 L 580 100 L 630 100 L 630 90 L 650 90 L 650 100 L 690 100 L 690 80 L 710 80 L 710 70 L 730 70 L 730 80 L 750 80 L 750 100 L 800 100 L 800 85 L 820 85 L 820 100 L 860 100 L 860 75 L 880 75 L 880 65 L 900 65 L 900 75 L 920 75 L 920 100 L 970 100 L 970 90 L 990 90 L 990 100 L 1030 100 L 1030 80 L 1050 80 L 1050 70 L 1070 70 L 1070 80 L 1090 80 L 1090 100 L 1140 100 L 1140 85 L 1160 85 L 1160 100 L 1200 100 L 1200 75 L 1220 75 L 1220 60 L 1240 60 L 1240 75 L 1260 75 L 1260 100 L 1310 100 L 1310 90 L 1330 90 L 1330 100 L 1400 100 L 1400 200 L 0 200 Z"
+  fill="#1a1a1a" stroke="none"/>
+
+  <!-- Building windows lights -->
+  <circle cx="40" cy="90" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="90" cy="75" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="110" cy="65" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="190" cy="90" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="250" cy="85" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="270" cy="80" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="360" cy="75" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="470" cy="90" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="530" cy="70" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="550" cy="65" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="640" cy="95" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="700" cy="75" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="810" cy="90" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="870" cy="70" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="890" cy="68" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="980" cy="95" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="1040" cy="75" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="1060" cy="73" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="1150" cy="90" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="1210" cy="70" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="1230" cy="65" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="1320" cy="95" r="2" fill="#FFD700" opacity="0.6"/>
+</svg>

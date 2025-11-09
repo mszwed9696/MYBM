@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
+  <!-- New York City Skyline Silhouette -->
+  <defs>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background buildings (shorter) -->
+  <rect x="50" y="280" width="80" height="120" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="55" y="290" width="10" height="10" fill="#FFD700" opacity="0.8"/>
+  <rect x="70" y="290" width="10" height="10" fill="#FFD700" opacity="0.6"/>
+  <rect x="85" y="290" width="10" height="10" fill="#FFD700" opacity="0.8"/>
+  <rect x="100" y="290" width="10" height="10" fill="#FFD700" opacity="0.6"/>
+
+  <rect x="160" y="250" width="90" height="150" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="165" y="260" width="12" height="12" fill="#FFD700" opacity="0.7"/>
+  <rect x="182" y="260" width="12" height="12" fill="#FFD700" opacity="0.8"/>
+  <rect x="199" y="260" width="12" height="12" fill="#FFD700" opacity="0.6"/>
+
+  <!-- Empire State Building (center) -->
+  <rect x="550" y="100" width="100" height="300" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="3"/>
+  <rect x="570" y="80" width="60" height="20" fill="#2a2a2a" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="585" y="50" width="30" height="30" fill="#8B7355" stroke="#0a0a0a" stroke-width="2"/>
+  <path d="M 600 30 L 590 50 L 610 50 Z" fill="#FFD700" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Empire State windows -->
+  <rect x="560" y="120" width="10" height="15" fill="#FFD700" opacity="0.8"/>
+  <rect x="575" y="120" width="10" height="15" fill="#FFD700" opacity="0.6"/>
+  <rect x="590" y="120" width="10" height="15" fill="#FFD700" opacity="0.8"/>
+  <rect x="605" y="120" width="10" height="15" fill="#FFD700" opacity="0.6"/>
+  <rect x="620" y="120" width="10" height="15" fill="#FFD700" opacity="0.8"/>
+
+  <!-- Chrysler Building style -->
+  <rect x="400" y="150" width="80" height="250" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <path d="M 410 150 L 440 100 L 470 150 Z" fill="#c0c0c0" stroke="#0a0a0a" stroke-width="2"/>
+  <path d="M 420 120 L 440 100 L 460 120 Z" fill="#FFD700" opacity="0.3"/>
+
+  <!-- One World Trade Center style -->
+  <rect x="750" y="120" width="90" height="280" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <path d="M 750 120 L 795 80 L 840 120 Z" fill="#4a5568" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- More background buildings -->
+  <rect x="280" y="220" width="70" height="180" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="870" y="240" width="75" height="160" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="970" y="200" width="85" height="200" fill="url(#buildingGrad)" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Windows for other buildings -->
+  <g opacity="0.7">
+    <rect x="285" y="230" width="8" height="10" fill="#FFD700"/>
+    <rect x="298" y="230" width="8" height="10" fill="#FFD700"/>
+    <rect x="311" y="230" width="8" height="10" fill="#FFD700"/>
+    <rect x="324" y="230" width="8" height="10" fill="#FFD700"/>
+
+    <rect x="875" y="250" width="8" height="10" fill="#FFD700"/>
+    <rect x="890" y="250" width="8" height="10" fill="#FFD700"/>
+    <rect x="905" y="250" width="8" height="10" fill="#FFD700"/>
+
+    <rect x="975" y="210" width="8" height="10" fill="#FFD700"/>
+    <rect x="992" y="210" width="8" height="10" fill="#FFD700"/>
+    <rect x="1009" y="210" width="8" height="10" fill="#FFD700"/>
+  </g>
+
+  <!-- Foreground small buildings -->
+  <rect x="0" y="300" width="50" height="100" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2"/>
+  <rect x="1100" y="280" width="60" height="120" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Street level -->
+  <rect x="0" y="390" width="1200" height="10" fill="#3a3a3a"/>
+</svg>

@@ -59,9 +59,9 @@ export default function ApplyPage() {
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-16 overflow-hidden">
         {/* Cityscape hero background */}
         <div className="absolute inset-0 z-0">
-          <img src="/heroes/Gemini_Generated_Image_c7ujjpc7ujjpc7uj.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
+          <img src="/heroes/vegas-strip.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
           {/* Gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/60 via-[#1a1a2e]/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/30 via-[#1a1a2e]/20 to-black/40"></div>
         </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

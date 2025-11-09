@@ -10,20 +10,12 @@ export default function GuaranteePage() {
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
         {/* Cityscape hero background */}
         <div className="absolute inset-0 z-0">
-          <img src="/heroes/Gemini_Generated_Image_c5f5mxc5f5mxc5f5.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
+          <img src="/heroes/philadelphia-skyline.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
           {/* Gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/60 via-[#1a1a2e]/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/30 via-[#1a1a2e]/20 to-black/40"></div>
         </div>
 
         {/* The Don character */}
-        <motion.div
-          className="absolute right-0 bottom-0 w-72 md:w-96 opacity-50 z-0"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.5 }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.h1

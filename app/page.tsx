@@ -27,15 +27,6 @@ export default function Home() {
         <FloatingParticles count={40} color="#FFD700" />
 
         {/* The Don character with car - positioned in front */}
-        <motion.div
-          className="absolute right-8 md:right-16 lg:right-24 bottom-0 w-72 md:w-[400px] lg:w-[520px] z-10"
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          style={{ filter: "drop-shadow(0 25px 60px rgba(0, 0, 0, 0.9))" }}
-        >
-          <img src="/characters/driver-vintage-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-20 flex items-center min-h-screen">
           <div className="max-w-4xl">
@@ -184,26 +175,8 @@ export default function Home() {
       {/* Our Way - The Family Business */}
       <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white relative overflow-hidden">
         {/* The Banker - Left side */}
-        <motion.div
-          className="absolute left-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.7 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/banker-briefcase.png" alt="The Banker" className="w-full h-auto" />
-        </motion.div>
 
         {/* The Enforcer - Right side */}
-        <motion.div
-          className="absolute right-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.7 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -317,13 +290,6 @@ export default function Home() {
       {/* Social Proof - The Numbers */}
       <section className="py-20 bg-gradient-to-br from-black via-[#1a1a2e] to-black text-white relative overflow-hidden">
         {/* The Bagman character - floating animation */}
-        <motion.div
-          className="absolute right-10 top-10 w-64 md:w-80 opacity-60"
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <img src="/characters/bagman-money.png" alt="The Bagman" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -369,15 +335,6 @@ export default function Home() {
         <FloatingParticles count={30} color="#FFD700" />
 
         {/* The Don character - Left side */}
-        <motion.div
-          className="absolute left-0 bottom-0 w-64 md:w-96 opacity-75 z-0"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.75 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2 }}
-        >
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.h2

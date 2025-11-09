@@ -1,43 +1,67 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Marketing Automation Services | Scale Without Scaling Your Team",
-  description: "Marketing automation for high-ticket coaches, consultants, and businesses. Automated funnels, email sequences, and sales systems that work 24/7 to generate qualified leads and revenue.",
-  keywords: [
-    "marketing automation",
-    "marketing automation services",
-    "email automation",
-    "sales automation",
-    "marketing automation for coaches",
-    "automated marketing funnels",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function MarketingAutomationPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* The Partner character */}
+        <motion.div
+          className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.6 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/partner-contractor.png" alt="The Partner" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-block mb-4 px-4 py-2 bg-blue-600/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold">
-              Marketing Automation
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Scale Your Revenue
-              <span className="text-blue-400"> Without Scaling Your Team</span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Build automated marketing and sales systems that work 24/7 to nurture leads, book calls, and generate
-              revenue while you focus on delivery and strategy.
-            </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700"
+            <motion.div
+              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              Automate Your Marketing
-            </Link>
+              🤝 MARKETING AUTOMATION - THE PARTNER 🤝
+            </motion.div>
+            <motion.h1
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Your Marketing<br />
+              <span className="text-[#FFD700]">Works While You Sleep</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              style={{ fontFamily: "'Georgia', serif" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Automated systems that nurture leads, book calls, close deals.
+              <span className="text-[#FFD700] font-bold"> 24/7 operation. No days off. Just results.</span>
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link
+                href="/apply"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                Join The Family
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

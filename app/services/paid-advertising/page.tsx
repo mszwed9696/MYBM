@@ -141,6 +141,87 @@ export default function PaidAdvertisingPage() {
         </div>
       </section>
 
+      {/* VSL Funnel Strategy Section */}
+      <section className="py-20 bg-gradient-to-r from-red-900 to-red-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <div className="text-6xl mb-6">🎬</div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              VSL Funnels: The Silent Closer
+            </h2>
+            <p className="text-xl text-red-100">
+              Video Sales Letters that sell high-ticket offers while you sleep. No sales calls needed until they're ready to wire the money.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif" }}>What's a VSL Funnel?</h3>
+              <p className="text-red-100 mb-4">
+                A Video Sales Letter is a long-form video (15-45 minutes) that does all the selling for you.
+                We drive paid traffic directly to the VSL, and it pitches your high-ticket offer using proven
+                persuasion frameworks.
+              </p>
+              <p className="text-red-100">
+                <span className="text-[#FFD700] font-bold">The Family way:</span> Your video does the heavy lifting.
+                Only qualified, pre-sold prospects book calls. Your close rate skyrockets because they already believe.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif" }}>Why VSLs Work for High-Ticket</h3>
+              <ul className="space-y-3 text-red-100">
+                <li className="flex items-start">
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Time to sell:</strong> 30-minute VSL vs 30-second ad gives you room to overcome objections</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Automation:</strong> Works 24/7 without you. Scale without hiring more salespeople</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Pre-qualification:</strong> Only serious buyers watch a 30-min video and apply</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Higher close rates:</strong> Prospects arrive pre-sold on your methodology and pricing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-black/30 p-8 rounded-xl border-2 border-[#FFD700]">
+            <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+              Our VSL Funnel Package
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <div className="text-3xl mb-3">📝</div>
+                <h4 className="font-bold text-lg mb-2">Script Writing</h4>
+                <p className="text-red-100 text-sm">
+                  Hook, story, offer, objection handling, close. We write VSL scripts using proven frameworks that convert cold traffic.
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl mb-3">🎥</div>
+                <h4 className="font-bold text-lg mb-2">Video Production</h4>
+                <p className="text-red-100 text-sm">
+                  Professional filming, editing, graphics, captions. Or simple slide-based VSLs that convert just as well.
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl mb-3">🎯</div>
+                <h4 className="font-bold text-lg mb-2">Paid Traffic Campaigns</h4>
+                <p className="text-red-100 text-sm">
+                  Facebook, YouTube, and Google ads driving targeted traffic to your VSL. Optimized for cost per qualified application.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Platforms */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,6 +310,7 @@ export default function PaidAdvertisingPage() {
                 <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Ad copy writing</li>
                 <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Creative design</li>
                 <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Video ad production</li>
+                <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>VSL funnel creation & scripting</li>
                 <li className="flex items-start"><span className="text-blue-600 mr-2">•</span>Landing page optimization</li>
               </ul>
             </div>
@@ -251,7 +333,7 @@ export default function PaidAdvertisingPage() {
           <h2 className="text-4xl font-bold mb-12 text-center">
             Paid Advertising Results
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
               <div className="text-5xl font-bold text-blue-400 mb-2">$1.8M</div>
               <div className="text-xl font-semibold mb-4">Revenue Generated</div>
@@ -261,6 +343,11 @@ export default function PaidAdvertisingPage() {
               <div className="text-5xl font-bold text-blue-400 mb-2">8.2x</div>
               <div className="text-xl font-semibold mb-4">ROAS</div>
               <p className="text-gray-400">Consultant: $35k/month ad spend returning $287k/month in new client revenue</p>
+            </div>
+            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
+              <div className="text-5xl font-bold text-red-400 mb-2">$2.4M</div>
+              <div className="text-xl font-semibold mb-4">VSL Funnel Revenue</div>
+              <p className="text-gray-400">High-ticket program: VSL converting at 3.2% to $25k offer. $82k ad spend → $2.4M revenue in 8 months</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
               <div className="text-5xl font-bold text-blue-400 mb-2">$847</div>

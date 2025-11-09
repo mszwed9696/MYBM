@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function SaaSPage() {
   return (
@@ -43,25 +44,25 @@ export default function SaaSPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center">Our SaaS Marketing Approach</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Product-Led Growth (PLG)</h3>
-              <p className="text-blue-100">Free trials, freemium models, and product virality to reduce CAC and accelerate growth.</p>
+              <p className="text-gray-200">Free trials, freemium models, and product virality to reduce CAC and accelerate growth.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Enterprise Demand Gen</h3>
-              <p className="text-blue-100">ABM, LinkedIn campaigns, and intent data to target and close enterprise accounts.</p>
+              <p className="text-gray-200">ABM, LinkedIn campaigns, and intent data to target and close enterprise accounts.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Content & SEO</h3>
-              <p className="text-blue-100">Rank for bottom-funnel keywords and establish thought leadership in your category.</p>
+              <p className="text-gray-200">Rank for bottom-funnel keywords and establish thought leadership in your category.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Customer Marketing</h3>
-              <p className="text-blue-100">Reduce churn, increase expansion revenue, and build referral programs from happy customers.</p>
+              <p className="text-gray-200">Reduce churn, increase expansion revenue, and build referral programs from happy customers.</p>
             </div>
           </div>
         </div>

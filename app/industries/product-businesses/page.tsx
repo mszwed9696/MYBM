@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function ProductBusinessesPage() {
   return (
@@ -43,25 +44,25 @@ export default function ProductBusinessesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center">High-Ticket Product Marketing Strategies</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Wealth-Based Targeting</h3>
-              <p className="text-blue-100">Target by income level, net worth, job titles, and buying behavior—not demographics.</p>
+              <p className="text-gray-200">Target by income level, net worth, job titles, and buying behavior—not demographics.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Consultation Funnels</h3>
-              <p className="text-blue-100">Route high-ticket traffic to consultation requests, not direct checkout. White-glove sales process.</p>
+              <p className="text-gray-200">Route high-ticket traffic to consultation requests, not direct checkout. White-glove sales process.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Luxury Brand Positioning</h3>
-              <p className="text-blue-100">Premium messaging, aspirational imagery, and exclusivity positioning that commands high prices.</p>
+              <p className="text-gray-200">Premium messaging, aspirational imagery, and exclusivity positioning that commands high prices.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Multi-Touch Attribution</h3>
-              <p className="text-blue-100">Track the 7-12 touchpoints before purchase. Optimize entire customer journey, not just last click.</p>
+              <p className="text-gray-200">Track the 7-12 touchpoints before purchase. Optimize entire customer journey, not just last click.</p>
             </div>
           </div>
         </div>

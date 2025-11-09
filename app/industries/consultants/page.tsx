@@ -2,27 +2,34 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function ConsultantsPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+        {/* Detroit Skyline cityscape - PROMINENT hero image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/heroes/detroit-skyline.png" alt="Detroit Skyline" className="w-full h-full object-cover" />
+          {/* Light gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
+        </div>
         {/* The Boss character */}
         <motion.div
-          className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
+          className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
           initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.6 }}
+          animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1 }}
         >
           <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
         </motion.div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <motion.div
               className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
-              style={{ fontFamily: "'Georgia', serif" }}
+              style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -31,7 +38,7 @@ export default function ConsultantsPage() {
             </motion.div>
             <motion.h1
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -39,7 +46,7 @@ export default function ConsultantsPage() {
               Build A Consulting Practice<br /><span className="text-[#FFD700]">Nobody Can Touch</span>
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -72,10 +79,15 @@ export default function ConsultantsPage() {
         </div>
       </section>
 
+      {/* Skyline Divider */}
+      <div className="relative -mt-1">
+        <SkylineDivider className="text-white" />
+      </div>
+
       {/* Pain Points */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             The Growth Challenges Consultants Face
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -105,67 +117,67 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Solution */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
               Our Marketing Solutions for Consultants
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We've helped consulting firms scale from $1M to $5M+ ARR with predictable client acquisition
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-2xl font-bold mb-3">Thought Leadership & Authority Building</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Position yourself as THE expert through strategic content marketing, speaking opportunities, and
                 media placements. Become the obvious choice in your category.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">📊</div>
               <h3 className="text-2xl font-bold mb-3">Account-Based Marketing (ABM)</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Target specific companies and decision-makers with personalized campaigns. Land enterprise clients
                 worth $100k-500k+ engagements.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">🔗</div>
               <h3 className="text-2xl font-bold mb-3">LinkedIn Lead Generation</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Systematic LinkedIn outreach and content strategy that fills your calendar with qualified discovery calls.
                 B2B lead generation that actually works.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">📈</div>
               <h3 className="text-2xl font-bold mb-3">Strategic Partnerships & Alliances</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Build referral partnerships with complementary firms, create co-marketing initiatives, and tap into
                 existing client bases.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">🎓</div>
               <h3 className="text-2xl font-bold mb-3">Educational Marketing & Workshops</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Host workshops, webinars, and executive briefings that demonstrate your expertise and convert
                 attendees into clients.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-2xl font-bold mb-3">Multi-Touch Nurture Campaigns</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Sophisticated email, LinkedIn, and retargeting sequences that stay top-of-mind throughout long
                 B2B sales cycles.
               </p>
@@ -177,7 +189,7 @@ export default function ConsultantsPage() {
       {/* Consulting Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Marketing Solutions for Every Type of Consultant
           </h2>
           <p className="text-xl text-gray-600 mb-12 text-center">
@@ -254,12 +266,12 @@ export default function ConsultantsPage() {
       {/* Results */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Consulting Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-600 mb-2">+156%</div>
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2">+156%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
               <p className="text-gray-700">
                 Strategy consulting firm: $150k/mo to $385k/mo in 12 months. Landed 3 enterprise clients worth
@@ -267,8 +279,8 @@ export default function ConsultantsPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-600 mb-2">+203%</div>
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2">+203%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
               <p className="text-gray-700">
                 Fractional CFO practice: $110k/mo to $333k/mo in 10 months. Scaled from 11 to 37 monthly retainer
@@ -276,8 +288,8 @@ export default function ConsultantsPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-600 mb-2">+178%</div>
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2">+178%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
               <p className="text-gray-700">
                 HR consulting firm: $135k/mo to $375k/mo in 11 months. Built thought leadership platform that
@@ -286,7 +298,7 @@ export default function ConsultantsPage() {
             </div>
           </div>
           <div className="text-center">
-            <Link href="/results" className="text-blue-600 text-xl font-semibold hover:underline">
+            <Link href="/results" className="text-[#FFD700] text-xl font-semibold hover:underline">
               View All Consulting Client Case Studies →
             </Link>
           </div>
@@ -296,7 +308,7 @@ export default function ConsultantsPage() {
       {/* Why Us */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Why Consultants Choose Mind Your Business Media
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -333,21 +345,21 @@ export default function ConsultantsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Ready to Scale Your Consulting Practice?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             If you're a consultant doing $100k+ monthly and ready for predictable growth, let's talk.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
           >
             Apply for Partnership
           </Link>
-          <p className="mt-6 text-blue-200 text-sm">
+          <p className="mt-6 text-gray-300 text-sm">
             Limited consulting client partnerships available
           </p>
         </div>

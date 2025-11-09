@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function CourseCreatorsPage() {
   return (
@@ -43,25 +44,25 @@ export default function CourseCreatorsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center">Our Course Marketing Services</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Evergreen VSL Funnels</h3>
-              <p className="text-blue-100">Automated video sales letter funnels that sell your course 24/7 without you.</p>
+              <p className="text-gray-200">Automated video sales letter funnels that sell your course 24/7 without you.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Webinar Automation</h3>
-              <p className="text-blue-100">Automated webinar systems with email sequences, registration optimization, and replay funnels.</p>
+              <p className="text-gray-200">Automated webinar systems with email sequences, registration optimization, and replay funnels.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Multi-Tier Offers</h3>
-              <p className="text-blue-100">Create premium tiers: self-study ($997), group coaching ($3k-5k), 1-on-1 ($10k+).</p>
+              <p className="text-gray-200">Create premium tiers: self-study ($997), group coaching ($3k-5k), 1-on-1 ($10k+).</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">YouTube SEO & Growth</h3>
-              <p className="text-blue-100">Organic lead generation through YouTube search optimization and authority content.</p>
+              <p className="text-gray-200">Organic lead generation through YouTube search optimization and authority content.</p>
             </div>
           </div>
         </div>
@@ -119,11 +120,11 @@ export default function CourseCreatorsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Automate Your Course Sales?</h2>
           <p className="text-xl mb-8">If you're doing $100k+ monthly and ready to scale without constant launches, let's talk.</p>
-          <Link href="/apply" className="inline-block bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100">
+          <Link href="/apply" className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100">
             Apply for Partnership
           </Link>
         </div>

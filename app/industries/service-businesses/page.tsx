@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function ServiceBusinessesPage() {
   return (
@@ -43,25 +44,25 @@ export default function ServiceBusinessesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center">How We Generate Service Business Leads</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Thought Leadership & Content</h3>
-              <p className="text-blue-100">Position as industry expert through strategic content, speaking, and media placements.</p>
+              <p className="text-gray-200">Position as industry expert through strategic content, speaking, and media placements.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">LinkedIn Lead Generation</h3>
-              <p className="text-blue-100">Systematic B2B outreach and content strategy targeting decision-makers in your ideal accounts.</p>
+              <p className="text-gray-200">Systematic B2B outreach and content strategy targeting decision-makers in your ideal accounts.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Account-Based Marketing</h3>
-              <p className="text-blue-100">Target specific companies with personalized campaigns to land enterprise clients.</p>
+              <p className="text-gray-200">Target specific companies with personalized campaigns to land enterprise clients.</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-3">Strategic Partnerships</h3>
-              <p className="text-blue-100">Build referral networks with complementary service providers and industry partners.</p>
+              <p className="text-gray-200">Build referral networks with complementary service providers and industry partners.</p>
             </div>
           </div>
         </div>

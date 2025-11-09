@@ -2,23 +2,30 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function PaidAdvertisingPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+        {/* Vegas Strip cityscape - PROMINENT hero image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/heroes/vegas-strip.png" alt="Vegas Strip" className="w-full h-full object-cover" />
+          {/* Light gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
+        </div>
         {/* The Enforcer character */}
         <motion.div
           className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
           initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.6 }}
+          animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1 }}
         >
           <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" />
         </motion.div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <motion.div
               className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
@@ -31,7 +38,7 @@ export default function PaidAdvertisingPage() {
             </motion.div>
             <motion.h1
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -40,7 +47,7 @@ export default function PaidAdvertisingPage() {
               We <span className="text-[#FFD700]">Enforce Results</span>
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -65,6 +72,11 @@ export default function PaidAdvertisingPage() {
           </div>
         </div>
       </section>
+
+      {/* Skyline Divider */}
+      <div className="relative -mt-1">
+        <SkylineDivider className="text-white" />
+      </div>
 
       {/* Problem */}
       <section className="py-20 bg-white">

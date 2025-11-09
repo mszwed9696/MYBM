@@ -1,35 +1,53 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Our 30% Revenue Guarantee | Marketing Agency Guarantee",
-  description: "Mind Your Business Media guarantees a 30% net revenue increase in year 1 or we work for free until we achieve it. The only marketing agency with a real results guarantee.",
-  keywords: [
-    "marketing agency guarantee",
-    "guaranteed marketing results",
-    "performance-based marketing",
-    "revenue guarantee",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function GuaranteePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Our Ironclad Guarantee
-          </h1>
-          <p className="text-2xl md:text-3xl text-blue-300 font-semibold mb-8">
-            30% Net Revenue Increase in Year 1
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* The Don character */}
+        <motion.div
+          className="absolute right-0 bottom-0 w-72 md:w-96 opacity-50 z-0"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.h1
+            className="text-5xl md:text-7xl font-bold mb-6"
+            style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            The <span className="text-[#FFD700]">Family Guarantee</span>
+          </motion.h1>
+          <motion.p
+            className="text-2xl md:text-3xl text-[#FFD700] font-bold mb-8"
+            style={{ fontFamily: "'Georgia', serif" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            30% Revenue Increase in Year 1
             <br />
-            Or We Work For Free Until We Achieve It
-          </p>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            No other marketing agency offers this guarantee because they can't deliver.
-            We can—and we prove it with every client.
-          </p>
+            Or We Work For Free Until It's Done
+          </motion.p>
+          <motion.p
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            No other agency makes this promise. They can't back it up.
+            <br /><strong className="text-[#FFD700]">Our word is our bond. That's the family way.</strong>
+          </motion.p>
         </div>
       </section>
 

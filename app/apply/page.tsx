@@ -32,20 +32,21 @@ export default function ApplyPage() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white flex items-center justify-center py-20">
+      <div className="min-h-screen bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white flex items-center justify-center py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-6xl mb-6">✓</div>
-          <h1 className="text-5xl font-bold mb-6">Application Received!</h1>
-          <p className="text-xl text-gray-300 mb-8">
-            Thank you for your interest in partnering with Mind Your Business Media. We'll review your
-            application and get back to you within 24-48 hours.
+          <div className="text-6xl mb-6 text-[#FFD700]">🤝</div>
+          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+            Welcome To <span className="text-[#FFD700]">The Family</span>
+          </h1>
+          <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
+            Your application has been received. We'll review it within 24-48 hours.
+            <br /><span className="text-[#FFD700] font-bold">If you're serious, we'll be in touch.</span>
           </p>
           <p className="text-lg text-gray-400 mb-8">
-            If you're a good fit, we'll schedule a strategy call to discuss your business goals and how
-            we can help you achieve guaranteed 30% revenue growth.
+            If you're a fit, we'll schedule a sit-down to discuss your business and how we'll deliver that 30% revenue increase. Guaranteed.
           </p>
-          <Link href="/" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700">
-            Return to Homepage
+          <Link href="/" className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all" style={{ fontFamily: "'Georgia', serif" }}>
+            Return Home
           </Link>
         </div>
       </div>
@@ -55,14 +56,14 @@ export default function ApplyPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-16">
+      <section className="bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Apply for Partnership
+          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+            Join <span className="text-[#FFD700]">The Family</span>
           </h1>
-          <p className="text-xl text-gray-300">
-            We're selective about who we work with. We only partner with businesses doing $100k+ monthly
-            that we're confident we can grow by 30% or more.
+          <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
+            We're selective. We only work with businesses doing $100k+ monthly that we know we can grow 30%+.
+            <br /><span className="text-[#FFD700] font-bold">If you're serious, apply below.</span>
           </p>
         </div>
       </section>

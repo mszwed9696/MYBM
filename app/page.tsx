@@ -4,21 +4,24 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import FloatingParticles from "@/components/FloatingParticles";
+import SkylineDivider from "@/components/SkylineDivider";
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Mobster Theme */}
-      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white overflow-hidden min-h-screen flex items-center">
-        {/* Chicago cityscape background */}
-        <div className="absolute inset-0 opacity-20 z-0">
+      {/* Hero Section - Mobster Theme with Chicago Cityscape */}
+      <section className="relative bg-black text-white overflow-hidden min-h-screen flex items-center">
+        {/* Chicago cityscape - PROMINENT hero image */}
+        <div className="absolute inset-0 z-0">
           <img src="/heroes/chicago-bean.png" alt="Chicago" className="w-full h-full object-cover" />
+          {/* Light gradient overlay for text readability - MUCH lighter */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
 
         {/* Floating gold particles (money theme) */}
         <FloatingParticles count={40} color="#FFD700" />
 
-        {/* The Boss character - Hero image */}
+        {/* The Boss character - layered on top */}
         <motion.div
           className="absolute right-10 md:right-20 bottom-0 w-72 md:w-96 lg:w-[500px] opacity-90 z-10"
           initial={{ x: 200, opacity: 0 }}
@@ -109,6 +112,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Skyline Divider */}
+      <div className="relative -mt-1">
+        <SkylineDivider className="text-[#2a2a2a]" />
+      </div>
 
       {/* Why Most Agencies Are "Weak" Section */}
       <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white relative overflow-hidden">

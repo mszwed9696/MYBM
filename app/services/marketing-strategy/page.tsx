@@ -171,13 +171,13 @@ export default function MarketingStrategyPage() {
       {/* What's Included */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             What's Included in Your Marketing Strategy
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Strategic Documents</h3>
-              <ul className="space-y-3 text-gray-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Strategic Documents</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] mr-3 text-xl">✓</span>
                   <span>Market analysis and competitive positioning report</span>
@@ -202,8 +202,8 @@ export default function MarketingStrategyPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Tactical Playbooks</h3>
-              <ul className="space-y-3 text-gray-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Tactical Playbooks</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] mr-3 text-xl">✓</span>
                   <span>Customer acquisition playbook (by channel)</span>
@@ -228,8 +228,8 @@ export default function MarketingStrategyPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Implementation Tools</h3>
-              <ul className="space-y-3 text-gray-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Implementation Tools</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] mr-3 text-xl">✓</span>
                   <span>90-day execution roadmap with weekly tasks</span>
@@ -254,8 +254,8 @@ export default function MarketingStrategyPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Ongoing Support</h3>
-              <ul className="space-y-3 text-gray-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ongoing Support</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] mr-3 text-xl">✓</span>
                   <span>Monthly strategy review and optimization sessions</span>
@@ -285,14 +285,14 @@ export default function MarketingStrategyPage() {
       {/* Growth Stages */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Strategic Priorities by Growth Stage
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">$100k-300k/mo</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">$100k-300k/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Foundation Stage</p>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="mr-2">•</span>Positioning and differentiation</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Product-market fit optimization</li>
                 <li className="flex items-start"><span className="mr-2">•</span>1-2 core acquisition channels</li>
@@ -302,9 +302,9 @@ export default function MarketingStrategyPage() {
             </div>
 
             <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">$300k-750k/mo</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">$300k-750k/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Scaling Stage</p>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="mr-2">•</span>Multi-channel expansion</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Content and SEO investment</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Marketing team buildout</li>
@@ -314,9 +314,9 @@ export default function MarketingStrategyPage() {
             </div>
 
             <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">$750k+/mo</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">$750k+/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Optimization Stage</p>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="mr-2">•</span>Market expansion strategies</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Product line extension</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Brand authority & thought leadership</li>

@@ -68,10 +68,10 @@ export default function ConsultingPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
               Choose Your Level of Access
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Whether you need ongoing 1-on-1 strategy, peer-level masterminding, or a complete coaching program—here's how to work with Mike directly.
             </p>
           </div>
@@ -84,41 +84,41 @@ export default function ConsultingPage() {
             >
               <div className="text-center mb-6">
                 <div className="text-6xl mb-4">🎯</div>
-                <h3 className="text-3xl font-bold text-white mb-2">1-on-1 Consulting</h3>
-                <p className="text-gray-300 font-semibold">Private Strategic Advisory</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-2">1-on-1 Consulting</h3>
+                <p className="text-gray-700 font-semibold">Private Strategic Advisory</p>
               </div>
 
-              <p className="text-gray-200 mb-6">
+              <p className="text-gray-700 mb-6">
                 Monthly retainer for direct access to Mike. Custom marketing strategy, funnel reviews, campaign optimization, and growth planning.
               </p>
 
               <div className="space-y-3 mb-8">
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">4 hours/month of 1-on-1 time</span>
+                  <span className="text-gray-700">4 hours/month of 1-on-1 time</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Unlimited async Slack/email support</span>
+                  <span className="text-gray-700">Unlimited async Slack/email support</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Campaign reviews & funnel audits</span>
+                  <span className="text-gray-700">Campaign reviews & funnel audits</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Custom growth roadmaps</span>
+                  <span className="text-gray-700">Custom growth roadmaps</span>
                 </div>
               </div>
 
               <div className="mb-6">
-                <div className="text-4xl font-bold text-white mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$7,500<span className="text-xl text-gray-300">/month</span></div>
-                <p className="text-sm text-gray-300">6-month minimum commitment</p>
+                <div className="text-4xl font-bold text-gray-900 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$7,500<span className="text-xl text-gray-700">/month</span></div>
+                <p className="text-sm text-gray-700">6-month minimum commitment</p>
               </div>
 
               <Link
                 href="/apply"
-                className="block text-center bg-gray-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
+                className="block text-center bg-gray-900 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
               >
                 Apply for 1-on-1 Consulting
               </Link>
@@ -140,40 +140,40 @@ export default function ConsultingPage() {
 
               <div className="text-center mb-6 relative z-10">
                 <div className="text-6xl mb-4">👥</div>
-                <h3 className="text-3xl font-bold text-white mb-2">Elite Mastermind</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-2">Elite Mastermind</h3>
                 <p className="text-[#FFD700] font-semibold">8-12 High-Performers Only</p>
               </div>
 
-              <p className="text-gray-300 mb-6 relative z-10">
+              <p className="text-gray-700 mb-6 relative z-10">
                 Quarterly in-person meetups + monthly group calls. Peer-level connections with other $100k+/month business owners. Accountability, strategy, and network.
               </p>
 
               <div className="space-y-3 mb-8 relative z-10">
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-white">4 in-person meetups/year (luxury destinations)</span>
+                  <span className="text-gray-900">4 in-person meetups/year (luxury destinations)</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-white">Monthly 3-hour group strategy calls</span>
+                  <span className="text-gray-900">Monthly 3-hour group strategy calls</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-white">Private Slack community with Mike + members</span>
+                  <span className="text-gray-900">Private Slack community with Mike + members</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-white">Hot seat coaching & accountability</span>
+                  <span className="text-gray-900">Hot seat coaching & accountability</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-white">Access to member network & deals</span>
+                  <span className="text-gray-900">Access to member network & deals</span>
                 </div>
               </div>
 
               <div className="mb-6 relative z-10">
-                <div className="text-4xl font-bold text-white mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$25,000<span className="text-xl text-gray-300">/year</span></div>
-                <p className="text-sm text-gray-400">Application required. Limited to 12 members.</p>
+                <div className="text-4xl font-bold text-gray-900 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$25,000<span className="text-xl text-gray-700">/year</span></div>
+                <p className="text-sm text-gray-600">Application required. Limited to 12 members.</p>
               </div>
 
               <Link
@@ -196,45 +196,45 @@ export default function ConsultingPage() {
 
               <div className="text-center mb-6 relative z-10">
                 <div className="text-6xl mb-4">🎓</div>
-                <h3 className="text-3xl font-bold text-white mb-2">VIP Coaching Program</h3>
-                <p className="text-gray-300 font-semibold">12-Week Intensive Transformation</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-2">VIP Coaching Program</h3>
+                <p className="text-gray-700 font-semibold">12-Week Intensive Transformation</p>
               </div>
 
-              <p className="text-gray-200 mb-6 relative z-10">
+              <p className="text-gray-700 mb-6 relative z-10">
                 Complete high-ticket marketing system buildout. Go from $0-100k/month or scale from $100k to $300k+/month in 90 days. Done-with-you implementation.
               </p>
 
               <div className="space-y-3 mb-8 relative z-10">
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">12 weekly 1-on-1 coaching calls</span>
+                  <span className="text-gray-700">12 weekly 1-on-1 coaching calls</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Complete funnel & offer design</span>
+                  <span className="text-gray-700">Complete funnel & offer design</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Ad campaign setup & management</span>
+                  <span className="text-gray-700">Ad campaign setup & management</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">Sales script & close optimization</span>
+                  <span className="text-gray-700">Sales script & close optimization</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-[#FFD700] mr-2">✓</span>
-                  <span className="text-gray-200">90 days of Slack support</span>
+                  <span className="text-gray-700">90 days of Slack support</span>
                 </div>
               </div>
 
               <div className="mb-6 relative z-10">
-                <div className="text-4xl font-bold text-white mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$35,000<span className="text-xl text-gray-300"></span></div>
-                <p className="text-sm text-gray-300">One-time investment. Payment plans available.</p>
+                <div className="text-4xl font-bold text-gray-900 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$35,000<span className="text-xl text-gray-700"></span></div>
+                <p className="text-sm text-gray-700">One-time investment. Payment plans available.</p>
               </div>
 
               <Link
                 href="/apply"
-                className="block text-center bg-gray-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
+                className="block text-center bg-gray-900 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
               >
                 Apply for VIP Coaching
               </Link>
@@ -306,15 +306,15 @@ export default function ConsultingPage() {
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Work Together?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-700 mb-8">
             Fill out an application. We'll review within 24-48 hours and book a strategy call if it's a fit.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 px-12 py-6 rounded-lg font-bold text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
           >
             Apply Now
           </Link>

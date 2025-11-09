@@ -222,33 +222,33 @@ export default function FractionalCMOPage() {
       {/* Industries Served */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Fractional CMO Services for Every High-Ticket Business Type
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/industries/coaches" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">High-Ticket Coaches</h3>
-              <p className="text-gray-300">$10k+ coaching programs, masterminds, and transformation programs</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">High-Ticket Coaches</h3>
+              <p className="text-gray-700">$10k+ coaching programs, masterminds, and transformation programs</p>
             </Link>
             <Link href="/industries/consultants" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">Business Consultants</h3>
-              <p className="text-gray-300">Strategic consulting, implementation services, and advisory</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Business Consultants</h3>
+              <p className="text-gray-700">Strategic consulting, implementation services, and advisory</p>
             </Link>
             <Link href="/industries/course-creators" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">Course Creators</h3>
-              <p className="text-gray-300">Premium online courses, certifications, and training programs</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Course Creators</h3>
+              <p className="text-gray-700">Premium online courses, certifications, and training programs</p>
             </Link>
             <Link href="/industries/service-businesses" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">B2B Service Businesses</h3>
-              <p className="text-gray-300">Professional services, agencies, and specialized B2B offerings</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">B2B Service Businesses</h3>
+              <p className="text-gray-700">Professional services, agencies, and specialized B2B offerings</p>
             </Link>
             <Link href="/industries/saas" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">SaaS Companies</h3>
-              <p className="text-gray-300">B2B software platforms doing $1M+ ARR</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">SaaS Companies</h3>
+              <p className="text-gray-700">B2B software platforms doing $1M+ ARR</p>
             </Link>
             <Link href="/industries/product-businesses" className="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-600 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">High-Ticket Products</h3>
-              <p className="text-gray-300">Premium ecommerce, luxury goods, and B2B equipment</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">High-Ticket Products</h3>
+              <p className="text-gray-700">Premium ecommerce, luxury goods, and B2B equipment</p>
             </Link>
           </div>
         </div>

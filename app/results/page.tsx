@@ -190,19 +190,19 @@ export default function ResultsPage() {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
-              <div className="text-gray-300">Average Revenue Increase Year 1</div>
+              <div className="text-gray-700">Average Revenue Increase Year 1</div>
             </div>
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>100%</div>
-              <div className="text-gray-300">Clients Hit 30% Guarantee</div>
+              <div className="text-gray-700">Clients Hit 30% Guarantee</div>
             </div>
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$18M+</div>
-              <div className="text-gray-300">Revenue Added for Clients</div>
+              <div className="text-gray-700">Revenue Added for Clients</div>
             </div>
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>9.2</div>
-              <div className="text-gray-300">Average Month to ROI Positive</div>
+              <div className="text-gray-700">Average Month to ROI Positive</div>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function ResultsPage() {
       {/* Case Studies */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Client Case Studies
           </h2>
 
@@ -242,14 +242,14 @@ export default function ResultsPage() {
                 </div>
 
                 <div className="p-8">
-                  <p className="text-lg text-gray-200 mb-8">{study.description}</p>
+                  <p className="text-lg text-gray-700 mb-8">{study.description}</p>
 
                   <div className="grid md:grid-cols-3 gap-8">
                     <div>
-                      <h4 className="text-xl font-bold text-white mb-4">Challenges</h4>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Challenges</h4>
                       <ul className="space-y-2">
                         {study.challenges.map((challenge, i) => (
-                          <li key={i} className="flex items-start text-gray-300">
+                          <li key={i} className="flex items-start text-gray-700">
                             <span className="text-red-500 mr-2">•</span>
                             <span>{challenge}</span>
                           </li>
@@ -258,10 +258,10 @@ export default function ResultsPage() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-bold text-white mb-4">Solutions</h4>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Solutions</h4>
                       <ul className="space-y-2">
                         {study.solutions.map((solution, i) => (
-                          <li key={i} className="flex items-start text-gray-300">
+                          <li key={i} className="flex items-start text-gray-700">
                             <span className="text-blue-500 mr-2">→</span>
                             <span>{solution}</span>
                           </li>
@@ -270,10 +270,10 @@ export default function ResultsPage() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-bold text-white mb-4">Results</h4>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Results</h4>
                       <ul className="space-y-2">
                         {study.results.map((result, i) => (
-                          <li key={i} className="flex items-start text-gray-300">
+                          <li key={i} className="flex items-start text-gray-700">
                             <span className="text-green-500 mr-2">✓</span>
                             <span>{result}</span>
                           </li>

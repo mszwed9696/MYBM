@@ -80,27 +80,27 @@ export default function PaidAdvertisingPage() {
       {/* Problem */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why Most Paid Ad Campaigns Fail for High-Ticket Businesses
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Volume Over Quality</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Volume Over Quality</h3>
+              <p className="text-gray-700">
                 Most agencies optimize for cheap leads, not qualified buyers. You get flooded with $100 tire-kickers
                 instead of $10k+ ready buyers.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Wrong Sales Cycle</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Wrong Sales Cycle</h3>
+              <p className="text-gray-700">
                 High-ticket requires nurture, trust, and relationship building. Direct-to-sale funnels from cold
                 traffic don't work.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Generic Targeting</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Generic Targeting</h3>
+              <p className="text-gray-700">
                 Broad audience targeting brings in the masses. You need precision targeting to reach buyers who can
                 actually afford you.
               </p>
@@ -236,17 +236,17 @@ export default function PaidAdvertisingPage() {
       {/* Platforms */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Multi-Platform Paid Advertising Management
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Google Ads (Search & Display)</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Google Ads (Search & Display)</h3>
+              <p className="text-gray-700 mb-4">
                 Capture high-intent buyers actively searching for solutions. Search campaigns for bottom-funnel,
                 display for awareness and retargeting.
               </p>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>High-intent keyword targeting</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Competitor conquest campaigns</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Display retargeting sequences</li>
@@ -255,12 +255,12 @@ export default function PaidAdvertisingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">Facebook & Instagram Ads</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Facebook & Instagram Ads</h3>
+              <p className="text-gray-700 mb-4">
                 Advanced audience targeting for coaches, consultants, and high-ticket offers. Best for awareness,
                 lead generation, and application funnels.
               </p>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Custom audience targeting (income, interests, behaviors)</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Lookalike audiences from best clients</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Video view and engagement campaigns</li>
@@ -269,12 +269,12 @@ export default function PaidAdvertisingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">LinkedIn Ads</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">LinkedIn Ads</h3>
+              <p className="text-gray-700 mb-4">
                 Perfect for B2B consultants, executive coaches, and professional services. Target by job title,
                 company, industry, and seniority.
               </p>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Job title and seniority targeting</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Company size and industry filters</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Sponsored content and InMail campaigns</li>
@@ -283,12 +283,12 @@ export default function PaidAdvertisingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-white mb-4">YouTube Advertising</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">YouTube Advertising</h3>
+              <p className="text-gray-700 mb-4">
                 Video ads for building trust and authority. Pre-roll, discovery, and action campaigns optimized
                 for high-ticket conversion.
               </p>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Skippable and non-skippable pre-roll</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Discovery ads in search results</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Remarketing to engaged viewers</li>
@@ -302,13 +302,13 @@ export default function PaidAdvertisingPage() {
       {/* What's Included */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Complete Paid Advertising Management
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-3">Strategy & Planning</h3>
-              <ul className="space-y-2 text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Strategy & Planning</h3>
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Competitive analysis</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Audience research</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Platform selection</li>
@@ -316,8 +316,8 @@ export default function PaidAdvertisingPage() {
               </ul>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-3">Campaign Creation</h3>
-              <ul className="space-y-2 text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Campaign Creation</h3>
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Ad copy writing</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Creative design</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Video ad production</li>
@@ -326,8 +326,8 @@ export default function PaidAdvertisingPage() {
               </ul>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-3">Ongoing Optimization</h3>
-              <ul className="space-y-2 text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Ongoing Optimization</h3>
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Daily monitoring</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>A/B testing</li>
                 <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Bid optimization</li>

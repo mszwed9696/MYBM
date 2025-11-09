@@ -86,27 +86,27 @@ export default function ConsultantsPage() {
       {/* Pain Points */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             The Growth Challenges Consultants Face
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Network Dependency</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Network Dependency</h3>
+              <p className="text-gray-700">
                 80% of clients come from referrals and past connections. Great for starting, terrible for scaling.
                 You've maxed out your network and need new sources.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Long Sales Cycles</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Long Sales Cycles</h3>
+              <p className="text-gray-700">
                 Months of nurturing, multiple stakeholders, endless proposals. Your pipeline is full of maybes
                 but nothing's closing.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Commoditization Pressure</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Commoditization Pressure</h3>
+              <p className="text-gray-700">
                 Competing on price instead of value. Prospects see you as interchangeable with every other consultant.
                 Your premium positioning is weak.
               </p>
@@ -188,73 +188,73 @@ export default function ConsultantsPage() {
       {/* Consulting Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Marketing Solutions for Every Type of Consultant
           </h2>
-          <p className="text-xl text-gray-300 mb-12 text-center">
+          <p className="text-xl text-gray-700 mb-12 text-center">
             We work with consultants across industries and specialties
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Strategy Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Strategy Consultants</h3>
+              <p className="text-gray-700">
                 Business strategy, growth strategy, market entry, and transformation consulting
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Management Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Management Consultants</h3>
+              <p className="text-gray-700">
                 Operations, process improvement, organizational design, and change management
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Fractional Executives</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Fractional Executives</h3>
+              <p className="text-gray-700">
                 Fractional CFO, COO, CMO, CTO, and other C-suite advisory services
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Technology Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Technology Consultants</h3>
+              <p className="text-gray-700">
                 IT strategy, digital transformation, system implementation, and tech advisory
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Financial Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Financial Consultants</h3>
+              <p className="text-gray-700">
                 M&A advisory, financial restructuring, valuation, and corporate finance
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">HR & Talent Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">HR & Talent Consultants</h3>
+              <p className="text-gray-700">
                 Talent strategy, compensation design, organizational culture, and people operations
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Marketing Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Consultants</h3>
+              <p className="text-gray-700">
                 Marketing strategy, brand positioning, go-to-market, and growth marketing
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Sales Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Sales Consultants</h3>
+              <p className="text-gray-700">
                 Sales strategy, sales enablement, revenue operations, and sales training
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Industry-Specific Consultants</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Industry-Specific Consultants</h3>
+              <p className="text-gray-700">
                 Healthcare, manufacturing, retail, financial services, and other industry specialists
               </p>
             </div>
@@ -265,14 +265,14 @@ export default function ConsultantsPage() {
       {/* Results */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Consulting Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+156%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-200">
+              <p className="text-gray-700">
                 Strategy consulting firm: $150k/mo to $385k/mo in 12 months. Landed 3 enterprise clients worth
                 $500k+ each through ABM.
               </p>
@@ -281,7 +281,7 @@ export default function ConsultantsPage() {
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+203%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-200">
+              <p className="text-gray-700">
                 Fractional CFO practice: $110k/mo to $333k/mo in 10 months. Scaled from 11 to 37 monthly retainer
                 clients.
               </p>
@@ -290,7 +290,7 @@ export default function ConsultantsPage() {
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+178%</div>
               <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-200">
+              <p className="text-gray-700">
                 HR consulting firm: $135k/mo to $375k/mo in 11 months. Built thought leadership platform that
                 generates 40+ qualified leads monthly.
               </p>

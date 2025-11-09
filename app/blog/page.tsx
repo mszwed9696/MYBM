@@ -129,15 +129,15 @@ export default function BlogPage() {
       {/* CTA */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Apply These Strategies to Your Business?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-700 mb-8">
             Get a custom marketing strategy designed specifically for your business with our 30% revenue guarantee.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]"
           >
             Apply for Partnership
           </Link>

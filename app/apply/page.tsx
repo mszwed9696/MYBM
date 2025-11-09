@@ -240,7 +240,7 @@ export default function ApplyPage() {
       {/* Why Partner */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why Partner With Us?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">

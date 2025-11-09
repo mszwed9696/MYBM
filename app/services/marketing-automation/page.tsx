@@ -80,27 +80,27 @@ export default function MarketingAutomationPage() {
       {/* Problem */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The Problem With Manual Marketing
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Time Bottleneck</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Time Bottleneck</h3>
+              <p className="text-gray-700">
                 You're manually sending emails, following up with leads, and managing campaigns. Your time should
                 be spent on strategy and delivery, not repetitive tasks.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Inconsistent Follow-Up</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Inconsistent Follow-Up</h3>
+              <p className="text-gray-700">
                 Leads fall through cracks. Some get nurtured, some don't. No systematic approach to moving
                 prospects through your pipeline.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Can't Scale</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Can't Scale</h3>
+              <p className="text-gray-700">
                 Doubling revenue means doubling your workload and team size. You need leverage to grow
                 without linear costs.
               </p>
@@ -218,43 +218,43 @@ export default function MarketingAutomationPage() {
       {/* Tools */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Automation Platforms We Master
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">ActiveCampaign</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">ActiveCampaign</h3>
+              <p className="text-gray-700">
                 Advanced automation, CRM, and email marketing. Best for complex multi-touch sequences.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">HubSpot</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">HubSpot</h3>
+              <p className="text-gray-700">
                 All-in-one platform for marketing, sales, and service. Great for teams scaling operations.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Keap (Infusionsoft)</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Keap (Infusionsoft)</h3>
+              <p className="text-gray-700">
                 Powerful automation with built-in CRM and e-commerce. Popular with coaches and consultants.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">GoHighLevel</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">GoHighLevel</h3>
+              <p className="text-gray-700">
                 White-label platform with SMS, email, funnels, and calendars. All-in-one for agencies.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Zapier & Make</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Zapier & Make</h3>
+              <p className="text-gray-700">
                 Connect any tools together. Build custom automation workflows across platforms.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Custom Solutions</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
+              <p className="text-gray-700">
                 We build custom automation with APIs, webhooks, and no-code tools for unique needs.
               </p>
             </div>
@@ -265,16 +265,16 @@ export default function MarketingAutomationPage() {
       {/* ROI */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The ROI of Marketing Automation
           </h2>
-          <p className="text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
             What happens when you automate marketing and sales processes
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-blue-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">Before Automation</h3>
-              <ul className="space-y-3 text-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Before Automation</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-3">✗</span>
                   <span>10-15 hours/week on manual marketing tasks</span>
@@ -298,8 +298,8 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
             <div className="bg-green-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">After Automation</h3>
-              <ul className="space-y-3 text-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">After Automation</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 text-xl mr-3">✓</span>
                   <span>90% reduction in manual marketing work</span>

@@ -89,27 +89,27 @@ export default function CoachesPage() {
       {/* Pain Points */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The Challenge Every High-Ticket Coach Faces
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Feast or Famine Revenue</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Feast or Famine Revenue</h3>
+              <p className="text-gray-700">
                 Great month during your launch, then crickets. You're constantly chasing new clients instead of
                 having a predictable pipeline.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Ad Spend Black Hole</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Ad Spend Black Hole</h3>
+              <p className="text-gray-700">
                 You're spending $5k-15k/month on ads but getting unqualified leads who can't afford your $10k+ programs.
                 ROI is underwater.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">Referral Dependency</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Referral Dependency</h3>
+              <p className="text-gray-700">
                 Most clients come from word-of-mouth. Great problem to have, but it doesn't scale and you can't
                 control the flow.
               </p>
@@ -191,73 +191,73 @@ export default function CoachesPage() {
       {/* Coaching Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Solutions for Every Type of High-Ticket Coaching
           </h2>
-          <p className="text-xl text-gray-300 mb-12 text-center">
+          <p className="text-xl text-gray-700 mb-12 text-center">
             We specialize in marketing for coaches across all niches and formats
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Business Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Business Coaching</h3>
+              <p className="text-gray-700">
                 Marketing solutions for business coaches, revenue coaches, and scaling consultants with $10k+ programs
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Executive & Leadership Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Executive & Leadership Coaching</h3>
+              <p className="text-gray-700">
                 Target C-suite executives and senior leaders with premium coaching and advisory services
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Life & Transformation Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Life & Transformation Coaching</h3>
+              <p className="text-gray-700">
                 High-ticket personal transformation, mindset coaching, and life coaching programs
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Health & Wellness Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Health & Wellness Coaching</h3>
+              <p className="text-gray-700">
                 Premium health transformation, nutrition coaching, and wellness programs $5k+
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Relationship & Dating Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Relationship & Dating Coaching</h3>
+              <p className="text-gray-700">
                 High-end relationship transformation, dating coaching, and marriage programs
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Performance & Sports Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Performance & Sports Coaching</h3>
+              <p className="text-gray-700">
                 Elite performance coaching, athletic coaching, and peak performance programs
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Financial & Wealth Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Financial & Wealth Coaching</h3>
+              <p className="text-gray-700">
                 Wealth building, financial transformation, and money mindset coaching services
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">Group Coaching & Masterminds</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Group Coaching & Masterminds</h3>
+              <p className="text-gray-700">
                 Fill your mastermind programs, group coaching cohorts, and $25k+ group experiences
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-white mb-3">1-on-1 Premium Coaching</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">1-on-1 Premium Coaching</h3>
+              <p className="text-gray-700">
                 Build pipelines for $50k-100k+ per client 1-on-1 transformation programs
               </p>
             </div>
@@ -268,14 +268,14 @@ export default function CoachesPage() {
       {/* Results */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Coaching Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+287%</div>
-              <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
-              <p className="text-gray-200">
+              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
+              <p className="text-gray-700">
                 Business coaching program: $80k/mo to $310k/mo in 9 months. Scaled from 8 clients/month to 31 clients/month
                 at $10k average.
               </p>
@@ -283,8 +283,8 @@ export default function CoachesPage() {
 
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+210%</div>
-              <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
-              <p className="text-gray-200">
+              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
+              <p className="text-gray-700">
                 Leadership coaching: $95k/mo to $295k/mo in 11 months. Filled 12-month mastermind program
                 at $25k/person.
               </p>
@@ -292,8 +292,8 @@ export default function CoachesPage() {
 
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+342%</div>
-              <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
-              <p className="text-gray-200">
+              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
+              <p className="text-gray-700">
                 Life transformation coach: $65k/mo to $288k/mo in 8 months. Launched $15k group program
                 with automated funnel.
               </p>

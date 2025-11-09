@@ -19,7 +19,7 @@ export default function ResultsHero() {
         animate={{ x: 0, opacity: 0.8 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        <img src="/characters/money-stack.png" alt="Money Stack" className="w-full h-auto" />
+        <img src="/characters/bagman-money.png" alt="Money Stack" className="w-full h-auto" />
       </motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">

@@ -1,17 +1,7 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Marketing for High-Ticket Product Businesses | Premium Ecommerce Marketing",
-  description: "Marketing for high-ticket product businesses and premium ecommerce brands. Generate qualified buyers for products $1k-100k+. Luxury goods, B2B equipment, premium ecommerce.",
-  keywords: [
-    "high ticket ecommerce marketing",
-    "luxury product marketing",
-    "premium ecommerce agency",
-    "high ticket product marketing",
-    "B2B product marketing",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ProductBusinessesPage() {
   return (

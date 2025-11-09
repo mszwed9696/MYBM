@@ -1,17 +1,7 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Marketing for High-Ticket Service Businesses | B2B Service Marketing Agency",
-  description: "Marketing agency for high-ticket service businesses doing $100k+ monthly. Professional services, agencies, B2B services. Generate qualified leads and scale predictably.",
-  keywords: [
-    "marketing for service businesses",
-    "B2B service marketing",
-    "professional services marketing",
-    "agency marketing",
-    "high ticket service marketing",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ServiceBusinessesPage() {
   return (

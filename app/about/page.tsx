@@ -1,54 +1,65 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "About Mind Your Business Media | Marketing Agency for $100k+ Businesses",
-  description: "Learn about Mind Your Business Media, the only marketing agency that guarantees 30% revenue growth for high-ticket coaches, consultants, and businesses.",
-  keywords: [
-    "marketing agency",
-    "about mind your business media",
-    "guaranteed marketing results",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            We're Not a Typical Marketing Agency
-          </h1>
-          <p className="text-xl text-gray-300">
-            We only work with businesses doing $100k+ monthly because we guarantee results.
-            Most agencies can't do that.
-          </p>
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* The Boss character */}
+        <motion.div
+          className="absolute right-0 bottom-0 w-72 md:w-96 opacity-50 z-0"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
+        </motion.div>
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.h1
+            className="text-5xl md:text-6xl font-bold mb-6"
+            style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            We're Not Like <span className="text-[#FFD700]">The Other Families</span>
+          </motion.h1>
+          <motion.p
+            className="text-xl md:text-2xl text-gray-300"
+            style={{ fontFamily: "'Georgia', serif" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            We only work with serious players doing $100k+ monthly.
+            <br /><span className="text-[#FFD700] font-bold">We guarantee results. Most can't.</span>
+          </motion.p>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Story</h2>
-          <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
+            How <span className="text-[#8B0000]">The Family</span> Started
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p>
-              Mind Your Business Media was founded on a simple premise: marketing agencies should be accountable
-              for revenue results, not just activity metrics.
+              <strong>Mind Your Business Media</strong> was built on one rule: marketing agencies should answer for revenue, not vanity metrics.
             </p>
             <p>
-              After spending years scaling high-ticket businesses—coaches, consultants, course creators, and
-              premium service companies—we noticed a pattern. Most marketing agencies were optimizing for the
-              wrong things: clicks, impressions, engagement. Meanwhile, their clients struggled to connect those
-              vanity metrics to actual revenue growth.
+              After years in the trenches—scaling high-ticket coaches, consultants, course creators, premium services—we saw the same scam everywhere.
+              Agencies charging $10k-20k/month for "clicks," "impressions," "engagement." Meanwhile, their clients couldn't pay rent.
             </p>
             <p>
-              We built Mind Your Business Media differently. We only take on clients we're confident we can grow
-              by at least 30% in year one. If we don't hit that number, we work for free until we do. It's that
-              simple.
+              So we built it differently. <strong>We only take clients we know we can grow 30%+ in year one.</strong> If we don't hit that number, we work for free until we do.
+              No other agency makes this promise because they can't deliver.
             </p>
             <p>
-              This model only works because we're selective about who we partner with (established businesses
-              doing $100k+ monthly) and because we've developed a proven system for scaling high-ticket offers
-              across multiple channels and industries.
+              This model works because we're selective (only $100k+ monthly businesses) and because we've cracked the code on scaling high-ticket offers
+              across channels and industries. <span className="text-[#8B0000] font-bold">We don't guess. We execute what works.</span>
             </p>
           </div>
         </div>

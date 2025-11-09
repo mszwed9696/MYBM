@@ -1,17 +1,7 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Marketing for SaaS Companies | B2B SaaS Marketing Agency",
-  description: "Marketing agency for B2B SaaS companies with $1M+ ARR. Generate qualified leads, reduce churn, and scale predictably. Expert SaaS growth strategies.",
-  keywords: [
-    "SaaS marketing agency",
-    "B2B SaaS marketing",
-    "SaaS growth marketing",
-    "SaaS lead generation",
-    "enterprise SaaS marketing",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function SaaSPage() {
   return (

@@ -1,17 +1,7 @@
-import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Marketing for Online Course Creators | Course Marketing Agency",
-  description: "Marketing agency for online course creators and digital product businesses generating $100k+ monthly. Fill your courses on autopilot with evergreen funnels and guaranteed results.",
-  keywords: [
-    "marketing for course creators",
-    "online course marketing",
-    "course launch marketing",
-    "evergreen funnel",
-    "marketing agency for course creators",
-  ],
-});
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function CourseCreatorsPage() {
   return (

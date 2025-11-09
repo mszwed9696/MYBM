@@ -7,12 +7,20 @@ export default function ResultsHero() {
     <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
       {/* Vegas Strip cityscape - FULL hero image */}
       <div className="absolute inset-0 z-0">
-        <img src="/heroes/vegas-strip.png" alt="Vegas" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
+        <img src="/heroes/Gemini_Generated_Image_b7xmilb7xmilb7xm.png" alt="Vegas" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
         {/* Light gradient overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
       </div>
 
       {/* Money Stack character */}
+      <motion.div
+        className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
+        initial={{ x: 200, opacity: 0 }}
+        animate={{ x: 0, opacity: 0.8 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        <img src="/characters/bagman-money.png" alt="Money Stack" className="w-full h-auto" />
+      </motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
         <motion.h1

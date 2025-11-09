@@ -15,7 +15,7 @@ export default function ConsultingPage() {
           animate={{ x: 0, opacity: 0.4 }}
           transition={{ duration: 1 }}
         >
-          <img src="/heroes/docks-deal.png" alt="Business Deal" className="w-full h-auto" />
+          <img src="/heroes/Gemini_Generated_Image_5jsses5jsses5jss.png" alt="Business Deal" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -135,7 +135,7 @@ export default function ConsultingPage() {
 
               {/* Hollywood Mansion Image */}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
-                <img src="/heroes/docks-deal.png" alt="Mastermind" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+                <img src="/heroes/Gemini_Generated_Image_5jsses5jsses5jss.png" alt="Mastermind" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
               </div>
 
               <div className="text-center mb-6 relative z-10">
@@ -191,7 +191,7 @@ export default function ConsultingPage() {
             >
               {/* Casino VIP Image */}
               <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <img src="/heroes/docks-deal.png" alt="VIP Coaching" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+                <img src="/heroes/Gemini_Generated_Image_5jsses5jsses5jss.png" alt="VIP Coaching" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
               </div>
 
               <div className="text-center mb-6 relative z-10">

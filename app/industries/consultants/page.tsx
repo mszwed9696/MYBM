@@ -36,7 +36,7 @@ export default function ConsultantsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Build A Consulting Practice<br /><span class="text-[#FFD700]">Nobody Can Touch</span>
+              Build A Consulting Practice<br /><span className="text-[#FFD700]">Nobody Can Touch</span>
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
@@ -45,7 +45,7 @@ export default function ConsultantsPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Stop chasing clients. Position yourself as the authority everyone wants to work with.<span class="text-[#FFD700] font-bold"> Premium clients. Premium fees. No competition.</span>
+              Stop chasing clients. Position yourself as the authority everyone wants to work with.<span className="text-[#FFD700] font-bold"> Premium clients. Premium fees. No competition.</span>
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"

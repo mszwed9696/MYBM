@@ -38,8 +38,7 @@ export default function CoachesPage() {
               💪 FOR HIGH-TICKET COACHES 💪
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -123,7 +122,7 @@ export default function CoachesPage() {
       <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
               Our Marketing Solutions for <span className="text-[#FFD700]">High-Ticket Coaches</span>
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
@@ -269,12 +268,12 @@ export default function CoachesPage() {
       {/* Results */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Coaching Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>+287%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+287%</div>
               <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
               <p className="text-gray-200">
                 Business coaching program: $80k/mo to $310k/mo in 9 months. Scaled from 8 clients/month to 31 clients/month
@@ -283,7 +282,7 @@ export default function CoachesPage() {
             </div>
 
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>+210%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+210%</div>
               <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
               <p className="text-gray-200">
                 Leadership coaching: $95k/mo to $295k/mo in 11 months. Filled 12-month mastermind program
@@ -292,7 +291,7 @@ export default function CoachesPage() {
             </div>
 
             <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>+342%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+342%</div>
               <div className="text-xl font-semibold mb-4 text-white">Revenue Growth</div>
               <p className="text-gray-200">
                 Life transformation coach: $65k/mo to $288k/mo in 8 months. Launched $15k group program
@@ -350,7 +349,7 @@ export default function CoachesPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Ready to Scale Your <span className="text-[#FFD700]">Coaching Business?</span>
           </h2>
           <p className="text-xl mb-8 text-gray-200">

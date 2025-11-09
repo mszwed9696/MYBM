@@ -37,8 +37,7 @@ export default function ConsultantsPage() {
               👔 FOR CONSULTANTS 👔
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -87,7 +86,7 @@ export default function ConsultantsPage() {
       {/* Pain Points */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             The Growth Challenges Consultants Face
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -120,7 +119,7 @@ export default function ConsultantsPage() {
       <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
               Our Marketing Solutions for Consultants
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
@@ -189,7 +188,7 @@ export default function ConsultantsPage() {
       {/* Consulting Types */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-white mb-4 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Marketing Solutions for Every Type of Consultant
           </h2>
           <p className="text-xl text-gray-300 mb-12 text-center">
@@ -266,7 +265,7 @@ export default function ConsultantsPage() {
       {/* Results */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Consulting Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -308,7 +307,7 @@ export default function ConsultantsPage() {
       {/* Why Us */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Why Consultants Choose Mind Your Business Media
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -347,7 +346,7 @@ export default function ConsultantsPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Ready to Scale Your Consulting Practice?
           </h2>
           <p className="text-xl mb-8 text-gray-200">

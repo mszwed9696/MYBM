@@ -35,7 +35,7 @@ export default function ApplyPage() {
       <div className="min-h-screen bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white flex items-center justify-center py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-6xl mb-6 text-[#FFD700]">🤝</div>
-          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Welcome To <span className="text-[#FFD700]">The Family</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
@@ -58,7 +58,7 @@ export default function ApplyPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif" }}>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Join <span className="text-[#FFD700]">The Family</span>
           </h1>
           <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>

@@ -40,8 +40,7 @@ export default function FractionalCMOPage() {
               🎩 FRACTIONAL CMO - THE CONSIGLIERE 🎩
             </motion.div>
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -145,7 +144,7 @@ export default function FractionalCMOPage() {
       <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               What The <span className="text-[#FFD700]">Consigliere</span> Handles
             </h2>
             <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
@@ -269,7 +268,7 @@ export default function FractionalCMOPage() {
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Why <span className="text-[#FFD700]">The Family</span> Is Different
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -304,7 +303,7 @@ export default function FractionalCMOPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-black to-[#1a1a2e] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }} style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Ready to Bring In <span className="text-[#FFD700]">The Consigliere</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>

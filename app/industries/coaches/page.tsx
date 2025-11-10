@@ -17,50 +17,35 @@ export default function CoachesPage() {
         </div>
 
         {/* The Muscle character */}
-        <motion.div
+        <div
           className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.8 }}
-          transition={{ duration: 1 }}
         >
           <img src="/characters/coaches-character.png" alt="The Muscle" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
-            <motion.div
+            <div
               className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
             >
               💪 FOR HIGH-TICKET COACHES 💪
-            </motion.div>
-            <motion.h1
+            </div>
+            <h1
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
             >
               Build A Coaching Empire<br />
               <span className="text-[#FFD700]">That Commands Respect</span>
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
             >
               Stop begging for clients. Build a system that fills your programs on demand.
               <span className="text-[#FFD700] font-bold"> 30% revenue increase guaranteed. No excuses.</span>
-            </motion.p>
-            <motion.div
+            </p>
+            <div
               className="flex flex-col sm:flex-row gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Link
                 href="/apply"
@@ -76,7 +61,7 @@ export default function CoachesPage() {
               >
                 See The Results
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

@@ -16,49 +16,34 @@ export default function ContentMarketingPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
         {/* The Driver character */}
-        <motion.div
+        <div
           className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.8 }}
-          transition={{ duration: 1 }}
         >
           <img src="/characters/content-marketing-character.png" alt="The Driver" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
-            <motion.div
+            <div
               className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
             >
               🚗 CONTENT MARKETING - THE DRIVER 🚗
-            </motion.div>
-            <motion.h1
+            </div>
+            <h1
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
             >
               Own Your Territory<br />
               <span className="text-[#FFD700]">With Content That Commands Respect</span>
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
             >
               Stop chasing clients. Build authority that brings them to you.
               <span className="text-[#FFD700] font-bold"> Content that ranks. SEO that works. Authority nobody questions.</span>
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+            </p>
+            <div
             >
               <Link
                 href="/apply"
@@ -67,7 +52,7 @@ export default function ContentMarketingPage() {
               >
                 Join The Family
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

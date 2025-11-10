@@ -28,40 +28,27 @@ export default function SkoolCommunityPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
-            <motion.div
+            <div
               className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
             >
               🎓 SKOOL COMMUNITY FUNNELS - THE INNER CIRCLE 🎓
-            </motion.div>
-            <motion.h1
+            </div>
+            <h1
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
             >
               Build Your Own<br />
               <span className="text-[#FFD700]">Exclusive Inner Circle</span>
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
             >
               Turn your expertise into a thriving Skool community.
               <span className="text-[#FFD700] font-bold"> Funnels that fill seats. Systems that keep them engaged.</span> Recurring revenue on autopilot.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
+            </p>
+            <div>
               <Link
                 href="/apply"
                 className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
@@ -69,7 +56,7 @@ export default function SkoolCommunityPage() {
               >
                 Build Your Empire
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

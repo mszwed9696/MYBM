@@ -97,7 +97,7 @@ export default function FractionalCMOPage() {
                 <strong> But you don't pay a $250k+ salary.</strong> You get the expertise. We handle the execution. Capisce?
               </p>
               <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
-                <p className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Georgia', serif" }}>
+                <p className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                   Full-Time CMO: $250k - $400k/year + benefits
                 </p>
                 <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>

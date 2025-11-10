@@ -11,7 +11,7 @@ export default function ContentMarketingPage() {
       <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
         {/* Portland Mountain cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/Gemini_Generated_Image_4dzuvr4dzuvr4dzu.png" alt="Portland Mountain" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/content-marketing-hero.png" alt="Portland Mountain" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -22,7 +22,7 @@ export default function ContentMarketingPage() {
           animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1 }}
         >
-          <img src="/characters/driver-vintage-car.png" alt="The Driver" className="w-full h-auto" />
+          <img src="/characters/content-marketing-character.png" alt="The Driver" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">

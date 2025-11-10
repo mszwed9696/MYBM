@@ -13,7 +13,7 @@ export default function FractionalCMOPage() {
       <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
         {/* European Street cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/Gemini_Generated_Image_1lqyf51lqyf51lqy.png" alt="European Street" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/fractional-cmo-hero.png" alt="European Street" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -25,7 +25,7 @@ export default function FractionalCMOPage() {
           animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1 }}
         >
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
+          <img src="/characters/fractional-cmo-character.png" alt="The Don" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
@@ -264,7 +264,7 @@ export default function FractionalCMOPage() {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
+          <img src="/characters/fractional-cmo-character.png" alt="The Boss" className="w-full h-auto" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

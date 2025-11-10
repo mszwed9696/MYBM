@@ -39,47 +39,33 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-20 flex items-center min-h-screen">
           <div className="max-w-4xl">
-            <motion.div
+            <div
               className="inline-block mb-6 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
               style={{ fontFamily: "'Georgia', serif" }}
             >
               🎩 FOR BUSINESSES DOING $100K+ MONTHLY REVENUE 🎩
-            </motion.div>
+            </div>
 
-            <motion.h1
+            <h1
               className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
             >
               We Don't Make Offers
               <br />
               <span className="text-[#FFD700]">We Make You An Offer</span>
               <br />
               <span className="text-5xl md:text-6xl">You Can't Refuse</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
+            <p
               className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
             >
               30% revenue increase in year 1, <span className="text-[#FFD700] font-bold">guaranteed</span>.
               Or we work for free until you get it. That's the family way.
-            </motion.p>
+            </p>
 
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link
                 href="/apply"
                 className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 text-center shadow-lg"
@@ -94,14 +80,9 @@ export default function Home() {
               >
                 See The Guarantee
               </Link>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="grid grid-cols-3 gap-8 bg-black/60 p-8 rounded-xl border-2 border-[#FFD700]/30"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
+            <div className="grid grid-cols-3 gap-8 bg-black/60 p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div>
                 <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>30%</div>
                 <div className="text-gray-400 mt-2 text-sm">Minimum Revenue Increase</div>
@@ -114,7 +95,7 @@ export default function Home() {
                 <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>100%</div>
                 <div className="text-gray-400 mt-2 text-sm">Risk-Free Guarantee</div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

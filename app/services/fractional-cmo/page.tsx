@@ -85,19 +85,19 @@ export default function FractionalCMOPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 What's a <span className="text-[#8B0000]">Consigliere</span>?
               </h2>
-              <p className="text-lg text-gray-200 mb-4">
+              <p className="text-lg text-gray-700 mb-4">
                 In the family, the <strong>Consigliere</strong> is the trusted advisor. The strategic mind. The one who sees the whole board
                 while everyone else is focused on one move. That's what a Fractional CMO does for your business.
               </p>
-              <p className="text-lg text-gray-200 mb-4">
+              <p className="text-lg text-gray-700 mb-4">
                 You get executive-level marketing leadership—someone who's scaled businesses from 6 to 7 and 7 to 8 figures.
                 <strong> But you don't pay a $250k+ salary.</strong> You get the expertise. We handle the execution. Capisce?
               </p>
               <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
-                <p className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
+                <p className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                   Full-Time CMO: $250k - $400k/year + benefits
                 </p>
                 <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>
@@ -106,33 +106,33 @@ export default function FractionalCMOPage() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 When You Need <span className="text-[#8B0000]">The Consigliere</span>
               </h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
+                  <span className="text-gray-700"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
+                  <span className="text-gray-700"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
+                  <span className="text-gray-700"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
+                  <span className="text-gray-700"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
+                  <span className="text-gray-700"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-200"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
+                  <span className="text-gray-700"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
                 </li>
               </ul>
             </div>

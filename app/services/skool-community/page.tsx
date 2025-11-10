@@ -100,7 +100,7 @@ export default function SkoolCommunityPage() {
                 requires a funnel that converts</span> and retention systems that keep people paying month after month.
               </p>
               <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
-                <p className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
+                <p className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                   Average Skool Community (DIY): 20-50 members, $2k-5k MRR
                 </p>
                 <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>

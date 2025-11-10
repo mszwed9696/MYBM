@@ -7,8 +7,19 @@ import SkylineDivider from "@/components/SkylineDivider";
 export default function ServiceBusinessesPage() {
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* Hero background image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/heroes/service-businesses-hero.png" alt="Cityscape" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
+        </div>
+
+        {/* Character image */}
+        <div className="absolute right-0 bottom-0 w-80 md:w-96 lg:w-[500px] z-0">
+          <img src="/characters/service-businesses-character.png" alt="The Accountant" className="w-full h-auto opacity-90" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}>
               Marketing Solutions for High-Ticket Service Businesses
@@ -100,7 +111,7 @@ export default function ServiceBusinessesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Ready to Build Predictable Lead Flow?</h2>
           <p className="text-xl mb-8">If you're doing $100k+ monthly and ready to scale beyond referrals, let's talk.</p>

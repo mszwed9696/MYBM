@@ -106,7 +106,7 @@ export default function ConsultingPage() {
 
               <Link
                 href="/apply"
-                className="block text-center bg-gray-900 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
+                className="block text-center bg-gradient-to-br from-[#1a1a2e] to-black text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
               >
                 Apply for 1-on-1 Consulting
               </Link>
@@ -123,7 +123,8 @@ export default function ConsultingPage() {
 
               {/* Hollywood Mansion Image */}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
-                <img src="/heroes/consulting-hero.png" alt="Mastermind" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+                <img src="/heroes/consulting-hero.png" alt="Mastermind" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
               </div>
 
               <div className="text-center mb-6 relative z-10">
@@ -179,7 +180,8 @@ export default function ConsultingPage() {
             >
               {/* Casino VIP Image */}
               <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <img src="/heroes/consulting-hero.png" alt="VIP Coaching" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+                <img src="/heroes/consulting-hero.png" alt="VIP Coaching" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
               </div>
 
               <div className="text-center mb-6 relative z-10">
@@ -222,7 +224,7 @@ export default function ConsultingPage() {
 
               <Link
                 href="/apply"
-                className="block text-center bg-gray-900 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
+                className="block text-center bg-gradient-to-br from-[#1a1a2e] to-black text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all"
               >
                 Apply for VIP Coaching
               </Link>
@@ -232,7 +234,7 @@ export default function ConsultingPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Who Should Work With Mike Directly?

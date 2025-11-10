@@ -7,8 +7,19 @@ import SkylineDivider from "@/components/SkylineDivider";
 export default function CourseCreatorsPage() {
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* Hero background image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/heroes/course-creators-hero.png" alt="Cityscape" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
+        </div>
+
+        {/* Character image */}
+        <div className="absolute right-0 bottom-0 w-80 md:w-96 lg:w-[500px] z-0">
+          <img src="/characters/course-creators-character.png" alt="The Professor" className="w-full h-auto opacity-90" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: "\'Georgia\', serif" }}>
               Marketing Solutions for Online Course Creators
@@ -100,20 +111,20 @@ export default function CourseCreatorsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Real Course Creator Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>+210%</div>
+              <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "\'Georgia\', serif" }}>+210%</div>
               <p className="text-gray-400 mt-4">Revenue growth for course creator scaling from $120k to $372k/mo with evergreen funnel</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>$15k</div>
+              <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "\'Georgia\', serif" }}>$15k</div>
               <p className="text-gray-400 mt-4">Average student value after adding group coaching tier to $997 course</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-blue-400" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
+              <div className="text-5xl font-bold text-[#FFD700]" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
               <p className="text-gray-400 mt-4">Reduction in launch workload while maintaining revenue through automation</p>
             </div>
           </div>

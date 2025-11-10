@@ -144,3 +144,6 @@ export function generateAltText(imageName: string, context?: string): string {
 
   return `${contextPrefix}${cleanName} | Mind Your Business Media - Marketing Agency for High-Ticket Businesses`
 }
+
+// Alias for backward compatibility
+export { generateSEO as generateMetadata }

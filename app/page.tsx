@@ -27,15 +27,12 @@ export default function Home() {
         <FloatingParticles count={40} color="#FFD700" />
 
         {/* The Don character with car - positioned in front */}
-        <motion.div
+        <div
           className="absolute right-8 md:right-16 lg:right-24 bottom-0 w-72 md:w-[400px] lg:w-[520px] z-10"
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
           style={{ filter: "drop-shadow(0 25px 60px rgba(0, 0, 0, 0.9))" }}
         >
           <img src="/characters/driver-vintage-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-20 flex items-center min-h-screen">
           <div className="max-w-4xl">
@@ -110,12 +107,8 @@ export default function Home() {
         <FloatingParticles count={20} color="#8B0000" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
+          <div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               Why Most Agencies Are <span className="text-[#8B0000]">Weak</span>
@@ -124,7 +117,7 @@ export default function Home() {
               They make empty promises, take your money, and disappear when results don't show.
               <br />We don't do business that way.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -144,19 +137,14 @@ export default function Home() {
                 description: "Same strategy for everyone. High-ticket businesses need specialized expertise, not generic templates.",
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="bg-black/50 p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                whileHover={{ scale: 1.05 }}
               >
                 <div className="text-6xl mb-4">{item.icon}</div>
                 <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>{item.title}</h3>
                 <p className="text-gray-300">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -165,34 +153,22 @@ export default function Home() {
       {/* Our Way - The Family Business */}
       <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white relative overflow-hidden">
         {/* The Banker - Left side */}
-        <motion.div
+        <div
           className="absolute left-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.7 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
         >
           <img src="/characters/banker-briefcase.png" alt="The Banker" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         {/* The Enforcer - Right side */}
-        <motion.div
+        <div
           className="absolute right-0 bottom-0 w-56 md:w-72 opacity-70 z-0"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.7 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
         >
           <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
+          <div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               The <span className="text-[#FFD700]">Mind Your Business</span> Way
@@ -200,7 +176,7 @@ export default function Home() {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: "'Georgia', serif" }}>
               We're a family business. We protect our partners. We deliver results. Or we don't get paid. Capisce?
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
@@ -225,19 +201,14 @@ export default function Home() {
                 description: "We don't hand you a deck and disappear. We execute everything: ads, funnels, content, optimization. Done.",
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-8 rounded-xl border-2 border-[#FFD700]/20 hover:border-[#FFD700] transition-all"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                whileHover={{ scale: 1.03 }}
               >
                 <div className="text-5xl mb-4">{item.icon}</div>
                 <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>{item.title}</h3>
                 <p className="text-gray-300">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -248,12 +219,8 @@ export default function Home() {
         <FloatingParticles count={25} color="#FFD700" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
+          <div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               What The <span className="text-[#FFD700]">Family</span> Does For You
@@ -261,7 +228,7 @@ export default function Home() {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: "'Georgia', serif" }}>
               Everything you need to dominate your market and scale to 8-figures
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -272,12 +239,8 @@ export default function Home() {
               { title: "Content & SEO", desc: "Authority content that ranks and converts. Thought leadership that attracts premium clients.", link: "/services/content-marketing" },
               { title: "Marketing Automation", desc: "Scale marketing without scaling team. Automated nurture sequences and sales systems.", link: "/services/marketing-automation" },
             ].map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Link
                   href={service.link}
@@ -289,7 +252,7 @@ export default function Home() {
                   <p className="text-gray-300 mb-4">{service.desc}</p>
                   <span className="text-[#FFD700] font-semibold group-hover:underline">Learn More →</span>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -298,21 +261,15 @@ export default function Home() {
       {/* Social Proof - The Numbers */}
       <section className="py-20 bg-gradient-to-br from-black via-[#1a1a2e] to-black text-white relative overflow-hidden">
         {/* The Bagman character - floating animation */}
-        <motion.div
+        <div
           className="absolute right-10 top-10 w-64 md:w-80 opacity-60"
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
           <img src="/characters/bagman-money.png" alt="The Bagman" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
+          <div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
               The <span className="text-[#FFD700]">Numbers</span> Don't Lie
@@ -320,7 +277,7 @@ export default function Home() {
             <Link href="/results" className="text-[#FFD700] text-xl hover:underline font-bold">
               View All Case Studies →
             </Link>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -328,18 +285,13 @@ export default function Home() {
               { percent: "+156%", desc: "B2B consulting: $150k/mo → $385k/mo in 12 months" },
               { percent: "+210%", desc: "Online courses: $120k/mo → $372k/mo in 11 months" },
             ].map((result, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="bg-gradient-to-br from-[#8B0000] to-[#5a0000] p-8 rounded-xl border-2 border-[#FFD700]"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                whileHover={{ scale: 1.05 }}
               >
                 <div className="text-6xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>{result.percent}</div>
                 <p className="text-white text-lg">{result.desc}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -350,44 +302,28 @@ export default function Home() {
         <FloatingParticles count={30} color="#FFD700" />
 
         {/* The Don character - Left side */}
-        <motion.div
+        <div
           className="absolute left-0 bottom-0 w-64 md:w-96 opacity-75 z-0"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.75 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2 }}
         >
           <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" />
-        </motion.div>
+        </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <motion.h2
+          <h2
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
             Ready To Join <span className="text-[#FFD700]">The Family</span>?
-          </motion.h2>
-          <motion.p
+          </h2>
+          <p
             className="text-2xl mb-10 text-gray-200"
             style={{ fontFamily: "'Georgia', serif" }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
           >
             If you're doing $100k+ monthly and serious about scaling,
             <br />
             we'll make you an offer you can't refuse.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+          </p>
+          <div
           >
             <Link
               href="/apply"
@@ -396,17 +332,13 @@ export default function Home() {
             >
               Join The Family Now
             </Link>
-          </motion.div>
-          <motion.p
+          </div>
+          <p
             className="mt-8 text-[#FFD700] text-sm font-bold"
             style={{ fontFamily: "'Georgia', serif" }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
           >
             Application review: 24-48 hours | Limited partnerships available
-          </motion.p>
+          </p>
         </div>
       </section>
     </>

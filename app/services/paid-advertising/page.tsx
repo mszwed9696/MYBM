@@ -72,7 +72,7 @@ export default function PaidAdvertisingPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="w-full max-w-4xl"
+              className="w-full max-w-md mx-auto"
             >
               <img
                 src="/featured/paid-advertising-featured.png"

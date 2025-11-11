@@ -71,6 +71,24 @@ export default function FractionalCMOPage() {
       {/* Main Content */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Image */}
+          <div className="mb-12 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="w-full max-w-4xl"
+            >
+              <img
+                src="/featured/fractional-cmo-featured.png"
+                alt="Fractional CMO"
+                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>

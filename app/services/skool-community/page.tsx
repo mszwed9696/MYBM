@@ -9,9 +9,9 @@ export default function SkoolCommunityPage() {
     <div>
       {/* Hero Section */}
       <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* Hero cityscape background */}
+        {/* Philadelphia skyline background */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/skool-community-hero.png" alt="Skool Community" className="w-full h-full object-cover" style={{ objectPosition: "center center" }}  loading="lazy" />
+          <img src="/heroes/philadelphia-skyline.png" alt="Philadelphia Skyline" className="w-full h-full object-cover" style={{ objectPosition: "center center" }}  loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>

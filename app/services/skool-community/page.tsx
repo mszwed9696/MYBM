@@ -63,31 +63,31 @@ export default function SkoolCommunityPage() {
 
       {/* Skyline Divider */}
       <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+        <SkylineDivider className="text-[#1a1a1a]" />
       </div>
 
       {/* Main Content */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a1a] to-black text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-                Why <span className="text-[#8B0000]">Skool Communities</span>?
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+                Why <span className="text-[#FFD700]">Skool Communities</span>?
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4">
                 You've got the expertise. You've got the audience. But you're leaving money on the table
                 if you're not building a <strong>recurring revenue community</strong>.
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4">
                 Skool is the new king of paid communities. Better engagement than Facebook Groups.
                 Easier to monetize than Discord. <strong>More profitable than courses alone.</strong>
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
-                But here's the thing: <span className="text-[#8B0000] font-bold">Building a community that actually makes money
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4">
+                But here's the thing: <span className="text-[#FFD700] font-bold">Building a community that actually makes money
                 requires a funnel that converts</span> and retention systems that keep people paying month after month.
               </p>
               <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
-                <p className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Georgia', serif" }}>
+                <p className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                   Average Skool Community (DIY): 20-50 members, $2k-5k MRR
                 </p>
                 <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>
@@ -96,33 +96,33 @@ export default function SkoolCommunityPage() {
               </div>
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 You Need This If...
               </h2>
               <ul className="space-y-3 sm:space-y-4">
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>You're launching a Skool community</strong> but don't know how to fill it with paying members</span>
+                  <span className="text-gray-300"><strong>You're launching a Skool community</strong> but don't know how to fill it with paying members</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>You have a community</strong> but it's a ghost town with poor engagement</span>
+                  <span className="text-gray-300"><strong>You have a community</strong> but it's a ghost town with poor engagement</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>Your retention sucks</strong>—people join then cancel within 30-60 days</span>
+                  <span className="text-gray-300"><strong>Your retention sucks</strong>—people join then cancel within 30-60 days</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>You want recurring revenue</strong> instead of the one-time course sale hamster wheel</span>
+                  <span className="text-gray-300"><strong>You want recurring revenue</strong> instead of the one-time course sale hamster wheel</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>You're spending hours answering DMs</strong> instead of building a scalable support system</span>
+                  <span className="text-gray-300"><strong>You're spending hours answering DMs</strong> instead of building a scalable support system</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FFD700] text-2xl mr-3">🎓</span>
-                  <span className="text-gray-700"><strong>You know communities are the future</strong> but don't have time to figure it out yourself</span>
+                  <span className="text-gray-300"><strong>You know communities are the future</strong> but don't have time to figure it out yourself</span>
                 </li>
               </ul>
             </div>
@@ -210,19 +210,19 @@ export default function SkoolCommunityPage() {
       </section>
 
       {/* Results Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black via-[#1a1a2e] to-black text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Georgia', serif" }}>
-              The <span className="text-[#8B0000]">Numbers</span> Don't Lie
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
+              The <span className="text-[#FFD700]">Numbers</span> Don't Lie
             </h2>
-            <p className="text-xl text-gray-700">
+            <p className="text-xl text-gray-300">
               Real results from our Skool community clients
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
+            <div className="bg-gradient-to-br from-[#8B0000] to-[#5a0000] p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                 400+
               </div>
@@ -230,7 +230,7 @@ export default function SkoolCommunityPage() {
               <p className="text-gray-300 text-sm">Business Coach - Started from 0</p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
+            <div className="bg-gradient-to-br from-[#8B0000] to-[#5a0000] p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                 $47k
               </div>
@@ -238,7 +238,7 @@ export default function SkoolCommunityPage() {
               <p className="text-gray-300 text-sm">Course Creator - Up from $8k/mo</p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
+            <div className="bg-gradient-to-br from-[#8B0000] to-[#5a0000] p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700] text-center">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>
                 89%
               </div>
@@ -303,22 +303,22 @@ export default function SkoolCommunityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-            Ready to Build Your <span className="text-[#8B0000]">Inner Circle</span>?
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}>
+            Ready to Build Your <span className="text-[#FFD700]">Inner Circle</span>?
           </h2>
-          <p className="text-xl text-gray-700 mb-8">
+          <p className="text-xl text-gray-200 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
             We're selective. We only work with experts who have proven expertise and are ready to commit to building
             a real community—not a ghost town.
           </p>
-          <p className="text-lg text-gray-600 mb-10">
+          <p className="text-lg text-gray-300 mb-10">
             If you're doing $50k+ monthly and ready to add $20k-100k+ MRR through a Skool community,
-            <span className="text-[#8B0000] font-bold"> let's talk.</span>
+            <span className="text-[#FFD700] font-bold"> let's talk.</span>
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 rounded-lg font-bold text-lg sm:text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+            className="inline-block bg-black border-4 border-[#FFD700] text-[#FFD700] px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 rounded-lg font-bold text-lg sm:text-xl hover:bg-[#FFD700] hover:text-black transition-all transform hover:scale-110 shadow-2xl"
             style={{ fontFamily: "'Georgia', serif" }}
           >
             Apply to Work With Us

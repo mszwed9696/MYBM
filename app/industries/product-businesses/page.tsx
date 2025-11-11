@@ -37,40 +37,6 @@ export default function ProductBusinessesPage() {
 
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/product-businesses-featured.png"
-                alt="Product Businesses"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>High-Ticket Product Challenges</h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Wrong Audience</h3>
-              <p className="text-gray-600">Standard ecommerce tactics bring tire-kickers, not qualified buyers who can afford premium pricing.</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Long Sales Cycles</h3>
-              <p className="text-gray-600">High-ticket purchases require education, trust-building, and often sales team involvement.</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Low CAC:LTV Understanding</h3>
-              <p className="text-gray-600">Agencies optimize for cheap cost-per-click, not customer lifetime value. Wrong metrics.</p>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -37,40 +37,6 @@ export default function CourseCreatorsPage() {
 
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/course-creators-featured.png"
-                alt="Course Creators"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>Course Creator Challenges We Solve</h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Launch Burnout</h3>
-              <p className="text-gray-600">Living launch-to-launch is exhausting. Build evergreen systems that sell daily.</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Low Course Prices</h3>
-              <p className="text-gray-600">Stuck at $997 when you should be charging $3k-15k+. Premium positioning and packaging.</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold mb-4">Poor Completion Rates</h3>
-              <p className="text-gray-600">Students don't finish or get results. We help you add done-for-you and coaching tiers.</p>
-            </div>
-          </div>
         </div>
       </section>
 

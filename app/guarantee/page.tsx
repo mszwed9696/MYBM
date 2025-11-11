@@ -60,42 +60,6 @@ export default function GuaranteePage() {
       {/* How It Works */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/guarantee-featured.png"
-                alt="Guarantee"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            How Our Guarantee Works
-          </h2>
-
-          <div className="space-y-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 rounded-full flex items-center justify-center font-bold text-xl mr-6">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Baseline Revenue Documentation</h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-700">
-                    We document your current net monthly revenue over the last 3-6 months to establish a clear baseline.
-                    This is the starting point for our guarantee calculation.
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-xl">

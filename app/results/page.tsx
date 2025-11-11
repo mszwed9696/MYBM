@@ -187,18 +187,6 @@ export default function ResultsPage() {
       {/* Quick Stats */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <div className="w-full max-w-md mx-auto">
-              <img
-                src="/featured/results-featured.png"
-                alt="Results"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>

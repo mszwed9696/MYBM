@@ -74,51 +74,6 @@ export default function CoachesPage() {
       {/* Pain Points */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/coaches-featured.png"
-                alt="Coaches"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            The Challenge Every High-Ticket Coach Faces
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Feast or Famine Revenue</h3>
-              <p className="text-gray-700">
-                Great month during your launch, then crickets. You're constantly chasing new clients instead of
-                having a predictable pipeline.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Ad Spend Black Hole</h3>
-              <p className="text-gray-700">
-                You're spending $5k-15k/month on ads but getting unqualified leads who can't afford your $10k+ programs.
-                ROI is underwater.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Referral Dependency</h3>
-              <p className="text-gray-700">
-                Most clients come from word-of-mouth. Great problem to have, but it doesn't scale and you can't
-                control the flow.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

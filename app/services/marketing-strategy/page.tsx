@@ -65,50 +65,6 @@ export default function MarketingStrategyPage() {
       {/* Problem */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/marketing-strategy-featured.png"
-                alt="Marketing Strategy"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-            Why Most Marketing Strategies <span className="text-[#8B0000]">Fail</span>
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>Copy-Paste Blueprints</h3>
-              <p className="text-gray-300">
-                Most "strategies" are generic templates that worked for someone else in a different market.
-                Your business needs custom strategy, not cookie-cutter plans.
-              </p>
-            </div>
-            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>No Execution Plan</h3>
-              <p className="text-gray-300">
-                Beautiful PowerPoints that sit in a folder. Strategy without execution roadmap is worthless.
-                You need step-by-step implementation plans.
-              </p>
-            </div>
-            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>Built by Non-Operators</h3>
-              <p className="text-gray-300">
-                Created by consultants who've never scaled a business. We've scaled dozens of high-ticket businesses—
-                we know what actually works.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

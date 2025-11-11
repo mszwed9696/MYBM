@@ -65,56 +65,6 @@ export default function FunnelOptimizationPage() {
       {/* Problem */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/funnel-optimization-featured.png"
-                alt="Funnel Optimization"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Where High-Ticket Funnels Fail
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-            You're driving traffic but revenue isn't growing proportionally. The problem isn't traffic—it's conversion.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📉</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Low Application Rates</h3>
-              <p className="text-gray-700">
-                Visitors land on your page but don't fill out applications. Poor copy, unclear value prop, or
-                friction in the process.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>☎️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">No-Shows & Cancellations</h3>
-              <p className="text-gray-700">
-                People book calls but don't show up. Or they show up unqualified. Your funnel isn't pre-selling
-                or qualifying properly.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💸</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Long Sales Cycles</h3>
-              <p className="text-gray-700">
-                Prospects enter your funnel but take months to close (or never do). Missing nurture sequences
-                and trust-building elements.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

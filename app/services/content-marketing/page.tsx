@@ -65,57 +65,6 @@ export default function ContentMarketingPage() {
       {/* Why Content */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/content-marketing-featured.png"
-                alt="Content Marketing"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Why High-Ticket Businesses Need Content Marketing
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-            Premium buyers don't respond to aggressive ads. They buy from recognized authorities they discover
-            through valuable content.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Pre-Sold Inbound Leads</h3>
-              <p className="text-gray-700">
-                People who find you through content are already sold on your expertise. They're reaching out to hire you,
-                not to be convinced.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💰</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Compounds Over Time</h3>
-              <p className="text-gray-700">
-                Paid ads stop when you stop paying. Content keeps working forever. One great piece can generate leads
-                for years.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>👑</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Category Leadership</h3>
-              <p className="text-gray-700">
-                When you dominate search results and thought leadership, competitors become irrelevant. You own
-                the category.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

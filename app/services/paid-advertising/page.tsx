@@ -65,50 +65,6 @@ export default function PaidAdvertisingPage() {
       {/* Problem */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/paid-advertising-featured.png"
-                alt="Paid Advertising"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Why Most Paid Ad Campaigns Fail for High-Ticket Businesses
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Volume Over Quality</h3>
-              <p className="text-gray-700">
-                Most agencies optimize for cheap leads, not qualified buyers. You get flooded with $100 tire-kickers
-                instead of $10k+ ready buyers.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Wrong Sales Cycle</h3>
-              <p className="text-gray-700">
-                High-ticket requires nurture, trust, and relationship building. Direct-to-sale funnels from cold
-                traffic don't work.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Generic Targeting</h3>
-              <p className="text-gray-700">
-                Broad audience targeting brings in the masses. You need precision targeting to reach buyers who can
-                actually afford you.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

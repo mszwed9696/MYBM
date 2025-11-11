@@ -71,51 +71,6 @@ export default function ConsultantsPage() {
       {/* Pain Points */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/consultants-featured.png"
-                alt="Consultants"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
-            The Growth Challenges Consultants Face
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Network Dependency</h3>
-              <p className="text-gray-700">
-                80% of clients come from referrals and past connections. Great for starting, terrible for scaling.
-                You've maxed out your network and need new sources.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Long Sales Cycles</h3>
-              <p className="text-gray-700">
-                Months of nurturing, multiple stakeholders, endless proposals. Your pipeline is full of maybes
-                but nothing's closing.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Commoditization Pressure</h3>
-              <p className="text-gray-700">
-                Competing on price instead of value. Prospects see you as interchangeable with every other consultant.
-                Your premium positioning is weak.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

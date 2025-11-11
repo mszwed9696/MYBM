@@ -71,46 +71,6 @@ export default function FractionalCMOPage() {
       {/* Main Content */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-md mx-auto"
-            >
-              <img
-                src="/featured/fractional-cmo-featured.png"
-                alt="Fractional CMO"
-                className="w-full h-auto rounded-lg shadow-lg"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-                What's a <span className="text-[#8B0000]">Consigliere</span>?
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
-                In the family, the <strong>Consigliere</strong> is the trusted advisor. The strategic mind. The one who sees the whole board
-                while everyone else is focused on one move. That's what a Fractional CMO does for your business.
-              </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
-                You get executive-level marketing leadership—someone who's scaled businesses from 6 to 7 and 7 to 8 figures.
-                <strong> But you don't pay a $250k+ salary.</strong> You get the expertise. We handle the execution. Capisce?
-              </p>
-              <div className="bg-gradient-to-br from-[#8B0000] to-black border-2 border-[#FFD700] p-6 my-8 rounded-xl">
-                <p className="text-base sm:text-lg font-bold text-white mb-2" style={{ fontFamily: "'Georgia', serif" }}>
-                  Full-Time CMO: $250k - $400k/year + benefits
-                </p>
-                <p className="text-lg font-bold text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>
-                  Our Consigliere: $8k - $20k/month (no BS, just results)
-                </p>
-              </div>
-            </div>
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
                 When You Need <span className="text-[#8B0000]">The Consigliere</span>

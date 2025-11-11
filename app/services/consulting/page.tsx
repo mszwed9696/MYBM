@@ -8,14 +8,14 @@ export default function ConsultingPage() {
     <div>
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
-        {/* Docks Business Deal Image */}
+        {/* Character */}
         <motion.div
-          className="absolute right-0 bottom-0 w-96 md:w-[500px] opacity-40 z-0"
+          className="absolute right-4 sm:right-8 md:right-16 lg:right-20 bottom-0 w-48 sm:w-60 md:w-80 lg:w-96 opacity-80 z-10"
           initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.4 }}
+          animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1 }}
         >
-          <img src="/heroes/consulting-hero.png" alt="Business Deal" className="w-full h-auto"  loading="lazy" />
+          <img src="/characters/consulting-character.png" alt="The Consigliere" className="w-full h-auto"  loading="lazy" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

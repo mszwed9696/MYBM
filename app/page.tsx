@@ -37,7 +37,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-16 sm:py-20 md:py-28 lg:py-32 z-20 flex items-center min-h-screen">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 sm:mb-6 px-3 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide whitespace-nowrap"
+              className="inline-block mb-4 sm:mb-6 px-3 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide text-center max-w-full"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               🎩 FOR BUSINESSES DOING $100K+ MONTHLY REVENUE 🎩

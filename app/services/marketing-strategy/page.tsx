@@ -65,6 +65,24 @@ export default function MarketingStrategyPage() {
       {/* Problem */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Image */}
+          <div className="mb-12 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="w-full max-w-4xl"
+            >
+              <img
+                src="/featured/marketing-strategy-featured.png"
+                alt="Marketing Strategy"
+                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Why Most Marketing Strategies <span className="text-[#8B0000]">Fail</span>
           </h2>

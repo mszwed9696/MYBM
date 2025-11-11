@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ApplyPage() {
   const [formData, setFormData] = useState({
@@ -95,7 +96,7 @@ export default function ApplyPage() {
               <img
                 src="/featured/apply-featured.png"
                 alt="Apply"
-                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                className="w-full h-auto rounded-lg shadow-lg"
                 loading="lazy"
               />
             </motion.div>

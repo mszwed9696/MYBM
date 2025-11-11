@@ -77,7 +77,7 @@ export default function ContentMarketingPage() {
               <img
                 src="/featured/content-marketing-featured.png"
                 alt="Content Marketing"
-                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                className="w-full h-auto rounded-lg shadow-lg"
                 loading="lazy"
               />
             </motion.div>

@@ -189,20 +189,14 @@ export default function ResultsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Image */}
           <div className="mb-12 flex justify-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="w-full max-w-4xl"
-            >
+            <div className="w-full max-w-4xl">
               <img
                 src="/featured/results-featured.png"
                 alt="Results"
-                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                className="w-full h-auto rounded-lg shadow-lg"
                 loading="lazy"
               />
-            </motion.div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 text-center">

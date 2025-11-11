@@ -77,7 +77,7 @@ export default function FunnelOptimizationPage() {
               <img
                 src="/featured/funnel-optimization-featured.png"
                 alt="Funnel Optimization"
-                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                className="w-full h-auto rounded-lg shadow-lg"
                 loading="lazy"
               />
             </motion.div>

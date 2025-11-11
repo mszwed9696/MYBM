@@ -83,6 +83,24 @@ export default function ApplyPage() {
       {/* Form Section */}
       <section className="py-16 bg-gradient-to-b from-[#1a1a2e] to-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Image */}
+          <div className="mb-12 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="w-full max-w-4xl"
+            >
+              <img
+                src="/featured/apply-featured.png"
+                alt="Apply"
+                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+
           <div className="bg-[#2a1a4a]/10 border-l-4 border-[#FFD700] p-6 mb-12">
             <h3 className="text-xl font-bold text-white mb-2">What Happens Next?</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-200">

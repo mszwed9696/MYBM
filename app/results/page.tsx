@@ -187,6 +187,24 @@ export default function ResultsPage() {
       {/* Quick Stats */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Image */}
+          <div className="mb-12 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="w-full max-w-4xl"
+            >
+              <img
+                src="/featured/results-featured.png"
+                alt="Results"
+                className="w-full h-auto rounded-xl shadow-2xl border-4 border-[#FFD700]"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>

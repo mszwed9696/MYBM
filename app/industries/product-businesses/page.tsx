@@ -38,7 +38,7 @@ export default function ProductBusinessesPage() {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Image */}
-          <div className="mb-12 flex justify-center">
+          <div className="mb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

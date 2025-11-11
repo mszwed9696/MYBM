@@ -188,7 +188,7 @@ export default function ResultsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Image */}
-          <div className="mb-12 flex justify-center">
+          <div className="mb-8">
             <div className="w-full max-w-4xl">
               <img
                 src="/featured/results-featured.png"

@@ -321,7 +321,7 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mt-12 p-6 bg-blue-50 border-l-4 border-blue-600 rounded">
+          <section className="mt-12 p-6 bg-[#2a1a4a]/10 border-l-4 border-[#FFD700] rounded">
             <p className="text-white font-semibold mb-2">Acknowledgment</p>
             <p className="text-gray-300">
               By using our Services, you acknowledge that you have read, understood, and agree to be bound by these

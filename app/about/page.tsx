@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
         {/* DC Monument background for authority/establishment */}
         <div className="absolute inset-0 opacity-15 z-0">
-          <img src="/heroes/Gemini_Generated_Image_b7f0mnb7f0mnb7f0.png" alt="Authority" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/philadelphia-skyline.png" alt="Authority" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
         </div>
 
         {/* The Boss character */}
@@ -19,7 +19,7 @@ export default function AboutPage() {
           animate={{ x: 0, opacity: 0.5 }}
           transition={{ duration: 1 }}
         >
-          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto" />
+          <img src="/characters/boss-city-hall.png" alt="The Boss" className="w-full h-auto"  loading="lazy" />
         </motion.div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -45,7 +45,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
             How <span className="text-[#8B0000]">The Family</span> Started
@@ -70,10 +70,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>Our Approach</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Revenue-First</h3>
               <p className="text-gray-700">
@@ -99,7 +99,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: "'Georgia', serif" }}>Our Values</h2>
           <div className="space-y-8">
@@ -134,7 +134,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-6 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>By the Numbers</h2>
           <div className="grid md:grid-cols-4 gap-8 text-center mt-12">
@@ -158,7 +158,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>Ready to Partner With Us?</h2>
           <p className="text-xl text-gray-300 mb-8">
@@ -166,7 +166,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000]"
           >
             Apply for Partnership
           </Link>

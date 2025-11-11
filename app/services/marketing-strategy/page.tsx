@@ -8,10 +8,10 @@ export default function MarketingStrategyPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
         {/* Chicago Bean cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/marketing-strategy-hero.png" alt="Chicago Bean" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/marketing-strategy-hero.png" alt="Chicago Bean" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -19,25 +19,25 @@ export default function MarketingStrategyPage() {
         <div
           className="absolute right-0 bottom-0 w-72 md:w-96 opacity-70 z-0"
         >
-          <img src="/characters/marketing-strategy-character.png" alt="The Boss" className="w-full h-auto" />
+          <img src="/characters/marketing-strategy-character.png" alt="The Boss" className="w-full h-auto"  loading="lazy" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               👑 MARKETING STRATEGY - THE BOSS 👑
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
               Strategy From<br />
               <span className="text-[#FFD700]">The Top. Not The Bottom.</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               Stop throwing tactics at the wall. Get a master plan designed for domination.
@@ -47,7 +47,7 @@ export default function MarketingStrategyPage() {
             >
               <Link
                 href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Join The Family
@@ -63,27 +63,27 @@ export default function MarketingStrategyPage() {
       </div>
 
       {/* Problem */}
-      <section className="py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Why Most Marketing Strategies <span className="text-[#8B0000]">Fail</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-black/50 p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
               <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>Copy-Paste Blueprints</h3>
               <p className="text-gray-300">
                 Most "strategies" are generic templates that worked for someone else in a different market.
                 Your business needs custom strategy, not cookie-cutter plans.
               </p>
             </div>
-            <div className="bg-black/50 p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
+            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
               <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>No Execution Plan</h3>
               <p className="text-gray-300">
                 Beautiful PowerPoints that sit in a folder. Strategy without execution roadmap is worthless.
                 You need step-by-step implementation plans.
               </p>
             </div>
-            <div className="bg-black/50 p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
+            <div className="bg-black/50 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#8B0000]/30 hover:border-[#FFD700] transition-all">
               <h3 className="text-xl font-bold text-[#FFD700] mb-4" style={{ fontFamily: "'Georgia', serif" }}>Built by Non-Operators</h3>
               <p className="text-gray-300">
                 Created by consultants who've never scaled a business. We've scaled dozens of high-ticket businesses—
@@ -95,13 +95,13 @@ export default function MarketingStrategyPage() {
       </section>
 
       {/* Our Process */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             The <span className="text-[#FFD700]">Family's</span> Strategy Development Process
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-8 rounded-xl border-2 border-[#FFD700]/20 hover:border-[#FFD700] transition-all">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/20 hover:border-[#FFD700] transition-all">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
               <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Deep Business Analysis</h3>
               <p className="text-gray-300">
@@ -109,42 +109,42 @@ export default function MarketingStrategyPage() {
                 current marketing. Find what's working and what's not.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔍</div>
               <h3 className="text-2xl font-bold mb-3">Market & Competitive Research</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Study your market, competitors, customer psychology, and industry trends. Identify white space
                 opportunities and positioning strategies.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
               <h3 className="text-2xl font-bold mb-3">Strategic Positioning</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Define your unique market position, differentiation, and messaging. Create a positioning strategy
                 that commands premium pricing.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📈</div>
               <h3 className="text-2xl font-bold mb-3">Growth Roadmap</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Map out the exact channels, campaigns, and initiatives to hit your revenue goals. Prioritized by
                 impact and feasibility.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💰</div>
               <h3 className="text-2xl font-bold mb-3">Budget Allocation</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Strategic budget allocation across channels and campaigns. Know exactly where to spend for
                 maximum ROI.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🚀</div>
               <h3 className="text-2xl font-bold mb-3">90-Day Execution Plan</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Detailed 90-day implementation roadmap with specific tasks, timelines, and success metrics.
                 You know exactly what to do next.
               </p>
@@ -154,12 +154,12 @@ export default function MarketingStrategyPage() {
       </section>
 
       {/* What's Included */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             What's Included in Your Marketing Strategy
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Strategic Documents</h3>
               <ul className="space-y-3 text-gray-700">
@@ -268,13 +268,13 @@ export default function MarketingStrategyPage() {
       </section>
 
       {/* Growth Stages */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Strategic Priorities by Growth Stage
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">$100k-300k/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Foundation Stage</p>
               <ul className="space-y-2 text-gray-700">
@@ -286,7 +286,7 @@ export default function MarketingStrategyPage() {
               </ul>
             </div>
 
-            <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
+            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">$300k-750k/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Scaling Stage</p>
               <ul className="space-y-2 text-gray-700">
@@ -298,7 +298,7 @@ export default function MarketingStrategyPage() {
               </ul>
             </div>
 
-            <div className="bg-blue-50 border-2 border-blue-600 p-8 rounded-xl">
+            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">$750k+/mo</h3>
               <p className="text-sm font-semibold text-[#FFD700] mb-4">Optimization Stage</p>
               <ul className="space-y-2 text-gray-700">
@@ -314,17 +314,17 @@ export default function MarketingStrategyPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready for a Real Marketing Strategy?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             Stop guessing. Get a comprehensive strategy built specifically for your business and guaranteed to deliver 30% growth.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
           >
             Schedule Strategy Session
           </Link>

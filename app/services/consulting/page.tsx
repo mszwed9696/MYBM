@@ -15,19 +15,19 @@ export default function ConsultingPage() {
           animate={{ x: 0, opacity: 0.4 }}
           transition={{ duration: 1 }}
         >
-          <img src="/heroes/consulting-hero.png" alt="Business Deal" className="w-full h-auto" />
+          <img src="/heroes/consulting-hero.png" alt="Business Deal" className="w-full h-auto"  loading="lazy" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               🤝 WORK WITH MIKE - DIRECT ACCESS 🤝
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"
               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 6px rgba(0,0,0,0.8)" }}
             >
               Personal Consulting,<br />
@@ -42,7 +42,7 @@ export default function ConsultingPage() {
             <div>
               <Link
                 href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Apply for Partnership
@@ -53,7 +53,7 @@ export default function ConsultingPage() {
       </section>
 
       {/* Three Consulting Offerings */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
@@ -64,7 +64,7 @@ export default function ConsultingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* 1-on-1 Consulting */}
             <motion.div
               className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200 hover:border-[#FFD700] transition-all shadow-lg hover:shadow-2xl"
@@ -72,7 +72,7 @@ export default function ConsultingPage() {
             >
               <div className="text-center mb-6">
                 <div className="text-6xl mb-4">🎯</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">1-on-1 Consulting</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">1-on-1 Consulting</h3>
                 <p className="text-gray-700 font-semibold">Private Strategic Advisory</p>
               </div>
 
@@ -123,13 +123,13 @@ export default function ConsultingPage() {
 
               {/* Hollywood Mansion Image */}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
-                <img src="/heroes/consulting-hero.png" alt="Mastermind" className="w-full h-full object-cover opacity-40" />
+                <img src="/heroes/consulting-hero.png" alt="Mastermind" className="w-full h-full object-cover opacity-40"  loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
               </div>
 
               <div className="text-center mb-6 relative z-10">
                 <div className="text-6xl mb-4">👥</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">Elite Mastermind</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">Elite Mastermind</h3>
                 <p className="text-[#FFD700] font-semibold">8-12 High-Performers Only</p>
               </div>
 
@@ -180,13 +180,13 @@ export default function ConsultingPage() {
             >
               {/* Casino VIP Image */}
               <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <img src="/heroes/consulting-hero.png" alt="VIP Coaching" className="w-full h-full object-cover opacity-40" />
+                <img src="/heroes/consulting-hero.png" alt="VIP Coaching" className="w-full h-full object-cover opacity-40"  loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#2a1a4a]/90 to-[#1a1a2e]/80"></div>
               </div>
 
               <div className="text-center mb-6 relative z-10">
                 <div className="text-6xl mb-4">🎓</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">VIP Coaching Program</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">VIP Coaching Program</h3>
                 <p className="text-gray-700 font-semibold">12-Week Intensive Transformation</p>
               </div>
 
@@ -234,14 +234,14 @@ export default function ConsultingPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Who Should Work With Mike Directly?
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4 text-[#FFD700]">✓ You're a Good Fit If:</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-[#FFD700]">✓ You're a Good Fit If:</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start"><span className="mr-2">•</span>Currently doing $100k+/month in revenue</li>
                 <li className="flex items-start"><span className="mr-2">•</span>Selling high-ticket offers ($3k-$50k+)</li>
@@ -265,7 +265,7 @@ export default function ConsultingPage() {
       </section>
 
       {/* Results */}
-      <section className="py-20 bg-gradient-to-r from-red-900 to-red-700 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-red-900 to-red-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Client Results from Direct Consulting
@@ -273,7 +273,7 @@ export default function ConsultingPage() {
           <p className="text-xl text-red-100 mb-12 text-center max-w-3xl mx-auto">
             These are real businesses Mike worked with 1-on-1 or in the mastermind
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-black/30 p-8 rounded-xl border border-[#FFD700]">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$80k → $310k</div>
               <div className="text-xl font-semibold mb-4">Business Coach (9 months)</div>
@@ -294,7 +294,7 @@ export default function ConsultingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Work Together?
@@ -304,7 +304,7 @@ export default function ConsultingPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 px-12 py-6 rounded-lg font-bold text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 rounded-lg font-bold text-lg sm:text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
           >
             Apply Now
           </Link>

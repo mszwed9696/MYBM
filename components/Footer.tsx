@@ -5,22 +5,22 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 md:gap-12 pb-6 sm:pb-8">
           {/* Company Info - Takes more space */}
           <div className="lg:col-span-4">
             <Link href="/">
               <img
                 src="/myb-logo-gold.png"
                 alt="Mind Your Business Media"
-                className="h-20 w-auto mb-5 cursor-pointer hover:opacity-80 transition-opacity"
+                className="h-16 sm:h-18 md:h-20 w-auto mb-4 sm:mb-5 cursor-pointer hover:opacity-80 transition-opacity"
               />
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed mb-3 max-w-xs">
+            <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-2 sm:mb-3 max-w-xs">
               The marketing agency for businesses doing $100k+/month in revenue.
             </p>
-            <p className="text-[#FFD700] font-semibold mb-6 text-sm max-w-xs">
+            <p className="text-[#FFD700] font-semibold mb-4 sm:mb-6 text-sm sm:text-base max-w-xs">
               30% revenue increase guaranteed or we work for free.
             </p>
 

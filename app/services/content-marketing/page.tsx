@@ -8,10 +8,10 @@ export default function ContentMarketingPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
         {/* Portland Mountain cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/content-marketing-hero.png" alt="Portland Mountain" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/content-marketing-hero.png" alt="Portland Mountain" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -19,25 +19,25 @@ export default function ContentMarketingPage() {
         <div
           className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
         >
-          <img src="/characters/content-marketing-character.png" alt="The Driver" className="w-full h-auto" />
+          <img src="/characters/content-marketing-character.png" alt="The Driver" className="w-full h-auto"  loading="lazy" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               🚗 CONTENT MARKETING - THE DRIVER 🚗
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
               Own Your Territory<br />
               <span className="text-[#FFD700]">With Content That Commands Respect</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               Stop chasing clients. Build authority that brings them to you.
@@ -47,7 +47,7 @@ export default function ContentMarketingPage() {
             >
               <Link
                 href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Join The Family
@@ -63,7 +63,7 @@ export default function ContentMarketingPage() {
       </div>
 
       {/* Why Content */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why High-Ticket Businesses Need Content Marketing
@@ -72,7 +72,7 @@ export default function ContentMarketingPage() {
             Premium buyers don't respond to aggressive ads. They buy from recognized authorities they discover
             through valuable content.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Pre-Sold Inbound Leads</h3>
@@ -102,40 +102,40 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Our Content Marketing Methodology
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔍</div>
               <h3 className="text-2xl font-bold mb-3">High-Intent Keyword Research</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Target keywords that indicate buying intent and budget. Not "how to" queries from broke beginners,
                 but searches from people ready to invest.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📝</div>
               <h3 className="text-2xl font-bold mb-3">Authority Content Creation</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Deep, comprehensive content that demonstrates expertise. Not 500-word blog posts, but pillar content
                 that becomes the definitive resource.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
               <h3 className="text-2xl font-bold mb-3">Technical SEO Excellence</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Optimize site architecture, page speed, mobile experience, and technical elements that Google rewards.
                 Content quality + technical SEO = rankings.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔗</div>
               <h3 className="text-2xl font-bold mb-3">Strategic Link Building</h3>
-              <p className="text-blue-100">
+              <p className="text-gray-200">
                 Earn backlinks from authoritative sources through guest posts, partnerships, PR, and linkable assets.
                 Build domain authority over time.
               </p>
@@ -145,12 +145,12 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* Content Types */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Content Types We Create
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pillar Content & Guides</h3>
               <p className="text-gray-700 mb-4">
@@ -221,12 +221,12 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* SEO Services */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Complete SEO Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Technical SEO</h3>
               <ul className="space-y-2 text-gray-700">
@@ -262,24 +262,24 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* Results */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Content Marketing & SEO Results
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>287%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>287%</div>
               <div className="text-xl font-semibold mb-4">Organic Traffic Growth</div>
               <p className="text-gray-400">Business coach: 2,400 → 9,300 monthly organic visitors in 9 months. 35% of new clients from organic search.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>47</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>47</div>
               <div className="text-xl font-semibold mb-4">Page 1 Rankings</div>
               <p className="text-gray-400">Consultant: Ranking #1-10 for 47 high-intent keywords in their niche within 12 months.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$0.00</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$0.00</div>
               <div className="text-xl font-semibold mb-4">Cost Per Lead (Organic)</div>
               <p className="text-gray-400">Course creator: 120+ qualified leads/month from organic content. Zero ad spend required.</p>
             </div>
@@ -288,17 +288,17 @@ export default function ContentMarketingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Build Authority That Attracts Premium Clients?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             Stop renting attention with ads. Own your market through content that compounds forever.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
           >
             Get Your Content Strategy
           </Link>

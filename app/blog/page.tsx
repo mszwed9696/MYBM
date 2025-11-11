@@ -83,8 +83,18 @@ export default function BlogPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
+        {/* Hero background image */}
+        <div className="absolute inset-0 opacity-20 z-0">
+          <img src="/heroes/philadelphia-skyline.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }}  loading="lazy" />
+        </div>
+
+        {/* Character image */}
+        <div className="absolute right-0 bottom-0 w-64 md:w-80 opacity-30 z-0">
+          <img src="/characters/boss-city-hall.png" alt="The Consigliere" className="w-full h-auto"  loading="lazy" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Insights for High-Ticket Businesses
           </h1>
@@ -102,7 +112,7 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-gradient-to-b from-[#1a1a2e] to-black border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-600 hover:shadow-xl transition-all"
+                className="group bg-gradient-to-b from-[#1a1a2e] to-black border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#FFD700] hover:shadow-xl transition-all"
               >
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">

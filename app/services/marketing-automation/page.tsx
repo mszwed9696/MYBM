@@ -8,10 +8,10 @@ export default function MarketingAutomationPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
         {/* Detroit Skyline cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/marketing-automation-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/marketing-automation-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -19,25 +19,25 @@ export default function MarketingAutomationPage() {
         <div
           className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
         >
-          <img src="/characters/marketing-automation-character.png" alt="The Partner" className="w-full h-auto" />
+          <img src="/characters/marketing-automation-character.png" alt="The Partner" className="w-full h-auto"  loading="lazy" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               🤝 MARKETING AUTOMATION - THE PARTNER 🤝
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
               Your Marketing<br />
               <span className="text-[#FFD700]">Works While You Sleep</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               Automated systems that nurture leads, book calls, close deals.
@@ -47,7 +47,7 @@ export default function MarketingAutomationPage() {
             >
               <Link
                 href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Join The Family
@@ -63,12 +63,12 @@ export default function MarketingAutomationPage() {
       </div>
 
       {/* Problem */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The Problem With Manual Marketing
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Time Bottleneck</h3>
               <p className="text-gray-700">
@@ -95,20 +95,20 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* Solution */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             What We Automate
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
               <h3 className="text-2xl font-bold mb-3">Email Marketing Automation</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Automated email sequences that nurture leads from cold to hot. Welcome sequences, educational series,
                 sales sequences, and re-engagement campaigns.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• Welcome sequences for new subscribers</li>
                 <li>• Educational nurture series</li>
                 <li>• Sales sequences with strategic CTAs</li>
@@ -117,14 +117,14 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📅</div>
               <h3 className="text-2xl font-bold mb-3">Calendar & Booking Automation</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Automated scheduling that fills your calendar with qualified prospects. Smart booking logic,
                 automated reminders, and no-show reduction.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• Intelligent calendar routing</li>
                 <li>• Automated booking confirmations</li>
                 <li>• Multi-touch reminder sequences</li>
@@ -133,14 +133,14 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
               <h3 className="text-2xl font-bold mb-3">Lead Scoring & Segmentation</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Automatically tag and segment leads based on behavior, engagement, and demographics. Priority
                 routing to sales for hot leads.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• Behavioral tracking and scoring</li>
                 <li>• Automatic segmentation</li>
                 <li>• Hot lead notifications</li>
@@ -149,14 +149,14 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💬</div>
               <h3 className="text-2xl font-bold mb-3">SMS & Chat Automation</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Automated SMS sequences for appointment reminders, follow-ups, and engagement. AI chatbots to
                 qualify and route leads 24/7.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• SMS appointment confirmations</li>
                 <li>• Text-based nurture sequences</li>
                 <li>• Two-way conversational automation</li>
@@ -165,14 +165,14 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔄</div>
               <h3 className="text-2xl font-bold mb-3">Multi-Channel Workflows</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Sophisticated workflows across email, SMS, ads, and CRM. Trigger-based automation that responds
                 to prospect actions in real-time.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• Trigger-based workflows</li>
                 <li>• Cross-channel sequences</li>
                 <li>• Conditional logic and branching</li>
@@ -181,14 +181,14 @@ export default function MarketingAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
               <h3 className="text-2xl font-bold mb-3">Reporting & Analytics Automation</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Automated dashboards and reports delivered to your inbox. Real-time visibility into funnel
                 performance, revenue, and ROI.
               </p>
-              <ul className="space-y-2 text-blue-100 text-sm">
+              <ul className="space-y-2 text-gray-200 text-sm">
                 <li>• Automated performance reports</li>
                 <li>• Real-time dashboards</li>
                 <li>• Revenue attribution</li>
@@ -201,12 +201,12 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* Tools */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Automation Platforms We Master
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-xl font-bold text-gray-900 mb-3">ActiveCampaign</h3>
               <p className="text-gray-700">
@@ -248,7 +248,7 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* ROI */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The ROI of Marketing Automation
@@ -256,8 +256,8 @@ export default function MarketingAutomationPage() {
           <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
             What happens when you automate marketing and sales processes
           </p>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-8 rounded-xl">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-[#2a1a4a]/10 p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Before Automation</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
@@ -312,24 +312,24 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* Results */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Automation Results
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
               <div className="text-xl font-semibold mb-4">Time Saved</div>
               <p className="text-gray-400">Coach reduced weekly marketing time from 14 hours to 2 hours with full automation</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+143%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+143%</div>
               <div className="text-xl font-semibold mb-4">Lead Conversion</div>
               <p className="text-gray-400">Consultant increased lead-to-client rate from 12% to 29% with automated nurture</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$287k</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$287k</div>
               <div className="text-xl font-semibold mb-4">Revenue From Automation</div>
               <p className="text-gray-400">Course creator generated $287k from automated evergreen funnel in 12 months</p>
             </div>
@@ -338,17 +338,17 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Automate Your Marketing?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             Stop trading time for revenue. Build systems that scale without you.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
           >
             Get Your Automation Strategy
           </Link>

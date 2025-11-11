@@ -8,10 +8,10 @@ export default function FunnelOptimizationPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
         {/* Detroit Skyline cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/funnel-optimization-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/funnel-optimization-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -19,25 +19,25 @@ export default function FunnelOptimizationPage() {
         <div
           className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
         >
-          <img src="/characters/funnel-optimization-character.png" alt="The Banker" className="w-full h-auto" />
+          <img src="/characters/funnel-optimization-character.png" alt="The Banker" className="w-full h-auto"  loading="lazy" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               💰 FUNNEL OPTIMIZATION - THE BANKER 💰
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
               Your Funnel Is Bleeding<br />
               <span className="text-[#FFD700]">Money. We Stop The Leak.</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               Most businesses lose 60-80% of prospects in their funnel.
@@ -47,7 +47,7 @@ export default function FunnelOptimizationPage() {
             >
               <Link
                 href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Join The Family
@@ -63,7 +63,7 @@ export default function FunnelOptimizationPage() {
       </div>
 
       {/* Problem */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Where High-Ticket Funnels Fail
@@ -71,7 +71,7 @@ export default function FunnelOptimizationPage() {
           <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
             You're driving traffic but revenue isn't growing proportionally. The problem isn't traffic—it's conversion.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📉</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Low Application Rates</h3>
@@ -101,66 +101,66 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* Our Process */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Our 5-Step Funnel Optimization Process
           </h2>
           <div className="space-y-6">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">1</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Complete Funnel Audit</h3>
-                  <p className="text-blue-100">
+                  <p className="text-gray-200">
                     We analyze every step of your current funnel: landing pages, forms, emails, call booking, sales
                     process. Identify drop-off points and conversion blockers.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">2</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Conversion Gap Analysis</h3>
-                  <p className="text-blue-100">
+                  <p className="text-gray-200">
                     Calculate conversion rates at each step. Compare to industry benchmarks for high-ticket offers.
                     Prioritize fixes by revenue impact.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">3</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Strategic Redesign</h3>
-                  <p className="text-blue-100">
+                  <p className="text-gray-200">
                     Rebuild problem areas with high-ticket conversion psychology: trust elements, social proof,
                     pre-qualification, and urgency without pressure.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">4</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">A/B Testing & Iteration</h3>
-                  <p className="text-blue-100">
+                  <p className="text-gray-200">
                     Test headlines, CTAs, page layouts, form fields, and nurture sequences. Continuous optimization
                     based on real conversion data.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#8B0000] border-2 border-[#FFD700] rounded-full flex items-center justify-center font-bold text-xl mr-6">5</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">Scale What Works</h3>
-                  <p className="text-blue-100">
+                  <p className="text-gray-200">
                     Once we've optimized conversion rates, we scale traffic knowing each visitor is worth more.
                     Compound revenue growth.
                   </p>
@@ -172,12 +172,12 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* Funnel Types */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             High-Ticket Funnels We Optimize
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Application Funnels</h3>
               <p className="text-gray-700 mb-4">
@@ -238,12 +238,12 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* What We Optimize */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Every Element We Test & Optimize
           </h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
             <div className="text-center">
               <div className="text-4xl mb-3" style={{ fontFamily: "\'Georgia\', serif" }}>📝</div>
               <h3 className="font-bold text-gray-900 mb-2">Copy & Messaging</h3>
@@ -289,24 +289,24 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* Results */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Funnel Optimization Results
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+127%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+127%</div>
               <div className="text-xl font-semibold mb-4">Application Rate</div>
               <p className="text-gray-400">Coaching program: 4.2% → 9.5% application rate through page redesign and copy optimization</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+89%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+89%</div>
               <div className="text-xl font-semibold mb-4">Show-Up Rate</div>
               <p className="text-gray-400">Consultant: 51% → 96% call show rate with automated SMS reminders and pre-call video</p>
             </div>
             <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-blue-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+203%</div>
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+203%</div>
               <div className="text-xl font-semibold mb-4">Webinar Conversion</div>
               <p className="text-gray-400">Course creator: 2.8% → 8.5% webinar-to-sale conversion through script and offer optimization</p>
             </div>
@@ -315,17 +315,17 @@ export default function FunnelOptimizationPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Fix Your Leaky Funnel?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             Stop losing revenue to poor conversion. Get a complete funnel audit and optimization strategy.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
+            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
           >
             Get Your Funnel Audit
           </Link>

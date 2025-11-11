@@ -8,10 +8,10 @@ export default function CoachesPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-black text-white py-32 overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
         {/* Phoenix Desert cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/coaches-hero.png" alt="Phoenix Desert" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }}/>
+          <img src="/heroes/coaches-hero.png" alt="Phoenix Desert" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
@@ -20,25 +20,25 @@ export default function CoachesPage() {
         <div
           className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
         >
-          <img src="/characters/coaches-character.png" alt="The Muscle" className="w-full h-auto" />
+          <img src="/characters/coaches-character.png" alt="The Muscle" className="w-full h-auto"  loading="lazy" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
             <div
-              className="inline-block mb-4 px-6 py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-sm font-bold tracking-wide"
+              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
               💪 FOR HIGH-TICKET COACHES 💪
             </div>
             <h1
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
               Build A Coaching Empire<br />
               <span className="text-[#FFD700]">That Commands Respect</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
               style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
             >
               Stop begging for clients. Build a system that fills your programs on demand.
@@ -49,14 +49,14 @@ export default function CoachesPage() {
             >
               <Link
                 href="/apply"
-                className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg text-center"
+                className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg text-center"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 Join The Family
               </Link>
               <Link
                 href="/results"
-                className="bg-black/50 border-2 border-[#FFD700] text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-black/70 transition-all text-center"
+                className="bg-black/50 border-2 border-[#FFD700] text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-black/70 transition-all text-center"
                 style={{ fontFamily: "'Georgia', serif" }}
               >
                 See The Results
@@ -72,12 +72,12 @@ export default function CoachesPage() {
       </div>
 
       {/* Pain Points */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             The Challenge Every High-Ticket Coach Faces
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-gray-50 p-8 rounded-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Feast or Famine Revenue</h3>
               <p className="text-gray-700">
@@ -104,10 +104,10 @@ export default function CoachesPage() {
       </section>
 
       {/* Solution */}
-      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
               Our Marketing Solutions for <span className="text-[#FFD700]">High-Ticket Coaches</span>
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
@@ -115,8 +115,8 @@ export default function CoachesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Application Funnel Systems</h3>
               <p className="text-gray-200">
@@ -125,7 +125,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📱</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Multi-Channel Paid Advertising</h3>
               <p className="text-gray-200">
@@ -134,7 +134,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Authority-Building Content</h3>
               <p className="text-gray-200">
@@ -143,7 +143,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🚀</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Webinar & VSL Funnels</h3>
               <p className="text-gray-200">
@@ -152,7 +152,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🧲</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Lead Nurture Sequences</h3>
               <p className="text-gray-200">
@@ -161,7 +161,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-[#FFD700]/30">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
               <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
               <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Revenue Analytics & Optimization</h3>
               <p className="text-gray-200">
@@ -174,7 +174,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Coaching Types */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Marketing Solutions for Every Type of High-Ticket Coaching
@@ -183,7 +183,7 @@ export default function CoachesPage() {
             We specialize in marketing for coaches across all niches and formats
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Business Coaching</h3>
               <p className="text-gray-700">
@@ -251,13 +251,13 @@ export default function CoachesPage() {
       </section>
 
       {/* Results */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
             Real Results from Coaching Clients
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+287%</div>
               <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
               <p className="text-gray-700">
@@ -266,7 +266,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+210%</div>
               <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
               <p className="text-gray-700">
@@ -275,7 +275,7 @@ export default function CoachesPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-8 rounded-xl border-2 border-[#FFD700]/30">
+            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
               <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+342%</div>
               <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
               <p className="text-gray-700">
@@ -293,34 +293,34 @@ export default function CoachesPage() {
       </section>
 
       {/* Why Us */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why Coaches Choose Mind Your Business Media
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
               <h3 className="text-2xl font-bold mb-4">We Only Work With Coaches Doing $100k+ Monthly</h3>
               <p className="text-gray-300">
                 We're not for coaches just starting out. We work with established coaches who are ready to scale from
                 6-to-7 or 7-to-8 figures. You need specialized strategies, not beginner tactics.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
               <h3 className="text-2xl font-bold mb-4">30% Revenue Increase Guaranteed</h3>
               <p className="text-gray-300">
                 We guarantee a 30% net revenue increase in year 1. If we don't hit it, we work for free until we do.
                 No other marketing agency for coaches offers this.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
               <h3 className="text-2xl font-bold mb-4">High-Ticket Coaching Specialists</h3>
               <p className="text-gray-300">
                 We don't work with $97 programs. We exclusively serve high-ticket coaches with programs $5k-100k+.
                 We understand premium positioning and sophisticated buyer psychology.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
               <h3 className="text-2xl font-bold mb-4">Complete Marketing Execution</h3>
               <p className="text-gray-300">
                 We don't just create strategy decks. We execute everything: ads, funnels, emails, content, optimization.
@@ -332,9 +332,9 @@ export default function CoachesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Ready to Scale Your <span className="text-[#FFD700]">Coaching Business?</span>
           </h2>
           <p className="text-xl mb-8 text-gray-200">
@@ -342,7 +342,7 @@ export default function CoachesPage() {
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#FFD700] text-black px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#FFA500] transition-all shadow-lg"
+            className="inline-block bg-[#FFD700] text-black px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#FFA500] transition-all shadow-lg"
             style={{ fontFamily: "'Georgia', serif" }}
           >
             Apply for Partnership

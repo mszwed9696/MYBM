@@ -226,7 +226,7 @@ export default function ResultsPage() {
                     </div>
                     <div className="bg-white/20 backdrop-blur-sm px-6 py-4 rounded-lg mt-4 md:mt-0">
                       <div className="text-5xl font-bold text-green-300" style={{ fontFamily: "\'Georgia\', serif" }}>{study.increase}</div>
-                      <div className="text-sm text-blue-100">Revenue Growth</div>
+                      <div className="text-sm text-gray-200">Revenue Growth</div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 text-sm">
@@ -293,12 +293,12 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1a1a2e] to-black text-white">
+      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
             Ready to Become Our Next Success Story?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-200">
             If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
           </p>
           <Link

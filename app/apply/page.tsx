@@ -45,7 +45,7 @@ export default function ApplyPage() {
           <p className="text-lg text-gray-400 mb-8">
             If you're a fit, we'll schedule a sit-down to discuss your business and how we'll deliver that 30% revenue increase. Guaranteed.
           </p>
-          <Link href="/" className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000] transition-all" style={{ fontFamily: "'Georgia', serif" }}>
+          <Link href="/" className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all" style={{ fontFamily: "'Georgia', serif" }}>
             Return Home
           </Link>
         </div>
@@ -59,13 +59,18 @@ export default function ApplyPage() {
       <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-16 overflow-hidden">
         {/* Cityscape hero background */}
         <div className="absolute inset-0 z-0">
-          <img src="/heroes/Gemini_Generated_Image_c7ujjpc7ujjpc7uj.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }} />
+          <img src="/heroes/philadelphia-skyline.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }}  loading="lazy" />
           {/* Gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/60 via-[#1a1a2e]/50 to-black/70"></div>
         </div>
 
+        {/* Character image */}
+        <div className="absolute right-0 bottom-0 w-64 md:w-80 opacity-40 z-0">
+          <img src="/characters/don-mobster.png" alt="The Don" className="w-full h-auto"  loading="lazy" />
+        </div>
+
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
             Join <span className="text-[#FFD700]">The Family</span>
           </h1>
           <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
@@ -78,7 +83,7 @@ export default function ApplyPage() {
       {/* Form Section */}
       <section className="py-16 bg-gradient-to-b from-[#1a1a2e] to-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-12">
+          <div className="bg-[#2a1a4a]/10 border-l-4 border-[#FFD700] p-6 mb-12">
             <h3 className="text-xl font-bold text-white mb-2">What Happens Next?</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-200">
               <li>Submit your application below (takes 2 minutes)</li>
@@ -90,7 +95,7 @@ export default function ApplyPage() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-200 mb-2">
                   Full Name *
@@ -124,7 +129,7 @@ export default function ApplyPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               <div>
                 <label htmlFor="phone" className="block text-sm font-semibold text-gray-200 mb-2">
                   Phone Number *
@@ -238,12 +243,12 @@ export default function ApplyPage() {
       </section>
 
       {/* Why Partner */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
             Why Partner With Us?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-gradient-to-b from-[#1a1a2e] to-black p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-white mb-4">Guaranteed Results</h3>
               <p className="text-gray-300">

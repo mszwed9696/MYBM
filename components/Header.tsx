@@ -5,6 +5,8 @@ import { useState } from "react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
 
   return (
     <header className="fixed w-full bg-gradient-to-r from-[#1a1a2e] via-[#2a1a4a] to-[#1a1a2e] backdrop-blur-sm z-50 border-b border-[#FFD700]/30">
@@ -96,10 +98,62 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-3 bg-gradient-to-br from-[#1a1a2e] to-[#2a1a4a] border-t border-[#FFD700]/20">
             <div className="flex flex-col space-y-1">
-              <Link href="/services/fractional-cmo" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>Fractional CMO</Link>
-              <Link href="/services/paid-advertising" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>Paid Advertising</Link>
-              <Link href="/industries/coaches" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>High-Ticket Coaches</Link>
-              <Link href="/industries/consultants" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>Consultants</Link>
+              {/* Services Dropdown */}
+              <div>
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="w-full text-left text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors flex items-center justify-between"
+                >
+                  <span>Services</span>
+                  <svg
+                    className={`w-5 h-5 transition-transform ${servicesOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {servicesOpen && (
+                  <div className="bg-[#1a1a2e]/50 py-1">
+                    <Link href="/services/fractional-cmo" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Fractional CMO</Link>
+                    <Link href="/services/paid-advertising" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Paid Advertising</Link>
+                    <Link href="/services/marketing-strategy" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Marketing Strategy</Link>
+                    <Link href="/services/funnel-optimization" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Funnel Optimization</Link>
+                    <Link href="/services/content-marketing" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Content & SEO</Link>
+                    <Link href="/services/marketing-automation" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Marketing Automation</Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Industries Dropdown */}
+              <div>
+                <button
+                  onClick={() => setIndustriesOpen(!industriesOpen)}
+                  className="w-full text-left text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors flex items-center justify-between"
+                >
+                  <span>Industries</span>
+                  <svg
+                    className={`w-5 h-5 transition-transform ${industriesOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {industriesOpen && (
+                  <div className="bg-[#1a1a2e]/50 py-1">
+                    <Link href="/industries/coaches" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>High-Ticket Coaches</Link>
+                    <Link href="/industries/consultants" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Consultants</Link>
+                    <Link href="/industries/course-creators" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Course Creators</Link>
+                    <Link href="/industries/service-businesses" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Service Businesses</Link>
+                    <Link href="/industries/product-businesses" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Product Businesses</Link>
+                    <Link href="/industries/saas" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>SaaS</Link>
+                  </div>
+                )}
+              </div>
+
               <Link href="/results" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>Results</Link>
               <Link href="/guarantee" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>Our Guarantee</Link>
               <Link href="/about" className="text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-4 py-3 transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>

@@ -34,6 +34,9 @@ export default function Header() {
                   <Link href="/services/paid-advertising" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Paid Advertising</Link>
                   <Link href="/services/marketing-strategy" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Marketing Strategy</Link>
                   <Link href="/services/funnel-optimization" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Funnel Optimization</Link>
+                  <Link href="/services/content-marketing" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Content & SEO</Link>
+                  <Link href="/services/marketing-automation" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Marketing Automation</Link>
+                  <Link href="/services/skool-community" className="block px-4 py-2 text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10">Skool Community</Link>
                 </div>
               </div>
             </div>
@@ -122,6 +125,7 @@ export default function Header() {
                     <Link href="/services/funnel-optimization" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Funnel Optimization</Link>
                     <Link href="/services/content-marketing" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Content & SEO</Link>
                     <Link href="/services/marketing-automation" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Marketing Automation</Link>
+                    <Link href="/services/skool-community" className="block text-gray-200 hover:text-[#FFD700] hover:bg-[#FFD700]/10 px-8 py-2 text-sm transition-colors" onClick={() => setMobileMenuOpen(false)}>Skool Community</Link>
                   </div>
                 )}
               </div>

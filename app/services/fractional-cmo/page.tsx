@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SkylineDivider from "@/components/SkylineDivider";

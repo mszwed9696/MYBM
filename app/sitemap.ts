@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'content-marketing',
     'marketing-automation',
     'consulting',
+    'skool-community',
   ]
 
   const servicePages = services.map(service => ({
@@ -91,5 +92,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  return [...mainPages, ...servicePages, ...industryPages]
+  // Blog posts
+  const blogPosts = [
+    'account-based-marketing-guide-consultants',
+    'course-creator-evergreen-funnel',
+    'fractional-cmo-vs-agency-vs-in-house',
+    'funnel-strategies-high-ticket-coaching',
+    'guaranteed-marketing-results',
+    'marketing-strategy-consultants',
+    'scale-coaching-business-500k-month',
+    'why-marketing-agencies-fail-high-ticket',
+  ]
+
+  const blogPostPages = blogPosts.map(post => ({
+    url: `${baseUrl}/blog/${post}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  return [...mainPages, ...servicePages, ...industryPages, ...blogPostPages]
 }

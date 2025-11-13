@@ -8,7 +8,7 @@ export default function BlogPost() {
         {/* Hero background image */}
         <div className="absolute inset-0 opacity-20 z-0">
           <img 
-            src="/heroes/detroit-skyline.png" 
+            src="/heroes/Gemini_Generated_Image_5g58tb5g58tb5g58.png" 
             alt="Cityscape" 
             className="w-full h-full object-cover" 
             style={{ objectPosition: "center center" }}  

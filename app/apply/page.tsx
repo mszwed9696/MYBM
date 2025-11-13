@@ -67,7 +67,7 @@ export default function ApplyPage() {
 
         {/* Character image */}
         <div className="absolute right-0 bottom-0 w-64 md:w-80 opacity-40 z-0">
-          <img src="/characters/don-mobster.png" alt="The Don" className="w-full h-auto"  loading="lazy" />
+          <img src="/characters/boss-city-hall.png" alt="The Don" className="w-full h-auto"  loading="lazy" />
         </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
+import { generateSEO } from "@/lib/seo";
 import ResultsHero from "@/components/ResultsHero";
 import SkylineDivider from "@/components/SkylineDivider";
 
-export const metadata = generateMetadata({
+export const metadata = generateSEO({
   title: "Client Results & Case Studies | Marketing Agency Success Stories",
   description: "Real results from high-ticket coaches, consultants, and businesses we've scaled. See case studies showing 30%-300%+ revenue increases.",
   keywords: [

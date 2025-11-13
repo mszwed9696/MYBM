@@ -2,30 +2,25 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import SkylineDivider from "@/components/SkylineDivider";
 
 export default function FractionalCMOPage() {
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* European Street cityscape - PROMINENT hero image */}
+        {/* Vegas Strip cityscape - PROMINENT hero image */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/fractional-cmo-hero.png" alt="European Street" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
+          <img src="/heroes/paid-advertising-hero.png" alt="Vegas Strip" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
           {/* Light gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
         </div>
-
-        {/* The Don character */}
-        <motion.div
-          className="absolute right-4 sm:right-8 md:right-16 lg:right-20 bottom-0 w-48 sm:w-60 md:w-80 lg:w-96 opacity-80 z-10"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.8 }}
-          transition={{ duration: 1 }}
+        {/* The Enforcer character */}
+        <div
+          className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
         >
-          <img src="/characters/fractional-cmo-character.png" alt="The Don" className="w-full h-auto"  loading="lazy" />
-        </motion.div>
+          <img src="/characters/paid-advertising-character.png" alt="The Enforcer" className="w-full h-auto"  loading="lazy" />
+        </div>
 
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
           <div className="max-w-4xl">
@@ -33,23 +28,23 @@ export default function FractionalCMOPage() {
               className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
               style={{ fontFamily: "'Georgia', serif" }}
             >
-              🎩 FRACTIONAL CMO - THE CONSIGLIERE 🎩
+              🎯 PAID ADVERTISING - THE ENFORCER 🎯
             </div>
             <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
             >
-              Every Don Needs A<br />
-              <span className="text-[#FFD700]">Trusted Consigliere</span>
+              We Don't Chase Leads<br />
+              We <span className="text-[#FFD700]">Enforce Results</span>
             </h1>
             <p
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
+              style={{ fontFamily: "'Georgia', serif" }}
             >
-              Strategic marketing leadership for $100k+ monthly businesses.
-              <span className="text-[#FFD700] font-bold"> No $250k+ salary. No empty suits.</span> Just results.
+              Paid ads across Google, Facebook, LinkedIn, YouTube.
+              <span className="text-[#FFD700] font-bold"> No tire-kickers. No BS. Just qualified buyers.</span>
             </p>
-            <div>
+            <div
+            >
               <Link
                 href="/apply"
                 className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
@@ -67,38 +62,196 @@ export default function FractionalCMOPage() {
         <SkylineDivider className="text-white" />
       </div>
 
-      {/* Main Content */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+      {/* Problem */}
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-                When You Need <span className="text-[#8B0000]">The Consigliere</span>
-              </h2>
-              <ul className="space-y-3 sm:space-y-4">
+        </div>
+      </section>
+
+      {/* Our Approach */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+            Our High-Ticket Paid Advertising Methodology
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
+              <h3 className="text-2xl font-bold mb-3">Precision Audience Targeting</h3>
+              <p className="text-gray-200">
+                We target based on income levels, job titles, company size, and buying behavior—not demographics.
+                Reach people who can afford your premium pricing.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔄</div>
+              <h3 className="text-2xl font-bold mb-3">Multi-Touch Attribution</h3>
+              <p className="text-gray-200">
+                High-ticket buyers need 7-12 touchpoints. We build campaigns across multiple platforms with
+                strategic retargeting and nurture sequences.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💰</div>
+              <h3 className="text-2xl font-bold mb-3">CAC:LTV Optimization</h3>
+              <p className="text-gray-200">
+                We optimize for customer lifetime value, not cost per lead. Spending $500-2k to acquire a $50k client
+                is a great ROI—we focus on what matters.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
+              <h3 className="text-2xl font-bold mb-3">Revenue Attribution</h3>
+              <p className="text-gray-200">
+                Track every dollar from ad click to closed client. Full transparency on what's working, what's not,
+                and where to scale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VSL Funnel Strategy Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-red-900 to-red-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <div className="text-6xl mb-6">🎬</div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
+              VSL Funnels: The Silent Closer
+            </h2>
+            <p className="text-xl text-red-100">
+              Video Sales Letters that sell high-ticket offers while you sleep. No sales calls needed until they're ready to wire the money.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif" }}>What's a VSL Funnel?</h3>
+              <p className="text-red-100 mb-4">
+                A Video Sales Letter is a long-form video (15-45 minutes) that does all the selling for you.
+                We drive paid traffic directly to the VSL, and it pitches your high-ticket offer using proven
+                persuasion frameworks.
+              </p>
+              <p className="text-red-100">
+                <span className="text-[#FFD700] font-bold">The Family way:</span> Your video does the heavy lifting.
+                Only qualified, pre-sold prospects book calls. Your close rate skyrockets because they already believe.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif" }}>Why VSLs Work for High-Ticket</h3>
+              <ul className="space-y-3 text-red-100">
                 <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're doing $100k+ monthly</strong> but your marketing is all over the place—no strategy, just tactics</span>
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Time to sell:</strong> 30-minute VSL vs 30-second ad gives you room to overcome objections</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're burning cash on ads</strong> with no one at the top calling the shots</span>
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Automation:</strong> Works 24/7 without you. Scale without hiring more salespeople</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You have a marketing team</strong> but they're rudderless—need a boss to lead them</span>
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Pre-qualification:</strong> Only serious buyers watch a 30-min video and apply</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You're ready to scale to 7 or 8 figures</strong> but don't have the marketing chops in-house</span>
+                  <span className="text-[#FFD700] mr-3 mt-1">•</span>
+                  <span><strong>Higher close rates:</strong> Prospects arrive pre-sold on your methodology and pricing</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>Agencies are executing</strong> but there's no strategic oversight—the inmates are running the asylum</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] text-2xl mr-3">💼</span>
-                  <span className="text-gray-700"><strong>You want a scalable marketing operation</strong> that doesn't depend on you for every decision</span>
-                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-black/30 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]">
+            <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+              Our VSL Funnel Package
+            </h3>
+            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+              <div>
+                <div className="text-3xl mb-3">📝</div>
+                <h4 className="font-bold text-lg mb-2">Script Writing</h4>
+                <p className="text-red-100 text-sm">
+                  Hook, story, offer, objection handling, close. We write VSL scripts using proven frameworks that convert cold traffic.
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl mb-3">🎥</div>
+                <h4 className="font-bold text-lg mb-2">Video Production</h4>
+                <p className="text-red-100 text-sm">
+                  Professional filming, editing, graphics, captions. Or simple slide-based VSLs that convert just as well.
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl mb-3">🎯</div>
+                <h4 className="font-bold text-lg mb-2">Paid Traffic Campaigns</h4>
+                <p className="text-red-100 text-sm">
+                  Facebook, YouTube, and Google ads driving targeted traffic to your VSL. Optimized for cost per qualified application.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Platforms */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+            Multi-Platform Paid Advertising Management
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Google Ads (Search & Display)</h3>
+              <p className="text-gray-700 mb-4">
+                Capture high-intent buyers actively searching for solutions. Search campaigns for bottom-funnel,
+                display for awareness and retargeting.
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>High-intent keyword targeting</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Competitor conquest campaigns</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Display retargeting sequences</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>YouTube pre-roll and discovery ads</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Facebook & Instagram Ads</h3>
+              <p className="text-gray-700 mb-4">
+                Advanced audience targeting for coaches, consultants, and high-ticket offers. Best for awareness,
+                lead generation, and application funnels.
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Custom audience targeting (income, interests, behaviors)</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Lookalike audiences from best clients</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Video view and engagement campaigns</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Multi-step retargeting funnels</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">LinkedIn Ads</h3>
+              <p className="text-gray-700 mb-4">
+                Perfect for B2B consultants, executive coaches, and professional services. Target by job title,
+                company, industry, and seniority.
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Job title and seniority targeting</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Company size and industry filters</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Sponsored content and InMail campaigns</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Account-based marketing (ABM) for enterprise</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">YouTube Advertising</h3>
+              <p className="text-gray-700 mb-4">
+                Video ads for building trust and authority. Pre-roll, discovery, and action campaigns optimized
+                for high-ticket conversion.
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Skippable and non-skippable pre-roll</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Discovery ads in search results</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Remarketing to engaged viewers</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Action campaigns for conversions</li>
               </ul>
             </div>
           </div>
@@ -106,181 +259,89 @@ export default function FractionalCMOPage() {
       </section>
 
       {/* What's Included */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a2a2a] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-              What The <span className="text-[#FFD700]">Consigliere</span> Handles
-            </h2>
-            <p className="text-xl text-gray-300" style={{ fontFamily: "'Georgia', serif" }}>
-              Complete marketing leadership. No guesswork. No excuses.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Strategy Development</h3>
-              <p className="text-gray-300">
-                The master plan. Your roadmap to domination. Strategy aligned with your business goals and market position.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Team Leadership & Management</h3>
-              <p className="text-gray-300">
-                We run the crew. Lead your internal team, manage agency partners, make sure everyone's following orders.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Customer Acquisition Strategy</h3>
-              <p className="text-gray-300">
-                Multi-channel plays optimized for high-ticket sales. We bring in the right people, not tire-kickers.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Budget Optimization</h3>
-              <p className="text-gray-300">
-                Every dollar has a job. Strategic allocation for maximum ROI. No wasteful spending on our watch.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Brand Positioning & Messaging</h3>
-              <p className="text-gray-300">
-                Define your territory. Own your market position. Make competitors look like amateurs.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Systems & Processes</h3>
-              <p className="text-gray-300">
-                Build infrastructure that scales. Systems that work while you sleep. Sustainable growth, not chaos.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Performance Analytics & Reporting</h3>
-              <p className="text-gray-300">
-                Track what matters. Executive-level insights. We tell you what's working and what's getting cut.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Go-to-Market Planning</h3>
-              <p className="text-gray-300">
-                Launch strategies for new offers. Market expansion. We make sure every launch is a hit, not a flop.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#1a1a2e] to-black p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30 hover:border-[#FFD700] transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#FFD700] mb-2 sm:mb-3" style={{ fontFamily: "'Georgia', serif" }}>Marketing Technology Stack</h3>
-              <p className="text-gray-300">
-                Select and optimize your tools. The right tech for maximum efficiency. No bloated software budgets.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Served */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Fractional CMO Services for Every High-Ticket Business Type
+            Complete Paid Advertising Management
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            <Link href="/industries/coaches" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">High-Ticket Coaches</h3>
-              <p className="text-gray-700">$10k+ coaching programs, masterminds, and transformation programs</p>
-            </Link>
-            <Link href="/industries/consultants" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Business Consultants</h3>
-              <p className="text-gray-700">Strategic consulting, implementation services, and advisory</p>
-            </Link>
-            <Link href="/industries/course-creators" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Course Creators</h3>
-              <p className="text-gray-700">Premium online courses, certifications, and training programs</p>
-            </Link>
-            <Link href="/industries/service-businesses" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">B2B Service Businesses</h3>
-              <p className="text-gray-700">Professional services, agencies, and specialized B2B offerings</p>
-            </Link>
-            <Link href="/industries/saas" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">SaaS Companies</h3>
-              <p className="text-gray-700">B2B software platforms doing $1M+ ARR</p>
-            </Link>
-            <Link href="/industries/product-businesses" className="p-4 sm:p-5 md:p-6 border-2 border-gray-200 rounded-xl hover:border-[#FFD700] hover:shadow-lg transition-all">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">High-Ticket Products</h3>
-              <p className="text-gray-700">Premium ecommerce, luxury goods, and B2B equipment</p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#8B0000] to-black text-white relative overflow-hidden">
-        {/* Character image */}
-        <motion.div
-          className="absolute left-0 bottom-0 w-40 sm:w-48 md:w-56 lg:w-64 opacity-50"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/characters/fractional-cmo-character.png" alt="The Boss" className="w-full h-auto"  loading="lazy" />
-        </motion.div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-            Why <span className="text-[#FFD700]">The Family</span> Is Different
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-black/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Proven Track Record</h3>
-              <p className="text-gray-200">
-                We've scaled dozens of high-ticket businesses from 6 to 7 and 7 to 8 figures. We don't guess. We execute what works.
-              </p>
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Strategy & Planning</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Competitive analysis</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Audience research</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Platform selection</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Budget allocation</li>
+              </ul>
             </div>
-            <div className="bg-black/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>High-Ticket Specialization</h3>
-              <p className="text-gray-200">
-                Unlike amateurs, we exclusively work with high-ticket businesses. Long sales cycles, premium positioning—this is our territory.
-              </p>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Campaign Creation</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Ad copy writing</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Creative design</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Video ad production</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>VSL funnel creation & scripting</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Landing page optimization</li>
+              </ul>
             </div>
-            <div className="bg-black/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>The Family Guarantee</h3>
-              <p className="text-gray-200">
-                30% revenue increase in year 1 or we work for free. Find another Consigliere who guarantees results. You can't.
-              </p>
-            </div>
-            <div className="bg-black/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Hands-On Execution</h3>
-              <p className="text-gray-200">
-                We don't create PowerPoint decks and disappear. We execute. We're in the trenches with you. That's the family way.
-              </p>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Ongoing Optimization</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Daily monitoring</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>A/B testing</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Bid optimization</li>
+                <li className="flex items-start"><span className="text-[#FFD700] mr-2">•</span>Performance reporting</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black to-[#1a1a2e] text-white">
+      {/* Results */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
+            Paid Advertising Results
+          </h2>
+          <div className="grid md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$1.8M</div>
+              <div className="text-xl font-semibold mb-4">Revenue Generated</div>
+              <p className="text-gray-400">Business coaching program: $22k ad spend generated $1.8M in closed clients over 12 months</p>
+            </div>
+            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>8.2x</div>
+              <div className="text-xl font-semibold mb-4">ROAS</div>
+              <p className="text-gray-400">Consultant: $35k/month ad spend returning $287k/month in new client revenue</p>
+            </div>
+            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
+              <div className="text-5xl font-bold text-red-400 mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$2.4M</div>
+              <div className="text-xl font-semibold mb-4">VSL Funnel Revenue</div>
+              <p className="text-gray-400">High-ticket program: VSL converting at 3.2% to $25k offer. $82k ad spend → $2.4M revenue in 8 months</p>
+            </div>
+            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
+              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$847</div>
+              <div className="text-xl font-semibold mb-4">Cost Per Qualified Lead</div>
+              <p className="text-gray-400">Course creator: Generating leads who convert at $15k average—profitable at $847 CPL</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-            Ready to Bring In <span className="text-[#FFD700]">The Consigliere</span>?
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
+            Ready for Paid Ads That Actually Work?
           </h2>
-          <p className="text-xl text-gray-300 mb-8" style={{ fontFamily: "'Georgia', serif" }}>
-            If you're doing $100k+ monthly and serious about scaling, let's talk.
-            <br />We don't work with everyone. Only serious players.
+          <p className="text-xl mb-8 text-gray-200">
+            Stop wasting money on agencies optimizing for vanity metrics. Get campaigns built for high-ticket revenue.
           </p>
           <Link
             href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 rounded-lg font-bold text-lg sm:text-xl hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-2xl"
-            style={{ fontFamily: "'Georgia', serif" }}
+            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
           >
-            Join The Family
+            Apply for Partnership
           </Link>
         </div>
       </section>

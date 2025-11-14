@@ -1,63 +1,57 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import SkylineDivider from "@/components/SkylineDivider";
 
 export default function CoachesPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* Phoenix Desert cityscape - PROMINENT hero image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/coaches-hero.png" alt="Phoenix Desert" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
-          {/* Light gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
-        </div>
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      {/* Newspaper Hero Section */}
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
+          {/* Cityscape background */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <img
+              src="/heroes/phoenix-skyline.png"
+              alt="Cityscape"
+              className="w-full h-full object-contain"
+              style={{ filter: "grayscale(100%) contrast(1.3)" }}
+            />
+          </div>
 
-        {/* The Muscle character */}
-        <div
-          className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
-        >
-          <img src="/characters/coaches-character.png" alt="The Muscle" className="w-full h-auto"  loading="lazy" />
-        </div>
+          {/* Character */}
+          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
+            <img
+              src="/characters/muscle-character.png"
+              alt="Character"
+              className="w-full h-auto"
+              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
+            />
+          </div>
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
-          <div className="max-w-4xl">
-            <div
-              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              💪 FOR HIGH-TICKET COACHES 💪
+          <div className="relative z-20 max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
+              ★ FOR HIGH-TICKET COACHES ★
             </div>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-            >
-              Build A Coaching Empire<br />
-              <span className="text-[#FFD700]">That Commands Respect</span>
+
+            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+              Build A Coaching Empire<br />That Commands Respect
             </h1>
-            <p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
-            >
-              Stop begging for clients. Build a system that fills your programs on demand.
-              <span className="text-[#FFD700] font-bold"> 30% revenue increase guaranteed. No excuses.</span>
+
+            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
+              Stop begging for clients. Build a system that fills your programs on demand. 30% revenue increase guaranteed.
             </p>
-            <div
-              className="flex flex-col sm:flex-row gap-4"
-            >
+
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/apply"
-                className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg text-center"
-                style={{ fontFamily: "'Georgia', serif" }}
+                className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all text-center"
               >
-                Join The Family
+                Join The Operation
               </Link>
               <Link
                 href="/results"
-                className="bg-black/50 border-2 border-[#FFD700] text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-black/70 transition-all text-center"
-                style={{ fontFamily: "'Georgia', serif" }}
+                className="inline-block bg-white text-black px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all text-center"
               >
                 See The Results
               </Link>
@@ -66,264 +60,209 @@ export default function CoachesPage() {
         </div>
       </section>
 
-      {/* Skyline Divider */}
-      <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+      {/* Newspaper Divider */}
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Coaches</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
       </div>
 
-      {/* Pain Points */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        </div>
-      </section>
-
-      {/* Solution */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* The Problem Section */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-              Our Marketing Solutions for <span className="text-[#FFD700]">High-Ticket Coaches</span>
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Most Coaches Are <span className="line-through">Trapped</span> In Feast Or Famine
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              We've scaled dozens of coaching businesses from $100k/mo to $500k+/mo with our proven marketing system
+            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
+              Inconsistent leads. Unpredictable revenue. We fix that.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Application Funnel Systems</h3>
-              <p className="text-gray-200">
-                High-converting application funnels that pre-qualify leads and book your calendar with ready-to-buy prospects.
-                No more discovery calls with tire-kickers.
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              Here's the brutal truth about coaching: 90% of coaches are stuck doing $5-20k months, riding a revenue roller coaster that never stops.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              One month you close three high-ticket clients and bank $60k. Next month? Nothing. You're back to begging for discovery calls on Instagram. <span className="font-bold">That's not a business—that's a gambling addiction.</span>
+            </p>
+
+            <p className="newspaper-body mb-4">
+              The problem isn't your coaching. It's your marketing. Most coaches waste time on social media, hoping the algorithm blesses them. They run ads that burn cash. They build funnels that leak like sieves. They launch programs to empty rooms.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              We build predictable client acquisition systems for high-ticket coaches. Consistent leads. Reliable revenue. 30% minimum growth guaranteed. Or we work for free.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do For Coaches */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              How We Help Coaches
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Positioning & Authority</h3>
+              <p className="newspaper-body leading-relaxed">
+                Stop competing on price. We position you as the premium option in your niche. Clear differentiation. Premium pricing power. Clients who beg to work with you, not the other way around.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📱</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Multi-Channel Paid Advertising</h3>
-              <p className="text-gray-200">
-                Strategic campaigns across Facebook, Instagram, YouTube, and LinkedIn targeting your ideal coaching clients.
-                Optimized for high-ticket conversion, not cheap leads.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📊</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Paid Ad Systems</h3>
+              <p className="newspaper-body leading-relaxed">
+                Predictable lead flow from Facebook, Instagram, YouTube. No more hoping and praying. We build funnels that convert cold traffic into booked calls at profitable CAC.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Authority-Building Content</h3>
-              <p className="text-gray-200">
-                Thought leadership content that positions you as THE expert in your niche. SEO-optimized to attract
-                organic leads who are already sold on you.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📝</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Content & Authority Marketing</h3>
+              <p className="newspaper-body leading-relaxed">
+                Thought leadership content that attracts premium clients. LinkedIn, podcasts, YouTube, SEO—strategic content that builds authority and fills your calendar with qualified leads.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🚀</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Webinar & VSL Funnels</h3>
-              <p className="text-gray-200">
-                Automated and live webinar systems that sell your high-ticket coaching on autopilot. Plus video sales
-                letters that convert cold traffic.
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🧲</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Lead Nurture Sequences</h3>
-              <p className="text-gray-200">
-                Email and SMS sequences that warm up leads over time, turning "not now" into "yes" when they're
-                ready to invest.
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
-              <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Georgia', serif" }}>Revenue Analytics & Optimization</h3>
-              <p className="text-gray-200">
-                Track every dollar from ad spend to client LTV. Continuously optimize for maximum ROI and
-                predictable revenue growth.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">⚡</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Sales & Conversion Optimization</h3>
+              <p className="newspaper-body leading-relaxed">
+                Convert more discovery calls. Optimize application funnels. Improve close rates. We don't just generate leads—we help you turn them into high-ticket clients.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Coaching Types */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Marketing Solutions for Every Type of High-Ticket Coaching
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center">
-            We specialize in marketing for coaches across all niches and formats
+      {/* Why Coaches Choose Us */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ SPECIAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Why Coaches Choose Us
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">We Understand High-Ticket Coaching</h3>
+              <p className="newspaper-body text-gray-700">
+                We don't run cookie-cutter tactics. We build strategies specific to high-ticket coaching: long sales cycles, relationship-based selling, authority positioning, trust-building funnels. We know your business model because we specialize in it.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Performance-Based Partnership</h3>
+              <p className="newspaper-body text-gray-700">
+                Most agencies get paid whether you make money or not. We guarantee 30% revenue growth. If you don't hit it, we work for free until you do. Our incentives are aligned with yours.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Complete Execution, Not Just Strategy</h3>
+              <p className="newspaper-body text-gray-700">
+                We don't hand you a playbook and disappear. We build the campaigns, manage the ads, create the content, optimize the funnels, track the metrics. You focus on delivering transformation to clients. We handle everything else.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Proven Track Record With Coaches</h3>
+              <p className="newspaper-body text-gray-700">
+                We've scaled dozens of coaching businesses from $100k/mo to $300k+/mo. We know what works in your industry: the offer positioning, the funnel structure, the ad creative, the nurture sequences. We've already solved the problems you're facing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Real Results For Coaches
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">+287%</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
+              <p className="font-newspaper text-gray-700">
+                Average results across our coaches clients in first 12 months
+              </p>
+            </div>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">30%</div>
+              <div className="font-headline text-xl uppercase mb-4">Minimum Guarantee</div>
+              <p className="font-newspaper text-gray-700">
+                Revenue increase guaranteed in year 1, or we work for free until you get it
+              </p>
+            </div>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">$100k+</div>
+              <div className="font-headline text-xl uppercase mb-4">Monthly Revenue</div>
+              <p className="font-newspaper text-gray-700">
+                Minimum requirement to work with us. We only serve established coaches
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pull Quote */}
+      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
+            "We're not just another agency. We're your partners. We protect our partners. We deliver results. Or we don't get paid. Capisce?"
           </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Business Coaching</h3>
-              <p className="text-gray-700">
-                Marketing solutions for business coaches, revenue coaches, and scaling consultants with $10k+ programs
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Executive & Leadership Coaching</h3>
-              <p className="text-gray-700">
-                Target C-suite executives and senior leaders with premium coaching and advisory services
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Life & Transformation Coaching</h3>
-              <p className="text-gray-700">
-                High-ticket personal transformation, mindset coaching, and life coaching programs
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Health & Wellness Coaching</h3>
-              <p className="text-gray-700">
-                Premium health transformation, nutrition coaching, and wellness programs $5k+
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Relationship & Dating Coaching</h3>
-              <p className="text-gray-700">
-                High-end relationship transformation, dating coaching, and marriage programs
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Performance & Sports Coaching</h3>
-              <p className="text-gray-700">
-                Elite performance coaching, athletic coaching, and peak performance programs
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Financial & Wealth Coaching</h3>
-              <p className="text-gray-700">
-                Wealth building, financial transformation, and money mindset coaching services
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Group Coaching & Masterminds</h3>
-              <p className="text-gray-700">
-                Fill your mastermind programs, group coaching cohorts, and $25k+ group experiences
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">1-on-1 Premium Coaching</h3>
-              <p className="text-gray-700">
-                Build pipelines for $50k-100k+ per client 1-on-1 transformation programs
-              </p>
-            </div>
-          </div>
+          <p className="font-newspaper text-xl">
+            — Don Michael Szwed, Mind Your Business Media
+          </p>
         </div>
-      </section>
+      </div>
 
-      {/* Results */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
-            Real Results from Coaching Clients
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+287%</div>
-              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
-              <p className="text-gray-700">
-                Business coaching program: $80k/mo to $310k/mo in 9 months. Scaled from 8 clients/month to 31 clients/month
-                at $10k average.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+210%</div>
-              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
-              <p className="text-gray-700">
-                Leadership coaching: $95k/mo to $295k/mo in 11 months. Filled 12-month mastermind program
-                at $25k/person.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "'Georgia', serif" }}>+342%</div>
-              <div className="text-xl font-semibold mb-4 text-gray-900">Revenue Growth</div>
-              <p className="text-gray-700">
-                Life transformation coach: $65k/mo to $288k/mo in 8 months. Launched $15k group program
-                with automated funnel.
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <Link href="/results" className="text-[#8B0000] text-xl font-semibold hover:underline" style={{ fontFamily: "'Georgia', serif" }}>
-              View All Coaching Client Case Studies →
+      {/* CTA Section */}
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16 bg-black">
+            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+              Ready To Scale<br />Your Business?
+            </h2>
+            <p className="font-newspaper text-xl mb-10 text-white/90">
+              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+            </p>
+            <Link
+              href="/apply"
+              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
+            >
+              APPLY NOW
             </Link>
+            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
+              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Why Us */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Why Coaches Choose Mind Your Business Media
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">We Only Work With Coaches Doing $100k+ Monthly</h3>
-              <p className="text-gray-300">
-                We're not for coaches just starting out. We work with established coaches who are ready to scale from
-                6-to-7 or 7-to-8 figures. You need specialized strategies, not beginner tactics.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">30% Revenue Increase Guaranteed</h3>
-              <p className="text-gray-300">
-                We guarantee a 30% net revenue increase in year 1. If we don't hit it, we work for free until we do.
-                No other marketing agency for coaches offers this.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">High-Ticket Coaching Specialists</h3>
-              <p className="text-gray-300">
-                We don't work with $97 programs. We exclusively serve high-ticket coaches with programs $5k-100k+.
-                We understand premium positioning and sophisticated buyer psychology.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">Complete Marketing Execution</h3>
-              <p className="text-gray-300">
-                We don't just create strategy decks. We execute everything: ads, funnels, emails, content, optimization.
-                Your entire marketing function, handled.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-            Ready to Scale Your <span className="text-[#FFD700]">Coaching Business?</span>
-          </h2>
-          <p className="text-xl mb-8 text-gray-200">
-            If you're a high-ticket coach doing $100k+ monthly and ready for predictable growth, let's talk.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-[#FFD700] text-black px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#FFA500] transition-all shadow-lg"
-            style={{ fontFamily: "'Georgia', serif" }}
-          >
-            Apply for Partnership
-          </Link>
-          <p className="mt-6 text-gray-300 text-sm">
-            Limited coaching client partnerships available
-          </p>
         </div>
       </section>
     </div>

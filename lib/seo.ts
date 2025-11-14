@@ -14,7 +14,7 @@ export function generateSEO({
   description,
   keywords = [],
   path = '',
-  image = '/myb-logo-gold.png',
+  image = '/myb-logo.png',
   type = 'website',
 }: SEOProps): Metadata {
   const baseUrl = 'https://mybm.vercel.app'

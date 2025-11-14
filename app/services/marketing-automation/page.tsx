@@ -1,310 +1,200 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import SkylineDivider from "@/components/SkylineDivider";
 
 export default function MarketingAutomationPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* Detroit Skyline cityscape - PROMINENT hero image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/marketing-automation-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
-          {/* Light gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
-        </div>
-        {/* The Partner character */}
-        <div
-          className="absolute right-0 bottom-0 w-64 md:w-80 opacity-60 z-0"
-        >
-          <img src="/characters/marketing-automation-character.png" alt="The Partner" className="w-full h-auto"  loading="lazy" />
-        </div>
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      {/* Newspaper Hero Section */}
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
+          {/* Cityscape background */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <img
+              src="/heroes/philadelphia-skyline.png"
+              alt="Cityscape"
+              className="w-full h-full object-contain"
+              style={{ filter: "grayscale(100%) contrast(1.3)" }}
+            />
+          </div>
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
-          <div className="max-w-4xl">
-            <div
-              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              🤝 MARKETING AUTOMATION - THE PARTNER 🤝
+          {/* Character */}
+          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
+            <img
+              src="/characters/tech-automation.png"
+              alt="Character"
+              className="w-full h-auto"
+              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
+            />
+          </div>
+
+          <div className="relative z-20 max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
+              ★ MARKETING AUTOMATION - THE TECH ★
             </div>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-            >
-              Your Marketing<br />
-              <span className="text-[#FFD700]">Works While You Sleep</span>
+
+            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+              Scale Marketing<br />Without Scaling Headcount
             </h1>
-            <p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              Automated systems that nurture leads, book calls, close deals.
-              <span className="text-[#FFD700] font-bold"> 24/7 operation. No days off. Just results.</span>
+
+            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
+              Automated nurture sequences and sales systems that run 24/7 while you focus on delivery.
             </p>
-            <div
+
+            <Link
+              href="/apply"
+              className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all"
             >
-              <Link
-                href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
-                style={{ fontFamily: "'Georgia', serif" }}
-              >
-                Join The Family
-              </Link>
-            </div>
+              Join The Operation
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Skyline Divider */}
-      <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+      {/* Newspaper Divider */}
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Marketing Automation</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
       </div>
 
-      {/* Problem */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            The Problem With Manual Marketing
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Time Bottleneck</h3>
-              <p className="text-gray-700">
-                You're manually sending emails, following up with leads, and managing campaigns. Your time should
-                be spent on strategy and delivery, not repetitive tasks.
+      {/* The Problem Section */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Most Businesses Are <span className="line-through">Stuck</span> In Manual Marketing
+            </h2>
+            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
+              Every lead requires manual follow-up. Every campaign needs hands-on management. That doesn't scale.
+            </p>
+          </div>
+
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              You can't scale to 7 or 8 figures doing everything manually.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              <span className="font-bold">Marketing automation isn't about sending more emails. It's about building systems that nurture leads, qualify prospects, and move buyers through your funnel—automatically.</span>
+            </p>
+
+            <p className="newspaper-body mb-4">
+              High-ticket automation is sophisticated: behavior-based triggers, lead scoring, segmentation, multi-channel orchestration. Done right, it feels personal. Done wrong, it feels spammy.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              We build automation systems that scale revenue without scaling team size. Sophisticated sequences that nurture complex sales cycles. Attribution tracking that shows ROI. And we guarantee 30% growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Automation Services */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Automation Services
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">⚙️</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Email Automation</h3>
+              <p className="newspaper-body leading-relaxed">
+                Sophisticated nurture sequences based on behavior, engagement, and buying stage. Automated follow-up that feels personal and converts at high rates.
               </p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Inconsistent Follow-Up</h3>
-              <p className="text-gray-700">
-                Leads fall through cracks. Some get nurtured, some don't. No systematic approach to moving
-                prospects through your pipeline.
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Lead Scoring & Segmentation</h3>
+              <p className="newspaper-body leading-relaxed">
+                Automatically qualify and segment leads based on behavior, firmographics, and engagement. Sales only talks to hot leads. Everything else nurtures automatically.
               </p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Can't Scale</h3>
-              <p className="text-gray-700">
-                Doubling revenue means doubling your workload and team size. You need leverage to grow
-                without linear costs.
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📊</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">CRM & Marketing Stack</h3>
+              <p className="newspaper-body leading-relaxed">
+                Complete marketing infrastructure: CRM setup, automation workflows, integration management, data hygiene. Systems that scale with your business.
+              </p>
+            </div>
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🔄</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Multi-Channel Orchestration</h3>
+              <p className="newspaper-body leading-relaxed">
+                Coordinate campaigns across email, SMS, retargeting, LinkedIn, and more. Unified messaging. Seamless buyer experience. Maximum conversion.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solution */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            What We Automate
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
-              <h3 className="text-2xl font-bold mb-3">Email Marketing Automation</h3>
-              <p className="text-gray-200 mb-4">
-                Automated email sequences that nurture leads from cold to hot. Welcome sequences, educational series,
-                sales sequences, and re-engagement campaigns.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• Welcome sequences for new subscribers</li>
-                <li>• Educational nurture series</li>
-                <li>• Sales sequences with strategic CTAs</li>
-                <li>• Cart abandonment recovery</li>
-                <li>• Re-engagement campaigns</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📅</div>
-              <h3 className="text-2xl font-bold mb-3">Calendar & Booking Automation</h3>
-              <p className="text-gray-200 mb-4">
-                Automated scheduling that fills your calendar with qualified prospects. Smart booking logic,
-                automated reminders, and no-show reduction.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• Intelligent calendar routing</li>
-                <li>• Automated booking confirmations</li>
-                <li>• Multi-touch reminder sequences</li>
-                <li>• Rescheduling automation</li>
-                <li>• Post-call follow-up</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
-              <h3 className="text-2xl font-bold mb-3">Lead Scoring & Segmentation</h3>
-              <p className="text-gray-200 mb-4">
-                Automatically tag and segment leads based on behavior, engagement, and demographics. Priority
-                routing to sales for hot leads.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• Behavioral tracking and scoring</li>
-                <li>• Automatic segmentation</li>
-                <li>• Hot lead notifications</li>
-                <li>• CRM integration and sync</li>
-                <li>• Pipeline automation</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💬</div>
-              <h3 className="text-2xl font-bold mb-3">SMS & Chat Automation</h3>
-              <p className="text-gray-200 mb-4">
-                Automated SMS sequences for appointment reminders, follow-ups, and engagement. AI chatbots to
-                qualify and route leads 24/7.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• SMS appointment confirmations</li>
-                <li>• Text-based nurture sequences</li>
-                <li>• Two-way conversational automation</li>
-                <li>• AI chatbot qualification</li>
-                <li>• After-hours lead capture</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔄</div>
-              <h3 className="text-2xl font-bold mb-3">Multi-Channel Workflows</h3>
-              <p className="text-gray-200 mb-4">
-                Sophisticated workflows across email, SMS, ads, and CRM. Trigger-based automation that responds
-                to prospect actions in real-time.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• Trigger-based workflows</li>
-                <li>• Cross-channel sequences</li>
-                <li>• Conditional logic and branching</li>
-                <li>• Abandoned funnel recovery</li>
-                <li>• Referral automation</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
-              <h3 className="text-2xl font-bold mb-3">Reporting & Analytics Automation</h3>
-              <p className="text-gray-200 mb-4">
-                Automated dashboards and reports delivered to your inbox. Real-time visibility into funnel
-                performance, revenue, and ROI.
-              </p>
-              <ul className="space-y-2 text-gray-200 text-sm">
-                <li>• Automated performance reports</li>
-                <li>• Real-time dashboards</li>
-                <li>• Revenue attribution</li>
-                <li>• Alert notifications</li>
-                <li>• Executive summaries</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tools */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Marketing Automation Platforms We Master
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">ActiveCampaign</h3>
-              <p className="text-gray-700">
-                Advanced automation, CRM, and email marketing. Best for complex multi-touch sequences.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">HubSpot</h3>
-              <p className="text-gray-700">
-                All-in-one platform for marketing, sales, and service. Great for teams scaling operations.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Keap (Infusionsoft)</h3>
-              <p className="text-gray-700">
-                Powerful automation with built-in CRM and e-commerce. Popular with coaches and consultants.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">GoHighLevel</h3>
-              <p className="text-gray-700">
-                White-label platform with SMS, email, funnels, and calendars. All-in-one for agencies.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Zapier & Make</h3>
-              <p className="text-gray-700">
-                Connect any tools together. Build custom automation workflows across platforms.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
-              <p className="text-gray-700">
-                We build custom automation with APIs, webhooks, and no-code tools for unique needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ROI */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            The ROI of Marketing Automation
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-            What happens when you automate marketing and sales processes
+      {/* Pull Quote */}
+      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
+            "The difference between 6 and 7 figures is often just automation. You can't manually follow up with 500 leads. But a properly built system can—and it'll convert them better than humans. That's scale."
           </p>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-[#2a1a4a]/10 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Before Automation</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-3">✗</span>
-                  <span>10-15 hours/week on manual marketing tasks</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-3">✗</span>
-                  <span>40-60% of leads never get followed up</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-3">✗</span>
-                  <span>Sales team handling unqualified leads</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-3">✗</span>
-                  <span>No visibility into funnel performance</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-3">✗</span>
-                  <span>Revenue caps based on manual capacity</span>
-                </li>
+          <p className="font-newspaper text-xl">
+            — Don Michael Szwed, Mind Your Business Media
+          </p>
+        </div>
+      </div>
+
+      {/* What's Included */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ WHAT YOU GET ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              What's Included
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Platform Setup</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>CRM selection & configuration</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Marketing automation platform setup</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Integration & data sync</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Lead scoring models</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Segmentation frameworks</li>
               </ul>
             </div>
-            <div className="bg-green-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">After Automation</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-green-600 text-xl mr-3">✓</span>
-                  <span>90% reduction in manual marketing work</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 text-xl mr-3">✓</span>
-                  <span>100% of leads nurtured systematically</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 text-xl mr-3">✓</span>
-                  <span>Only qualified leads reach sales team</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 text-xl mr-3">✓</span>
-                  <span>Real-time dashboards and insights</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 text-xl mr-3">✓</span>
-                  <span>Scale revenue without scaling team</span>
-                </li>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Automation Development</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>Email nurture sequences</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Behavior-based triggers</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Lead qualification workflows</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Sales handoff automation</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Re-engagement campaigns</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Management & Optimization</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>Performance monitoring</li>
+                <li className="flex items-start"><span className="mr-2">•</span>A/B testing sequences</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Deliverability optimization</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Reporting & analytics</li>
+                <li className="flex items-start"><span className="mr-2">•</span>30% growth guarantee</li>
               </ul>
             </div>
           </div>
@@ -312,46 +202,64 @@ export default function MarketingAutomationPage() {
       </section>
 
       {/* Results */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Marketing Automation Results
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
-              <div className="text-xl font-semibold mb-4">Time Saved</div>
-              <p className="text-gray-400">Coach reduced weekly marketing time from 14 hours to 2 hours with full automation</p>
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Results That Matter
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">43%</div>
+              <div className="font-headline text-xl uppercase mb-4">Lead-to-Close Rate</div>
+              <p className="font-newspaper text-gray-700">
+                SaaS company: Automated lead scoring and nurture increased close rate from 12% to 43% without adding sales reps
+              </p>
             </div>
-            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+143%</div>
-              <div className="text-xl font-semibold mb-4">Lead Conversion</div>
-              <p className="text-gray-400">Consultant increased lead-to-client rate from 12% to 29% with automated nurture</p>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">6.2x</div>
+              <div className="font-headline text-xl uppercase mb-4">Sales Productivity</div>
+              <p className="font-newspaper text-gray-700">
+                Consulting firm: Automation qualified leads before sales contact, increasing deals closed per rep from 3.1 to 19.2 monthly
+              </p>
             </div>
-            <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$287k</div>
-              <div className="text-xl font-semibold mb-4">Revenue From Automation</div>
-              <p className="text-gray-400">Course creator generated $287k from automated evergreen funnel in 12 months</p>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">+267%</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
+              <p className="font-newspaper text-gray-700">
+                Course creator: Email automation and segmentation grew revenue from $68k/mo to $249k/mo in 11 months
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Ready to Automate Your Marketing?
-          </h2>
-          <p className="text-xl mb-8 text-gray-200">
-            Stop trading time for revenue. Build systems that scale without you.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
-          >
-            Get Your Automation Strategy
-          </Link>
+      {/* Final CTA */}
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16 bg-black">
+            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+              Ready To Get Started?
+            </h2>
+            <p className="font-newspaper text-xl mb-10 text-white/90">
+              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+            </p>
+            <Link
+              href="/apply"
+              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
+            >
+              APPLY NOW
+            </Link>
+            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
+              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+            </p>
+          </div>
         </div>
       </section>
     </div>

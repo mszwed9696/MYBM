@@ -1,307 +1,327 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import SkylineDivider from "@/components/SkylineDivider";
 
 export default function MarketingStrategyPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* Chicago Bean cityscape - PROMINENT hero image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/marketing-strategy-hero.png" alt="Chicago Bean" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
-          {/* Light gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
-        </div>
-        {/* The Boss character */}
-        <div
-          className="absolute right-0 bottom-0 w-72 md:w-96 opacity-70 z-0"
-        >
-          <img src="/characters/marketing-strategy-character.png" alt="The Boss" className="w-full h-auto"  loading="lazy" />
-        </div>
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      {/* Newspaper Hero Section */}
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
+          {/* Cityscape background */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <img
+              src="/heroes/philadelphia-skyline.png"
+              alt="Cityscape"
+              className="w-full h-full object-contain"
+              style={{ filter: "grayscale(100%) contrast(1.3)" }}
+            />
+          </div>
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
-          <div className="max-w-4xl">
-            <div
-              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              👑 MARKETING STRATEGY - THE BOSS 👑
+          {/* Character */}
+          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
+            <img
+              src="/characters/consigliere-wisdom.png"
+              alt="Character"
+              className="w-full h-auto"
+              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
+            />
+          </div>
+
+          <div className="relative z-20 max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
+              ★ MARKETING STRATEGY - THE CONSIGLIERE ★
             </div>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-            >
-              Strategy From<br />
-              <span className="text-[#FFD700]">The Top. Not The Bottom.</span>
+
+            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+              Strategy Without Execution<br />Is Just Talk
             </h1>
-            <p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              Stop throwing tactics at the wall. Get a master plan designed for domination.
-              <span className="text-[#FFD700] font-bold"> Custom strategy. Proven roadmap. Guaranteed results.</span>
+
+            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
+              Custom marketing strategies for high-ticket businesses. We don't just plan it—we execute it.
             </p>
-            <div
+
+            <Link
+              href="/apply"
+              className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all"
             >
-              <Link
-                href="/apply"
-                className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg"
-                style={{ fontFamily: "'Georgia', serif" }}
-              >
-                Join The Family
-              </Link>
-            </div>
+              Join The Operation
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Skyline Divider */}
-      <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+      {/* Newspaper Divider */}
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Marketing Strategy</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
       </div>
 
-      {/* Problem */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* The Problem Section */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Most Strategy Consultants Are <span className="line-through">All Talk</span>
+            </h2>
+            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
+              They hand you a deck and disappear. We execute the entire plan.
+            </p>
+          </div>
+
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              You've seen it before: hire a consultant, pay $20-50k for a strategy deck, then... nothing. You're left to execute it yourself. Most businesses can't. The deck collects dust.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              <span className="font-bold">We don't do strategy decks. We do complete execution.</span> Your marketing strategy is worthless unless someone implements it correctly.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              Here's how we're different: we build the strategy, we execute every piece, and we guarantee 30% revenue growth. If the strategy doesn't deliver, we keep working for free until it does.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              That's why other consultants charge for decks and run. They can't guarantee execution. We can. We do. Every time.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Our Process */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-            The <span className="text-[#FFD700]">Family's</span> Strategy Development Process
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/20 hover:border-[#FFD700] transition-all">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
-              <h3 className="text-2xl font-bold mb-3 text-[#FFD700]" style={{ fontFamily: "'Georgia', serif" }}>Deep Business Analysis</h3>
-              <p className="text-gray-300">
-                We analyze your business model, offers, pricing, unit economics, customer LTV, sales process, and
-                current marketing. Find what's working and what's not.
+      {/* Strategic Services */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Strategic Marketing Services
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Positioning & Messaging</h3>
+              <p className="newspaper-body leading-relaxed">
+                Most businesses sound like everyone else. We build positioning that makes you the only choice in your market. Clear differentiation. Premium pricing power. Market dominance.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔍</div>
-              <h3 className="text-2xl font-bold mb-3">Market & Competitive Research</h3>
-              <p className="text-gray-200">
-                Study your market, competitors, customer psychology, and industry trends. Identify white space
-                opportunities and positioning strategies.
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📈</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Go-To-Market Strategy</h3>
+              <p className="newspaper-body leading-relaxed">
+                Complete go-to-market planning for new offers, market expansion, or repositioning. Channel selection, budget allocation, timeline, KPIs—all tied to our 30% revenue guarantee.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
-              <h3 className="text-2xl font-bold mb-3">Strategic Positioning</h3>
-              <p className="text-gray-200">
-                Define your unique market position, differentiation, and messaging. Create a positioning strategy
-                that commands premium pricing.
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">💼</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Marketing Infrastructure</h3>
+              <p className="newspaper-body leading-relaxed">
+                Build scalable marketing systems: CRM setup, automation workflows, lead scoring, attribution models, reporting dashboards. Infrastructure that supports 7 and 8-figure growth.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📈</div>
-              <h3 className="text-2xl font-bold mb-3">Growth Roadmap</h3>
-              <p className="text-gray-200">
-                Map out the exact channels, campaigns, and initiatives to hit your revenue goals. Prioritized by
-                impact and feasibility.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>💰</div>
-              <h3 className="text-2xl font-bold mb-3">Budget Allocation</h3>
-              <p className="text-gray-200">
-                Strategic budget allocation across channels and campaigns. Know exactly where to spend for
-                maximum ROI.
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🚀</div>
-              <h3 className="text-2xl font-bold mb-3">90-Day Execution Plan</h3>
-              <p className="text-gray-200">
-                Detailed 90-day implementation roadmap with specific tasks, timelines, and success metrics.
-                You know exactly what to do next.
+
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🔄</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Continuous Optimization</h3>
+              <p className="newspaper-body leading-relaxed">
+                Strategy isn't static. We continuously test, iterate, and optimize based on data. Monthly reviews. Strategic pivots. Relentless focus on what drives revenue.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Pull Quote */}
+      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
+            "A strategy without execution is just expensive consulting theater. We execute everything. And we guarantee the results. That's the difference between us and every other consultant you've met."
+          </p>
+          <p className="font-newspaper text-xl">
+            — Don Michael Szwed, Mind Your Business Media
+          </p>
+        </div>
+      </div>
 
       {/* What's Included */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            What's Included in Your Marketing Strategy
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Strategic Documents</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Market analysis and competitive positioning report</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Customer avatar and buying journey mapping</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Brand positioning and messaging framework</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>12-month growth roadmap with quarterly milestones</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Channel strategy and budget allocation plan</span>
-                </li>
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ WHAT YOU GET ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              What's Included
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Strategy Development</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>Complete marketing audit</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Competitive analysis & positioning</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Customer research & segmentation</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Channel strategy & budget allocation</li>
+                <li className="flex items-start"><span className="mr-2">•</span>12-month growth roadmap</li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Tactical Playbooks</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Customer acquisition playbook (by channel)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Content marketing and SEO strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Email marketing and nurture strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Paid advertising strategy (multi-platform)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Partnership and referral strategy</span>
-                </li>
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Complete Execution</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>Campaign planning & execution</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Content strategy & creation</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Funnel development & optimization</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Team hiring & management</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Vendor & agency oversight</li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Implementation Tools</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>90-day execution roadmap with weekly tasks</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Marketing calendar and campaign timeline</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>KPI dashboard and tracking framework</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Marketing technology stack recommendations</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Team structure and hiring plan</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ongoing Support</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Monthly strategy review and optimization sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Quarterly business review and planning</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Direct access to strategic team via Slack/email</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Ad-hoc consulting for strategic decisions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FFD700] mr-3 text-xl">✓</span>
-                  <span>Market intelligence and competitive updates</span>
-                </li>
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Performance Management</h3>
+              <ul className="space-y-2 font-newspaper text-gray-700">
+                <li className="flex items-start"><span className="mr-2">•</span>Revenue tracking & attribution</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Monthly performance reviews</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Strategic pivot recommendations</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Continuous testing & optimization</li>
+                <li className="flex items-start"><span className="mr-2">•</span>Guaranteed 30% growth or free work</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Growth Stages */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Strategic Priorities by Growth Stage
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">$100k-300k/mo</h3>
-              <p className="text-sm font-semibold text-[#FFD700] mb-4">Foundation Stage</p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Positioning and differentiation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Product-market fit optimization</li>
-                <li className="flex items-start"><span className="mr-2">•</span>1-2 core acquisition channels</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Basic automation and systems</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Referral program development</li>
-              </ul>
+      {/* Results */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Results That Matter
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">+287%</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
+              <p className="font-newspaper text-gray-700">
+                Course creator: Complete repositioning and go-to-market strategy grew revenue from $95k/mo to $368k/mo in 12 months
+              </p>
             </div>
 
-            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">$300k-750k/mo</h3>
-              <p className="text-sm font-semibold text-[#FFD700] mb-4">Scaling Stage</p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Multi-channel expansion</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Content and SEO investment</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Marketing team buildout</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Advanced automation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Partnership ecosystem</li>
-              </ul>
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">+156%</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
+              <p className="font-newspaper text-gray-700">
+                B2B consulting: New positioning and channel strategy grew from $145k/mo to $371k/mo in 11 months
+              </p>
             </div>
 
-            <div className="bg-[#2a1a4a]/10 border-2 border-[#FFD700] p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">$750k+/mo</h3>
-              <p className="text-sm font-semibold text-[#FFD700] mb-4">Optimization Stage</p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Market expansion strategies</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Product line extension</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Brand authority & thought leadership</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Advanced attribution modeling</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Exit/acquisition positioning</li>
-              </ul>
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">100%</div>
+              <div className="font-headline text-xl uppercase mb-4">Hit Guarantee</div>
+              <p className="font-newspaper text-gray-700">
+                Every client exceeds our 30% minimum guarantee because we execute the strategy correctly
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Ready for a Real Marketing Strategy?
-          </h2>
-          <p className="text-xl mb-8 text-gray-200">
-            Stop guessing. Get a comprehensive strategy built specifically for your business and guaranteed to deliver 30% growth.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
-          >
-            Schedule Strategy Session
-          </Link>
+      {/* How It Works */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE PROCESS ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              How It Works
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white border-3 border-black p-6">
+              <div className="flex items-start">
+                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">1</div>
+                <div>
+                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Discovery & Audit</h3>
+                  <p className="font-newspaper text-gray-700">
+                    Complete analysis of your business, market, customers, and current marketing. We identify growth opportunities and blockers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <div className="flex items-start">
+                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">2</div>
+                <div>
+                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Strategy Development</h3>
+                  <p className="font-newspaper text-gray-700">
+                    Build your complete marketing strategy: positioning, channels, messaging, budget allocation, timeline. Tied to our 30% guarantee.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <div className="flex items-start">
+                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">3</div>
+                <div>
+                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Complete Execution</h3>
+                  <p className="font-newspaper text-gray-700">
+                    We execute the entire strategy. No handoffs. No delegation. We manage everything from campaigns to team to vendors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <div className="flex items-start">
+                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">4</div>
+                <div>
+                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Optimization & Guarantee</h3>
+                  <p className="font-newspaper text-gray-700">
+                    Continuous testing and optimization. Monthly reviews. Strategic pivots as needed. We deliver 30% growth or work for free.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16 bg-black">
+            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+              Ready To Get Started?
+            </h2>
+            <p className="font-newspaper text-xl mb-10 text-white/90">
+              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+            </p>
+            <Link
+              href="/apply"
+              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
+            >
+              APPLY NOW
+            </Link>
+            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
+              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+            </p>
+          </div>
         </div>
       </section>
     </div>

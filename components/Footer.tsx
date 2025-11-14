@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-[#1a1a2e] to-black text-white">
+    <footer className="bg-white text-black border-t-5 border-black">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 md:gap-12 pb-6 sm:pb-8">
@@ -12,27 +12,27 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/">
               <img
-                src="/myb-logo-gold.png"
+                src="/myb-logo.png"
                 alt="Mind Your Business Media"
                 className="h-16 sm:h-18 md:h-20 w-auto mb-4 sm:mb-5 cursor-pointer hover:opacity-80 transition-opacity"
               />
             </Link>
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-2 sm:mb-3 max-w-xs">
+            <p className="text-newspaper-dark-gray font-newspaper text-sm sm:text-base leading-relaxed mb-2 sm:mb-3 max-w-xs">
               The marketing agency for businesses doing $100k+/month in revenue.
             </p>
-            <p className="text-[#FFD700] font-semibold mb-4 sm:mb-6 text-sm sm:text-base max-w-xs">
+            <p className="text-black font-newspaper font-bold mb-4 sm:mb-6 text-sm sm:text-base max-w-xs border-l-3 border-black pl-3">
               30% revenue increase guaranteed or we work for free.
             </p>
 
             {/* Social Media Icons */}
             <div className="space-y-3">
-              <h5 className="text-[#FFD700] font-semibold text-xs uppercase tracking-wider">Connect With Us</h5>
+              <h5 className="text-black font-newspaper font-bold text-xs uppercase tracking-wider border-b-2 border-black pb-1 inline-block">Connect With Us</h5>
               <div className="flex items-center space-x-3">
                 <a
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors"
+                  className="text-black hover:text-newspaper-dark-gray transition-colors"
                   aria-label="Facebook"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors"
+                  className="text-black hover:text-newspaper-dark-gray transition-colors"
                   aria-label="Twitter/X"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export default function Footer() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors"
+                  className="text-black hover:text-newspaper-dark-gray transition-colors"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors"
+                  className="text-black hover:text-newspaper-dark-gray transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ export default function Footer() {
                   href="https://youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors"
+                  className="text-black hover:text-newspaper-dark-gray transition-colors"
                   aria-label="YouTube"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -89,47 +89,47 @@ export default function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-3">
-            <h4 className="font-bold mb-4 text-[#FFD700] text-xs uppercase tracking-wider">Services</h4>
+            <h4 className="font-newspaper font-black mb-4 text-black text-xs uppercase tracking-wider border-b-2 border-black pb-1 inline-block">Services</h4>
             <ul className="space-y-2.5">
-              <li><Link href="/services/fractional-cmo" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Fractional CMO</Link></li>
-              <li><Link href="/services/marketing-strategy" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Marketing Strategy</Link></li>
-              <li><Link href="/services/paid-advertising" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Paid Advertising</Link></li>
-              <li><Link href="/services/funnel-optimization" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Funnel Optimization</Link></li>
+              <li><Link href="/services/fractional-cmo" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Fractional CMO</Link></li>
+              <li><Link href="/services/marketing-strategy" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Marketing Strategy</Link></li>
+              <li><Link href="/services/paid-advertising" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Paid Advertising</Link></li>
+              <li><Link href="/services/funnel-optimization" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Funnel Optimization</Link></li>
             </ul>
           </div>
 
           {/* Industries */}
           <div className="lg:col-span-3">
-            <h4 className="font-bold mb-4 text-[#FFD700] text-xs uppercase tracking-wider">Industries</h4>
+            <h4 className="font-newspaper font-black mb-4 text-black text-xs uppercase tracking-wider border-b-2 border-black pb-1 inline-block">Industries</h4>
             <ul className="space-y-2.5">
-              <li><Link href="/industries/coaches" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">High-Ticket Coaches</Link></li>
-              <li><Link href="/industries/consultants" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Consultants</Link></li>
-              <li><Link href="/industries/course-creators" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Course Creators</Link></li>
-              <li><Link href="/industries/service-businesses" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Service Businesses</Link></li>
-              <li><Link href="/industries/product-businesses" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Product Businesses</Link></li>
+              <li><Link href="/industries/coaches" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">High-Ticket Coaches</Link></li>
+              <li><Link href="/industries/consultants" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Consultants</Link></li>
+              <li><Link href="/industries/course-creators" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Course Creators</Link></li>
+              <li><Link href="/industries/service-businesses" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Service Businesses</Link></li>
+              <li><Link href="/industries/product-businesses" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Product Businesses</Link></li>
             </ul>
           </div>
 
           {/* Company */}
           <div className="lg:col-span-2">
-            <h4 className="font-bold mb-4 text-[#FFD700] text-xs uppercase tracking-wider">Company</h4>
+            <h4 className="font-newspaper font-black mb-4 text-black text-xs uppercase tracking-wider border-b-2 border-black pb-1 inline-block">Company</h4>
             <ul className="space-y-2.5">
-              <li><Link href="/about" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">About</Link></li>
-              <li><Link href="/results" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Results</Link></li>
-              <li><Link href="/guarantee" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Our Guarantee</Link></li>
-              <li><Link href="/blog" className="text-gray-300 hover:text-[#FFD700] transition-colors text-sm block">Blog</Link></li>
-              <li><Link href="/apply" className="text-[#FFD700] hover:text-white font-semibold transition-colors text-sm block">Apply Now</Link></li>
+              <li><Link href="/about" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">About</Link></li>
+              <li><Link href="/results" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Results</Link></li>
+              <li><Link href="/guarantee" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Our Guarantee</Link></li>
+              <li><Link href="/blog" className="text-black hover:text-newspaper-dark-gray transition-colors text-sm block font-newspaper">Blog</Link></li>
+              <li><Link href="/apply" className="text-black hover:text-newspaper-dark-gray font-newspaper font-bold transition-colors text-sm block border-b-2 border-black inline-block">Apply Now</Link></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#FFD700]/20 mt-8 pt-6">
+        <div className="border-t-3 border-black mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
-            <p className="text-gray-400 text-xs">&copy; {currentYear} Mind Your Business Media. All rights reserved.</p>
+            <p className="text-newspaper-dark-gray font-newspaper text-xs">&copy; {currentYear} Mind Your Business Media. All rights reserved.</p>
             <div className="flex items-center space-x-6 text-xs">
-              <Link href="/privacy" className="text-gray-400 hover:text-[#FFD700] transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="text-gray-400 hover:text-[#FFD700] transition-colors">Terms of Service</Link>
+              <Link href="/privacy" className="text-newspaper-dark-gray font-newspaper hover:text-black transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="text-newspaper-dark-gray font-newspaper hover:text-black transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

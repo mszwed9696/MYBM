@@ -1,60 +1,57 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import SkylineDivider from "@/components/SkylineDivider";
 
 export default function ConsultantsPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative bg-black text-white py-16 sm:py-20 md:py-28 lg:py-32 overflow-hidden min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center">
-        {/* Detroit Skyline cityscape - PROMINENT hero image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img src="/heroes/consultants-hero.png" alt="Detroit Skyline" className="w-full h-full object-cover"  style={{ objectPosition: "center center" }} loading="lazy" />
-          {/* Light gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a4a]/50 via-[#1a1a2e]/40 to-black/60"></div>
-        </div>
-        {/* The Boss character */}
-        <div
-          className="absolute right-10 md:right-20 bottom-0 w-64 md:w-80 opacity-80 z-10"
-        >
-          <img src="/characters/consultants-character.png" alt="The Boss" className="w-full h-auto"  loading="lazy" />
-        </div>
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      {/* Newspaper Hero Section */}
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
+          {/* Cityscape background */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <img
+              src="/heroes/philadelphia-skyline.png"
+              alt="Cityscape"
+              className="w-full h-full object-contain"
+              style={{ filter: "grayscale(100%) contrast(1.3)" }}
+            />
+          </div>
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
-          <div className="max-w-4xl">
-            <div
-              className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#FFD700] rounded-full text-[#FFD700] text-xs sm:text-sm font-bold tracking-wide"
-              style={{ fontFamily: "'Georgia', serif", textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}
-            >
-              👔 FOR CONSULTANTS 👔
+          {/* Character */}
+          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
+            <img
+              src="/characters/advisor-wisdom.png"
+              alt="Character"
+              className="w-full h-auto"
+              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
+            />
+          </div>
+
+          <div className="relative z-20 max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
+              ★ FOR B2B CONSULTANTS ★
             </div>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"               style={{ fontFamily: "'Georgia', serif", textShadow: "3px 3px 8px rgba(0,0,0,0.9)" }}
-            >
-              Build A Consulting Practice<br /><span className="text-[#FFD700]">Nobody Can Touch</span>
+
+            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+              Consulting That Scales<br />Beyond Referrals
             </h1>
-            <p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
-              Stop chasing clients. Position yourself as the authority everyone wants to work with.<span className="text-[#FFD700] font-bold"> Premium clients. Premium fees. No competition.</span>
+
+            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
+              Build predictable pipelines and systematized client acquisition. No more feast or famine.
             </p>
-            <div
-              className="flex flex-col sm:flex-row gap-4"
-            >
+
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/apply"
-                className="bg-[#8B0000] border-2 border-[#FFD700] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-[#a00000] transition-all transform hover:scale-105 shadow-lg text-center"
-                style={{ fontFamily: "'Georgia', serif" }}
+                className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all text-center"
               >
-                Join The Family
+                Join The Operation
               </Link>
               <Link
                 href="/results"
-                className="bg-black/50 border-2 border-[#FFD700] text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-black/70 transition-all text-center"
-                style={{ fontFamily: "'Georgia', serif" }}
+                className="inline-block bg-white text-black px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all text-center"
               >
                 See The Results
               </Link>
@@ -63,263 +60,209 @@ export default function ConsultantsPage() {
         </div>
       </section>
 
-      {/* Skyline Divider */}
-      <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+      {/* Newspaper Divider */}
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Consultants</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
       </div>
 
-      {/* Pain Points */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        </div>
-      </section>
-
-      {/* Solution */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* The Problem Section */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-              Our Marketing Solutions for Consultants
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Most Consultants Are <span className="line-through">Stuck</span> Living Referral To Referral
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              We've helped consulting firms scale from $1M to $5M+ ARR with predictable client acquisition
+            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
+              Unpredictable pipeline. Inconsistent revenue. We build systems that scale.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎯</div>
-              <h3 className="text-2xl font-bold mb-3">Thought Leadership & Authority Building</h3>
-              <p className="text-gray-200">
-                Position yourself as THE expert through strategic content marketing, speaking opportunities, and
-                media placements. Become the obvious choice in your category.
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              Here's the cold truth about consulting: most consultants are one referral away from a bad quarter.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              You're great at delivering results for clients. But when it comes to your own lead generation? You're dependent on referrals, waiting for your network to throw you a bone. <span className="font-bold">That's not a scalable business model—that's hope disguised as strategy.</span>
+            </p>
+
+            <p className="newspaper-body mb-4">
+              The problem isn't your expertise. It's that you don't have a predictable client acquisition system. LinkedIn posts that go nowhere. Cold email that gets ignored. Partnerships that never materialize. Website traffic that doesn't convert. You're busy delivering for existing clients while your pipeline dries up.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              We build systematized marketing for B2B consultants. Predictable lead flow. Qualified prospects. Shorter sales cycles. 30% revenue growth guaranteed—or we work for free.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do For Consultants */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              How We Help Consultants
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Thought Leadership Positioning</h3>
+              <p className="newspaper-body leading-relaxed">
+                Position yourself as the expert in your vertical. Strategic content on LinkedIn, podcasts, speaking, and publishing that attracts enterprise clients and builds premium pricing power.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📊</div>
-              <h3 className="text-2xl font-bold mb-3">Account-Based Marketing (ABM)</h3>
-              <p className="text-gray-200">
-                Target specific companies and decision-makers with personalized campaigns. Land enterprise clients
-                worth $100k-500k+ engagements.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📊</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Outbound & ABM Systems</h3>
+              <p className="newspaper-body leading-relaxed">
+                Targeted account-based marketing and outbound programs. We identify your ideal clients, build multi-touch campaigns, and book meetings with decision-makers at target accounts.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🔗</div>
-              <h3 className="text-2xl font-bold mb-3">LinkedIn Lead Generation</h3>
-              <p className="text-gray-200">
-                Systematic LinkedIn outreach and content strategy that fills your calendar with qualified discovery calls.
-                B2B lead generation that actually works.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">📝</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Content & SEO</h3>
+              <p className="newspaper-body leading-relaxed">
+                Authority content that ranks for buyer-intent keywords. Case studies, white papers, research reports—content that attracts executives searching for solutions you provide.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📈</div>
-              <h3 className="text-2xl font-bold mb-3">Strategic Partnerships & Alliances</h3>
-              <p className="text-gray-200">
-                Build referral partnerships with complementary firms, create co-marketing initiatives, and tap into
-                existing client bases.
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>🎓</div>
-              <h3 className="text-2xl font-bold mb-3">Educational Marketing & Workshops</h3>
-              <p className="text-gray-200">
-                Host workshops, webinars, and executive briefings that demonstrate your expertise and convert
-                attendees into clients.
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl mb-4" style={{ fontFamily: "\'Georgia\', serif" }}>📧</div>
-              <h3 className="text-2xl font-bold mb-3">Multi-Touch Nurture Campaigns</h3>
-              <p className="text-gray-200">
-                Sophisticated email, LinkedIn, and retargeting sequences that stay top-of-mind throughout long
-                B2B sales cycles.
+            <div className="bg-white border-5 border-black p-8">
+              <div className="text-5xl mb-4">⚡</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Sales Enablement</h3>
+              <p className="newspaper-body leading-relaxed">
+                Proposal templates, case study frameworks, ROI calculators, sales collateral. Everything you need to shorten sales cycles and close enterprise deals faster.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Consulting Types */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: "'Georgia', serif" }}>
-            Marketing Solutions for Every Type of Consultant
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center">
-            We work with consultants across industries and specialties
+      {/* Why Consultants Choose Us */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ SPECIAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Why Consultants Choose Us
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">We Understand B2B Consulting</h3>
+              <p className="newspaper-body text-gray-700">
+                We know your sales cycles: 6-18 months, multiple stakeholders, enterprise budgets. We build marketing that works for complex B2B sales, not transactional consumer funnels. Relationship-based selling. Trust-building content. Long-term nurture.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Results-Based Partnership</h3>
+              <p className="newspaper-body text-gray-700">
+                We guarantee 30% revenue growth. If you don't hit it, we keep working for free until you do. Most marketing agencies get paid whether you succeed or fail. We only win when you win.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Complete Marketing Execution</h3>
+              <p className="newspaper-body text-gray-700">
+                We don't just hand you a strategy deck and disappear. We execute everything: build campaigns, create content, manage outreach, optimize funnels, track attribution. You focus on delivering client results. We handle marketing.
+              </p>
+            </div>
+
+            <div className="bg-white border-3 border-black p-6">
+              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Proven With Enterprise Consultants</h3>
+              <p className="newspaper-body text-gray-700">
+                We've helped dozens of consulting firms scale from $100k/mo to $500k+/mo. We know what works: the positioning angles, the content strategy, the outbound cadences, the enterprise sales enablement. We've already solved your growth problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Real Results For Consultants
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">+287%</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
+              <p className="font-newspaper text-gray-700">
+                Average results across our consultants clients in first 12 months
+              </p>
+            </div>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">30%</div>
+              <div className="font-headline text-xl uppercase mb-4">Minimum Guarantee</div>
+              <p className="font-newspaper text-gray-700">
+                Revenue increase guaranteed in year 1, or we work for free until you get it
+              </p>
+            </div>
+
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">$100k+</div>
+              <div className="font-headline text-xl uppercase mb-4">Monthly Revenue</div>
+              <p className="font-newspaper text-gray-700">
+                Minimum requirement to work with us. We only serve established consultants
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pull Quote */}
+      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
+            "We're not just another agency. We're your partners. We protect our partners. We deliver results. Or we don't get paid. Capisce?"
           </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Strategy Consultants</h3>
-              <p className="text-gray-700">
-                Business strategy, growth strategy, market entry, and transformation consulting
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Management Consultants</h3>
-              <p className="text-gray-700">
-                Operations, process improvement, organizational design, and change management
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Fractional Executives</h3>
-              <p className="text-gray-700">
-                Fractional CFO, COO, CMO, CTO, and other C-suite advisory services
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Technology Consultants</h3>
-              <p className="text-gray-700">
-                IT strategy, digital transformation, system implementation, and tech advisory
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Financial Consultants</h3>
-              <p className="text-gray-700">
-                M&A advisory, financial restructuring, valuation, and corporate finance
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">HR & Talent Consultants</h3>
-              <p className="text-gray-700">
-                Talent strategy, compensation design, organizational culture, and people operations
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Marketing Consultants</h3>
-              <p className="text-gray-700">
-                Marketing strategy, brand positioning, go-to-market, and growth marketing
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Sales Consultants</h3>
-              <p className="text-gray-700">
-                Sales strategy, sales enablement, revenue operations, and sales training
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Industry-Specific Consultants</h3>
-              <p className="text-gray-700">
-                Healthcare, manufacturing, retail, financial services, and other industry specialists
-              </p>
-            </div>
-          </div>
+          <p className="font-newspaper text-xl">
+            — Don Michael Szwed, Mind Your Business Media
+          </p>
         </div>
-      </section>
+      </div>
 
-      {/* Results */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
-            Real Results from Consulting Clients
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+156%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-700">
-                Strategy consulting firm: $150k/mo to $385k/mo in 12 months. Landed 3 enterprise clients worth
-                $500k+ each through ABM.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+203%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-700">
-                Fractional CFO practice: $110k/mo to $333k/mo in 10 months. Scaled from 11 to 37 monthly retainer
-                clients.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#2a1a4a]/10 to-[#FFD700]/20 p-4 sm:p-6 md:p-8 rounded-xl border-2 border-[#FFD700]/30">
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>+178%</div>
-              <div className="text-xl font-semibold mb-4">Revenue Growth</div>
-              <p className="text-gray-700">
-                HR consulting firm: $135k/mo to $375k/mo in 11 months. Built thought leadership platform that
-                generates 40+ qualified leads monthly.
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <Link href="/results" className="text-[#FFD700] text-xl font-semibold hover:underline">
-              View All Consulting Client Case Studies →
+      {/* CTA Section */}
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16 bg-black">
+            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+              Ready To Scale<br />Your Business?
+            </h2>
+            <p className="font-newspaper text-xl mb-10 text-white/90">
+              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+            </p>
+            <Link
+              href="/apply"
+              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
+            >
+              APPLY NOW
             </Link>
+            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
+              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Why Us */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#1a1a2e] to-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: "'Georgia', serif" }}>
-            Why Consultants Choose Mind Your Business Media
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">We Understand B2B Consulting Sales</h3>
-              <p className="text-gray-300">
-                Long sales cycles, multiple stakeholders, high-touch relationships. We've helped consultants close
-                $100k-500k+ engagements consistently.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">30% Revenue Increase Guaranteed</h3>
-              <p className="text-gray-300">
-                We don't get paid unless you grow. 30% revenue increase in year 1 or we work for free until we achieve it.
-                That's our commitment to you.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">Expertise in Premium Positioning</h3>
-              <p className="text-gray-300">
-                We help consultants command premium fees by building unassailable authority and market positioning.
-                Stop competing on price.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4">Full-Service Marketing Execution</h3>
-              <p className="text-gray-300">
-                We handle everything from thought leadership content to ABM campaigns to partnership development.
-                Your entire marketing function, managed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#8B0000] via-[#2a1a4a] to-black text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Georgia', serif" }}>
-            Ready to Scale Your Consulting Practice?
-          </h2>
-          <p className="text-xl mb-8 text-gray-200">
-            If you're a consultant doing $100k+ monthly and ready for predictable growth, let's talk.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all"
-          >
-            Apply for Partnership
-          </Link>
-          <p className="mt-6 text-gray-300 text-sm">
-            Limited consulting client partnerships available
-          </p>
         </div>
       </section>
     </div>

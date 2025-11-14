@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
-      { url: '/myb-logo-gold.png', sizes: 'any' },
+      { url: '/myb-logo.png', sizes: 'any' },
     ],
     apple: '/apple-touch-icon.png',
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: 'Marketing solutions for high-ticket coaches, consultants, and businesses generating $100k+ monthly. Guaranteed 30% revenue increase in year 1 or we work for free.',
     images: [
       {
-        url: '/myb-logo-gold.png',
+        url: '/myb-logo.png',
         width: 1200,
         height: 630,
         alt: 'Mind Your Business Media - Marketing Agency for High-Ticket Businesses',
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mind Your Business Media | Marketing Agency for $100k+/Month Businesses',
     description: 'Marketing solutions for high-ticket coaches, consultants, and businesses generating $100k+ monthly. Guaranteed 30% revenue increase.',
-    images: ['/myb-logo-gold.png'],
+    images: ['/myb-logo.png'],
     creator: '@mindyourbizmedia',
   },
   robots: {
@@ -102,7 +102,7 @@ export default function RootLayout({
         "url": "https://mybm.vercel.app",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://mybm.vercel.app/myb-logo-gold.png",
+          "url": "https://mybm.vercel.app/myb-logo.png",
           "width": 512,
           "height": 512
         },
@@ -124,7 +124,7 @@ export default function RootLayout({
         "@type": "ProfessionalService",
         "@id": "https://mybm.vercel.app/#service",
         "name": "Mind Your Business Media",
-        "image": "https://mybm.vercel.app/myb-logo-gold.png",
+        "image": "https://mybm.vercel.app/myb-logo.png",
         "description": "Full-service marketing agency for high-ticket coaches, consultants, and businesses. Specializing in fractional CMO services, paid advertising, funnel optimization, and marketing strategy with guaranteed results.",
         "priceRange": "$$$",
         "areaServed": "Worldwide",

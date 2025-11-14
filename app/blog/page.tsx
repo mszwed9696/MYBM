@@ -1,156 +1,201 @@
+"use client";
+
 import Link from "next/link";
-import { generateMetadata } from "@/lib/seo";
-
-export const metadata = generateMetadata({
-  title: "Marketing Blog | Strategies for High-Ticket Businesses",
-  description: "Expert marketing insights for coaches, consultants, and high-ticket businesses. Learn strategies to scale from 6 to 7 and 7 to 8 figures.",
-  keywords: [
-    "marketing blog",
-    "high ticket marketing",
-    "marketing strategies",
-    "business growth",
-  ],
-});
-
-const blogPosts = [
-  {
-    slug: "scale-coaching-business-500k-month",
-    title: "How to Scale a High-Ticket Coaching Business to $500k/Month",
-    excerpt: "The exact playbook we use to scale coaching businesses from $100k to $500k+ monthly revenue. No fluff, just what actually works.",
-    category: "Coaching",
-    readTime: "12 min read",
-    date: "January 15, 2025",
-  },
-  {
-    slug: "marketing-strategy-consultants",
-    title: "The Ultimate Marketing Strategy for Business Consultants in 2025",
-    excerpt: "How consultants can break free from referral dependency and build predictable $50k+ monthly pipelines through strategic marketing.",
-    category: "Consulting",
-    readTime: "10 min read",
-    date: "January 12, 2025",
-  },
-  {
-    slug: "why-marketing-agencies-fail-high-ticket",
-    title: "Why Most Marketing Agencies Fail High-Ticket Businesses (And What to Do Instead)",
-    excerpt: "The fundamental misunderstanding most agencies have about high-ticket marketing, and how to find one that actually gets it.",
-    category: "Strategy",
-    readTime: "8 min read",
-    date: "January 10, 2025",
-  },
-  {
-    slug: "account-based-marketing-guide-consultants",
-    title: "Account-Based Marketing for Consultants: A Complete Guide",
-    excerpt: "How to target and close enterprise clients worth $100k-500k+ using systematic ABM strategies that actually work.",
-    category: "Consulting",
-    readTime: "15 min read",
-    date: "January 8, 2025",
-  },
-  {
-    slug: "funnel-strategies-high-ticket-coaching",
-    title: "7 Funnel Strategies for $10k+ Coaching Programs",
-    excerpt: "The exact funnels we use to generate qualified applications for high-ticket coaching programs without relying on launches.",
-    category: "Coaching",
-    readTime: "11 min read",
-    date: "January 5, 2025",
-  },
-  {
-    slug: "guaranteed-marketing-results",
-    title: "Can Marketing Agencies Really Guarantee Results?",
-    excerpt: "Breaking down what's possible (and what's BS) when it comes to marketing guarantees, plus our own 30% revenue guarantee explained.",
-    category: "Strategy",
-    readTime: "9 min read",
-    date: "January 3, 2025",
-  },
-  {
-    slug: "fractional-cmo-vs-agency-vs-in-house",
-    title: "Fractional CMO vs Marketing Agency vs In-House: What's Right for Your $1M+ Business?",
-    excerpt: "Compare the three options for marketing leadership and execution, with honest pros/cons for each at different revenue stages.",
-    category: "Strategy",
-    readTime: "13 min read",
-    date: "December 30, 2024",
-  },
-  {
-    slug: "course-creator-evergreen-funnel",
-    title: "Building an Evergreen Funnel That Sells Your Course Without Launches",
-    excerpt: "Stop living launch-to-launch. Build automated systems that sell your online course 24/7 while you focus on delivery.",
-    category: "Course Creation",
-    readTime: "14 min read",
-    date: "December 27, 2024",
-  },
-];
 
 export default function BlogPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-black text-white py-20 overflow-hidden">
-        {/* Hero background image */}
-        <div className="absolute inset-0 opacity-20 z-0">
-          <img src="/heroes/philadelphia-skyline.png" alt="Cityscape" className="w-full h-full object-cover" style={{ objectPosition: "center center" }}  loading="lazy" />
-        </div>
-
-        {/* Character image */}
-        <div className="absolute right-0 bottom-0 w-64 md:w-80 opacity-30 z-0">
-          <img src="/characters/boss-city-hall.png" alt="The Consigliere" className="w-full h-auto"  loading="lazy" />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Marketing Insights for High-Ticket Businesses
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
+          <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+            Marketing Insights
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Real strategies from scaling dozens of coaches, consultants, and businesses from 6 to 7 and 7 to 8 figures.
+          <p className="font-newspaper text-xl md:text-2xl text-black max-w-3xl mx-auto">
+            Real strategies from scaling businesses from 6 to 7 and 7 to 8 figures
           </p>
         </div>
       </section>
 
-      {/* Blog Posts */}
-      <section className="py-20 bg-gradient-to-b from-[#1a1a2e] to-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group bg-gradient-to-b from-[#1a1a2e] to-black border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#FFD700] hover:shadow-xl transition-all"
-              >
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-sm font-semibold text-[#FFD700]">{post.category}</span>
-                    <span className="text-sm text-gray-500">{post.readTime}</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#FFD700]">
-                    {post.title}
-                  </h2>
-                  <p className="text-gray-300 mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{post.date}</span>
-                    <span className="text-[#FFD700] font-semibold group-hover:underline">
-                      Read More →
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Blog</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Intro Section */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE REAL DEAL ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              No Fluff. <span className="line-through">Just</span> Results.
+            </h2>
+          </div>
+
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              Most marketing blogs are filled with regurgitated SEO garbage written by people who've never scaled a real business.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              <span className="font-bold">Not this one.</span> Every article below comes from real experience scaling businesses from $100k/month to $500k, $1M, and beyond. These are the exact strategies we use with our clients—the ones we guarantee 30% revenue growth on.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              You won't find fluffy "10 social media tips" nonsense here. You'll find battle-tested systems for paid acquisition, funnel optimization, and scaling high-ticket offers. The stuff that actually moves revenue.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              Read. Implement. Grow. That's the deal.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Ready to Apply These Strategies to Your Business?
-          </h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Get a custom marketing strategy designed specifically for your business with our 30% revenue guarantee.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-[#8B0000] border-2 border-[#FFD700] text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#a00000]"
-          >
-            Apply for Partnership
-          </Link>
+      {/* Blog Articles Grid */}
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ LATEST ARTICLES ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Recent Posts
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Article 1 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ STRATEGY ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Fractional CMO vs Agency vs In-House: The Truth
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                Most businesses waste $120k+ annually on the wrong marketing structure. Here's how to choose between fractional CMO, agency, or in-house—and why most pick wrong.
+              </p>
+              <Link href="/blog/fractional-cmo-vs-agency-vs-in-house" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 2 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ CONSULTING ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Marketing Strategy Consultants: What Actually Works
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                95% of marketing consultants deliver PowerPoints, not revenue. Learn what separates strategy that scales from expensive reports that collect dust.
+              </p>
+              <Link href="/blog/marketing-strategy-consultants" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 3 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ COACHING ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Funnel Strategies for High-Ticket Coaching Programs
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                How to build evergreen VSL funnels that convert cold traffic into $10k+ clients on autopilot. The exact system our coaching clients use to scale past $300k/month.
+              </p>
+              <Link href="/blog/funnel-strategies-high-ticket-coaching" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 4 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ TRUTH BOMB ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Why Marketing Agencies Fail High-Ticket Businesses
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                Traditional agencies are built for volume clients, not premium offers. Here's why they burn your budget on vanity metrics and what to do instead.
+              </p>
+              <Link href="/blog/why-marketing-agencies-fail-high-ticket" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 5 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ B2B STRATEGY ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Account-Based Marketing Guide for Consultants
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                Stop chasing every lead. Learn how to target your ideal 50 accounts with surgical precision and close $50k-$500k contracts consistently.
+              </p>
+              <Link href="/blog/account-based-marketing-guide-consultants" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 6 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ COURSE CREATORS ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Course Creator Evergreen Funnel That Actually Converts
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                Tired of quarterly launches? Build an evergreen funnel that generates daily sales while you sleep. The exact framework that took our clients from $120k to $372k monthly.
+              </p>
+              <Link href="/blog/course-creator-evergreen-funnel" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 7 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ OUR GUARANTEE ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                Guaranteed Marketing Results: Why We Can, Others Can't
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                We guarantee 30% revenue growth or work for free. No other agency dares to make this promise. Here's exactly why we can—and why your current agency won't.
+              </p>
+              <Link href="/blog/guaranteed-marketing-results" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+
+            {/* Article 8 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="font-headline text-xs uppercase mb-3 tracking-widest">★ SCALE BLUEPRINT ★</div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-3">
+                How to Scale a Coaching Business to $500k/Month
+              </h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-6">
+                The complete playbook for taking a coaching business from $100k to $500k+ monthly. Paid acquisition, funnel optimization, team structure, and scaling without burnout.
+              </p>
+              <Link href="/blog/scale-coaching-business-500k-month" className="font-headline uppercase text-sm hover:underline border-b-2 border-black pb-1">
+                Read Full Article →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16">
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-6">
+              Ready To Stop Reading<br />And Start Growing?
+            </h2>
+            <p className="font-newspaper text-xl mb-8 text-white/90">
+              Knowledge is worthless without execution. Let's scale your business with our 30% guarantee.
+            </p>
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+              APPLY FOR PARTNERSHIP
+            </Link>
+          </div>
         </div>
       </section>
     </div>

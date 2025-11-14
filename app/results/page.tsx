@@ -1,312 +1,232 @@
-import Link from "next/link";
-import { generateSEO } from "@/lib/seo";
-import ResultsHero from "@/components/ResultsHero";
-import SkylineDivider from "@/components/SkylineDivider";
+"use client";
 
-export const metadata = generateSEO({
-  title: "Client Results & Case Studies | Marketing Agency Success Stories",
-  description: "Real results from high-ticket coaches, consultants, and businesses we've scaled. See case studies showing 30%-300%+ revenue increases.",
-  keywords: [
-    "marketing agency results",
-    "marketing case studies",
-    "client success stories",
-    "marketing agency testimonials",
-  ],
-});
+import Link from "next/link";
 
 export default function ResultsPage() {
-  const caseStudies = [
-    {
-      title: "High-Ticket Business Coaching Program",
-      industry: "Business Coaching",
-      before: "$80k/mo",
-      after: "$310k/mo",
-      increase: "+287%",
-      timeframe: "9 months",
-      description: "Scaled from 8 clients/month to 31 clients/month at $10k average ticket through Facebook ads, automated webinar funnel, and strategic partnerships.",
-      challenges: [
-        "Inconsistent lead flow from referrals only",
-        "No paid acquisition strategy",
-        "Sales team overwhelmed with unqualified leads",
-      ],
-      solutions: [
-        "Built application funnel with qualification quiz",
-        "Launched Facebook and YouTube ads targeting business owners",
-        "Implemented automated webinar for pre-selling",
-        "Created partnership program with complementary coaches",
-      ],
-      results: [
-        "31 new clients per month (up from 8)",
-        "67% application-to-close rate (up from 34%)",
-        "$310k average monthly revenue",
-        "Reduced cost per acquisition by 58%",
-      ],
-    },
-    {
-      title: "B2B Strategy Consulting Firm",
-      industry: "Management Consulting",
-      before: "$150k/mo",
-      after: "$385k/mo",
-      increase: "+156%",
-      timeframe: "12 months",
-      description: "Landed 3 enterprise clients worth $500k+ each through account-based marketing, LinkedIn outreach, and thought leadership content.",
-      challenges: [
-        "Network-dependent lead generation",
-        "Long sales cycles (6-9 months average)",
-        "Difficulty breaking into enterprise accounts",
-      ],
-      solutions: [
-        "Launched targeted ABM campaigns for Fortune 1000 companies",
-        "Built CEO thought leadership platform (LinkedIn + articles)",
-        "Created executive briefing program",
-        "Developed strategic partnership with PE firm",
-      ],
-      results: [
-        "3 enterprise clients signed ($500k-700k each)",
-        "45 qualified discovery calls per quarter",
-        "$385k average monthly revenue",
-        "Sales cycle reduced to 4.5 months average",
-      ],
-    },
-    {
-      title: "Online Course Creator (Business Training)",
-      industry: "Course Creation",
-      before: "$120k/mo",
-      after: "$372k/mo",
-      increase: "+210%",
-      timeframe: "11 months",
-      description: "Launched $15k group program with automated evergreen funnel generating consistent enrollments without live launches.",
-      challenges: [
-        "Revenue roller coaster from launches",
-        "Burnout from constant live webinars",
-        "Low email list engagement",
-      ],
-      solutions: [
-        "Created $15k group coaching tier (previously only $2k course)",
-        "Built evergreen VSL funnel for automated selling",
-        "Launched YouTube organic content strategy",
-        "Implemented sophisticated email segmentation and nurture",
-      ],
-      results: [
-        "24-28 students enrolling monthly in $15k program",
-        "Evergreen funnel generating $280k-320k/mo",
-        "YouTube channel generating 40% of new leads",
-        "87% reduction in live launch workload",
-      ],
-    },
-    {
-      title: "Fractional CFO Practice",
-      industry: "Financial Consulting",
-      before: "$110k/mo",
-      after: "$333k/mo",
-      increase: "+203%",
-      timeframe: "10 months",
-      description: "Scaled from 11 to 37 monthly retainer clients through LinkedIn lead generation and strategic content marketing.",
-      challenges: [
-        "Difficulty explaining value proposition",
-        "Competing with full-time CFO hires",
-        "Long sales cycles and price objections",
-      ],
-      solutions: [
-        "Repositioned messaging around CFO outcomes vs. activities",
-        "Built LinkedIn authority platform (3x posts/week + outreach)",
-        "Created \"CFO Scorecard\" lead magnet",
-        "Developed case study library showing ROI",
-      ],
-      results: [
-        "37 active retainer clients (up from 11)",
-        "$9k average monthly retainer",
-        "72% of leads from LinkedIn (organic + paid)",
-        "84% client retention rate",
-      ],
-    },
-    {
-      title: "Leadership Coaching & Masterminds",
-      industry: "Executive Coaching",
-      before: "$95k/mo",
-      after: "$295k/mo",
-      increase: "+210%",
-      timeframe: "11 months",
-      description: "Filled 12-month mastermind program at $25k/person and scaled 1-on-1 executive coaching pipeline.",
-      challenges: [
-        "Mastermind not filling consistently",
-        "Difficulty reaching C-suite executives",
-        "High cost per lead from cold advertising",
-      ],
-      solutions: [
-        "Created executive briefing series targeting VPs and C-suite",
-        "Launched LinkedIn ads + retargeting campaigns",
-        "Built referral incentive program for current clients",
-        "Implemented application funnel with video testimonials",
-      ],
-      results: [
-        "12-month mastermind filled (24 members at $25k)",
-        "18 active 1-on-1 clients at $3.5k/mo average",
-        "Cost per qualified lead reduced 64%",
-        "Waitlist of 11 for next mastermind cohort",
-      ],
-    },
-    {
-      title: "HR & Talent Consulting Firm",
-      industry: "HR Consulting",
-      before: "$135k/mo",
-      after: "$375k/mo",
-      increase: "+178%",
-      timeframe: "11 months",
-      description: "Built thought leadership platform generating 40+ qualified leads monthly for high-ticket HR transformation services.",
-      challenges: [
-        "Viewed as commodity service provider",
-        "Price pressure from larger firms",
-        "Inconsistent lead generation",
-      ],
-      solutions: [
-        "Launched \"Future of Work\" thought leadership platform",
-        "Published research report (gated lead magnet)",
-        "Speaking engagements at HR conferences",
-        "Strategic partnerships with compensation software companies",
-      ],
-      results: [
-        "40-50 qualified leads per month",
-        "9 retained clients for $20k-60k projects",
-        "Featured in 3 major HR publications",
-        "Average project value increased from $35k to $67k",
-      ],
-    },
-  ];
-
   return (
-    <div>
-      {/* Hero Section - Vegas Strip (Winner's Row) */}
-      <ResultsHero />
+    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+      <section className="relative bg-white border-b-5 border-black">
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
+          <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
+            Client Results<br />That Speak For Themselves
+          </h1>
+          <p className="font-newspaper text-xl md:text-2xl text-black max-w-3xl mx-auto">
+            Real revenue growth from real businesses. 30% minimum guaranteed or we work for free.
+          </p>
+        </div>
+      </section>
 
-      {/* Skyline Divider */}
-      <div className="relative -mt-1">
-        <SkylineDivider className="text-white" />
+      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
+            <span>★ Philadelphia Edition ★</span>
+            <span>Special Report: Client Results</span>
+            <span>Price: Results or Nothing</span>
+          </div>
+        </div>
       </div>
 
-      {/* Quick Stats */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>87%</div>
-              <div className="text-gray-700">Average Revenue Increase Year 1</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>100%</div>
-              <div className="text-gray-700">Clients Hit 30% Guarantee</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>$18M+</div>
-              <div className="text-gray-700">Revenue Added for Clients</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-[#FFD700] mb-2" style={{ fontFamily: "\'Georgia\', serif" }}>9.2</div>
-              <div className="text-gray-700">Average Month to ROI Positive</div>
-            </div>
+      {/* The Truth About Results */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE TRUTH ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
+              Why Our Results Are <span className="line-through">Different</span>
+            </h2>
+          </div>
+
+          <div className="newspaper-columns-2 newspaper-columns">
+            <p className="newspaper-body drop-cap mb-4">
+              Most agencies show you cherry-picked wins from their best month ever. We show you sustained, year-over-year revenue growth.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              <span className="font-bold">Every client you see below hit—and most exceeded—our 30% minimum guarantee.</span> These aren't outliers. This is our standard.
+            </p>
+
+            <p className="newspaper-body mb-4">
+              We only work with businesses doing $100k+ monthly because that's the threshold where our systems produce predictable results. Below that, you're fighting different battles. Above that, it's execution.
+            </p>
+
+            <p className="newspaper-body font-bold">
+              100% of our clients exceed the 30% guarantee. That's not luck. That's systems that work.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Case Studies */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Client Case Studies
-          </h2>
+      <section className="py-20 md:py-24 bg-newspaper-cream">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ CASE STUDIES ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              Client Success Stories
+            </h2>
+          </div>
 
           <div className="space-y-12">
-            {caseStudies.map((study, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gradient-to-r from-[#1a1a2e] to-black text-white p-8">
-                  <div className="flex flex-wrap items-center justify-between mb-4">
-                    <div>
-                      <div className="text-sm font-semibold text-blue-200 mb-2">{study.industry}</div>
-                      <h3 className="text-3xl font-bold">{study.title}</h3>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm px-6 py-4 rounded-lg mt-4 md:mt-0">
-                      <div className="text-5xl font-bold text-green-300" style={{ fontFamily: "\'Georgia\', serif" }}>{study.increase}</div>
-                      <div className="text-sm text-gray-200">Revenue Growth</div>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <div className="text-blue-200">Before</div>
-                      <div className="text-xl font-bold">{study.before}</div>
-                    </div>
-                    <div>
-                      <div className="text-blue-200">After</div>
-                      <div className="text-xl font-bold">{study.after}</div>
-                    </div>
-                  </div>
+            {/* Case Study 1 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="grid md:grid-cols-3 gap-8 mb-6">
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">+287%</div>
+                  <div className="font-newspaper text-sm uppercase">Revenue Growth</div>
                 </div>
-
-                <div className="p-8">
-                  <p className="text-lg text-gray-700 mb-8">{study.description}</p>
-
-                  <div className="grid md:grid-cols-3 gap-8">
-                    <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Challenges</h4>
-                      <ul className="space-y-2">
-                        {study.challenges.map((challenge, i) => (
-                          <li key={i} className="flex items-start text-gray-700">
-                            <span className="text-red-500 mr-2">•</span>
-                            <span>{challenge}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Solutions</h4>
-                      <ul className="space-y-2">
-                        {study.solutions.map((solution, i) => (
-                          <li key={i} className="flex items-start text-gray-700">
-                            <span className="text-blue-500 mr-2">→</span>
-                            <span>{solution}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Results</h4>
-                      <ul className="space-y-2">
-                        {study.results.map((result, i) => (
-                          <li key={i} className="flex items-start text-gray-700">
-                            <span className="text-green-500 mr-2">✓</span>
-                            <span>{result}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 pt-6 border-t border-gray-200">
-                    <div className="text-sm text-gray-500">Timeframe: {study.timeframe}</div>
-                  </div>
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">9 Mo</div>
+                  <div className="font-newspaper text-sm uppercase">Timeline</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-headline text-5xl font-black mb-2">$80k→$310k</div>
+                  <div className="font-newspaper text-sm uppercase">Monthly Revenue</div>
                 </div>
               </div>
-            ))}
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">High-Ticket Business Coaching</h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">The Problem:</span> Coach was doing $80k/month from referrals and sporadic webinar launches. Inconsistent pipeline. No scalable acquisition system.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">What We Did:</span> Built evergreen VSL funnel, launched profitable Facebook/YouTube ads, implemented automated nurture sequences, optimized application-to-close rate.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed">
+                <span className="font-bold">The Result:</span> Scaled from $80k/mo to $310k/mo in 9 months. Predictable daily lead flow. 40% close rate on applications. Completely eliminated launch dependency.
+              </p>
+            </div>
+
+            {/* Case Study 2 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="grid md:grid-cols-3 gap-8 mb-6">
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">+156%</div>
+                  <div className="font-newspaper text-sm uppercase">Revenue Growth</div>
+                </div>
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">12 Mo</div>
+                  <div className="font-newspaper text-sm uppercase">Timeline</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-headline text-5xl font-black mb-2">$150k→$385k</div>
+                  <div className="font-newspaper text-sm uppercase">Monthly Revenue</div>
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">B2B Consulting Firm</h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">The Problem:</span> Consulting firm relied entirely on referrals and networking. Zero outbound. No content strategy. Pipeline dried up during slow quarters.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">What We Did:</span> Launched LinkedIn thought leadership campaign, built SEO content strategy, created targeted ABM program, developed case study library and sales enablement.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed">
+                <span className="font-bold">The Result:</span> Grew from $150k/mo to $385k/mo in 12 months. Now generating 15-20 qualified leads monthly. Sales cycle shortened from 6 months to 3.5 months.
+              </p>
+            </div>
+
+            {/* Case Study 3 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="grid md:grid-cols-3 gap-8 mb-6">
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">+210%</div>
+                  <div className="font-newspaper text-sm uppercase">Revenue Growth</div>
+                </div>
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">11 Mo</div>
+                  <div className="font-newspaper text-sm uppercase">Timeline</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-headline text-5xl font-black mb-2">$120k→$372k</div>
+                  <div className="font-newspaper text-sm uppercase">Monthly Revenue</div>
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Online Course Creator</h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">The Problem:</span> Course creator stuck in quarterly launch cycle. Burnout from constant webinar launches. No evergreen revenue between launches.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">What We Did:</span> Built evergreen webinar funnel, launched paid traffic campaigns, created upsell/cross-sell product ecosystem, implemented email retention sequences.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed">
+                <span className="font-bold">The Result:</span> Scaled from $120k/mo to $372k/mo in 11 months. Now making daily sales on autopilot. Launches are optional, not required. LTV increased 2.4x through backend offers.
+              </p>
+            </div>
+
+            {/* Case Study 4 */}
+            <div className="bg-white border-5 border-black p-8">
+              <div className="grid md:grid-cols-3 gap-8 mb-6">
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">+198%</div>
+                  <div className="font-newspaper text-sm uppercase">Revenue Growth</div>
+                </div>
+                <div className="text-center border-r-0 md:border-r-3 border-black pr-4">
+                  <div className="font-headline text-5xl font-black mb-2">10 Mo</div>
+                  <div className="font-newspaper text-sm uppercase">Timeline</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-headline text-5xl font-black mb-2">$95k→$283k</div>
+                  <div className="font-newspaper text-sm uppercase">Monthly Revenue</div>
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">B2B SaaS Company</h3>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">The Problem:</span> SaaS company had high churn (7%), expensive CAC, low trial-to-paid conversion. Bleeding money on paid ads that didn't convert.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed mb-4">
+                <span className="font-bold">What We Did:</span> Rebuilt onboarding to drive activation, implemented retention campaigns, optimized trial-to-paid flow, launched content marketing for qualified pipeline, developed expansion revenue program.
+              </p>
+              <p className="font-newspaper text-gray-700 leading-relaxed">
+                <span className="font-bold">The Result:</span> Grew MRR from $95k to $283k in 10 months. Reduced churn from 7% to 2.5%. Increased trial-to-paid from 14% to 31%. Expansion revenue now 40% of new MRR.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#2a1a4a] via-[#1a1a2e] to-[#8B0000] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "\'Georgia\', serif" }}>
-            Ready to Become Our Next Success Story?
-          </h2>
-          <p className="text-xl mb-8 text-gray-200">
-            If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-white text-[#FFD700] px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
-          >
-            Apply for Partnership
-          </Link>
+      {/* Aggregate Stats */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
+              By The Numbers
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">87%</div>
+              <div className="font-headline text-xl uppercase mb-4">Avg Growth</div>
+              <p className="font-newspaper text-gray-700">Average revenue growth across all clients in year 1</p>
+            </div>
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">100%</div>
+              <div className="font-headline text-xl uppercase mb-4">Hit Guarantee</div>
+              <p className="font-newspaper text-gray-700">Every client exceeds our 30% minimum guarantee</p>
+            </div>
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">$18M+</div>
+              <div className="font-headline text-xl uppercase mb-4">Revenue Added</div>
+              <p className="font-newspaper text-gray-700">Total new revenue generated for client businesses</p>
+            </div>
+            <div className="bg-white border-5 border-black p-8 text-center">
+              <div className="font-headline text-6xl font-black mb-4">50+</div>
+              <div className="font-headline text-xl uppercase mb-4">Businesses</div>
+              <p className="font-newspaper text-gray-700">Companies we've partnered with and scaled</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="border-5 border-white p-10 md:p-16">
+            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8">
+              Ready For Your<br />30% Growth Story?
+            </h2>
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+              APPLY NOW
+            </Link>
+          </div>
         </div>
       </section>
     </div>

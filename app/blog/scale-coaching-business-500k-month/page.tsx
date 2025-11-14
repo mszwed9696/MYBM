@@ -242,7 +242,7 @@ export default function BlogPostPage() {
                 <li><strong>Average Deal Size:</strong> $5k-$20k+</li>
                 <li><strong>CAC (Cost to Acquire Customer):</strong> $1k-$3k for $10k+ LTV</li>
                 <li><strong>Close Rate:</strong> 40-60% of qualified sales calls</li>
-                <li><strong>Churn Rate:</strong> <10% monthly (for recurring programs)</li>
+                <li><strong>Churn Rate:</strong> &lt;10% monthly (for recurring programs)</li>
                 <li><strong>Team Headcount:</strong> 10-20 people (marketing, sales, delivery, ops)</li>
               </ul>
             </div>

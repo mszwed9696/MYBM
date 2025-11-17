@@ -1,267 +1,168 @@
 "use client";
 
 import Link from "next/link";
+import ComicPanel from "@/components/ComicPanel";
+import CartoonButton from "@/components/CartoonButton";
 
 export default function MarketingAutomationPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
-      {/* Newspaper Hero Section */}
-      <section className="relative bg-white border-b-5 border-black">
-        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          {/* Cityscape background */}
-          <div className="absolute inset-0 z-0 opacity-20">
-            <img
-              src="/heroes/philadelphia-skyline.png"
-              alt="Cityscape"
-              className="w-full h-full object-contain"
-              style={{ filter: "grayscale(100%) contrast(1.3)" }}
-            />
-          </div>
-
-          {/* Character */}
-          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
-            <img
-              src="/characters/tech-automation.png"
-              alt="Character"
-              className="w-full h-auto"
-              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
-            />
-          </div>
-
-          <div className="relative z-20 max-w-4xl">
-            {/* Category badge */}
-            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
-              ★ MARKETING AUTOMATION - THE TECH ★
-            </div>
-
-            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
-              Scale Marketing<br />Without Scaling Headcount
+    <>
+      <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
+        <div className="absolute inset-0 screen-tone opacity-40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 z-10">
+          <div className="max-w-4xl">
+            <h1 className="vintage-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+              MAKE MONEY
+              <br />
+              WHILE YOU
+              <br />
+              SLEEP
             </h1>
-
-            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
-              Automated nurture sequences and sales systems that run 24/7 while you focus on delivery.
+            <p className="text-2xl md:text-3xl font-mobster text-black leading-tight mb-8">
+              Marketing That Runs 24/7. No People Required.
             </p>
-
-            <Link
-              href="/apply"
-              className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all"
-            >
-              Join The Operation
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Newspaper Divider */}
-      <div className="border-t-5 border-b-5 border-black bg-white py-2">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
-            <span>★ Philadelphia Edition ★</span>
-            <span>Special Report: Marketing Automation</span>
-            <span>Price: Results or Nothing</span>
-          </div>
-        </div>
-      </div>
-
-      {/* The Problem Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Most Businesses Are <span className="line-through">Stuck</span> In Manual Marketing
-            </h2>
-            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
-              Every lead requires manual follow-up. Every campaign needs hands-on management. That doesn't scale.
-            </p>
-          </div>
-
-          <div className="newspaper-columns-2 newspaper-columns">
-            <p className="newspaper-body drop-cap mb-4">
-              You can't scale to 7 or 8 figures doing everything manually.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              <span className="font-bold">Marketing automation isn't about sending more emails. It's about building systems that nurture leads, qualify prospects, and move buyers through your funnel—automatically.</span>
-            </p>
-
-            <p className="newspaper-body mb-4">
-              High-ticket automation is sophisticated: behavior-based triggers, lead scoring, segmentation, multi-channel orchestration. Done right, it feels personal. Done wrong, it feels spammy.
-            </p>
-
-            <p className="newspaper-body font-bold">
-              We build automation systems that scale revenue without scaling team size. Sophisticated sequences that nurture complex sales cycles. Attribution tracking that shows ROI. And we guarantee 30% growth.
+            <ComicPanel className="mb-8">
+              <p className="text-xl font-newspaper leading-relaxed text-cartoon-ink">
+                You can't work 24 hours a day.
+                <br /><br />
+                But your marketing can. We <span className="font-bold text-black">build systems</span> that sell for you. All day. Every day.
+                <br /><br />
+                <span className="font-bold">30% more revenue. While you sleep.</span>
+              </p>
+            </ComicPanel>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <CartoonButton href="/apply" variant="primary" className="text-lg px-8 py-4">APPLY NOW →</CartoonButton>
+              <CartoonButton href="/guarantee" variant="gold" className="text-lg px-8 py-4">See The Guarantee</CartoonButton>
+            </div>
+            <p className="text-sm font-newspaper text-cartoon-brown italic mt-6">
+              ★ Limited partnerships • MINIMUM $100,000/month revenue required • 24-48hr review ★
             </p>
           </div>
         </div>
       </section>
 
-      {/* Automation Services */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
+      <section className="py-16 bg-cartoon-ink text-cartoon-cream border-b-5 border-black">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Automation Services
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">⚙️</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Email Automation</h3>
-              <p className="newspaper-body leading-relaxed">
-                Sophisticated nurture sequences based on behavior, engagement, and buying stage. Automated follow-up that feels personal and converts at high rates.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Lead Scoring & Segmentation</h3>
-              <p className="newspaper-body leading-relaxed">
-                Automatically qualify and segment leads based on behavior, firmographics, and engagement. Sales only talks to hot leads. Everything else nurtures automatically.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">📊</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">CRM & Marketing Stack</h3>
-              <p className="newspaper-body leading-relaxed">
-                Complete marketing infrastructure: CRM setup, automation workflows, integration management, data hygiene. Systems that scale with your business.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🔄</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Multi-Channel Orchestration</h3>
-              <p className="newspaper-body leading-relaxed">
-                Coordinate campaigns across email, SMS, retargeting, LinkedIn, and more. Unified messaging. Seamless buyer experience. Maximum conversion.
-              </p>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">24/7</div><div className="text-sm font-newspaper uppercase tracking-wide">Always Working</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">100%</div><div className="text-sm font-newspaper uppercase tracking-wide">Automated</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">30%</div><div className="text-sm font-newspaper uppercase tracking-wide">Growth Guarantee</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">$0</div><div className="text-sm font-newspaper uppercase tracking-wide">Manual Work</div></div>
           </div>
         </div>
       </section>
 
-      {/* Pull Quote */}
-      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
-            "The difference between 6 and 7 figures is often just automation. You can't manually follow up with 500 leads. But a properly built system can—and it'll convert them better than humans. That's scale."
-          </p>
-          <p className="font-newspaper text-xl">
-            — Don Michael Szwed, Mind Your Business Media
-          </p>
-        </div>
-      </div>
-
-      {/* What's Included */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-20 md:py-32 bg-cartoon-sepia border-b-5 border-cartoon-ink crosshatch">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ WHAT YOU GET ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              What's Included
-            </h2>
+            <div className="sound-effect mb-6">BAM!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHY YOU NEED<br /><span className="text-black">AUTOMATION</span></h2>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Platform Setup</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>CRM selection & configuration</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Marketing automation platform setup</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Integration & data sync</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Lead scoring models</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Segmentation frameworks</li>
-              </ul>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Automation Development</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Email nurture sequences</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Behavior-based triggers</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Lead qualification workflows</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Sales handoff automation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Re-engagement campaigns</li>
-              </ul>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Management & Optimization</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Performance monitoring</li>
-                <li className="flex items-start"><span className="mr-2">•</span>A/B testing sequences</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Deliverability optimization</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Reporting & analytics</li>
-                <li className="flex items-start"><span className="mr-2">•</span>30% growth guarantee</li>
-              </ul>
-            </div>
+            {[{icon: "⏰", title: "YOU'RE TOO BUSY", problem: "You spend all day on manual tasks. No time to grow.", solution: "Automation does it for you. You focus on what matters."},
+              {icon: "💸", title: "YOU LOSE LEADS", problem: "Leads come in. You forget to follow up. Money lost.", solution: "Automation follows up instantly. Never miss a lead."},
+              {icon: "😴", title: "YOU SLEEP", problem: "You sleep. Your business stops making money.", solution: "Automation works 24/7. Money never stops."}
+            ].map((item, i) => (
+              <ComicPanel key={i} className="text-center">
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="font-cartoon text-3xl text-black mb-4 uppercase">{item.title}</h3>
+                <div className="mb-4"><p className="font-newspaper text-lg italic text-cartoon-brown mb-2">The Problem:</p><p className="font-newspaper text-base text-cartoon-ink">{item.problem}</p></div>
+                <div className="border-t-3 border-cartoon-ink pt-4"><p className="font-newspaper text-lg font-bold text-black mb-2">The Fix:</p><p className="font-newspaper text-base text-cartoon-ink font-bold">{item.solution}</p></div>
+              </ComicPanel>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-20 md:py-32 bg-cartoon-cream border-b-5 border-cartoon-ink">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              Results That Matter
-            </h2>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHAT WE<br /><span className="text-black">AUTOMATE</span></h2>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">43%</div>
-              <div className="font-headline text-xl uppercase mb-4">Lead-to-Close Rate</div>
-              <p className="font-newspaper text-gray-700">
-                SaaS company: Automated lead scoring and nurture increased close rate from 12% to 43% without adding sales reps
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">6.2x</div>
-              <div className="font-headline text-xl uppercase mb-4">Sales Productivity</div>
-              <p className="font-newspaper text-gray-700">
-                Consulting firm: Automation qualified leads before sales contact, increasing deals closed per rep from 3.1 to 19.2 monthly
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">+267%</div>
-              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
-              <p className="font-newspaper text-gray-700">
-                Course creator: Email automation and segmentation grew revenue from $68k/mo to $249k/mo in 11 months
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">📧</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Email Sequences</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Emails that send themselves. Welcome emails. Follow ups. Sales emails. All automatic.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">🤖</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Lead Follow-Up</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">New lead comes in. System follows up instantly. Books calls. Sends info. No humans needed.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">📊</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">CRM Systems</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Track every lead. Every customer. Every dollar. All automatic. Always up to date.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">💬</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">SMS & Chat</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Text messages. Website chat. All automated. Answer questions. Book appointments. Make sales.</p></div></div></ComicPanel>
+          </div>
+          <div className="text-center">
+            <CartoonButton href="/apply" variant="primary" className="text-xl px-12 py-5">AUTOMATE NOW →</CartoonButton>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="border-5 border-white p-10 md:p-16 bg-black">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
-              Ready To Get Started?
-            </h2>
-            <p className="font-newspaper text-xl mb-10 text-white/90">
-              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
-            </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
-            >
-              APPLY NOW
-            </Link>
-            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
-              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
-            </p>
+      <section className="py-20 md:py-32 bg-cartoon-newsprint border-b-5 border-cartoon-ink halftone-bg">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="sound-effect mb-6 text-black">PROOF!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">REAL AUTOMATION<br /><span className="text-black">REAL RESULTS</span></h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[{before: "Manual follow-up", after: "100% automated", growth: "+340% leads", timeline: "3 months", industry: "B2B SaaS"},
+              {before: "5hrs/day on email", after: "0hrs/day", growth: "+200% response", timeline: "2 months", industry: "Consulting"},
+              {before: "$110k/mo", after: "$287k/mo", growth: "+161%", timeline: "8 months", industry: "Coaching"}
+            ].map((c, i) => (
+              <ComicPanel key={i} className="text-center bg-white">
+                <div className="text-5xl font-cartoon text-black mb-4">{c.growth}</div>
+                <div className="space-y-3 font-newspaper">
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">Before:</span><div className="text-2xl font-bold text-cartoon-ink">{c.before}</div></div>
+                  <div className="text-3xl text-black">→</div>
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">After:</span><div className="text-2xl font-bold text-black">{c.after}</div></div>
+                  <div className="border-t-3 border-cartoon-ink pt-3 mt-4"><div className="text-xs uppercase text-cartoon-brown mb-1">{c.timeline}</div><div className="text-sm font-bold text-black">{c.industry}</div></div>
+                </div>
+              </ComicPanel>
+            ))}
           </div>
         </div>
       </section>
-    </div>
+
+      <section className="py-20 md:py-32 bg-cartoon-tan border-b-5 border-cartoon-ink">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHO NEEDS<br /><span className="text-black">AUTOMATION</span></h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            <ComicPanel className="bg-white border-cartoon-ink">
+              <div className="text-6xl text-center mb-4">✓</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-black">YOU NEED THIS IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-cartoon-ink">
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You do <span className="font-bold">everything manually</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You <span className="font-bold">forget to follow up</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You want to <span className="font-bold">work less</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You make <span className="font-bold">$100k+ per month</span></span></li>
+              </ul>
+            </ComicPanel>
+            <ComicPanel className="bg-cartoon-ink text-white border-black">
+              <div className="text-6xl text-center mb-4">✗</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-white">NOT A FIT IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-white">
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You like <span className="font-bold">manual work</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You make <span className="font-bold">under $100k/month</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You have <span className="font-bold">no processes</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You want <span className="font-bold">instant results</span></span></li>
+              </ul>
+            </ComicPanel>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-cartoon-ink text-cartoon-cream border-b-5 border-black relative overflow-hidden">
+        <div className="absolute inset-0 halftone-bg opacity-10"></div>
+        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
+          <div className="sound-effect text-white mb-8">MAKE THE CALL!</div>
+          <h2 className="vintage-headline text-4xl md:text-6xl lg:text-7xl text-white mb-8">READY TO<br /><span className="text-white">AUTOMATE?</span></h2>
+          <ComicPanel className="mb-12 bg-cartoon-cream text-cartoon-ink">
+            <p className="text-xl md:text-2xl font-newspaper leading-relaxed">
+              If you're tired of manual work...<br /><br />
+              We'll automate your marketing. Make <span className="font-black text-black">30% more revenue in 12 months</span>.<br /><br />
+              <span className="font-black text-2xl text-black">Or we work for free.</span>
+            </p>
+          </ComicPanel>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <CartoonButton href="/apply" variant="gold" className="text-2xl px-16 py-6">APPLY NOW →</CartoonButton>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

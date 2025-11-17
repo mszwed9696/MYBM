@@ -1,329 +1,391 @@
 "use client";
 
 import Link from "next/link";
+import ComicPanel from "@/components/ComicPanel";
+import CartoonButton from "@/components/CartoonButton";
 
 export default function MarketingStrategyPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
-      {/* Newspaper Hero Section */}
-      <section className="relative bg-white border-b-5 border-black">
-        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          {/* Cityscape background */}
-          <div className="absolute inset-0 z-0 opacity-20">
-            <img
-              src="/heroes/philadelphia-skyline.png"
-              alt="Cityscape"
-              className="w-full h-full object-contain"
-              style={{ filter: "grayscale(100%) contrast(1.3)" }}
-            />
-          </div>
+    <>
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
+        <div className="absolute inset-0 screen-tone opacity-40"></div>
 
-          {/* Character */}
-          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
-            <img
-              src="/characters/consigliere-wisdom.png"
-              alt="Character"
-              className="w-full h-auto"
-              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
-            />
-          </div>
-
-          <div className="relative z-20 max-w-4xl">
-            {/* Category badge */}
-            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
-              ★ MARKETING STRATEGY - THE CONSIGLIERE ★
-            </div>
-
-            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
-              Strategy Without Execution<br />Is Just Talk
+        <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 z-10">
+          <div className="max-w-4xl">
+            <h1 className="vintage-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+              WE MAKE
+              <br />
+              THE PLAN
+              <br />
+              THEN WE DO IT
             </h1>
-
-            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
-              Custom marketing strategies for high-ticket businesses. We don't just plan it—we execute it.
+            <p className="text-2xl md:text-3xl font-mobster text-black leading-tight mb-8">
+              Strategy Plus Execution. No Deck. No BS.
             </p>
 
-            <Link
-              href="/apply"
-              className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all"
-            >
-              Join The Operation
-            </Link>
-          </div>
-        </div>
-      </section>
+            <ComicPanel className="mb-8">
+              <p className="text-xl font-newspaper leading-relaxed text-cartoon-ink">
+                Most consultants give you a plan. Then they leave.
+                <br /><br />
+                You're stuck trying to do it yourself. It never gets done.
+                <br /><br />
+                We make <span className="font-bold text-black">the whole plan</span>. Then we <span className="font-bold text-black">do the whole plan</span>.
+                <br /><br />
+                <span className="font-bold">That's how we guarantee 30% growth.</span>
+              </p>
+            </ComicPanel>
 
-      {/* Newspaper Divider */}
-      <div className="border-t-5 border-b-5 border-black bg-white py-2">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
-            <span>★ Philadelphia Edition ★</span>
-            <span>Special Report: Marketing Strategy</span>
-            <span>Price: Results or Nothing</span>
-          </div>
-        </div>
-      </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <CartoonButton href="/apply" variant="primary" className="text-lg px-8 py-4">
+                APPLY NOW →
+              </CartoonButton>
+              <CartoonButton href="/guarantee" variant="gold" className="text-lg px-8 py-4">
+                See The Guarantee
+              </CartoonButton>
+            </div>
 
-      {/* The Problem Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Most Strategy Consultants Are <span className="line-through">All Talk</span>
-            </h2>
-            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
-              They hand you a deck and disappear. We execute the entire plan.
-            </p>
-          </div>
-
-          <div className="newspaper-columns-2 newspaper-columns">
-            <p className="newspaper-body drop-cap mb-4">
-              You've seen it before: hire a consultant, pay $20-50k for a strategy deck, then... nothing. You're left to execute it yourself. Most businesses can't. The deck collects dust.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              <span className="font-bold">We don't do strategy decks. We do complete execution.</span> Your marketing strategy is worthless unless someone implements it correctly.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              Here's how we're different: we build the strategy, we execute every piece, and we guarantee 30% revenue growth. If the strategy doesn't deliver, we keep working for free until it does.
-            </p>
-
-            <p className="newspaper-body font-bold">
-              That's why other consultants charge for decks and run. They can't guarantee execution. We can. We do. Every time.
+            <p className="text-sm font-newspaper text-cartoon-brown italic mt-6">
+              ★ Limited partnerships • MINIMUM $100,000/month revenue required • 24-48hr review ★
             </p>
           </div>
         </div>
       </section>
 
-      {/* Strategic Services */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
+      {/* Stats Section */}
+      <section className="py-16 bg-cartoon-ink text-cartoon-cream border-b-5 border-black">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Strategic Marketing Services
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Positioning & Messaging</h3>
-              <p className="newspaper-body leading-relaxed">
-                Most businesses sound like everyone else. We build positioning that makes you the only choice in your market. Clear differentiation. Premium pricing power. Market dominance.
-              </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">100%</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">We Execute</div>
             </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">📈</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Go-To-Market Strategy</h3>
-              <p className="newspaper-body leading-relaxed">
-                Complete go-to-market planning for new offers, market expansion, or repositioning. Channel selection, budget allocation, timeline, KPIs—all tied to our 30% revenue guarantee.
-              </p>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">$0</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Decks We Make</div>
             </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">💼</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Marketing Infrastructure</h3>
-              <p className="newspaper-body leading-relaxed">
-                Build scalable marketing systems: CRM setup, automation workflows, lead scoring, attribution models, reporting dashboards. Infrastructure that supports 7 and 8-figure growth.
-              </p>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">30%</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Growth Guarantee</div>
             </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🔄</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Continuous Optimization</h3>
-              <p className="newspaper-body leading-relaxed">
-                Strategy isn't static. We continuously test, iterate, and optimize based on data. Monthly reviews. Strategic pivots. Relentless focus on what drives revenue.
-              </p>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">12mo</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Max Timeline</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pull Quote */}
-      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
-            "A strategy without execution is just expensive consulting theater. We execute everything. And we guarantee the results. That's the difference between us and every other consultant you've met."
-          </p>
-          <p className="font-newspaper text-xl">
-            — Don Michael Szwed, Mind Your Business Media
-          </p>
-        </div>
-      </div>
-
-      {/* What's Included */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Problem Section */}
+      <section className="py-20 md:py-32 bg-cartoon-sepia border-b-5 border-cartoon-ink crosshatch">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ WHAT YOU GET ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              What's Included
+            <div className="sound-effect mb-6">BAM!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              WHY MOST STRATEGY
+              <br />
+              <span className="text-black">NEVER WORKS</span>
             </h2>
+            <p className="text-xl font-newspaper text-cartoon-brown max-w-3xl mx-auto">
+              Because no one does the work. It sits in a folder. Forgotten.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Strategy Development</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Complete marketing audit</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Competitive analysis & positioning</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Customer research & segmentation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Channel strategy & budget allocation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>12-month growth roadmap</li>
-              </ul>
-            </div>
+            {[
+              {
+                icon: "📄",
+                title: "JUST TALK",
+                problem: "Consultants give you a deck. Then they disappear.",
+                solution: "We do the whole thing. Strategy to execution."
+              },
+              {
+                icon: "💸",
+                title: "YOU PAY TWICE",
+                problem: "Pay for strategy. Then pay someone else to do it.",
+                solution: "One price. Strategy plus execution."
+              },
+              {
+                icon: "🎲",
+                title: "NO GUARANTEES",
+                problem: "They get paid. You hope it works.",
+                solution: "30% revenue growth guaranteed. Or free."
+              }
+            ].map((item, i) => (
+              <ComicPanel key={i} className="text-center">
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="font-cartoon text-3xl text-black mb-4 uppercase">{item.title}</h3>
+                <div className="mb-4">
+                  <p className="font-newspaper text-lg italic text-cartoon-brown mb-2">
+                    The Problem:
+                  </p>
+                  <p className="font-newspaper text-base text-cartoon-ink">
+                    {item.problem}
+                  </p>
+                </div>
+                <div className="border-t-3 border-cartoon-ink pt-4">
+                  <p className="font-newspaper text-lg font-bold text-black mb-2">
+                    The Fix:
+                  </p>
+                  <p className="font-newspaper text-base text-cartoon-ink font-bold">
+                    {item.solution}
+                  </p>
+                </div>
+              </ComicPanel>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Complete Execution</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Campaign planning & execution</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Content strategy & creation</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Funnel development & optimization</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Team hiring & management</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Vendor & agency oversight</li>
-              </ul>
-            </div>
+      {/* What We Do */}
+      <section className="py-20 md:py-32 bg-cartoon-cream border-b-5 border-cartoon-ink">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              WHAT WE
+              <br />
+              <span className="text-black">ACTUALLY DO</span>
+            </h2>
+            <p className="text-xl font-newspaper text-cartoon-brown max-w-3xl mx-auto">
+              We figure out what to do. Then we do it.
+            </p>
+          </div>
 
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Performance Management</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Revenue tracking & attribution</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Monthly performance reviews</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Strategic pivot recommendations</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Continuous testing & optimization</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Guaranteed 30% growth or free work</li>
-              </ul>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">🎯</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Figure Out The Plan</h3>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    We study your business. We study your customers. We figure out what will make you more money. That's the plan.
+                  </p>
+                </div>
+              </div>
+            </ComicPanel>
+
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">⚡</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Do All The Work</h3>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    We don't hand you a plan. We do it. We run the ads. We build the funnels. We write the content. All of it.
+                  </p>
+                </div>
+              </div>
+            </ComicPanel>
+
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">💰</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Make You Money</h3>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    The plan works. You make <span className="font-bold text-black">30% more money in 12 months</span>. That's the guarantee.
+                  </p>
+                </div>
+              </div>
+            </ComicPanel>
+
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">🤝</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Fix What's Broken</h3>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    If something doesn't work, we fix it. We keep testing. We keep improving. Until you hit 30%.
+                  </p>
+                </div>
+              </div>
+            </ComicPanel>
+          </div>
+
+          <div className="text-center">
+            <CartoonButton href="/apply" variant="primary" className="text-xl px-12 py-5">
+              GET THE PLAN →
+            </CartoonButton>
           </div>
         </div>
       </section>
 
       {/* Results */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-20 md:py-32 bg-cartoon-newsprint border-b-5 border-cartoon-ink halftone-bg">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              Results That Matter
+            <div className="sound-effect mb-6 text-black">PROOF!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              REAL PLANS
+              <br />
+              <span className="text-black">REAL RESULTS</span>
             </h2>
+            <p className="text-xl font-newspaper text-cartoon-brown">
+              What happens when the plan actually gets done.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">+287%</div>
-              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
-              <p className="font-newspaper text-gray-700">
-                Course creator: Complete repositioning and go-to-market strategy grew revenue from $95k/mo to $368k/mo in 12 months
-              </p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                before: "$95k/mo",
+                after: "$368k/mo",
+                growth: "+287%",
+                timeline: "12 months",
+                industry: "Course Creator"
+              },
+              {
+                before: "$145k/mo",
+                after: "$371k/mo",
+                growth: "+156%",
+                timeline: "11 months",
+                industry: "B2B Consulting"
+              },
+              {
+                before: "$110k/mo",
+                after: "$341k/mo",
+                growth: "+210%",
+                timeline: "10 months",
+                industry: "SaaS Company"
+              }
+            ].map((caseStudy, i) => (
+              <ComicPanel key={i} className="text-center bg-white">
+                <div className="text-5xl font-cartoon text-black mb-4">{caseStudy.growth}</div>
+                <div className="space-y-3 font-newspaper">
+                  <div>
+                    <span className="text-sm uppercase tracking-wide text-cartoon-brown">Before:</span>
+                    <div className="text-2xl font-bold text-cartoon-ink">{caseStudy.before}</div>
+                  </div>
+                  <div className="text-3xl text-black">→</div>
+                  <div>
+                    <span className="text-sm uppercase tracking-wide text-cartoon-brown">After:</span>
+                    <div className="text-2xl font-bold text-black">{caseStudy.after}</div>
+                  </div>
+                  <div className="border-t-3 border-cartoon-ink pt-3 mt-4">
+                    <div className="text-xs uppercase text-cartoon-brown mb-1">{caseStudy.timeline}</div>
+                    <div className="text-sm font-bold text-black">{caseStudy.industry}</div>
+                  </div>
+                </div>
+              </ComicPanel>
+            ))}
+          </div>
 
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">+156%</div>
-              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
-              <p className="font-newspaper text-gray-700">
-                B2B consulting: New positioning and channel strategy grew from $145k/mo to $371k/mo in 11 months
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">100%</div>
-              <div className="font-headline text-xl uppercase mb-4">Hit Guarantee</div>
-              <p className="font-newspaper text-gray-700">
-                Every client exceeds our 30% minimum guarantee because we execute the strategy correctly
-              </p>
-            </div>
+          <div className="text-center">
+            <Link href="/results" className="font-newspaper text-lg text-cartoon-ink underline hover:text-black transition-colors">
+              View All Results →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      {/* Who This Is For */}
+      <section className="py-20 md:py-32 bg-cartoon-tan border-b-5 border-cartoon-ink">
+        <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE PROCESS ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              How It Works
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              WHO NEEDS
+              <br />
+              <span className="text-black">STRATEGY + EXECUTION</span>
             </h2>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white border-3 border-black p-6">
-              <div className="flex items-start">
-                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">1</div>
-                <div>
-                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Discovery & Audit</h3>
-                  <p className="font-newspaper text-gray-700">
-                    Complete analysis of your business, market, customers, and current marketing. We identify growth opportunities and blockers.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Yes */}
+            <ComicPanel className="bg-white border-cartoon-ink">
+              <div className="text-6xl text-center mb-4">✓</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-black">YOU NEED THIS IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-cartoon-ink">
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span>You make <span className="font-bold">$100k+ per month</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span>You're tired of <span className="font-bold">consultants who just talk</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span>You want someone to <span className="font-bold">do the work</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span>You want <span className="font-bold">guaranteed growth</span></span>
+                </li>
+              </ul>
+            </ComicPanel>
 
-            <div className="bg-white border-3 border-black p-6">
-              <div className="flex items-start">
-                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">2</div>
-                <div>
-                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Strategy Development</h3>
-                  <p className="font-newspaper text-gray-700">
-                    Build your complete marketing strategy: positioning, channels, messaging, budget allocation, timeline. Tied to our 30% guarantee.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <div className="flex items-start">
-                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">3</div>
-                <div>
-                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Complete Execution</h3>
-                  <p className="font-newspaper text-gray-700">
-                    We execute the entire strategy. No handoffs. No delegation. We manage everything from campaigns to team to vendors.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <div className="flex items-start">
-                <div className="font-headline text-4xl font-black mr-6 border-3 border-black px-4 py-2 bg-black text-white">4</div>
-                <div>
-                  <h3 className="font-headline text-xl font-bold uppercase mb-2">Optimization & Guarantee</h3>
-                  <p className="font-newspaper text-gray-700">
-                    Continuous testing and optimization. Monthly reviews. Strategic pivots as needed. We deliver 30% growth or work for free.
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* No */}
+            <ComicPanel className="bg-cartoon-ink text-white border-black">
+              <div className="text-6xl text-center mb-4">✗</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-white">NOT A FIT IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-white">
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span>You make <span className="font-bold">under $100k/month</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span>You just want <span className="font-bold">a plan on paper</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span>You don't care about <span className="font-bold">guarantees</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span>You want <span className="font-bold">cheap freelancers</span></span>
+                </li>
+              </ul>
+            </ComicPanel>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="border-5 border-white p-10 md:p-16 bg-black">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
-              Ready To Get Started?
-            </h2>
-            <p className="font-newspaper text-xl mb-10 text-white/90">
-              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+      <section className="py-20 md:py-32 bg-cartoon-ink text-cartoon-cream border-b-5 border-black relative overflow-hidden">
+        <div className="absolute inset-0 halftone-bg opacity-10"></div>
+
+        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
+          <div className="sound-effect text-white mb-8">MAKE THE CALL!</div>
+
+          <h2 className="vintage-headline text-4xl md:text-6xl lg:text-7xl text-white mb-8">
+            READY FOR
+            <br />
+            <span className="text-white">THE PLAN?</span>
+          </h2>
+
+          <ComicPanel className="mb-12 bg-cartoon-cream text-cartoon-ink">
+            <p className="text-xl md:text-2xl font-newspaper leading-relaxed">
+              If you make <span className="font-black text-black">$100k+ per month</span>...
+              <br /><br />
+              And you're tired of plans that never get done...
+              <br /><br />
+              We'll make <span className="font-black text-black">the plan</span>. We'll do <span className="font-black text-black">the work</span>.
+              <br /><br />
+              <span className="font-black text-2xl text-black">30% more revenue. Guaranteed.</span>
             </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
-            >
-              APPLY NOW
-            </Link>
-            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
-              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+          </ComicPanel>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <CartoonButton href="/apply" variant="gold" className="text-2xl px-16 py-6">
+              APPLY NOW →
+            </CartoonButton>
+          </div>
+
+          <p className="font-newspaper text-sm text-cartoon-tan uppercase tracking-wider">
+            ★ APPLICATION REVIEW: 24-48 HOURS ★<br/>
+            LIMITED PARTNERSHIPS AVAILABLE ★ MINIMUM $100,000/MONTH REVENUE REQUIRED ★
+          </p>
+
+          <div className="mt-12 pt-8 border-t-3 border-cartoon-tan">
+            <p className="font-mobster text-xl italic text-cartoon-cream">
+              "Most consultants talk. We do. That's why we can guarantee the results. <span className="not-italic font-black">Capisce?</span>"
+            </p>
+            <p className="font-newspaper text-sm mt-2 text-cartoon-tan">
+              — Don Michael Szwed, Mind Your Business Media
             </p>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

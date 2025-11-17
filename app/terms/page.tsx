@@ -2,10 +2,10 @@
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          <h1 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 text-black text-center">
+          <h1 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 text-black text-center">
             Terms of Service
           </h1>
         </div>
@@ -25,21 +25,21 @@ export default function TermsPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="font-newspaper text-base text-gray-700 space-y-8 leading-relaxed">
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Agreement to Terms</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Agreement to Terms</h2>
               <p>
                 These Terms of Service ("Terms") govern your access to and use of Mind Your Business Media's website and services. By accessing our website or engaging our services, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access our services.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Services Description</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Services Description</h2>
               <p>
                 Mind Your Business Media provides marketing strategy, execution, and consulting services to businesses generating $100,000+ in monthly revenue. Our services include but are not limited to: paid advertising management, funnel optimization, content marketing, marketing automation, and fractional CMO services.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Revenue Growth Guarantee</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Revenue Growth Guarantee</h2>
               <p className="mb-4">
                 We guarantee a minimum 30% net revenue increase within the first 12 months of partnership for qualifying clients. The guarantee is subject to the following conditions:
               </p>
@@ -54,7 +54,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Client Obligations</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Client Obligations</h2>
               <p className="mb-4">As a client, you agree to:</p>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Provide accurate business information and financial documentation for baseline and progress measurement</li>
@@ -68,7 +68,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Payment Terms</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Payment Terms</h2>
               <p className="mb-4">
                 Payment terms are specified in individual client agreements. Generally:
               </p>
@@ -82,7 +82,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Partnership Term and Termination</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Partnership Term and Termination</h2>
               <p className="mb-4">
                 Partnership agreements typically have a 12-month initial term. Either party may terminate the agreement with 30 days written notice, subject to:
               </p>
@@ -96,70 +96,70 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Intellectual Property</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Intellectual Property</h2>
               <p>
                 All proprietary methodologies, frameworks, and strategic approaches remain the intellectual property of Mind Your Business Media. Client-specific deliverables (ad creative, landing pages, email copy, etc.) become client property upon full payment. We retain the right to use anonymized case studies and aggregate performance data for marketing purposes.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Confidentiality</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Confidentiality</h2>
               <p>
                 Both parties agree to maintain confidentiality of sensitive business information, financial data, strategic plans, and proprietary methods shared during the partnership. This obligation extends indefinitely beyond partnership termination.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Limitation of Liability</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Limitation of Liability</h2>
               <p>
                 To the maximum extent permitted by law, Mind Your Business Media's liability is limited to the total fees paid by client in the 12 months preceding the claim. We are not liable for indirect, incidental, consequential, or punitive damages. This limitation does not affect our revenue growth guarantee obligations.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Warranties and Disclaimers</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Warranties and Disclaimers</h2>
               <p>
                 We warrant that services will be performed with professional skill and care. However, marketing results depend on numerous factors beyond our control. Except for the explicit 30% revenue guarantee, services are provided "as is" without warranties of any kind, express or implied.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Indemnification</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Indemnification</h2>
               <p>
                 Client agrees to indemnify and hold harmless Mind Your Business Media from claims arising from: (a) client's use of our services, (b) violation of these Terms, (c) infringement of third-party rights, or (d) client's business operations, products, or services.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Dispute Resolution</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Dispute Resolution</h2>
               <p>
                 Any disputes will first be addressed through good-faith negotiation. If unresolved within 30 days, disputes will be settled through binding arbitration in Philadelphia, PA, under the American Arbitration Association's Commercial Arbitration Rules. Each party bears its own costs; arbitrator fees are split equally.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Governing Law</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Governing Law</h2>
               <p>
                 These Terms are governed by the laws of the Commonwealth of Pennsylvania, without regard to conflict of law provisions. Any legal action must be brought in the state or federal courts located in Philadelphia, PA.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Changes to Terms</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Changes to Terms</h2>
               <p>
                 We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of services after changes constitutes acceptance. Material changes affecting existing clients will be communicated directly.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Severability</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Severability</h2>
               <p>
                 If any provision of these Terms is found unenforceable, the remaining provisions continue in full force and effect. The unenforceable provision will be modified to the minimum extent necessary to make it enforceable.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Contact Information</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Contact Information</h2>
               <p>
                 For questions about these Terms, contact us at:<br/>
                 <strong>Email:</strong> legal@mindyourbusinessmedia.com<br/>

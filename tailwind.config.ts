@@ -11,18 +11,37 @@ const config: Config = {
       fontFamily: {
         'newspaper': ['Georgia', 'Times New Roman', 'serif'],
         'headline': ['Impact', 'Arial Black', 'sans-serif'],
+        'cartoon': ['"Bangers"', '"Londrina Solid"', '"Permanent Marker"', 'Impact', 'sans-serif'],
+        'comic': ['"Comic Sans MS"', '"Comic Neue"', 'cursive'],
+        'mobster': ['"Playfair Display"', 'Georgia', 'serif'],
       },
       colors: {
-        'newspaper': {
+        'cartoon': {
+          // Grayscale Palette
           'white': '#FFFFFF',
-          'cream': '#F5F5DC',
-          'light-gray': '#E5E5E5',
-          'gray': '#CCCCCC',
-          'medium-gray': '#999999',
-          'dark-gray': '#666666',
-          'charcoal': '#333333',
+          'cream': '#F5F5F5',        // Light gray background
+          'sepia': '#E5E5E5',        // Light gray
+          'tan': '#CCCCCC',          // Medium-light gray
+          'brown': '#999999',        // Medium gray
+
+          // Grayscale Primaries
+          'red': '#000000',          // Black
+          'blue': '#666666',         // Dark gray
+          'yellow': '#CCCCCC',       // Light gray
+          'green': '#555555',        // Charcoal gray
+
+          // Grayscale Accents
+          'gold': '#888888',         // Medium gray
+          'burgundy': '#333333',     // Dark charcoal
+          'olive': '#777777',        // Gray
+
+          // Newspaper Elements
+          'ink': '#000000',          // Pure black
+          'newsprint': '#FAFAFA',    // Off-white
+          'halftone': '#AAAAAA',     // Mid-gray
+
+          // Pure values
           'black': '#000000',
-          'ink': '#1a1a1a',
         },
       },
       borderWidth: {

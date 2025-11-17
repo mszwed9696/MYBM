@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ SCALE BLUEPRINT ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ SCALE BLUEPRINT ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             How to Scale a Coaching Business to $500k/Month
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're doing $100k-$150k monthly. Solid revenue. You're not struggling. But you're stuck. You can't seem to break past $200k no matter what you try. Scaling to $500k+ feels impossible.
             </p>
@@ -42,7 +42,7 @@ export default function BlogPostPage() {
               Here's the exact playbook we use to take coaching businesses from $100k to $500k+ monthly—without burning out or sacrificing quality.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why Most Coaches Get Stuck At $100k-$200k/Month
             </h2>
 
@@ -70,7 +70,7 @@ export default function BlogPostPage() {
               You're not "growing bigger." You're building a different business.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Phase 1: Build Evergreen Acquisition (Months 1-3)
             </h2>
 
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">To scale to $500k+, you need predictable daily lead flow. Enter: Evergreen acquisition.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 1: Build Your Evergreen VSL or Automated Webinar</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 1: Build Your Evergreen VSL or Automated Webinar</h3>
 
             <p>
               Record your best webinar/sales presentation once. Make it evergreen (no time-specific references). This becomes your 24/7 sales machine.
@@ -94,7 +94,7 @@ export default function BlogPostPage() {
               <li>Sales sequence after they watch (5-7 days of follow-up emails)</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 2: Launch Paid Traffic Campaigns</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 2: Launch Paid Traffic Campaigns</h3>
 
             <p>
               Referrals won't get you to $500k. You need scalable, paid acquisition.
@@ -109,7 +109,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">Budget: $10k-$30k+ monthly minimum to scale to $500k.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 3: Optimize For Applications, Not Sales</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 3: Optimize For Applications, Not Sales</h3>
 
             <p>
               At $100k-$200k, you're probably closing clients on webinars or after quick calls. At $500k+, you need a qualification process.
@@ -127,7 +127,7 @@ export default function BlogPostPage() {
               <strong>Target:</strong> 3-5% of VSL viewers apply. 60-70% of qualified applicants book calls. 40-60% close rate.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Phase 2: Build Your Sales Team (Months 3-6)
             </h2>
 
@@ -137,7 +137,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">To scale to $500k+, you need closers.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Hire Your First Closer (Month 3-4)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Hire Your First Closer (Month 3-4)</h3>
 
             <p><strong>Compensation Structure:</strong></p>
             <ul className="list-disc pl-8 space-y-2">
@@ -150,13 +150,13 @@ export default function BlogPostPage() {
               Don't hire cheap. A great closer pays for themselves 10x over.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Train Them On Your Process</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Train Them On Your Process</h3>
 
             <p>
               Record yourself closing 10-20 sales calls. Document objections, frameworks, closes. That becomes their training manual.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">You Become The Closer of Last Resort</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">You Become The Closer of Last Resort</h3>
 
             <p>
               Closers handle 80% of calls. You close:
@@ -168,7 +168,7 @@ export default function BlogPostPage() {
               <li>Deals closers couldn't close (second-touch closes)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Phase 3: Build Your Delivery Team (Months 6-9)
             </h2>
 
@@ -176,7 +176,7 @@ export default function BlogPostPage() {
               At $100k-$200k, you're probably delivering most coaching yourself. At $500k+, that's impossible. You need leverage.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Hire Junior Coaches/Implementers</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Hire Junior Coaches/Implementers</h3>
 
             <p><strong>Model 1: Junior Coaches</strong></p>
             <ul className="list-disc pl-8 space-y-2">
@@ -192,7 +192,7 @@ export default function BlogPostPage() {
               <li>You're the strategist, they're the tacticians</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Build Systems For Quality Control</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Build Systems For Quality Control</h3>
 
             <p>
               Your biggest fear: Delegating delivery and quality drops. Prevent this with systems:
@@ -205,7 +205,7 @@ export default function BlogPostPage() {
               <li><strong>Spot-check client calls:</strong> Review recordings, provide feedback to coaches</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Phase 4: Optimize Unit Economics (Months 9-12)
             </h2>
 
@@ -213,7 +213,7 @@ export default function BlogPostPage() {
               Once you have acquisition + sales + delivery systems in place, it's time to optimize profitability.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Increase LTV (Lifetime Value)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Increase LTV (Lifetime Value)</h3>
 
             <p><strong>Strategies:</strong></p>
             <ul className="list-disc pl-8 space-y-2">
@@ -224,7 +224,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">Target: 2-3x LTV through backend monetization.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Decrease CAC (Cost to Acquire Customer)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Decrease CAC (Cost to Acquire Customer)</h3>
 
             <p><strong>Strategies:</strong></p>
             <ul className="list-disc pl-8 space-y-2">
@@ -233,10 +233,10 @@ export default function BlogPostPage() {
               <li><strong>Build organic content:</strong> YouTube/podcast reduces reliance on paid ads over time</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Track The Right Metrics</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Track The Right Metrics</h3>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Key Metrics At $500k/Month:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Key Metrics At $500k/Month:</h3>
               <ul className="space-y-3">
                 <li><strong>Monthly New Clients:</strong> 50-100+ (depending on ticket price)</li>
                 <li><strong>Average Deal Size:</strong> $5k-$20k+</li>
@@ -247,7 +247,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Team Structure At $500k/Month
             </h2>
 
@@ -267,7 +267,7 @@ export default function BlogPostPage() {
               Total headcount: 10-20 people. Payroll: $50k-$100k/month. Profit margin: 40-60% at scale.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Example: $100k to $310k/Month In 9 Months
             </h2>
 
@@ -298,31 +298,31 @@ export default function BlogPostPage() {
               <li>He works 20-30 hours weekly (vs 60+ previously)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Common Mistakes That Kill Scaling
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Trying To Do Everything Yourself</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Trying To Do Everything Yourself</h3>
             <p>
               You can't personally close 50 calls monthly and deliver 50 clients. Delegation isn't optional—it's required.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Hiring Too Cheap</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Hiring Too Cheap</h3>
             <p>
               A $2k/month closer who converts at 20% is worse than a $10k/month closer who converts at 50%. Pay for talent.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: No Systems/SOPs</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: No Systems/SOPs</h3>
             <p>
               If everything lives in your head, you can't scale. Document processes, train team, build repeatable systems.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Underspending On Ads</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Underspending On Ads</h3>
             <p>
               To hit $500k/month, you need $20k-$50k+ monthly ad spend. $5k/month won't cut it. Scale requires capital.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -352,9 +352,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -363,11 +363,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

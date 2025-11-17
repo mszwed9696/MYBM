@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ COURSE CREATORS ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ COURSE CREATORS ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Course Creator Evergreen Funnel That Actually Converts
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're running quarterly launches. Every 90 days, you frantically promote a webinar, close sales for 5-7 days, then watch revenue dry up until the next launch. Between launches? Crickets. Sound exhausting? It is.
             </p>
@@ -42,7 +42,7 @@ export default function BlogPostPage() {
               Here's exactly how to build it—the same system that took our course creator clients from $120k to $372k monthly without quarterly burnout.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why The Quarterly Launch Model Fails
             </h2>
 
@@ -60,7 +60,7 @@ export default function BlogPostPage() {
               Evergreen funnels flip the model: Sell 365 days/year, on autopilot, without the quarterly grind.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Evergreen Funnel Blueprint
             </h2>
 
@@ -68,7 +68,7 @@ export default function BlogPostPage() {
               Here's the proven funnel architecture that converts cold traffic into course sales daily:
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Component 1: VSL or Automated Webinar</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Component 1: VSL or Automated Webinar</h3>
 
             <p>
               At the core: A Video Sales Letter (VSL) or automated "evergreen webinar" that delivers your pitch 24/7.
@@ -76,8 +76,8 @@ export default function BlogPostPage() {
 
             <p className="font-bold">VSL vs Automated Webinar—Which To Use?</p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Use a VSL (Video Sales Letter) if:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Use a VSL (Video Sales Letter) if:</h3>
               <ul className="list-disc pl-8 space-y-2 mb-6">
                 <li>Your course is $97-$997 (lower ticket, shorter sales cycle)</li>
                 <li>You want immediate conversion (watch → buy now)</li>
@@ -85,7 +85,7 @@ export default function BlogPostPage() {
                 <li>Shorter video works (15-30 minutes max)</li>
               </ul>
 
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Use an Automated Webinar if:</h3>
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Use an Automated Webinar if:</h3>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Your course is $997-$2,997+ (higher ticket, needs more trust-building)</li>
                 <li>Complex topic requiring education before purchase</li>
@@ -94,7 +94,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Component 2: Lead Magnet or Free Challenge</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Component 2: Lead Magnet or Free Challenge</h3>
 
             <p>
               Cold traffic rarely buys immediately. Capture emails first with a relevant lead magnet or free challenge:
@@ -109,7 +109,7 @@ export default function BlogPostPage() {
               The goal: Get them on your email list, deliver value, then pitch your paid course via email sequence.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Component 3: Email Nurture Sequence</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Component 3: Email Nurture Sequence</h3>
 
             <p>
               Once they opt in, hit them with a nurture sequence that leads to your VSL/webinar:
@@ -123,7 +123,7 @@ export default function BlogPostPage() {
               <li><strong>Day 6-10:</strong> Follow-up emails driving to VSL/webinar for those who haven't watched</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Component 4: Sales Sequence Post-Webinar/VSL</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Component 4: Sales Sequence Post-Webinar/VSL</h3>
 
             <p>
               After they watch your pitch, hit them with a time-sensitive sales sequence:
@@ -137,11 +137,11 @@ export default function BlogPostPage() {
               <li><strong>Day 5:</strong> Cart closed email (reopen opportunity quarterly for true launches if desired)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Traffic Sources That Actually Work
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Facebook/Instagram Ads</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Facebook/Instagram Ads</h3>
 
             <p><strong>Best for:</strong> Consumer-facing courses (fitness, relationships, hobbies, parenting)</p>
 
@@ -152,7 +152,7 @@ export default function BlogPostPage() {
               <li>Budget: $2k-$10k+ monthly minimum for meaningful results</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">YouTube Ads</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">YouTube Ads</h3>
 
             <p><strong>Best for:</strong> B2B courses, complex topics requiring education</p>
 
@@ -163,7 +163,7 @@ export default function BlogPostPage() {
               <li>Lower cost per view than Facebook in many niches</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Organic Content + SEO</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Organic Content + SEO</h3>
 
             <p>
               If you can't afford $2k-$10k/month in ads yet, double down on organic:
@@ -180,7 +180,7 @@ export default function BlogPostPage() {
               Organic is slower but sustainable. Paid is faster but requires budget. Ideally, do both.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Example: $120k to $372k/Month
             </h2>
 
@@ -211,12 +211,12 @@ export default function BlogPostPage() {
               <li>LTV increased 2.4x through backend offers and upsells</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Conversion Benchmarks: What To Expect
             </h2>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Target Metrics For Profitable Funnel:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Target Metrics For Profitable Funnel:</h3>
               <ul className="space-y-3">
                 <li><strong>Lead Magnet Opt-In Rate:</strong> 30-50% (ad traffic to landing page)</li>
                 <li><strong>VSL/Webinar Watch Rate:</strong> 40-60% watch at least 50% of presentation</li>
@@ -227,31 +227,31 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Common Mistakes That Kill Evergreen Funnels
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Skipping The Nurture</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Skipping The Nurture</h3>
             <p>
               Sending cold traffic directly to a sales page doesn't work. You need a lead magnet → nurture sequence → pitch funnel. Build trust first.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Weak Lead Magnet</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Weak Lead Magnet</h3>
             <p>
               "Free PDF guide" isn't compelling enough. Your lead magnet needs to deliver real value and solve a specific problem. Free challenges work better than PDFs.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: No Urgency/Scarcity</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: No Urgency/Scarcity</h3>
             <p>
               If your course is always available with no deadline, people procrastinate forever. Use evergreen scarcity: "Cart closes 5 days after you watch the webinar."
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Underspending On Ads</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Underspending On Ads</h3>
             <p>
               $500/month won't give you enough data to optimize. You need $2k-$5k minimum to test audiences, creatives, and iterate. Go big or don't bother.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -274,9 +274,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -285,11 +285,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

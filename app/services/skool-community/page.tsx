@@ -1,267 +1,134 @@
 "use client";
 
 import Link from "next/link";
+import ComicPanel from "@/components/ComicPanel";
+import CartoonButton from "@/components/CartoonButton";
 
 export default function SkoolCommunityPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
-      {/* Newspaper Hero Section */}
-      <section className="relative bg-white border-b-5 border-black">
-        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          {/* Cityscape background */}
-          <div className="absolute inset-0 z-0 opacity-20">
-            <img
-              src="/heroes/philadelphia-skyline.png"
-              alt="Cityscape"
-              className="w-full h-full object-contain"
-              style={{ filter: "grayscale(100%) contrast(1.3)" }}
-            />
-          </div>
-
-          {/* Character */}
-          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
-            <img
-              src="/characters/community-builder.png"
-              alt="Character"
-              className="w-full h-auto"
-              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
-            />
-          </div>
-
-          <div className="relative z-20 max-w-4xl">
-            {/* Category badge */}
-            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
-              ★ SKOOL COMMUNITY - THE COMMUNITY BUILDER ★
-            </div>
-
-            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
-              Build A Community<br />That Sells For You
+    <>
+      <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
+        <div className="absolute inset-0 screen-tone opacity-40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 z-10">
+          <div className="max-w-4xl">
+            <h1 className="vintage-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+              BUILD YOUR
+              <br />
+              SKOOL
+              <br />
+              COMMUNITY
             </h1>
-
-            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
-              Skool community setup and management. Turn engagement into revenue.
-            </p>
-
-            <Link
-              href="/apply"
-              className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all"
-            >
-              Join The Operation
-            </Link>
+            <p className="text-2xl md:text-3xl font-mobster text-black leading-tight mb-8">We Build And Grow Your Skool Community.</p>
+            <ComicPanel className="mb-8">
+              <p className="text-xl font-newspaper leading-relaxed text-cartoon-ink">
+                Skool is the best platform for communities.<br /><br />
+                But most people don't know how to <span className="font-bold text-black">grow them</span>.<br /><br />
+                We build your Skool. We grow it. We fill it with <span className="font-bold text-black">paying members</span>.
+              </p>
+            </ComicPanel>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <CartoonButton href="/apply" variant="primary" className="text-lg px-8 py-4">APPLY NOW →</CartoonButton>
+              <CartoonButton href="/guarantee" variant="gold" className="text-lg px-8 py-4">See The Guarantee</CartoonButton>
+            </div>
+            <p className="text-sm font-newspaper text-cartoon-brown italic mt-6">★ Limited partnerships • MINIMUM $100,000/month revenue required • 24-48hr review ★</p>
           </div>
         </div>
       </section>
-
-      {/* Newspaper Divider */}
-      <div className="border-t-5 border-b-5 border-black bg-white py-2">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
-            <span>★ Philadelphia Edition ★</span>
-            <span>Special Report: Skool Community</span>
-            <span>Price: Results or Nothing</span>
-          </div>
-        </div>
-      </div>
-
-      {/* The Problem Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Most Communities Are <span className="line-through">Dead Zones</span>
-            </h2>
-            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
-              Zero engagement, zero revenue. We build communities that actually sell.
-            </p>
-          </div>
-
-          <div className="newspaper-columns-2 newspaper-columns">
-            <p className="newspaper-body drop-cap mb-4">
-              Here's what nobody tells you about online communities: engagement without revenue is just a hobby.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              <span className="font-bold">Most community platforms become ghost towns in 90 days. Members join, lurk for a week, then vanish.</span> Why? Because there's no structure, no value delivery, no reason to stay.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              Skool is different. It's built for revenue-generating communities: structured courses, gamification, community engagement, all in one platform. But the platform is only 10% of the equation. The other 90%? Content strategy, engagement tactics, monetization funnels, member retention systems.
-            </p>
-
-            <p className="newspaper-body font-bold">
-              We build Skool communities that generate revenue from day one. Recurring membership revenue. Course sales. Upsells to high-ticket offers. And we guarantee 30% growth.
-            </p>
-          </div>
-        </div>
+      <section className="py-16 bg-cartoon-ink text-cartoon-cream border-b-5 border-black">
+        <div className="max-w-7xl mx-auto px-4"><div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">1000+</div><div className="text-sm font-newspaper uppercase tracking-wide">Members Added</div></div>
+          <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">100%</div><div className="text-sm font-newspaper uppercase tracking-wide">Done For You</div></div>
+          <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">30%</div><div className="text-sm font-newspaper uppercase tracking-wide">Revenue Guarantee</div></div>
+          <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">90d</div><div className="text-sm font-newspaper uppercase tracking-wide">To Launch</div></div>
+        </div></div>
       </section>
-
-      {/* Community Services */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Community Services
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🏗️</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Community Setup</h3>
-              <p className="newspaper-body leading-relaxed">
-                Complete Skool community design and launch: branding, structure, course integration, gamification setup, onboarding sequences. Ready to monetize from day one.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">📚</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Content & Curriculum</h3>
-              <p className="newspaper-body leading-relaxed">
-                Structured learning paths, course content, discussion prompts, challenge frameworks. Content that keeps members engaged and drives them toward high-ticket offers.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">⚡</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Engagement Management</h3>
-              <p className="newspaper-body leading-relaxed">
-                Daily moderation, conversation starters, member recognition, event hosting. We keep your community alive and active—without you doing the heavy lifting.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">💰</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Monetization Funnels</h3>
-              <p className="newspaper-body leading-relaxed">
-                Turn community engagement into revenue: membership tiers, course sales, consultation upsells, high-ticket offer nurture. Communities that pay for themselves.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pull Quote */}
-      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
-            "A community without a business model is just an expensive Facebook group. We build communities that generate recurring revenue, nurture leads, and upsell to high-ticket. That's the difference between engagement and profit."
-          </p>
-          <p className="font-newspaper text-xl">
-            — Don Michael Szwed, Mind Your Business Media
-          </p>
-        </div>
-      </div>
-
-      {/* What's Included */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ WHAT YOU GET ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              What's Included
-            </h2>
-          </div>
-
+      <section className="py-20 md:py-32 bg-cartoon-sepia border-b-5 border-cartoon-ink crosshatch">
+        <div className="max-w-6xl mx-auto px-4"><div className="text-center mb-16"><div className="sound-effect mb-6">BAM!</div>
+          <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHY SKOOL<br /><span className="text-black">COMMUNITIES FAIL</span></h2></div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Platform Setup</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Skool account setup & branding</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Community structure & categories</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Course/classroom integration</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Gamification & leaderboard setup</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Member onboarding automation</li>
-              </ul>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Content & Engagement</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Course content development</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Weekly discussion prompts</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Challenge & event planning</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Member recognition systems</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Daily moderation & engagement</li>
-              </ul>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Revenue Generation</h3>
-              <ul className="space-y-2 font-newspaper text-gray-700">
-                <li className="flex items-start"><span className="mr-2">•</span>Membership tier strategy</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Course monetization funnels</li>
-                <li className="flex items-start"><span className="mr-2">•</span>High-ticket offer nurture sequences</li>
-                <li className="flex items-start"><span className="mr-2">•</span>Upsell & retention campaigns</li>
-                <li className="flex items-start"><span className="mr-2">•</span>30% revenue growth guarantee</li>
-              </ul>
-            </div>
+            {[{icon: "👻", title: "GHOST TOWNS", problem: "You build it. No one joins. It sits empty.", solution: "We fill it with real engaged members."},
+              {icon: "😴", title: "NO ONE TALKS", problem: "Members join. They don't engage. Dead community.", solution: "We create engagement. Daily activity."},
+              {icon: "💸", title: "CAN'T MONETIZE", problem: "You have members. But they don't pay. No money.", solution: "We build monetization into the community."}
+            ].map((item, i) => (
+              <ComicPanel key={i} className="text-center"><div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="font-cartoon text-3xl text-black mb-4 uppercase">{item.title}</h3>
+                <div className="mb-4"><p className="font-newspaper text-lg italic text-cartoon-brown mb-2">The Problem:</p><p className="font-newspaper text-base text-cartoon-ink">{item.problem}</p></div>
+                <div className="border-t-3 border-cartoon-ink pt-4"><p className="font-newspaper text-lg font-bold text-black mb-2">The Fix:</p><p className="font-newspaper text-base text-cartoon-ink font-bold">{item.solution}</p></div>
+              </ComicPanel>
+            ))}
           </div>
         </div>
       </section>
-
-      {/* Results */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              Results That Matter
-            </h2>
+      <section className="py-20 md:py-32 bg-cartoon-cream border-b-5 border-cartoon-ink">
+        <div className="max-w-6xl mx-auto px-4"><div className="text-center mb-16"><h2 className="vintage-headline text-4xl md:text-6xl mb-6">HOW WE BUILD<br /><span className="text-black">YOUR SKOOL</span></h2></div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">🏗️</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Build The Structure</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">We set up your Skool. Channels. Categories. Everything organized. Ready to go.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">📣</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Drive Traffic</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">We run ads. We create content. We bring people to your community.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">💬</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Create Engagement</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">We post. We ask questions. We start conversations. Your community stays active.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">💰</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Monetize Members</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Free to paid. We build funnels inside Skool. Turn members into customers.</p></div></div></ComicPanel>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">$47k</div>
-              <div className="font-headline text-xl uppercase mb-4">Monthly Recurring Revenue</div>
-              <p className="font-newspaper text-gray-700">
-                Course creator: Skool community generated $47k MRR from membership subscriptions within 8 months of launch
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">89%</div>
-              <div className="font-headline text-xl uppercase mb-4">Member Retention</div>
-              <p className="font-newspaper text-gray-700">
-                Coaching business: Engagement strategies maintained 89% member retention vs. industry average of 34%
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">+312%</div>
-              <div className="font-headline text-xl uppercase mb-4">High-Ticket Conversions</div>
-              <p className="font-newspaper text-gray-700">
-                Consultant: Community nurture funnel increased high-ticket program sales by 312% through relationship building
-              </p>
-            </div>
+          <div className="text-center"><CartoonButton href="/apply" variant="primary" className="text-xl px-12 py-5">BUILD MY SKOOL →</CartoonButton></div>
+        </div>
+      </section>
+      <section className="py-20 md:py-32 bg-cartoon-newsprint border-b-5 border-cartoon-ink halftone-bg">
+        <div className="max-w-6xl mx-auto px-4"><div className="text-center mb-16"><div className="sound-effect mb-6 text-black">PROOF!</div>
+          <h2 className="vintage-headline text-4xl md:text-6xl mb-6">REAL SKOOLS<br /><span className="text-black">REAL MEMBERS</span></h2></div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[{before: "0 members", after: "1,247 members", growth: "New Launch", timeline: "6 months", industry: "Coaching"},
+              {before: "85 members", after: "892 members", growth: "+950%", timeline: "8 months", industry: "Course Creator"},
+              {before: "$0/mo", after: "$47k/mo", growth: "New Revenue", timeline: "10 months", industry: "Consulting"}
+            ].map((c, i) => (
+              <ComicPanel key={i} className="text-center bg-white"><div className="text-5xl font-cartoon text-black mb-4">{c.growth}</div>
+                <div className="space-y-3 font-newspaper">
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">Before:</span><div className="text-2xl font-bold text-cartoon-ink">{c.before}</div></div>
+                  <div className="text-3xl text-black">→</div>
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">After:</span><div className="text-2xl font-bold text-black">{c.after}</div></div>
+                  <div className="border-t-3 border-cartoon-ink pt-3 mt-4"><div className="text-xs uppercase text-cartoon-brown mb-1">{c.timeline}</div><div className="text-sm font-bold text-black">{c.industry}</div></div>
+                </div>
+              </ComicPanel>
+            ))}
           </div>
         </div>
       </section>
-
-      {/* Final CTA */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="border-5 border-white p-10 md:p-16 bg-black">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
-              Ready To Get Started?
-            </h2>
-            <p className="font-newspaper text-xl mb-10 text-white/90">
-              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
+      <section className="py-20 md:py-32 bg-cartoon-tan border-b-5 border-cartoon-ink">
+        <div className="max-w-5xl mx-auto px-4"><div className="text-center mb-16"><h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHO NEEDS<br /><span className="text-black">A SKOOL</span></h2></div>
+          <div className="grid md:grid-cols-2 gap-12">
+            <ComicPanel className="bg-white border-cartoon-ink"><div className="text-6xl text-center mb-4">✓</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-black">YOU NEED THIS IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-cartoon-ink">
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You want a <span className="font-bold">paid community</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You have <span className="font-bold">an audience</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You need <span className="font-bold">recurring revenue</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You make <span className="font-bold">$100k+ per month</span></span></li>
+              </ul>
+            </ComicPanel>
+            <ComicPanel className="bg-cartoon-ink text-white border-black"><div className="text-6xl text-center mb-4">✗</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-white">NOT A FIT IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-white">
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You have <span className="font-bold">no audience</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You make <span className="font-bold">under $100k/month</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You just want <span className="font-bold">free community</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You can't <span className="font-bold">engage daily</span></span></li>
+              </ul>
+            </ComicPanel>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 md:py-32 bg-cartoon-ink text-cartoon-cream border-b-5 border-black relative overflow-hidden">
+        <div className="absolute inset-0 halftone-bg opacity-10"></div>
+        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
+          <div className="sound-effect text-white mb-8">MAKE THE CALL!</div>
+          <h2 className="vintage-headline text-4xl md:text-6xl lg:text-7xl text-white mb-8">READY FOR<br /><span className="text-white">YOUR SKOOL?</span></h2>
+          <ComicPanel className="mb-12 bg-cartoon-cream text-cartoon-ink">
+            <p className="text-xl md:text-2xl font-newspaper leading-relaxed">
+              If you want a thriving paid community...<br /><br />
+              We'll build it. Grow it. Make <span className="font-black text-black">30% more revenue in 12 months</span>.<br /><br />
+              <span className="font-black text-2xl text-black">Or we work for free.</span>
             </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
-            >
-              APPLY NOW
-            </Link>
-            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
-              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
-            </p>
-          </div>
+          </ComicPanel>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8"><CartoonButton href="/apply" variant="gold" className="text-2xl px-16 py-6">APPLY NOW →</CartoonButton></div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

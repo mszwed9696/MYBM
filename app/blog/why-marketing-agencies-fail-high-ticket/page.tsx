@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ TRUTH BOMB ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ TRUTH BOMB ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Why Marketing Agencies Fail High-Ticket Businesses
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're selling $10k+ coaching programs, $25k consulting packages, or $100k+ enterprise solutions. You hire a marketing agency. Six months later, you've burned through $60k-$120k in fees and ad spend. Revenue is flat. The agency blames your "offer" or "market." You fire them and start over.
             </p>
@@ -38,7 +38,7 @@ export default function BlogPostPage() {
               This isn't bad luck. Traditional marketing agencies are structurally incompatible with high-ticket businesses. They're built for volume, not premium. Here's why they fail—and what to do instead.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #1: They're Built For Volume, Not Premium
             </h2>
 
@@ -54,8 +54,8 @@ export default function BlogPostPage() {
               Selling a $15k coaching program requires trust, nurturing, consultative sales—not "Add to Cart" buttons. Agencies don't understand this, so they run the same tactics that work for $47 courses and wonder why your $10k offer isn't converting.
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">What Agencies Do (Volume Playbook):</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">What Agencies Do (Volume Playbook):</h3>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Drive traffic to landing page with "Buy Now" button</li>
                 <li>Focus on impressions, clicks, CTR—not qualified leads</li>
@@ -63,7 +63,7 @@ export default function BlogPostPage() {
                 <li>Treat every visitor the same—no qualification, no nurture</li>
               </ul>
 
-              <h3 className="font-headline text-xl font-bold uppercase mt-6 mb-4">What High-Ticket Requires:</h3>
+              <h3 className="font-cartoon text-xl font-bold uppercase mt-6 mb-4">What High-Ticket Requires:</h3>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Drive traffic to VSL or webinar that educates and builds trust</li>
                 <li>Focus on qualified applications, not raw traffic volume</li>
@@ -72,7 +72,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #2: You're Not Their Priority Client
             </h2>
 
@@ -94,7 +94,7 @@ export default function BlogPostPage() {
               The strategist who sold you? They're selling the next client. You're managed by someone 2 years out of college running cookie-cutter playbooks.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #3: Misaligned Incentives
             </h2>
 
@@ -119,7 +119,7 @@ export default function BlogPostPage() {
               You want profitability. They want recurring revenue. Incentives completely misaligned.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #4: They Don't Understand Your Sales Process
             </h2>
 
@@ -140,7 +140,7 @@ export default function BlogPostPage() {
               <strong>What agencies measure:</strong> Cost per lead (regardless of quality).
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #5: Cookie-Cutter Playbooks That Ignore Your Unique Positioning
             </h2>
 
@@ -156,7 +156,7 @@ export default function BlogPostPage() {
               They'll run the same "webinar funnel" they ran for 10 other coaches, using the same ad creative templates, the same landing page structure, the same email sequences. When it doesn't work, they blame your offer.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Problem #6: No Strategic Leadership
             </h2>
 
@@ -183,7 +183,7 @@ export default function BlogPostPage() {
               Agencies don't do this. They execute what you ask for, collect their retainer, and move on.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Example: $120k Wasted, Zero Results
             </h2>
 
@@ -214,7 +214,7 @@ export default function BlogPostPage() {
               The agency was structurally incapable of delivering what this business needed. They ran their standard B2B playbook and collected checks while the client bled cash.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               What High-Ticket Businesses Actually Need
             </h2>
 
@@ -231,7 +231,7 @@ export default function BlogPostPage() {
               <li><strong>Guides execution</strong> (doesn't just consult—builds and optimizes with you)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -254,9 +254,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -265,11 +265,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

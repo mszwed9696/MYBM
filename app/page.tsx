@@ -1,393 +1,447 @@
 "use client";
 
 import Link from "next/link";
-import NewspaperDivider from "@/components/NewspaperDivider";
-import NewspaperHeadline from "@/components/NewspaperHeadline";
-import NewspaperMasthead from "@/components/NewspaperMasthead";
-import NewspaperGrid, { NewspaperGridItem } from "@/components/NewspaperGrid";
-import PullQuote from "@/components/PullQuote";
-import ClassifiedAd from "@/components/ClassifiedAd";
+import SpeechBubble from "@/components/SpeechBubble";
+import ComicPanel from "@/components/ComicPanel";
+import CartoonButton from "@/components/CartoonButton";
+import Starburst from "@/components/Starburst";
 
 export default function Home() {
   return (
     <>
-      {/* Newspaper Masthead - Mobster Style */}
-      <section className="bg-white border-b-5 border-black newspaper-texture">
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <NewspaperMasthead subtitle="For Businesses Doing $100K+ Monthly Revenue · Established 2024 · Philadelphia">
-            MIND YOUR BUSINESS MEDIA
-          </NewspaperMasthead>
+      {/* Vintage Cartoon Hero - Above the Fold */}
+      <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
+        {/* Halftone background pattern */}
+        <div className="absolute inset-0 screen-tone opacity-40"></div>
 
-          {/* Date and Edition - Mobster Theme */}
-          <div className="flex justify-between items-center border-t-2 border-b-2 border-black py-2 mt-4 text-xs font-newspaper uppercase">
-            <span>★ Philadelphia Edition ★</span>
-            <span className="font-bold">SPECIAL EDITION: The Offer You Can't Refuse</span>
-            <span>Price: Results or Nothing</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Hero Section - Front Page Lead Story */}
-      <section className="relative bg-white text-black overflow-hidden border-b-5 border-black newspaper-texture">
-        {/* Philadelphia cityscape - Black and white background */}
-        <div className="absolute inset-0 z-0 opacity-15">
+        {/* Philadelphia cityscape silhouette */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 opacity-10">
           <img
             src="/heroes/philadelphia-skyline.png"
-            alt="Philadelphia Skyline"
-            className="w-full h-full object-cover"
-            style={{ filter: 'grayscale(100%) contrast(1.2)' }}
-            loading="lazy"
+            alt=""
+            className="w-full h-full object-cover object-bottom"
+            style={{ filter: 'sepia(1) contrast(1.5)' }}
+            loading="eager"
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 z-20">
-          <div className="grid md:grid-cols-12 gap-12">
-            {/* Main Story - Left Column (8 cols) */}
-            <div className="md:col-span-8 border-r-0 md:border-r-3 border-black pr-0 md:pr-12">
-              {/* Main Headline */}
-              <div className="mb-10 animate-stamp">
-                <div className="inline-block mb-3 px-4 py-2 border-3 border-black bg-black text-white font-newspaper font-bold text-xs uppercase tracking-wider">
-                  ★ BREAKING NEWS ★
-                </div>
-
-                <h1 className="font-headline font-black uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-none tracking-tighter border-b-5 border-black pb-4 mb-6">
-                  WE DON'T MAKE OFFERS
+        <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Main Offer */}
+            <div className="space-y-8">
+              {/* Main Headline - Dream Outcome */}
+              <div>
+                <h1 className="vintage-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+                  WE MAKE YOU
                   <br />
-                  <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2">WE MAKE YOU AN OFFER</span>
+                  AN OFFER
                   <br />
-                  <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-1">YOU CAN'T REFUSE</span>
+                  YOU CAN'T REFUSE
                 </h1>
-
-                <p className="newspaper-byline text-base mb-8">
-                  By The Don · Special Investigative Report · Mind Your Business Media Exclusive
+                <p className="text-2xl md:text-3xl font-mobster text-black leading-tight mb-4">
+                  30% Revenue Increase Guaranteed Or We Work For Free
                 </p>
               </div>
 
-              {/* Article Body - Newspaper Columns */}
-              <div className="newspaper-columns-2 newspaper-columns animate-ink mb-8">
-                <div className="no-column-break">
-                  <p className="newspaper-body drop-cap mb-4">
-                    In an unprecedented move shaking up the marketing industry, Philadelphia-based Mind Your Business Media has issued a bold guarantee that other agencies won't touch: <span className="font-bold">30% revenue increase in year 1, or they work for free until you get it.</span>
-                  </p>
-
-                  <p className="newspaper-body mb-4">
-                    Industry insiders are calling it "the offer you can't refuse" — a complete reversal of the typical agency model where businesses pay hefty retainers with zero accountability.
-                  </p>
-
-                  <p className="newspaper-body mb-4">
-                    "Most agencies burn through $5k-10k monthly while delivering nothing but vanity metrics," says Don Michael Szwed, founder of Mind Your Business Media. "Clicks, impressions, engagement — all smoke and mirrors. They don't talk revenue because they can't deliver it."
-                  </p>
-
-                  <p className="newspaper-body mb-4">
-                    But Mind Your Business Media operates differently. <span className="font-bold">Revenue is the only metric that matters.</span> No excuses. No BS. Just results — or you don't pay.
-                  </p>
-
-                  <p className="newspaper-body mb-4">
-                    The Philadelphia operation only works with established businesses doing $100k+ monthly revenue. "We're not here for tire-kickers," Szwed explains. "You're serious, we're serious. You want guarantees, we give guarantees."
-                  </p>
-                </div>
-              </div>
+              {/* Value Proposition - Perceived Likelihood */}
+              <ComicPanel>
+                <p className="text-xl font-newspaper leading-relaxed text-cartoon-ink">
+                  <span className="font-black text-2xl">MINIMUM REQUIREMENT: $100,000+ in monthly revenue</span>
+                  <br /><br />
+                  We'll add <span className="font-bold text-black">$30k-$100k+ to your monthly revenue</span> in the next 12 months—or we work for free until we hit it.
+                  <br /><br />
+                  <span className="font-bold">Zero risk. Maximum results. That's the deal.</span>
+                </p>
+              </ComicPanel>
 
               {/* CTA Buttons */}
-              <div className="grid md:grid-cols-2 gap-6 mt-8 animate-stamp">
-                <Link href="/apply" className="newspaper-ad group hover:shadow-2xl transition-all">
-                  <div className="text-2xl font-headline font-black uppercase mb-2">JOIN THE OPERATION</div>
-                  <p className="font-newspaper text-xs">Limited partnerships · Apply in 24-48 hours</p>
-                </Link>
-                <Link href="/guarantee" className="border-5 border-black p-4 text-center bg-white group hover:bg-black hover:text-white transition-all">
-                  <div className="text-2xl font-headline font-black uppercase mb-2">SEE THE GUARANTEE</div>
-                  <p className="font-newspaper text-xs">30% or we work for free</p>
-                </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <CartoonButton href="/apply" variant="primary" className="text-lg px-8 py-4">
+                  APPLY NOW →
+                </CartoonButton>
+                <CartoonButton href="/guarantee" variant="gold" className="text-lg px-8 py-4">
+                  See The Guarantee
+                </CartoonButton>
               </div>
+
+              <p className="text-sm font-newspaper text-cartoon-brown italic">
+                ★ Limited partnerships • MINIMUM $100,000/month revenue required • 24-48hr review ★
+              </p>
             </div>
 
-            {/* Right Sidebar - Stats & Character */}
-            <div className="md:col-span-4">
-              {/* Stats Box */}
-              <div className="border-5 border-black bg-black text-white p-6 mb-8 newspaper-shadow animate-unfold">
-                <h3 className="font-headline font-black uppercase text-xl mb-6 border-b-2 border-white pb-3">
-                  THE NUMBERS
-                </h3>
-                <div className="space-y-6">
-                  <div className="border-b border-white pb-3">
-                    <div className="text-4xl font-headline font-black">30%</div>
-                    <div className="text-xs font-newspaper uppercase">Minimum Guarantee</div>
-                  </div>
-                  <div className="border-b border-white pb-3">
-                    <div className="text-4xl font-headline font-black">$100k+</div>
-                    <div className="text-xs font-newspaper uppercase">Monthly Revenue Required</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-headline font-black">100%</div>
-                    <div className="text-xs font-newspaper uppercase">Risk-Free</div>
-                  </div>
+            {/* Right Column - The Don Character */}
+            <div className="relative">
+              <ComicPanel className="relative halftone-overlay p-0 overflow-hidden">
+                <div className="relative w-full h-[600px] overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/characters/driver-vintage-car.png"
+                    alt="The Don - Mind Your Business Media Founder"
+                    className="w-full h-full object-contain"
+                    style={{ objectPosition: 'center center' }}
+                    loading="eager"
+                  />
                 </div>
-              </div>
-
-              {/* The Don Image */}
-              <div className="border-5 border-black bg-white p-2 animate-stamp">
-                <img
-                  src="/characters/driver-vintage-car.png"
-                  alt="The Don"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
-                <p className="text-xs font-newspaper italic text-center mt-2 border-t-2 border-black pt-2">
+                <SpeechBubble className="mt-6 mx-4 mb-4">
+                  "We don't make promises. We make <span className="font-black">guarantees</span>. 30% revenue growth or you don't pay. <span className="italic">Capisce?</span>"
+                </SpeechBubble>
+                <p className="text-center font-newspaper font-bold text-cartoon-ink border-t-3 border-cartoon-ink pt-3 pb-4 mx-4">
                   Don Michael Szwed, Founder
                 </p>
-              </div>
+              </ComicPanel>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Newspaper Ornamental Divider */}
-      <NewspaperDivider />
-
-      {/* Why Most Agencies Fail - Editorial Section */}
-      <section className="py-20 md:py-24 bg-newspaper-cream border-b-5 border-black newspaper-texture">
+      {/* Social Proof Numbers - Trust Building */}
+      <section className="py-16 bg-cartoon-ink text-cartoon-cream border-b-5 border-black">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16 animate-section-fade">
-            <div className="inline-block px-4 py-1 border-2 border-black bg-white font-newspaper font-bold text-xs uppercase mb-3">
-              ★ EDITORIAL ★
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">+287%</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Average Growth</div>
             </div>
-            <h2 className="font-headline font-black uppercase text-3xl md:text-5xl lg:text-6xl border-b-4 border-black pb-3 inline-block">
-              WHY MOST AGENCIES ARE <span className="line-through">WEAK</span>
-            </h2>
-            <p className="newspaper-byline text-center mt-4 border-l-0">
-              An exposé on the marketing racket's dirty secrets
-            </p>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">100%</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Hit Guarantee</div>
+            </div>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">$100k+</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Minimum Revenue</div>
+            </div>
+            <div>
+              <div className="text-5xl md:text-6xl font-cartoon text-white mb-2">12mo</div>
+              <div className="text-sm font-newspaper uppercase tracking-wide">Max Timeline</div>
+            </div>
           </div>
-
-          <NewspaperGrid columns={3} className="stagger-children">
-            <NewspaperGridItem>
-              <div className="text-5xl text-center mb-3">💸</div>
-              <h3 className="font-headline font-black text-lg uppercase mb-2 border-b-2 border-black pb-2 text-center">
-                THEY BURN YOUR MONEY
-              </h3>
-              <p className="newspaper-body text-sm">
-                $5k-10k/month retainers with zero accountability. They test on your dime while you bleed cash. No guarantees. No results. Just excuses and vanity metrics.
-              </p>
-            </NewspaperGridItem>
-
-            <NewspaperGridItem>
-              <div className="text-5xl text-center mb-3">🎭</div>
-              <h3 className="font-headline font-black text-lg uppercase mb-2 border-b-2 border-black pb-2 text-center">
-                THEY HIDE BEHIND METRICS
-              </h3>
-              <p className="newspaper-body text-sm">
-                Clicks, impressions, engagement—all vanity. They don't talk about revenue because they can't deliver it. Smoke and mirrors to cover their incompetence.
-              </p>
-            </NewspaperGridItem>
-
-            <NewspaperGridItem>
-              <div className="text-5xl text-center mb-3">🤡</div>
-              <h3 className="font-headline font-black text-lg uppercase mb-2 border-b-2 border-black pb-2 text-center">
-                THEY USE COOKIE-CUTTERS
-              </h3>
-              <p className="newspaper-body text-sm">
-                Same strategy for everyone. High-ticket businesses need specialized expertise, not generic templates from a $99 playbook they bought online.
-              </p>
-            </NewspaperGridItem>
-          </NewspaperGrid>
         </div>
       </section>
 
-      {/* Pull Quote - Mobster Style */}
-      <div className="relative -my-12 z-10">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="border-5 border-black bg-white p-10 md:p-12 newspaper-shadow animate-ink">
-            <p className="text-2xl md:text-3xl font-newspaper italic text-center font-bold leading-relaxed">
-              "We're not just another agency. We're your partners. We protect our partners. We deliver results. Or we don't get paid. <span className="not-italic">Capisce?</span>"
-            </p>
-            <p className="text-base mt-4 text-center font-newspaper">
-              — Don Michael Szwed, Mind Your Business Media
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* The Mind Your Business Way - Feature Story */}
-      <section className="py-20 md:py-24 bg-white border-b-5 border-black newspaper-texture relative">
-        {/* Background characters */}
-        <div className="absolute left-0 bottom-0 w-32 md:w-48 opacity-15 z-0">
-          <img src="/characters/banker-briefcase.png" alt="The Banker" className="w-full h-auto" loading="lazy" />
-        </div>
-        <div className="absolute right-0 bottom-0 w-32 md:w-48 opacity-15 z-0">
-          <img src="/characters/enforcer-statue.png" alt="The Enforcer" className="w-full h-auto" loading="lazy" />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="text-center mb-10 animate-section-fade">
-            <div className="inline-block px-4 py-1 border-2 border-black bg-black text-white font-newspaper font-bold text-xs uppercase mb-3">
-              ★ FEATURE STORY ★
-            </div>
-            <h2 className="font-headline font-black uppercase text-3xl md:text-5xl lg:text-6xl border-b-4 border-black pb-3 inline-block">
-              THE MIND YOUR BUSINESS WAY
+      {/* The Problem - Why Other Agencies Fail */}
+      <section className="py-20 md:py-32 bg-cartoon-sepia border-b-5 border-cartoon-ink crosshatch">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="sound-effect mb-6">BAM!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              WHY OTHER AGENCIES
+              <br />
+              <span className="text-black">FAIL YOU</span>
             </h2>
-            <p className="newspaper-byline text-center mt-4 border-l-0">
-              How we operate: No BS, just results
+            <p className="text-xl font-newspaper text-cartoon-brown max-w-3xl mx-auto">
+              Most agencies drain $5k-10k/month with zero accountability. Here's why:
             </p>
           </div>
 
-          <NewspaperGrid columns={2} className="stagger-children">
-            <NewspaperGridItem>
-              <div className="text-3xl mb-2">🎯</div>
-              <h3 className="font-headline font-black text-xl uppercase mb-2 border-b-2 border-black pb-1">REVENUE IS THE ONLY METRIC</h3>
-              <p className="newspaper-body text-sm">
-                We don't care about vanity metrics. Our sole focus: increase your net revenue by 30% minimum in year 1. That's it. Nothing else matters. No clicks. No impressions. Just cold hard cash in your bank account.
-              </p>
-            </NewspaperGridItem>
-
-            <NewspaperGridItem>
-              <div className="text-3xl mb-2">👔</div>
-              <h3 className="font-headline font-black text-xl uppercase mb-2 border-b-2 border-black pb-1">SERIOUS PLAYERS ONLY</h3>
-              <p className="newspaper-body text-sm">
-                $100k+ monthly revenue businesses only. You're established, you're ready to scale, you want guarantees. That's our clientele. We don't waste time with anyone else.
-              </p>
-            </NewspaperGridItem>
-
-            <NewspaperGridItem>
-              <div className="text-3xl mb-2">🤝</div>
-              <h3 className="font-headline font-black text-xl uppercase mb-2 border-b-2 border-black pb-1">OUR WORD IS OUR BOND</h3>
-              <p className="newspaper-body text-sm">
-                30% revenue increase in year 1 or we work for free. No other agency makes this promise because they can't deliver. We can. We do. Every single time.
-              </p>
-            </NewspaperGridItem>
-
-            <NewspaperGridItem>
-              <div className="text-3xl mb-2">💼</div>
-              <h3 className="font-headline font-black text-xl uppercase mb-2 border-b-2 border-black pb-1">COMPLETE EXECUTION</h3>
-              <p className="newspaper-body text-sm">
-                We don't hand you a deck and disappear. We execute everything: ads, funnels, content, optimization. Done. Complete. No hand-holding. No excuses.
-              </p>
-            </NewspaperGridItem>
-          </NewspaperGrid>
-        </div>
-      </section>
-
-      {/* Newspaper Divider */}
-      <NewspaperDivider className="bg-newspaper-cream" />
-
-      {/* Services - Classified Ads Section */}
-      <section className="py-20 md:py-24 bg-newspaper-cream border-b-5 border-black newspaper-texture">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16 animate-section-fade">
-            <div className="inline-block px-4 py-1 border-2 border-black bg-white font-newspaper font-bold text-xs uppercase mb-3">
-              ★ SERVICES DIRECTORY ★
-            </div>
-            <h2 className="font-headline font-black uppercase text-3xl md:text-5xl lg:text-6xl border-b-4 border-black pb-3 inline-block">
-              WHAT WE DO FOR YOU
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 stagger-children">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "FRACTIONAL CMO", desc: "Strategic leadership without the $250k salary. We run your entire marketing operation like it's our own business.", link: "/services/fractional-cmo" },
-              { title: "PAID ADVERTISING", desc: "High-converting campaigns on Google, Facebook, LinkedIn, YouTube. Built specifically for high-ticket offers.", link: "/services/paid-advertising" },
-              { title: "FUNNEL OPTIMIZATION", desc: "Turn traffic into qualified leads and sales. Complete funnel audits and conversion rate optimization.", link: "/services/funnel-optimization" },
-              { title: "MARKETING STRATEGY", desc: "Custom strategies for scaling high-ticket offers. Positioning, messaging, and complete go-to-market execution.", link: "/services/marketing-strategy" },
-              { title: "CONTENT & SEO", desc: "Authority content that ranks and converts. Thought leadership that attracts premium clients to your business.", link: "/services/content-marketing" },
-              { title: "MARKETING AUTOMATION", desc: "Scale marketing without scaling team. Automated nurture sequences and sales systems that run 24/7.", link: "/services/marketing-automation" },
-            ].map((service, index) => (
-              <Link key={index} href={service.link} className="block group">
-                <ClassifiedAd title={service.title}>
-                  <p className="mb-2 leading-tight">{service.desc}</p>
-                  <span className="font-bold underline group-hover:bg-black group-hover:text-white px-2 py-1 transition-all inline-block mt-1">
-                    LEARN MORE →
-                  </span>
-                </ClassifiedAd>
-              </Link>
+              {
+                icon: "⏰",
+                title: "TOO SLOW",
+                problem: "\"Give us 18-24 months...\"",
+                solution: "6-month ramp, 12-month guarantee max"
+              },
+              {
+                icon: "🎲",
+                title: "TOO RISKY",
+                problem: "\"Pay us first, hope for results later...\"",
+                solution: "30% or free. You don't lose. We guarantee it."
+              },
+              {
+                icon: "😓",
+                title: "TOO MUCH WORK",
+                problem: "\"You need to provide content, feedback, resources...\"",
+                solution: "We handle everything. You show up to strategy calls."
+              }
+            ].map((item, i) => (
+              <ComicPanel key={i} className="text-center">
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="font-cartoon text-3xl text-black mb-4 uppercase">{item.title}</h3>
+                <div className="mb-4">
+                  <p className="font-newspaper text-lg italic text-cartoon-brown mb-2">
+                    Them:
+                  </p>
+                  <p className="font-newspaper text-base text-cartoon-ink">
+                    {item.problem}
+                  </p>
+                </div>
+                <div className="border-t-3 border-cartoon-ink pt-4">
+                  <p className="font-newspaper text-lg font-bold text-black mb-2">
+                    Us:
+                  </p>
+                  <p className="font-newspaper text-base text-cartoon-ink font-bold">
+                    {item.solution}
+                  </p>
+                </div>
+              </ComicPanel>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Newspaper Divider */}
-      <NewspaperDivider className="bg-white" />
-
-      {/* Results - Statistics Report */}
-      <section className="py-20 md:py-24 bg-white border-b-5 border-black newspaper-texture relative">
-        <div className="absolute right-8 top-8 w-40 md:w-56 opacity-15 z-0">
-          <img src="/characters/bagman-money.png" alt="The Bagman" className="w-full h-auto" loading="lazy" />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="text-center mb-10 animate-section-fade">
-            <div className="inline-block px-4 py-1 border-2 border-black bg-black text-white font-newspaper font-bold text-xs uppercase mb-3">
-              ★ STATISTICAL REPORT ★
-            </div>
-            <h2 className="font-headline font-black uppercase text-3xl md:text-5xl lg:text-6xl border-b-4 border-black pb-3 inline-block">
-              THE NUMBERS DON'T LIE
+      {/* The Value Equation Breakdown */}
+      <section className="py-20 md:py-32 bg-cartoon-cream border-b-5 border-cartoon-ink">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              HOW WE DELIVER
+              <br />
+              <span className="text-black">GUARANTEED RESULTS</span>
             </h2>
-            <Link href="/results" className="inline-block mt-4 newspaper-link font-newspaper font-bold text-base">
-              View Complete Case Studies Archive →
-            </Link>
+            <p className="text-xl font-newspaper text-cartoon-brown max-w-3xl mx-auto">
+              Maximum outcome + Maximum certainty + Minimum time + Zero extra work
+            </p>
           </div>
 
-          <NewspaperGrid columns={3} className="stagger-children">
-            <NewspaperGridItem>
-              <div className="text-center">
-                <div className="text-6xl font-headline font-black mb-3">+287%</div>
-                <div className="border-t-2 border-black pt-2">
-                  <p className="newspaper-body text-xs font-bold">HIGH-TICKET COACHING</p>
-                  <p className="newspaper-body text-xs mt-1">$80k/mo → $310k/mo in 9 months</p>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Dream Outcome */}
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">🎯</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Dream Outcome</h3>
+                  <p className="font-newspaper text-lg leading-relaxed text-cartoon-ink mb-4">
+                    <span className="font-black">Not "more leads" or "better brand awareness."</span>
+                  </p>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    We guarantee <span className="font-bold">30% more revenue</span> in 12 months. That's $30k+/month for a $100k/mo business. $75k+/month for a $250k/mo business. Real money. In your account.
+                  </p>
                 </div>
               </div>
-            </NewspaperGridItem>
+            </ComicPanel>
 
-            <NewspaperGridItem>
-              <div className="text-center">
-                <div className="text-6xl font-headline font-black mb-3">+156%</div>
-                <div className="border-t-2 border-black pt-2">
-                  <p className="newspaper-body text-xs font-bold">B2B CONSULTING</p>
-                  <p className="newspaper-body text-xs mt-1">$150k/mo → $385k/mo in 12 months</p>
+            {/* Perceived Likelihood */}
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">✅</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">100% Certainty</h3>
+                  <p className="font-newspaper text-lg leading-relaxed text-cartoon-ink mb-4">
+                    <span className="font-black">We back it with a guarantee:</span>
+                  </p>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    If we don't hit 30% in 12 months, <span className="font-bold">we work for free</span> until we do. You literally can't lose. We've hit it 100% of the time. We'll hit it for you too.
+                  </p>
                 </div>
               </div>
-            </NewspaperGridItem>
+            </ComicPanel>
 
-            <NewspaperGridItem>
-              <div className="text-center">
-                <div className="text-6xl font-headline font-black mb-3">+210%</div>
-                <div className="border-t-2 border-black pt-2">
-                  <p className="newspaper-body text-xs font-bold">ONLINE COURSES</p>
-                  <p className="newspaper-body text-xs mt-1">$120k/mo → $372k/mo in 11 months</p>
+            {/* Time Delay */}
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">⚡</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Fast Results</h3>
+                  <p className="font-newspaper text-lg leading-relaxed text-cartoon-ink mb-4">
+                    <span className="font-black">Not "maybe in 2 years."</span>
+                  </p>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    Most clients see momentum in <span className="font-bold">90-120 days</span>. Full 30% within <span className="font-bold">12 months max</span>. No endless "testing." We know what works.
+                  </p>
                 </div>
               </div>
-            </NewspaperGridItem>
-          </NewspaperGrid>
+            </ComicPanel>
+
+            {/* Effort & Sacrifice */}
+            <ComicPanel className="halftone-overlay">
+              <div className="flex items-start gap-4">
+                <div className="text-6xl">🤝</div>
+                <div>
+                  <h3 className="font-cartoon text-2xl text-black uppercase mb-3">Zero Extra Work</h3>
+                  <p className="font-newspaper text-lg leading-relaxed text-cartoon-ink mb-4">
+                    <span className="font-black">Not "You need to create content, manage ads, build funnels..."</span>
+                  </p>
+                  <p className="font-newspaper text-base leading-relaxed text-cartoon-ink">
+                    <span className="font-bold">We do everything.</span> You show up to weekly strategy calls. We handle ads, funnels, content, automation, optimization. Everything.
+                  </p>
+                </div>
+              </div>
+            </ComicPanel>
+          </div>
+
+          <div className="text-center">
+            <CartoonButton href="/apply" variant="primary" className="text-xl px-12 py-5">
+              GET THE GUARANTEE →
+            </CartoonButton>
+          </div>
         </div>
       </section>
 
-      {/* Final CTA - Back Page Ad */}
-      <section className="py-20 md:py-24 bg-black text-white relative overflow-hidden">
-        <div className="absolute left-0 bottom-0 w-48 md:w-72 opacity-50 z-0">
-          <img src="/characters/don-cigar-car.png" alt="The Don" className="w-full h-auto" loading="lazy" />
+      {/* Case Studies / Proof */}
+      <section className="py-20 md:py-32 bg-cartoon-newsprint border-b-5 border-cartoon-ink halftone-bg">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="sound-effect mb-6 text-black">PROOF!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              THE NUMBERS
+              <br />
+              <span className="text-black">DON'T LIE</span>
+            </h2>
+            <p className="text-xl font-newspaper text-cartoon-brown">
+              Real clients. Real results. Real revenue.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                before: "$80k/mo",
+                after: "$310k/mo",
+                growth: "+287%",
+                timeline: "9 months",
+                industry: "High-Ticket Coaching"
+              },
+              {
+                before: "$150k/mo",
+                after: "$385k/mo",
+                growth: "+156%",
+                timeline: "12 months",
+                industry: "B2B Consulting"
+              },
+              {
+                before: "$120k/mo",
+                after: "$372k/mo",
+                growth: "+210%",
+                timeline: "11 months",
+                industry: "Online Courses"
+              }
+            ].map((caseStudy, i) => (
+              <ComicPanel key={i} className="text-center bg-white">
+                <div className="text-5xl font-cartoon text-black mb-4">{caseStudy.growth}</div>
+                <div className="space-y-3 font-newspaper">
+                  <div>
+                    <span className="text-sm uppercase tracking-wide text-cartoon-brown">Before:</span>
+                    <div className="text-2xl font-bold text-cartoon-ink">{caseStudy.before}</div>
+                  </div>
+                  <div className="text-3xl text-black">→</div>
+                  <div>
+                    <span className="text-sm uppercase tracking-wide text-cartoon-brown">After:</span>
+                    <div className="text-2xl font-bold text-black">{caseStudy.after}</div>
+                  </div>
+                  <div className="border-t-3 border-cartoon-ink pt-3 mt-4">
+                    <div className="text-xs uppercase text-cartoon-brown mb-1">{caseStudy.timeline}</div>
+                    <div className="text-sm font-bold text-black">{caseStudy.industry}</div>
+                  </div>
+                </div>
+              </ComicPanel>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/results" className="font-newspaper text-lg text-cartoon-ink underline hover:text-black transition-colors">
+              View All Case Studies →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Who This Is For - Qualification */}
+      <section className="py-20 md:py-32 bg-cartoon-tan border-b-5 border-cartoon-ink">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">
+              WHO WE WORK WITH
+              <br />
+              <span className="text-black">(AND WHO WE DON'T)</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Yes */}
+            <ComicPanel className="bg-white border-cartoon-ink">
+              <div className="text-6xl text-center mb-4">✓</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-black">PERFECT FIT:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-cartoon-ink">
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span><span className="font-bold">$100k+/month</span> in revenue (proven business model)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span><span className="font-bold">Ready to scale</span> (infrastructure in place)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span><span className="font-bold">Want accountability</span> (not just "exposure")</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✓</span>
+                  <span><span className="font-bold">Long-term partner</span> (6-12+ month commitment)</span>
+                </li>
+              </ul>
+            </ComicPanel>
+
+            {/* No */}
+            <ComicPanel className="bg-cartoon-ink text-white border-black">
+              <div className="text-6xl text-center mb-4">✗</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-white">NOT A FIT:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-white">
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span><span className="font-bold">Under $100k/month</span> (we can't guarantee results at that scale)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span><span className="font-bold">Want "brand awareness"</span> without revenue tracking</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span><span className="font-bold">Looking for cheap labor</span> (we're not the cheapest)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl">✗</span>
+                  <span><span className="font-bold">Need hand-holding</span> (we execute, you approve)</span>
+                </li>
+              </ul>
+            </ComicPanel>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA - The Offer */}
+      <section className="py-20 md:py-32 bg-cartoon-ink text-cartoon-cream border-b-5 border-black relative overflow-hidden">
+        <div className="absolute inset-0 halftone-bg opacity-10"></div>
+
+        {/* Character illustration */}
+        <div className="absolute left-0 bottom-0 w-48 md:w-64 opacity-30 z-0">
+          <img src="/characters/don-cigar-car.png" alt="" className="w-full h-auto" loading="lazy" />
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 text-center relative z-10 animate-unfold">
-          <div className="border-5 border-white p-10 md:p-16 bg-black">
-            <div className="border-2 border-white px-4 py-1 inline-block mb-4 font-newspaper text-xs uppercase tracking-wider">
-              ★ Join Mind Your Business Media ★
-            </div>
-            <h2 className="font-headline font-black uppercase text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight">
-              READY TO MAKE
-              <br />
-              <span className="text-3xl md:text-4xl lg:text-5xl">AN OFFER YOU CAN'T REFUSE?</span>
-            </h2>
-            <p className="text-lg md:text-xl mb-10 font-newspaper leading-relaxed">
-              If you're doing $100k+ monthly and serious about scaling,
-              <br />
-              <span className="font-bold">we'll guarantee you 30% revenue growth or work for free.</span>
+        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
+          <div className="sound-effect text-white mb-8">MAKE THE CALL!</div>
+
+          <h2 className="vintage-headline text-4xl md:text-6xl lg:text-7xl text-white mb-8">
+            READY FOR
+            <br />
+            <span className="text-white">30% MORE REVENUE?</span>
+          </h2>
+
+          <ComicPanel className="mb-12 bg-cartoon-cream text-cartoon-ink">
+            <p className="text-xl md:text-2xl font-newspaper leading-relaxed">
+              If you're doing <span className="font-black text-black">$100k+ monthly</span> and serious about growth...
+              <br /><br />
+              We'll guarantee you <span className="font-black text-black">30% more revenue in 12 months</span> or work for free until we hit it.
+              <br /><br />
+              <span className="font-black text-2xl text-black">Zero risk. Maximum results.</span>
             </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-white border-5 border-white text-black px-12 md:px-16 py-5 md:py-6 font-newspaper font-black text-lg uppercase tracking-wide hover:bg-newspaper-light-gray transition-all transform hover:scale-105 shadow-2xl"
-            >
-              APPLY NOW
-            </Link>
-            <p className="mt-8 text-xs font-newspaper uppercase tracking-wider border-t-2 border-white pt-6 inline-block">
-              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
+          </ComicPanel>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <CartoonButton href="/apply" variant="gold" className="text-2xl px-16 py-6">
+              APPLY NOW →
+            </CartoonButton>
+          </div>
+
+          <p className="font-newspaper text-sm text-cartoon-tan uppercase tracking-wider">
+            ★ APPLICATION REVIEW: 24-48 HOURS ★<br/>
+            LIMITED PARTNERSHIPS AVAILABLE ★ MINIMUM $100,000/MONTH REVENUE REQUIRED ★
+          </p>
+
+          <div className="mt-12 pt-8 border-t-3 border-cartoon-tan">
+            <p className="font-mobster text-xl italic text-cartoon-cream">
+              "We protect our partners. We deliver results. Or we don't get paid. <span className="not-italic font-black">Capisce?</span>"
+            </p>
+            <p className="font-newspaper text-sm mt-2 text-cartoon-tan">
+              — Don Michael Szwed, Mind Your Business Media
             </p>
           </div>
         </div>

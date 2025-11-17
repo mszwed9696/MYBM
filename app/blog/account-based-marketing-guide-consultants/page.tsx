@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ B2B STRATEGY ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ B2B STRATEGY ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Account-Based Marketing Guide for Consultants
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're a consultant selling $50k-$500k contracts. You need 3-5 new clients annually to hit your revenue goals. But you're wasting time chasing hundreds of unqualified leads who'll never write a six-figure check.
             </p>
@@ -38,7 +38,7 @@ export default function BlogPostPage() {
               Stop spraying and praying. Start targeting your ideal 50 accounts with surgical precision. That's Account-Based Marketing (ABM)—and it's how consultants close $100k+ deals consistently.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why Traditional Lead Gen Fails For Consultants
             </h2>
 
@@ -59,7 +59,7 @@ export default function BlogPostPage() {
               ABM flips the model: Instead of fishing with a net, you're spearfishing. You identify your ideal 50 companies and go all-in on winning them.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Step 1: Identify Your Ideal 50 Accounts
             </h2>
 
@@ -67,7 +67,7 @@ export default function BlogPostPage() {
               ABM only works if you target the right accounts. Here's how to build your list:
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Define Your Ideal Client Profile (ICP)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Define Your Ideal Client Profile (ICP)</h3>
 
             <p>Get specific. Not "mid-market B2B companies." Specific criteria:</p>
 
@@ -79,7 +79,7 @@ export default function BlogPostPage() {
               <li><strong>Decision-Makers:</strong> Who writes the check? CEO, CFO, COO?</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Build Your Target Account List</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Build Your Target Account List</h3>
 
             <p className="font-bold">Tools to use:</p>
             <ul className="list-disc pl-8 space-y-2">
@@ -91,7 +91,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold mt-4">Aim for 50-100 accounts max. Quality over quantity.</p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Step 2: Research Each Account Deeply
             </h2>
 
@@ -111,7 +111,7 @@ export default function BlogPostPage() {
               Spend 30-60 minutes researching each account before outreach. This separates you from the 99% sending spray-and-pray cold emails.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Step 3: Multi-Channel Outreach Strategy
             </h2>
 
@@ -119,7 +119,7 @@ export default function BlogPostPage() {
               Don't just send one cold email and give up. Hit them from multiple angles:
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Channel 1: LinkedIn (Warm-Up Phase)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Channel 1: LinkedIn (Warm-Up Phase)</h3>
 
             <p><strong>Goal:</strong> Get on their radar before direct outreach</p>
 
@@ -130,11 +130,11 @@ export default function BlogPostPage() {
               <li>Post case studies from similar companies in their industry</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Channel 2: Direct Email (Value-First Approach)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Channel 2: Direct Email (Value-First Approach)</h3>
 
             <p><strong>Goal:</strong> Start a conversation, not pitch immediately</p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-6 my-6">
+            <div className="bg-cartoon-cream border-3 border-black p-6 my-6">
               <p className="font-bold mb-2">Bad Email (Generic Pitch):</p>
               <p className="mb-4 text-sm">"Hi [Name], We help companies like yours scale operations. Would you be open to a 15-minute call?"</p>
 
@@ -142,7 +142,7 @@ export default function BlogPostPage() {
               <p className="text-sm">"Hi [Name], Saw you just raised $25M Series B. Congrats. Most SaaS companies at this stage struggle with [specific challenge]. We helped [Similar Company] solve this by [specific outcome]. Would it be valuable if I shared the 3-step framework we used?"</p>
             </div>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Channel 3: Direct Mail (Stand Out Physically)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Channel 3: Direct Mail (Stand Out Physically)</h3>
 
             <p>
               For your top 10-20 accounts, send physical packages that get past gatekeepers:
@@ -156,7 +156,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">Cost: $50-$200 per account. ROI: One $100k deal pays for 500-2000 packages.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Channel 4: Retargeting Ads (Stay Top of Mind)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Channel 4: Retargeting Ads (Stay Top of Mind)</h3>
 
             <p>
               Upload your target account list to LinkedIn/Facebook. Run ads specifically to decision-makers at those companies:
@@ -168,7 +168,7 @@ export default function BlogPostPage() {
               <li>Webinars/workshops designed for their industry</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Step 4: Create Account-Specific Content
             </h2>
 
@@ -176,7 +176,7 @@ export default function BlogPostPage() {
               Generic whitepapers don't close $100k deals. Create custom content for your top accounts:
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Tier 1 Accounts (Top 10): Custom Analysis</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Tier 1 Accounts (Top 10): Custom Analysis</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>Competitive analysis of their market position</li>
@@ -186,7 +186,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">Investment: 5-10 hours per account. Close rate: 40-60%.</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Tier 2 Accounts (Next 20): Industry-Specific Content</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Tier 2 Accounts (Next 20): Industry-Specific Content</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>Case studies from their vertical</li>
@@ -194,7 +194,7 @@ export default function BlogPostPage() {
               <li>Webinars addressing their sector's challenges</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Tier 3 Accounts (Remaining 20-30): Targeted General Content</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Tier 3 Accounts (Remaining 20-30): Targeted General Content</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>Educational content on topics they care about</li>
@@ -202,7 +202,7 @@ export default function BlogPostPage() {
               <li>Event invitations (webinars, workshops)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Step 5: Measure What Matters
             </h2>
 
@@ -210,8 +210,8 @@ export default function BlogPostPage() {
               ABM metrics are different from traditional lead gen. Track:
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Key ABM Metrics:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Key ABM Metrics:</h3>
               <ul className="space-y-3">
                 <li><strong>Account Engagement Rate:</strong> % of target accounts engaging with your outreach (target: 40-60%)</li>
                 <li><strong>Meeting Conversion Rate:</strong> % of engaged accounts booking discovery calls (target: 20-30%)</li>
@@ -222,7 +222,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Example: $150k to $385k/Month in 12 Months
             </h2>
 
@@ -252,31 +252,31 @@ export default function BlogPostPage() {
               <li>Pipeline 100% filled with qualified opportunities (no more feast-or-famine)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Common ABM Mistakes To Avoid
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Targeting Too Many Accounts</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: Targeting Too Many Accounts</h3>
             <p>
               ABM requires deep personalization. If you're targeting 500 accounts, you're not doing ABM—you're doing bad lead gen. Keep it to 50-100 max.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Generic Outreach</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: Generic Outreach</h3>
             <p>
               "We help companies like yours" is not personalized. Reference specific trigger events, challenges, and opportunities unique to that account.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: Single-Channel Approach</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: Single-Channel Approach</h3>
             <p>
               One cold email won't cut it. Hit them from LinkedIn, email, direct mail, retargeting ads. Multi-touch wins.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Pitching Too Soon</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: Pitching Too Soon</h3>
             <p>
               Lead with value, not your pitch deck. Share insights, research, case studies first. Build trust before asking for the meeting.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -299,9 +299,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -310,11 +310,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ COACHING ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ COACHING ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Funnel Strategies for High-Ticket Coaching Programs
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're stuck in the quarterly launch cycle. Every 90 days, you burn yourself out running webinars, doing sales calls, and desperately trying to hit your revenue targets. Between launches, revenue dries up. Sound familiar?
             </p>
@@ -42,11 +42,11 @@ export default function BlogPostPage() {
               Here's exactly how to build it—the same system our coaching clients use to scale from $100k/month to $300k+ without burning out on launches.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why Traditional Coaching Funnels Fail
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">The Webinar Launch Trap</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">The Webinar Launch Trap</h3>
 
             <p>
               Most coaches rely on live webinar launches: build hype, drive registrations, deliver live presentation, close sales calls, repeat every quarter.
@@ -62,7 +62,7 @@ export default function BlogPostPage() {
               <li><strong>Limited Availability:</strong> Sales calls bottleneck your growth</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">The Low-Ticket Tripwire Myth</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">The Low-Ticket Tripwire Myth</h3>
 
             <p>
               Some coaches try the low-ticket tripwire approach: Sell a $47 course, then upsell to high-ticket coaching.
@@ -74,7 +74,7 @@ export default function BlogPostPage() {
               Your $10k coaching clients don't buy $47 courses. They buy transformation, not information. Tripwires pre-qualify the wrong audience.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Evergreen VSL Funnel That Actually Works
             </h2>
 
@@ -82,13 +82,13 @@ export default function BlogPostPage() {
               Here's the funnel architecture that converts cold traffic into high-ticket clients daily:
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 1: Hook With A Big Promise (Not Education)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 1: Hook With A Big Promise (Not Education)</h3>
 
             <p>
               Your ad creative must promise a specific transformation, not vague education.
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-6 my-6">
+            <div className="bg-cartoon-cream border-3 border-black p-6 my-6">
               <p className="font-bold mb-2">Bad Hook (Education-Based):</p>
               <p className="mb-4">"Learn the 5 secrets to growing your coaching business"</p>
 
@@ -100,7 +100,7 @@ export default function BlogPostPage() {
               Education attracts freebie-seekers. Transformation attracts buyers.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 2: VSL Landing Page (Not Webinar Registration)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 2: VSL Landing Page (Not Webinar Registration)</h3>
 
             <p>
               Send traffic directly to a Video Sales Letter (VSL), not a webinar registration page.
@@ -115,7 +115,7 @@ export default function BlogPostPage() {
               <li><strong>Optimizable:</strong> A/B test scripts, iterate faster than live webinars</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 3: Application, Not Direct Sale</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 3: Application, Not Direct Sale</h3>
 
             <p>
               At the end of your VSL, don't try to close the sale. Ask for an application.
@@ -130,7 +130,7 @@ export default function BlogPostPage() {
               <li><strong>Data Collection:</strong> Learn their challenges before the call, personalize pitch</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 4: Automated Nurture (For Those Not Ready Yet)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 4: Automated Nurture (For Those Not Ready Yet)</h3>
 
             <p>
               Not everyone who watches your VSL will apply immediately. Capture their email and nurture them.
@@ -146,11 +146,11 @@ export default function BlogPostPage() {
               <li><strong>Day 14+:</strong> Value content + periodic application reminders</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Traffic Sources: Where To Find $10k+ Buyers
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Facebook/Instagram Ads (Best for Most Coaches)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Facebook/Instagram Ads (Best for Most Coaches)</h3>
 
             <p className="font-bold">Targeting Strategy:</p>
             <ul className="list-disc pl-8 space-y-2">
@@ -161,7 +161,7 @@ export default function BlogPostPage() {
 
             <p className="font-bold">Budget: $3k-$10k+ monthly minimum for consistent results</p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">YouTube Ads (Best for Complex Offers)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">YouTube Ads (Best for Complex Offers)</h3>
 
             <p>
               If your coaching requires education before purchase (B2B, technical niches), YouTube beats Facebook.
@@ -174,13 +174,13 @@ export default function BlogPostPage() {
               <li>Lower CPMs than Facebook in most niches</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Google Search Ads (For Established Brands Only)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Google Search Ads (For Established Brands Only)</h3>
 
             <p>
               Search ads work if people already know your category exists. Don't use search ads to create demand—use them to capture existing demand.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               VSL Script Structure: The 40-Minute Framework
             </h2>
 
@@ -188,8 +188,8 @@ export default function BlogPostPage() {
               Here's the proven VSL script structure that converts cold traffic into applications:
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-6 border-b-2 border-black pb-3">The 40-Minute VSL Formula</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-6 border-b-2 border-black pb-3">The 40-Minute VSL Formula</h3>
 
               <ul className="space-y-4">
                 <li><strong>Minutes 0-5:</strong> Hook + Promise (Your big transformation story)</li>
@@ -202,7 +202,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Example: $80k to $310k/Month In 9 Months
             </h2>
 
@@ -231,7 +231,7 @@ export default function BlogPostPage() {
               <li>Completely eliminated launch dependency—revenue runs on autopilot</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Conversion Optimization: The Metrics That Matter
             </h2>
 
@@ -239,8 +239,8 @@ export default function BlogPostPage() {
               Here are the benchmarks for a profitable high-ticket coaching funnel:
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-6 border-b-2 border-black pb-3">Target Metrics</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-6 border-b-2 border-black pb-3">Target Metrics</h3>
 
               <ul className="space-y-3">
                 <li><strong>Cost Per Click (CPC):</strong> $1-$3 (Facebook), $0.10-$0.50 (YouTube)</li>
@@ -253,31 +253,31 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Common Mistakes That Kill Funnels
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: VSL Too Short</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #1: VSL Too Short</h3>
             <p>
               10-15 minute VSLs don't work for high-ticket. You need 35-50 minutes to build trust, overcome objections, and create urgency. If they won't watch 40 minutes, they won't pay $10k.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: No Qualification Questions</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #2: No Qualification Questions</h3>
             <p>
               If your application form just asks for name/email/phone, you'll get tire-kickers. Ask: revenue, biggest challenge, budget, timeline. Pre-qualify before the call.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: Underspending on Ads</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #3: Underspending on Ads</h3>
             <p>
               $1k-$2k monthly ad spend doesn't give you enough data to optimize. You need $5k-$10k+ monthly minimum to test creatives, audiences, and iterate fast.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: No Follow-Up System</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">🚫 Mistake #4: No Follow-Up System</h3>
             <p>
               If someone watches your VSL but doesn't apply, and you don't email them again, you're throwing away 80% of your traffic. Build automated nurture sequences.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -300,9 +300,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -311,11 +311,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

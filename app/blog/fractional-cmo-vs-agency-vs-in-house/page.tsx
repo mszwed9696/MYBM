@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ STRATEGY ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ STRATEGY ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Fractional CMO vs Agency vs In-House: The Truth
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               You're doing $100k+ monthly and your marketing is broken. You know you need senior leadership, but should you hire an in-house CMO, partner with an agency, or bring in a fractional CMO?
             </p>
@@ -42,11 +42,11 @@ export default function BlogPostPage() {
               Here's the truth nobody tells you: The right answer depends on your revenue, your stage, and what you actually need. Let's break it down.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Option 1: In-House CMO ($150k-$300k+ Annually)
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
 
             <p>
               A full-time senior marketing executive who lives and breathes your business. They attend every meeting, know your team, own the strategy, and build your marketing department from the ground up.
@@ -60,7 +60,7 @@ export default function BlogPostPage() {
               <li><strong>Company Culture:</strong> They're part of your leadership team, shaping company direction</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
 
             <p className="font-bold">
               Here's where businesses get blindsided:
@@ -78,7 +78,7 @@ export default function BlogPostPage() {
               Real annual cost: $200k-$400k+ for the CMO alone, $400k-$900k+ with their team.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>You're doing <strong>$5M-$10M+ annually</strong> with proven product-market fit</li>
@@ -88,7 +88,7 @@ export default function BlogPostPage() {
               <li>You're planning 3-5+ year growth trajectory and need someone for the long haul</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Fails:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Fails:</h3>
 
             <p>
               <strong>Below $3M-$5M annual revenue, in-house CMOs are almost always a mistake.</strong> Here's why:
@@ -102,11 +102,11 @@ export default function BlogPostPage() {
               <li>Lack of external perspective—they only know your business, not what's working elsewhere</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Option 2: Marketing Agency ($5k-$25k+ Monthly)
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
 
             <p>
               A team of specialists—strategist, media buyer, designer, copywriter, analyst—managed under one roof. They pitch themselves as your "full-service marketing department."
@@ -120,7 +120,7 @@ export default function BlogPostPage() {
               <li><strong>Cross-Industry Insights:</strong> They've seen what works across multiple businesses</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li><strong>Monthly Retainer:</strong> $5k-$10k (small agencies) to $15k-$50k+ (premium agencies)</li>
@@ -133,7 +133,7 @@ export default function BlogPostPage() {
               Real annual cost: $60k-$300k+ in fees, plus your ad spend.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>You need specialized execution (paid ads, SEO, content) but not strategic leadership</li>
@@ -143,7 +143,7 @@ export default function BlogPostPage() {
               <li>Your business model is simple and doesn't require deep strategic thinking</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Fails (And Why Most Do):</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Fails (And Why Most Do):</h3>
 
             <p className="font-bold">
               Here's the dirty secret: 80% of agency relationships fail within 18 months. Here's why:
@@ -162,11 +162,11 @@ export default function BlogPostPage() {
               For high-ticket businesses ($10k+ offers), most agencies completely fail. They're built for volume, not premium.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Option 3: Fractional CMO ($8k-$20k+ Monthly)
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What You Get:</h3>
 
             <p>
               A senior marketing executive (10-20+ years experience) working part-time for your business—typically 20-40 hours monthly. They own strategy, guide execution, and drive revenue growth.
@@ -180,7 +180,7 @@ export default function BlogPostPage() {
               <li><strong>Fast Ramp:</strong> Senior operators hit the ground running—productive in weeks, not months</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">What It Actually Costs:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li><strong>Monthly Retainer:</strong> $8k-$20k+ depending on scope and seniority</li>
@@ -193,7 +193,7 @@ export default function BlogPostPage() {
               Real annual cost: $96k-$240k for strategic leadership + execution guidance.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Makes Sense:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li><strong>$100k-$500k monthly revenue:</strong> Too big for DIY, too small for full-time CMO + team</li>
@@ -204,7 +204,7 @@ export default function BlogPostPage() {
               <li>You have some execution capacity (small team or contractors) but lack strategic direction</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">When This Fails:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">When This Fails:</h3>
 
             <p>
               Fractional CMOs fail when:
@@ -218,12 +218,12 @@ export default function BlogPostPage() {
               <li>You don't have budget for the execution they'll recommend ($5k-$20k+ monthly in ad spend, tools, contractors)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Real Comparison: Cost vs Value
             </h2>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-2xl font-bold uppercase mb-6 text-center border-b-2 border-black pb-3">Annual Cost Breakdown</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-2xl font-bold uppercase mb-6 text-center border-b-2 border-black pb-3">Annual Cost Breakdown</h3>
 
               <div className="space-y-4">
                 <div className="border-b border-gray-300 pb-3">
@@ -246,11 +246,11 @@ export default function BlogPostPage() {
               </div>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               How To Choose: The Decision Matrix
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Choose In-House CMO If:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Choose In-House CMO If:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>Annual revenue: <strong>$5M-$10M+</strong></li>
@@ -260,7 +260,7 @@ export default function BlogPostPage() {
               <li>You have 12+ month runway to find the right person and ramp them</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Choose Marketing Agency If:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Choose Marketing Agency If:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>You need tactical execution only (ads, SEO, content production)</li>
@@ -270,7 +270,7 @@ export default function BlogPostPage() {
               <li>You have $10k-$50k+ monthly ad budget for them to manage</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Choose Fractional CMO If:</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Choose Fractional CMO If:</h3>
 
             <ul className="list-disc pl-8 space-y-2">
               <li>Monthly revenue: <strong>$100k-$500k</strong></li>
@@ -281,7 +281,7 @@ export default function BlogPostPage() {
               <li>You want flexibility to scale up/down as needed</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why Most Businesses In The $100k-$500k/Month Range Choose Fractional
             </h2>
 
@@ -299,7 +299,7 @@ export default function BlogPostPage() {
               A fractional CMO gives you $300k-level strategic thinking for $96k-$240k annually—and they're incentivized to drive revenue, not bill hours.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -328,9 +328,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -339,11 +339,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

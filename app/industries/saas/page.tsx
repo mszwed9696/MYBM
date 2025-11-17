@@ -1,270 +1,170 @@
 "use client";
 
 import Link from "next/link";
+import ComicPanel from "@/components/ComicPanel";
+import CartoonButton from "@/components/CartoonButton";
 
 export default function SaasPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
-      {/* Newspaper Hero Section */}
-      <section className="relative bg-white border-b-5 border-black">
-        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          {/* Cityscape background */}
-          <div className="absolute inset-0 z-0 opacity-20">
-            <img
-              src="/heroes/philadelphia-skyline.png"
-              alt="Cityscape"
-              className="w-full h-full object-contain"
-              style={{ filter: "grayscale(100%) contrast(1.3)" }}
-            />
-          </div>
-
-          {/* Character */}
-          <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
-            <img
-              src="/characters/tech-innovator.png"
-              alt="Character"
-              className="w-full h-auto"
-              style={{ filter: "grayscale(100%) contrast(1.3) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))" }}
-            />
-          </div>
-
-          <div className="relative z-20 max-w-4xl">
-            {/* Category badge */}
-            <div className="inline-block mb-8 px-6 py-2 bg-black text-white border-3 border-black font-headline text-sm uppercase tracking-widest">
-              ★ FOR SAAS COMPANIES ★
-            </div>
-
-            <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-8 leading-tight text-black">
-              SaaS Growth That<br />Compounds Monthly
+    <>
+      <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
+        <div className="absolute inset-0 screen-tone opacity-40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 z-10">
+          <div className="max-w-4xl">
+            <h1 className="vintage-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+              STOP THE
+              <br />
+              CHURN
+              <br />
+              NIGHTMARE
             </h1>
-
-            <p className="font-newspaper text-xl md:text-2xl text-black leading-relaxed mb-8 max-w-2xl">
-              Marketing systems built for SaaS companies scaling from 6 to 7 or 7 to 8 figures.
+            <p className="text-2xl md:text-3xl font-mobster text-black leading-tight mb-8">
+              Lower Churn. Higher MRR. Compound Growth.
             </p>
-
+            <ComicPanel className="mb-8">
+              <p className="text-xl font-newspaper leading-relaxed text-cartoon-ink">
+                Most SaaS companies drown in churn.
+                <br /><br />
+                You sign up customers. They churn before you recover CAC. MRR doesn't compound. You can't scale.
+                <br /><br />
+                We <span className="font-bold text-black">fix your entire growth system</span>. Better onboarding. Lower churn. Expansion revenue.
+              </p>
+            </ComicPanel>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/apply"
-                className="inline-block bg-black text-white px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-900 transition-all text-center"
-              >
-                Join The Operation
-              </Link>
-              <Link
-                href="/results"
-                className="inline-block bg-white text-black px-10 py-5 border-3 border-black font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all text-center"
-              >
-                See The Results
-              </Link>
+              <CartoonButton href="/apply" variant="primary" className="text-lg px-8 py-4">APPLY NOW →</CartoonButton>
+              <CartoonButton href="/guarantee" variant="gold" className="text-lg px-8 py-4">See The Guarantee</CartoonButton>
             </div>
+            <p className="text-sm font-newspaper text-cartoon-brown italic mt-6">
+              ★ Limited partnerships • MINIMUM $100,000/month revenue required • 24-48hr review ★
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Newspaper Divider */}
-      <div className="border-t-5 border-b-5 border-black bg-white py-2">
+      <section className="py-16 bg-cartoon-ink text-cartoon-cream border-b-5 border-black">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between text-xs font-newspaper uppercase tracking-wide">
-            <span>★ Philadelphia Edition ★</span>
-            <span>Special Report: Saas</span>
-            <span>Price: Results or Nothing</span>
-          </div>
-        </div>
-      </div>
-
-      {/* The Problem Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ THE SITUATION ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Most SaaS Companies Are <span className="line-through">Drowning</span> In Churn
-            </h2>
-            <p className="font-newspaper text-lg text-gray-700 italic max-w-3xl mx-auto">
-              High churn. Low LTV. Expensive acquisition. We fix all three.
-            </p>
-          </div>
-
-          <div className="newspaper-columns-2 newspaper-columns">
-            <p className="newspaper-body drop-cap mb-4">
-              Here's the brutal math of SaaS: if your churn rate is higher than your growth rate, you're slowly dying.
-            </p>
-
-            <p className="newspaper-body mb-4">
-              You're acquiring new customers, but they're churning before you recover CAC. Your LTV:CAC ratio is broken. You can't profitably scale because every new customer costs more than they're worth. <span className="font-bold">That's not sustainable growth—that's a leaky bucket that eventually runs dry.</span>
-            </p>
-
-            <p className="newspaper-body mb-4">
-              The problem isn't your product. It's that you haven't built the growth infrastructure SaaS requires: qualified lead generation, effective onboarding, feature adoption campaigns, retention playbooks, expansion revenue systems. You're focused on new logos instead of optimizing the full customer lifecycle.
-            </p>
-
-            <p className="newspaper-body font-bold">
-              We build complete growth systems for B2B SaaS. Qualified pipeline. Better onboarding. Lower churn. Expansion revenue. 30% MRR growth guaranteed—or we work for free.
-            </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">&lt;2%</div><div className="text-sm font-newspaper uppercase tracking-wide">Churn Rate</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">3:1</div><div className="text-sm font-newspaper uppercase tracking-wide">LTV:CAC Ratio</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">30%</div><div className="text-sm font-newspaper uppercase tracking-wide">MRR Guarantee</div></div>
+            <div><div className="text-5xl md:text-6xl font-cartoon text-white mb-2">12mo</div><div className="text-sm font-newspaper uppercase tracking-wide">Max Timeline</div></div>
           </div>
         </div>
       </section>
 
-      {/* What We Do For SaaS */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-20 md:py-32 bg-cartoon-sepia border-b-5 border-cartoon-ink crosshatch">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ BREAKING NEWS ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              How We Help SaaS Companies
-            </h2>
+            <div className="sound-effect mb-6">BAM!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHY SAAS COMPANIES<br /><span className="text-black">DROWN</span></h2>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Qualified Lead Generation</h3>
-              <p className="newspaper-body leading-relaxed">
-                Content marketing, SEO, paid ads, and ABM campaigns that generate qualified pipeline. Not just MQLs—leads that convert to paying customers with strong product fit.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">📊</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Conversion & Onboarding</h3>
-              <p className="newspaper-body leading-relaxed">
-                Optimize trial-to-paid conversion. Onboarding sequences that drive feature adoption. Activation campaigns that get users to "aha" moments faster. Turn trials into revenue.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">📝</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Retention & Churn Reduction</h3>
-              <p className="newspaper-body leading-relaxed">
-                Automated engagement campaigns, usage monitoring, at-risk customer identification, win-back programs. Reduce churn from 5% to 2% and watch MRR compound.
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8">
-              <div className="text-5xl mb-4">⚡</div>
-              <h3 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Expansion Revenue</h3>
-              <p className="newspaper-body leading-relaxed">
-                Upsell campaigns, cross-sell strategies, usage-based expansion, enterprise tier migrations. Get more revenue from existing customers than you spend acquiring new ones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why SaaS Companies Choose Us */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ SPECIAL REPORT ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block mb-6">
-              Why SaaS Companies Choose Us
-            </h2>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">SaaS Growth Specialists</h3>
-              <p className="newspaper-body text-gray-700">
-                We specialize in B2B SaaS growth. We understand your metrics: MRR, churn rate, LTV:CAC, NRR, activation rate, expansion revenue. We know what drives sustainable SaaS growth because we've done it dozens of times.
-              </p>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Guarantee 30% MRR Growth</h3>
-              <p className="newspaper-body text-gray-700">
-                We guarantee 30% MRR growth. If you don't hit it, we keep working for free until you do. Most agencies get paid whether your churn kills you or not. We only win when you win.
-              </p>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Full Lifecycle Optimization</h3>
-              <p className="newspaper-body text-gray-700">
-                We don't just generate leads. We optimize the entire customer journey: acquisition, activation, retention, expansion. Complete growth infrastructure from first touch to expansion revenue.
-              </p>
-            </div>
-
-            <div className="bg-white border-3 border-black p-6">
-              <h3 className="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-black pb-2">Proven SaaS Playbooks</h3>
-              <p className="newspaper-body text-gray-700">
-                We've scaled SaaS companies from $10k MRR to $500k+ MRR. We know the playbook: which acquisition channels work, how to optimize onboarding, what retention tactics reduce churn, how to build expansion revenue that compounds monthly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results Section */}
-      <section className="py-20 md:py-24 bg-newspaper-cream">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-4">★ STATISTICAL REPORT ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase border-b-4 border-black pb-4 inline-block">
-              Real Results For Saas
-            </h2>
-          </div>
-
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">+287%</div>
-              <div className="font-headline text-xl uppercase mb-4">Revenue Growth</div>
-              <p className="font-newspaper text-gray-700">
-                Average results across our saas clients in first 12 months
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">30%</div>
-              <div className="font-headline text-xl uppercase mb-4">Minimum Guarantee</div>
-              <p className="font-newspaper text-gray-700">
-                Revenue increase guaranteed in year 1, or we work for free until you get it
-              </p>
-            </div>
-
-            <div className="bg-white border-5 border-black p-8 text-center">
-              <div className="font-headline text-6xl font-black mb-4">$100k+</div>
-              <div className="font-headline text-xl uppercase mb-4">Monthly Revenue</div>
-              <p className="font-newspaper text-gray-700">
-                Minimum requirement to work with us. We only serve established saas
-              </p>
-            </div>
+            {[
+              {icon: "📉", title: "HIGH CHURN", problem: "Customers churn fast. Before you recover CAC. Growth dies.", solution: "We lower churn. Better onboarding. Feature adoption. Retention."},
+              {icon: "💰", title: "BROKEN LTV:CAC", problem: "CAC too high. LTV too low. Can't scale profitably.", solution: "We fix both. Lower CAC. Increase LTV. Hit 3:1 ratio."},
+              {icon: "🚫", title: "NO EXPANSION", problem: "Customers stay at same tier. No upsells. No growth.", solution: "We build expansion revenue. Upsells. Cross-sells. Higher tiers."}
+            ].map((item, i) => (
+              <ComicPanel key={i} className="text-center">
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="font-cartoon text-3xl text-black mb-4 uppercase">{item.title}</h3>
+                <div className="mb-4"><p className="font-newspaper text-lg italic text-cartoon-brown mb-2">The Problem:</p><p className="font-newspaper text-base text-cartoon-ink">{item.problem}</p></div>
+                <div className="border-t-3 border-cartoon-ink pt-4"><p className="font-newspaper text-lg font-bold text-black mb-2">The Fix:</p><p className="font-newspaper text-base text-cartoon-ink font-bold">{item.solution}</p></div>
+              </ComicPanel>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Pull Quote */}
-      <div className="border-t-5 border-b-5 border-black bg-black text-white py-12">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="font-headline text-3xl md:text-4xl italic leading-tight mb-6">
-            "We're not just another agency. We're your partners. We protect our partners. We deliver results. Or we don't get paid. Capisce?"
-          </p>
-          <p className="font-newspaper text-xl">
-            — Don Michael Szwed, Mind Your Business Media
-          </p>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="border-5 border-white p-10 md:p-16 bg-black">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Join Mind Your Business Media ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
-              Ready To Scale<br />Your Business?
-            </h2>
-            <p className="font-newspaper text-xl mb-10 text-white/90">
-              If you're doing $100k+ monthly and ready for guaranteed growth, let's talk.
-            </p>
-            <Link
-              href="/apply"
-              className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase tracking-wide hover:bg-gray-100 transition-all"
-            >
-              APPLY NOW
-            </Link>
-            <p className="font-newspaper text-sm mt-6 text-white/70 uppercase tracking-wider">
-              APPLICATION REVIEW: 24-48 HOURS | LIMITED PARTNERSHIPS AVAILABLE
-            </p>
+      <section className="py-20 md:py-32 bg-cartoon-cream border-b-5 border-cartoon-ink">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">HOW WE BUILD<br /><span className="text-black">SaaS GROWTH</span></h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">🎯</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Generate Qualified Leads</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Content marketing. SEO. Paid ads. ABM. We generate qualified pipeline. Not just MQLs. Real buyers.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">🚀</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Optimize Onboarding</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Trial to paid conversion. Onboarding sequences. Feature adoption. Get users to aha moments faster.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">🔒</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Reduce Churn</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Engagement campaigns. Usage monitoring. At-risk identification. Win-back programs. Cut churn in half.</p></div></div></ComicPanel>
+            <ComicPanel className="halftone-overlay"><div className="flex items-start gap-4"><div className="text-6xl">⬆️</div><div><h3 className="font-cartoon text-2xl text-black uppercase mb-3">Build Expansion Revenue</h3><p className="font-newspaper text-base leading-relaxed text-cartoon-ink">Upsells. Cross-sells. Usage-based expansion. Enterprise tier migrations. More revenue from existing customers.</p></div></div></ComicPanel>
+          </div>
+          <div className="text-center">
+            <CartoonButton href="/apply" variant="primary" className="text-xl px-12 py-5">GROW MY MRR →</CartoonButton>
           </div>
         </div>
       </section>
-    </div>
+
+      <section className="py-20 md:py-32 bg-cartoon-newsprint border-b-5 border-cartoon-ink halftone-bg">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="sound-effect mb-6 text-black">PROOF!</div>
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">REAL SAAS<br /><span className="text-black">REAL MRR</span></h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              {before: "$87k MRR", after: "$312k MRR", growth: "+259%", timeline: "11 months", industry: "B2B SaaS"},
+              {before: "$145k MRR", after: "$487k MRR", growth: "+236%", timeline: "12 months", industry: "Marketing SaaS"},
+              {before: "$210k MRR", after: "$698k MRR", growth: "+232%", timeline: "10 months", industry: "Dev Tools"}
+            ].map((c, i) => (
+              <ComicPanel key={i} className="text-center bg-white">
+                <div className="text-5xl font-cartoon text-black mb-4">{c.growth}</div>
+                <div className="space-y-3 font-newspaper">
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">Before:</span><div className="text-2xl font-bold text-cartoon-ink">{c.before}</div></div>
+                  <div className="text-3xl text-black">→</div>
+                  <div><span className="text-sm uppercase tracking-wide text-cartoon-brown">After:</span><div className="text-2xl font-bold text-black">{c.after}</div></div>
+                  <div className="border-t-3 border-cartoon-ink pt-3 mt-4"><div className="text-xs uppercase text-cartoon-brown mb-1">{c.timeline}</div><div className="text-sm font-bold text-black">{c.industry}</div></div>
+                </div>
+              </ComicPanel>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-cartoon-tan border-b-5 border-cartoon-ink">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="vintage-headline text-4xl md:text-6xl mb-6">WHO NEEDS<br /><span className="text-black">THIS</span></h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            <ComicPanel className="bg-white border-cartoon-ink">
+              <div className="text-6xl text-center mb-4">✓</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-black">YOU NEED THIS IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-cartoon-ink">
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>Your <span className="font-bold">churn is too high</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You can't <span className="font-bold">scale profitably</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You need <span className="font-bold">guaranteed MRR growth</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✓</span><span>You make <span className="font-bold">$100k+ per month</span></span></li>
+              </ul>
+            </ComicPanel>
+            <ComicPanel className="bg-cartoon-ink text-white border-black">
+              <div className="text-6xl text-center mb-4">✗</div>
+              <h3 className="font-cartoon text-3xl text-center uppercase mb-6 text-white">NOT A FIT IF:</h3>
+              <ul className="space-y-4 font-newspaper text-lg text-white">
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You make <span className="font-bold">under $100k/month</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>Your <span className="font-bold">churn is under 2%</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You're not <span className="font-bold">serious</span></span></li>
+                <li className="flex items-start gap-3"><span className="text-2xl">✗</span><span>You want <span className="font-bold">quick fixes</span></span></li>
+              </ul>
+            </ComicPanel>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-cartoon-ink text-cartoon-cream border-b-5 border-black relative overflow-hidden">
+        <div className="absolute inset-0 halftone-bg opacity-10"></div>
+        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
+          <div className="sound-effect text-white mb-8">MAKE THE CALL!</div>
+          <h2 className="vintage-headline text-4xl md:text-6xl lg:text-7xl text-white mb-8">READY TO<br /><span className="text-white">COMPOUND MRR?</span></h2>
+          <ComicPanel className="mb-12 bg-cartoon-cream text-cartoon-ink">
+            <p className="text-xl md:text-2xl font-newspaper leading-relaxed">
+              If you're tired of fighting churn...<br /><br />
+              We'll build real SaaS growth. Make <span className="font-black text-black">30% more MRR in 12 months</span>.<br /><br />
+              <span className="font-black text-2xl text-black">Or we work for free.</span>
+            </p>
+          </ComicPanel>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <CartoonButton href="/apply" variant="gold" className="text-2xl px-16 py-6">APPLY NOW →</CartoonButton>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

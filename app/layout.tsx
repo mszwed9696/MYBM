@@ -42,11 +42,19 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon.png', type: 'image/png' },
-      { url: '/myb-logo.png', sizes: 'any' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/favicon.svg' },
+    ],
   },
+  manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -57,8 +65,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/myb-logo.png',
-        width: 1200,
-        height: 630,
+        width: 500,
+        height: 500,
         alt: 'Mind Your Business Media - Marketing Agency for High-Ticket Businesses',
       },
     ],
@@ -103,8 +111,8 @@ export default function RootLayout({
         "logo": {
           "@type": "ImageObject",
           "url": "https://mybm.vercel.app/myb-logo.png",
-          "width": 512,
-          "height": 512
+          "width": 500,
+          "height": 500
         },
         "description": "Marketing agency specializing in high-ticket businesses generating $100k+ monthly revenue. We guarantee a 30% revenue increase in year 1 or work for free.",
         "sameAs": [
@@ -169,6 +177,9 @@ export default function RootLayout({
         {/* Performance optimization: Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+        {/* Vintage Cartoon Fonts */}
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Solid:wght@300;400;900&family=Playfair+Display:wght@400;700;900&family=Permanent+Marker&display=swap" rel="stylesheet" />
 
         <Script
           id="structured-data"

@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function BlogPostPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
-          <div className="font-headline text-sm uppercase tracking-widest mb-6 text-center">★ OUR GUARANTEE ★</div>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
+          <div className="font-cartoon text-sm uppercase tracking-widest mb-6 text-center">★ OUR GUARANTEE ★</div>
+          <h1 className="font-cartoon text-4xl md:text-5xl lg:text-6xl font-black uppercase mb-8 leading-tight text-black text-center">
             Guaranteed Marketing Results: Why We Can, Others Can't
           </h1>
           <div className="font-newspaper text-center text-gray-600 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPostPage() {
 
       <article className="py-20 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed newspaper-body">
+          <div className="font-newspaper text-lg text-gray-700 space-y-6 leading-relaxed font-newspaper text-base text-cartoon-ink">
             <p className="text-xl font-bold text-black drop-cap">
               We guarantee 30% net revenue growth in 12 months or we work for free until you hit it. No other marketing agency will make this promise. Ask yourself why.
             </p>
@@ -38,7 +38,7 @@ export default function BlogPostPage() {
               Because they can't deliver it. They're optimized for collecting retainers, not driving revenue. We're different. Here's exactly why we can guarantee results when everyone else hides behind "effort-based" contracts.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Marketing Industry's Dirty Secret
             </h2>
 
@@ -59,11 +59,11 @@ export default function BlogPostPage() {
               They're selling effort, not outcomes. And effort doesn't pay your bills—revenue does.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why We Can Guarantee 30% Growth
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Reason #1: We Only Work With Qualified Businesses</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Reason #1: We Only Work With Qualified Businesses</h3>
 
             <p>
               We don't work with everyone who can pay. We turn down 90% of applicants. Our minimum criteria:
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
               We don't guarantee results for startups with unproven offers or businesses without revenue history. We scale what already works.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Reason #2: We've Done This Before (Many Times)</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Reason #2: We've Done This Before (Many Times)</h3>
 
             <p>
               100% of our clients exceed the 30% guarantee. Not 80%. Not 90%. 100%.
@@ -90,8 +90,8 @@ export default function BlogPostPage() {
               Why? Because we've scaled 50+ businesses in your exact situation. We know what works. We're not experimenting on your dime—we're executing proven playbooks.
             </p>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-4">Our Track Record:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-4">Our Track Record:</h3>
               <ul className="space-y-2">
                 <li><strong>Average growth:</strong> 87% revenue increase in year 1</li>
                 <li><strong>Success rate:</strong> 100% hit or exceed 30% guarantee</li>
@@ -100,7 +100,7 @@ export default function BlogPostPage() {
               </ul>
             </div>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Reason #3: We Build Systems, Not Run Campaigns</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Reason #3: We Build Systems, Not Run Campaigns</h3>
 
             <p>
               Most agencies run campaigns: Launch Facebook ads, hope they work, adjust if they don't.
@@ -121,7 +121,7 @@ export default function BlogPostPage() {
               Systems compound. Campaigns don't. That's why we can predict outcomes.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Reason #4: We Have Skin In The Game</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Reason #4: We Have Skin In The Game</h3>
 
             <p>
               If we don't hit 30% by month 12, we continue working at $0 monthly fees until you do.
@@ -135,11 +135,11 @@ export default function BlogPostPage() {
               Our entire business model depends on your success. Incentives perfectly aligned.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               How The Guarantee Actually Works
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 1: Establish Your Baseline</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 1: Establish Your Baseline</h3>
 
             <p>
               We calculate your average monthly revenue over the last 90 days. That's your baseline.
@@ -154,7 +154,7 @@ export default function BlogPostPage() {
               <li><strong>30% Target: $130k/month by month 12</strong></li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 2: Build & Execute Growth Systems</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 2: Build & Execute Growth Systems</h3>
 
             <p>
               We spend months 1-3 diagnosing, strategizing, and building your revenue infrastructure:
@@ -168,7 +168,7 @@ export default function BlogPostPage() {
               <li>Optimize conversion rates across every touchpoint</li>
             </ul>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">Step 3: Measure At 6 & 12 Months</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">Step 3: Measure At 6 & 12 Months</h3>
 
             <p>
               We check progress at month 6 and month 12 against verified financial documentation.
@@ -188,7 +188,7 @@ export default function BlogPostPage() {
               <li>If no: We work for $0 fees until you do (this has never happened)</li>
             </ul>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               What's NOT Covered By The Guarantee
             </h2>
 
@@ -206,34 +206,34 @@ export default function BlogPostPage() {
               If we don't hit 30%, you pay $0 for our work but still cover pass-through costs (ads, tools). Fair deal.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Why Other Agencies Won't Do This
             </h2>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">They Can't Predict Outcomes</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">They Can't Predict Outcomes</h3>
 
             <p>
               Most agencies run generic tactics across all clients. They don't have vertical-specific expertise or proven playbooks. They're guessing, which means they can't guarantee anything.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">They Don't Want The Risk</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">They Don't Want The Risk</h3>
 
             <p>
               Guarantees mean accountability. If they fail, they lose money. Much safer to charge retainers regardless of results.
             </p>
 
-            <h3 className="font-headline text-xl font-bold uppercase mt-8 mb-4">They Work With Anyone Who Pays</h3>
+            <h3 className="font-cartoon text-xl font-bold uppercase mt-8 mb-4">They Work With Anyone Who Pays</h3>
 
             <p>
               Agencies take any client who can afford the retainer. We're selective—we only work with businesses we know we can scale. That's how we maintain 100% success rate.
             </p>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               Real Results: The Proof
             </h2>
 
-            <div className="bg-newspaper-cream border-3 border-black p-8 my-8">
-              <h3 className="font-headline text-xl font-bold uppercase mb-6">Client Examples:</h3>
+            <div className="bg-cartoon-cream border-3 border-black p-8 my-8">
+              <h3 className="font-cartoon text-xl font-bold uppercase mb-6">Client Examples:</h3>
 
               <div className="space-y-6">
                 <div>
@@ -262,7 +262,7 @@ export default function BlogPostPage() {
               </p>
             </div>
 
-            <h2 className="font-headline text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
+            <h2 className="font-cartoon text-3xl font-black uppercase mt-12 mb-6 border-b-2 border-black pb-2">
               The Bottom Line
             </h2>
 
@@ -289,9 +289,9 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      <section className="py-12 bg-newspaper-cream border-t-5 border-black">
+      <section className="py-12 bg-cartoon-cream border-t-5 border-black">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <Link href="/blog" className="font-headline uppercase text-lg hover:underline">
+          <Link href="/blog" className="font-cartoon uppercase text-lg hover:underline">
             ← Back to All Articles
           </Link>
         </div>
@@ -300,11 +300,11 @@ export default function BlogPostPage() {
       <section className="py-20 md:py-24 bg-black text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="border-5 border-white p-10 md:p-16">
-            <div className="font-headline text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
-            <h2 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
+            <div className="font-cartoon text-sm uppercase tracking-widest mb-6">★ Ready To Apply These Strategies? ★</div>
+            <h2 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">
               Get Guaranteed<br />Marketing Results
             </h2>
-            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-headline text-lg uppercase hover:bg-gray-100">
+            <Link href="/apply" className="inline-block bg-white text-black px-10 py-5 border-3 border-white font-cartoon text-lg uppercase hover:bg-gray-100">
               APPLY FOR PARTNERSHIP
             </Link>
           </div>

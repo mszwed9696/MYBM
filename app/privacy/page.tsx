@@ -2,10 +2,10 @@
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-newspaper-cream newspaper-texture">
+    <div className="min-h-screen bg-cartoon-cream">
       <section className="relative bg-white border-b-5 border-black">
         <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-          <h1 className="font-headline text-4xl md:text-5xl font-black uppercase mb-8 text-black text-center">
+          <h1 className="font-cartoon text-4xl md:text-5xl font-black uppercase mb-8 text-black text-center">
             Privacy Policy
           </h1>
         </div>
@@ -25,14 +25,14 @@ export default function PrivacyPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="font-newspaper text-base text-gray-700 space-y-8 leading-relaxed">
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Introduction</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Introduction</h2>
               <p>
                 Mind Your Business Media ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Information We Collect</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Information We Collect</h2>
               <p className="mb-4"><strong>Personal Information:</strong> We collect information you provide directly, including:</p>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Name, email address, phone number, and business information when you submit forms or apply for partnership</li>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">How We Use Your Information</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">How We Use Your Information</h2>
               <p className="mb-4">We use collected information to:</p>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Evaluate partnership applications and communicate with prospective clients</li>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Information Sharing and Disclosure</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Information Sharing and Disclosure</h2>
               <p className="mb-4">We do not sell your personal information. We may share your information with:</p>
               <ul className="list-disc pl-8 space-y-2">
                 <li><strong>Service Providers:</strong> Third-party vendors who perform services on our behalf (e.g., payment processing, analytics, email delivery)</li>
@@ -76,14 +76,14 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Data Security</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Data Security</h2>
               <p>
                 We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction. However, no internet transmission is completely secure, and we cannot guarantee absolute security.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Your Rights and Choices</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Your Rights and Choices</h2>
               <p className="mb-4">You have the right to:</p>
               <ul className="list-disc pl-8 space-y-2">
                 <li>Access, correct, or delete your personal information</li>
@@ -95,42 +95,42 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Cookies and Tracking Technologies</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Cookies and Tracking Technologies</h2>
               <p>
                 We use cookies, web beacons, and similar technologies to enhance website functionality, analyze usage patterns, and deliver personalized content. You can control cookies through your browser settings, though disabling them may limit website features.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Data Retention</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Data Retention</h2>
               <p>
                 We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce agreements. Client data is retained for the duration of our partnership and for a reasonable period thereafter.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Children's Privacy</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Children's Privacy</h2>
               <p>
                 Our services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children. If we become aware of such collection, we will delete the information immediately.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">International Data Transfers</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">International Data Transfers</h2>
               <p>
                 Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Changes to This Privacy Policy</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Changes to This Privacy Policy</h2>
               <p>
                 We may update this Privacy Policy periodically. Changes will be posted on this page with an updated "Last Updated" date. Continued use of our services after changes constitutes acceptance of the revised policy.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Contact Us</h2>
+              <h2 className="font-cartoon text-2xl font-bold uppercase mb-4 border-b-2 border-black pb-2">Contact Us</h2>
               <p>
                 For questions about this Privacy Policy or to exercise your rights, contact us at:<br/>
                 <strong>Email:</strong> privacy@mindyourbusinessmedia.com<br/>

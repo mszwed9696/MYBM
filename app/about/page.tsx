@@ -9,10 +9,20 @@ export default function AboutPage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen bg-cartoon-cream border-b-5 border-cartoon-ink overflow-hidden">
-        <div className="absolute inset-0 screen-tone opacity-40"></div>
+        {/* Philadelphia Skyline Background */}
+        <div className="absolute inset-0 z-0 flex items-end justify-center">
+          <img
+            src="/heroes/philadelphia-skyline.png"
+            alt="Philadelphia Skyline"
+            className="w-full h-auto object-contain"
+            style={{ filter: "grayscale(100%) contrast(1.2)", opacity: 0.3 }}
+          />
+        </div>
+
+        <div className="absolute inset-0 screen-tone opacity-30 z-[1]"></div>
 
         {/* Character */}
-        <div className="absolute right-8 bottom-0 w-48 md:w-64 z-10 opacity-90">
+        <div className="absolute right-8 md:right-16 bottom-0 w-56 md:w-80 lg:w-96 z-10">
           <img
             src="/characters/don-mobster.png"
             alt="The Boss"
